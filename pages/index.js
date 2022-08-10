@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import Router from "next/router";
+import React from "react";
 import Header from "components/Header/Header.tsx";
 import Footer from "components/Footer/Footer.tsx";
 
