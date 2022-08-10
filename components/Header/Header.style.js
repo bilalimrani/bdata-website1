@@ -9,6 +9,10 @@ const NavContainer = styled.div`
     @media (max-width: 1199px) {
       margin: 0 15px !important;
     }
+
+    @media (max-width: 992px) {
+      padding-bottom: 10px;
+    }
   }
   .navbar-nav .nav-item a {
     padding: 0 !important;

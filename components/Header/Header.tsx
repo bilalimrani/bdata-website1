@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-// core components
 import Logo from "public/img/logo.svg";
 import links from "utils/navbar.constants";
 import { NavContainer, NavbarLogo } from "./Header.style";
