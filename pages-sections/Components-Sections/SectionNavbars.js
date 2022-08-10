@@ -13,7 +13,7 @@ import Explore from "@material-ui/icons/Explore";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Header from "components/Header/Header.js";
+import Header from "components/Header/Header.tsx";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";

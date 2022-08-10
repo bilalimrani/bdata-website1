@@ -8,8 +8,8 @@ import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
+import Header from "components/Header/Header.tsx";
+import Footer from "components/Footer/Footer.tsx";
 import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";

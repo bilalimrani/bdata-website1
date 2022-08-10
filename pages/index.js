@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import Router from "next/router";
+import Header from "components/Header/Header.tsx";
+import Footer from "components/Footer/Footer.tsx";
 
-export default class Index extends Component {
-  componentDidMount = () => {
-    Router.push("/components");
-  };
+const Main = () => {
+  return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  );
+};
 
-  render() {
-    return <div />;
-  }
-}
+export default Main;
