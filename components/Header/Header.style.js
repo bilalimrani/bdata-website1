@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const NavbarWrapper = styled.div`
+  position: fixed;
+  width: 100%;
+  background: ${(props) => (props.isIncreaseHeight ? "white" : "none")};
+`;
 const NavContainer = styled.div`
   display: flex !important;
   align-items: center !important;
@@ -17,7 +22,7 @@ const NavContainer = styled.div`
   .navbar-nav .nav-item a {
     padding: 0 !important;
     font-size: 16px !important;
-    color: black;
+    color: ${(props) => (props.isIncreaseHeight ? "black" : "white")};
     opacity: 1;
   }
   .navbar-nav .nav-item a:hover {
@@ -38,4 +43,4 @@ const NavbarLogo = styled.div`
   }
 `;
 
-export { NavContainer, NavbarLogo };
+export { NavContainer, NavbarLogo, NavbarWrapper };
