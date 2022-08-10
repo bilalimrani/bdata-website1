@@ -1,77 +1,57 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Nav from "react-bootstrap/Nav";
+import { useRouter } from "next/router";
 import Image from "next/image";
 // core components
-import Logo from "public/img/Newlogo.png";
-import { NavContainer ,NavbarLogo } from "./Header.style";
+import Logo from "public/img/logo.svg";
+import links from "utils/navbar.constants";
+import { NavContainer, NavbarLogo } from "./Header.style";
 
-export default function Header(props) {
+export default function Header() {
   const [showNav, setShowNav] = useState(false);
-
+  const router = useRouter();
   const toggleNav = () => {
     setShowNav(!showNav);
   };
 
   return (
     <nav className="navbar navbar-expand-lg py-3">
-        <NavContainer className="container-fluid">
-          <NavbarLogo>
-            <a className="navbar-brand" href="#">
+      <NavContainer className="container-fluid">
+        <NavbarLogo>
+          <Link href="/">
+            <a className="navbar-brand" href="/">
               <Image src={Logo} width={150} height={48} />
             </a>
-            <button className="navbar-toggler" onClick={toggleNav}>
+          </Link>
+          <button className="navbar-toggler" onClick={toggleNav}>
             <span className="navbar-toggler-icon"></span>
           </button>
-          </NavbarLogo>
-          
-          <div className="">
-          <div className={(showNav ? "show" : "") + " collapse navbar-collapse"}>
+        </NavbarLogo>
+
+        <div className="">
+          <div
+            className={(showNav ? "show" : "") + " collapse navbar-collapse"}
+          >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  About Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Contact Us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Press
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Industries
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Products
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Resources
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Case Studies
-                </a>
-              </li>
+              {links?.map((item, index) => {
+                return (
+                  <li key={index} className="nav-item">
+                    <Link href={item?.link}>
+                      <a
+                        className={`${
+                          router.pathname == item.link ? "active" : ""
+                        } nav-link`}
+                      >
+                        {item?.name}
+                      </a>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-          </div>
-        </NavContainer>
+        </div>
+      </NavContainer>
     </nav>
   );
 }
