@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Logo from "public/img/logo.svg";
+import whiteLogo from "public/img/footerlogo.svg";
 import links from "utils/navbar.constants";
 import { NavContainer, NavbarLogo, NavbarWrapper } from "./Header.style";
 
@@ -21,7 +22,7 @@ export default function Header() {
 
   const headerColorChange = () => {
     const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > 200) {
+    if (windowsScrollTop > 100) {
       setIsIncreaseHeight(true);
     } else {
       setIsIncreaseHeight(false);
@@ -42,7 +43,9 @@ export default function Header() {
           <NavbarLogo>
             <Link href="/">
               <a className="navbar-brand" href="/">
+                <Image src={whiteLogo} width={150} height={48} />
                 <Image src={Logo} width={150} height={48} />
+
               </a>
             </Link>
             <button className="navbar-toggler" onClick={toggleNav}>

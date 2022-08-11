@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 const NavbarWrapper = styled.div`
   position: fixed;
+  top:0;
+  left:0;
   width: 100%;
-  background: ${(props) => (props.isIncreaseHeight ? "white" : "none")};
+  background: ${(props) => (props.isIncreaseHeight ? "white" : "black")};
+  z-index:1;
 `;
 const NavContainer = styled.div`
   display: flex !important;
