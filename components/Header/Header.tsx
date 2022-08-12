@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import Logo from "public/img/logo.svg";
-import whiteLogo from "public/img/footerlogo.svg";
-import links from "utils/navbar.constants";
+import links from "../../utils/navbar.constants";
 import { NavContainer, NavbarLogo, NavbarWrapper } from "./Header.style";
+const whiteLogo = require("public/img/footerlogo.svg");
+const Logo = require("public/img/logo.svg");
 
 export default function Header() {
   const router = useRouter();
@@ -43,9 +43,11 @@ export default function Header() {
           <NavbarLogo>
             <Link href="/">
               <a className="navbar-brand" href="/">
-                <Image src={whiteLogo} width={150} height={48} />
-                <Image src={Logo} width={150} height={48} />
-
+                <Image
+                  src={!isIncreaseHeight ? whiteLogo : Logo}
+                  width={150}
+                  height={48}
+                />
               </a>
             </Link>
             <button className="navbar-toggler" onClick={toggleNav}>
