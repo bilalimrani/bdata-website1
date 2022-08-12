@@ -43,4 +43,12 @@ const BannerWrapper = styled.div`
   }
 `;
 
-export { BannerWrapper };
+const Button = styled.button`
+  color: #004d88;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 18px 40px;
+`;
+
+export { BannerWrapper, Button };

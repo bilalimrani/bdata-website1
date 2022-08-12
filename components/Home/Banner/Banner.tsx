@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Image from "next/image";
-import { BannerWrapper } from "./Banner.style";
+import React from "react";
+import { BannerWrapper, Button } from "./Banner.style";
 
 export default function Banner() {
   return (
@@ -12,7 +9,7 @@ export default function Banner() {
           <h2 className="fw-bold">
             Zero Trust Technology for Network Security
           </h2>
-          <button className="custom-btn-white">Start free trial</button>
+          <Button className="btn btn-light">Start free trial</Button>
         </div>
       </div>
     </BannerWrapper>
