@@ -38,7 +38,7 @@ export default function Footer() {
           <div className="col-sm-6">
             <div className="row">
               <div className="col-lg-4 col-sm-6 col-12">
-                <h5 className="fw-bold m-0 mb-2">Main Pages</h5>
+                <h5 className="fw-bold m-0 mb-2 text-white">Main Pages</h5>
                 <ul className="footer-links-ul">
                   <li>
                     <a href="#" className="footer-links">
@@ -73,7 +73,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="col-lg-4 col-sm-6 col-12">
-                <h5 className="fw-bold m-0 mb-2">Company</h5>
+                <h5 className="fw-bold m-0 mb-2 text-white">Company</h5>
                 <ul className="footer-links-ul">
                   <li>
                     <a href="#" className="footer-links">
@@ -98,7 +98,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="col-lg-4 col-sm-6 col-12">
-                <h5 className="fw-bold m-0 mb-2">More</h5>
+                <h5 className="fw-bold m-0 mb-2 text-white">More</h5>
                 <ul className="footer-links-ul">
                   <li>
                     <a href="#" className="footer-links">

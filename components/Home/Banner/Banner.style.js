@@ -13,6 +13,12 @@ const BannerWrapper = styled.div`
   justify-content: center;
   text-align: center;
   position: relative;
+  @media (max-width: 991px) {
+    height: 450px;
+   }
+  @media (max-width: 767px) {
+    height: 300px;
+   }
   &::before {
     content: url(${bdataPattern});
     position: absolute;
@@ -21,17 +27,32 @@ const BannerWrapper = styled.div`
     transform: translateY(-50%);
     width: 135px;
     height: 315px;
-    // background:red;
+    @media (max-width: 991px) {
+      width: 75px;
+      height: 215px;
+      right:58px;
+    }
+    @media (max-width: 767px) {
+     display:none;
+    }
   }
   .banner-content-wrapper {
     max-width: 680px;
     margin: 0 auto;
+    position:relative;
+    z-index:111;
   }
   h2 {
     color: white;
     font-weight: 900 !important;
     margin: 0 !important;
     margin-bottom: 90px !important;
+    @media (max-width: 991px) {
+      margin-bottom: 50px !important;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px !important;
+    }
   }
   .custom-btn-white {
     background: white;

@@ -29,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
+  color: black;
 }
 h1,
 h2,
@@ -137,4 +137,25 @@ ul{
 }
 ul li{
   list-style-type: none;
+}
+.carousel-control-prev{
+  display: none !important;
+}
+.carousel-control-next{
+  display: none !important;
+}
+.carousel-indicators{
+  bottom:-50px !important;
+}
+.carousel-indicators button{
+  background: #E3E3E3 !important;
+  width:48px !important;
+  height:8px !important;
+  margin: 0 !important;
+  flex: none !important;
+  border: none !important;
+  margin-right: 10px !important;
+}
+.carousel-indicators .active{
+  background: #0976B4 !important;
 }
