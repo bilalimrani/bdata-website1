@@ -48,7 +48,7 @@ const Button = styled.button`
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  padding: 18px 40px;
+  padding: 20px 32px;
 `;
 
 export { BannerWrapper, Button };

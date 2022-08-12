@@ -2,18 +2,18 @@ import styled from "styled-components";
 
 const NavbarWrapper = styled.div`
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   background: ${(props) => (props.isIncreaseHeight ? "white" : "black")};
-  z-index:1;
+  z-index: 1;
 `;
 const NavContainer = styled.div`
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   .navbar-nav .nav-item {
-    margin: 0 25px !important;
+    margin: 0 20px !important;
     @media (max-width: 1199px) {
       margin: 0 15px !important;
     }
@@ -24,7 +24,7 @@ const NavContainer = styled.div`
   }
   .navbar-nav .nav-item a {
     padding: 0 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
     color: ${(props) => (props.isIncreaseHeight ? "black" : "white")};
     opacity: 1;
   }
@@ -38,6 +38,7 @@ const NavContainer = styled.div`
   }
 `;
 const NavbarLogo = styled.div`
+  padding-left: 18px;
   @media (max-width: 992px) {
     display: flex !important;
     align-items: center !important;
