@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 const NavbarWrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
+  /* position: fixed; */
+  /* top: 0;
+  left: 0; */
   width: 100%;
   background: ${(props) => (props.isIncreaseHeight ? "white" : "black")};
-  z-index: 999;
+  /* z-index: 999; */
 `;
 const NavContainer = styled.div`
   display: flex !important;
@@ -27,7 +27,7 @@ const NavContainer = styled.div`
     font-size: 14px !important;
     color: ${(props) => (props.isIncreaseHeight ? "black" : "white")};
     opacity: 1;
-    position:relative;
+    position: relative;
   }
   .navbar-nav .nav-item a:hover {
     cursor: pointer;
@@ -38,13 +38,13 @@ const NavContainer = styled.div`
     font-weight: 700;
   }
   .navbar-nav .nav-item .active::before {
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-10px;
-    width:100%;
-    height:2px;
-    border-radius:5px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
     background: #004d88 !important;
   }
 `;

@@ -12,22 +12,22 @@ export default function Header() {
   const [showNav, setShowNav] = useState(false);
   const [isIncreaseHeight, setIsIncreaseHeight] = useState(false);
 
-  React.useEffect(() => {
-    window.addEventListener("scroll", headerColorChange);
+  // React.useEffect(() => {
+  //   window.addEventListener("scroll", headerColorChange);
 
-    return () => {
-      window.removeEventListener("scroll", headerColorChange);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("scroll", headerColorChange);
+  //   };
+  // });
 
-  const headerColorChange = () => {
-    const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > 100) {
-      setIsIncreaseHeight(true);
-    } else {
-      setIsIncreaseHeight(false);
-    }
-  };
+  // const headerColorChange = () => {
+  //   const windowsScrollTop = window.pageYOffset;
+  //   if (windowsScrollTop > 100) {
+  //     setIsIncreaseHeight(true);
+  //   } else {
+  //     setIsIncreaseHeight(false);
+  //   }
+  // };
 
   const toggleNav = () => {
     setShowNav(!showNav);

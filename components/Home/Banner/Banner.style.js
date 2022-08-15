@@ -15,10 +15,10 @@ const BannerWrapper = styled.div`
   position: relative;
   @media (max-width: 991px) {
     height: 450px;
-   }
+  }
   @media (max-width: 767px) {
     height: 300px;
-   }
+  }
   &::before {
     content: url(${bdataPattern});
     position: absolute;
@@ -30,17 +30,17 @@ const BannerWrapper = styled.div`
     @media (max-width: 991px) {
       width: 75px;
       height: 215px;
-      right:58px;
+      right: 58px;
     }
     @media (max-width: 767px) {
-     display:none;
+      display: none;
     }
   }
   .banner-content-wrapper {
     max-width: 680px;
     margin: 0 auto;
-    position:relative;
-    z-index:111;
+    position: relative;
+    z-index: 111;
   }
   h2 {
     color: white;
