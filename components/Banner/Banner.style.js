@@ -2,9 +2,14 @@ import styled from "styled-components";
 import BannerImage from "public/img/banner-bg.svg";
 import bdataPattern from "public/img/bdata-logo.svg";
 
+const Container = styled.div`
+  background: #000000;
+  /* opacity: 0.6; */
+`;
+
 const BannerWrapper = styled.div`
-  height: 720px;
-  background-image: url(${BannerImage});
+  height: 630px;
+  background-image: url(${(props) => props?.bgImage})
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,7 +25,7 @@ const BannerWrapper = styled.div`
     height: 300px;
   }
   &::before {
-    content: url(${bdataPattern});
+    content: url(${(props) => props.sideImage})
     position: absolute;
     right: 0;
     top: 50%;
@@ -72,4 +77,4 @@ const Button = styled.button`
   padding: 20px 32px;
 `;
 
-export { BannerWrapper, Button };
+export { BannerWrapper, Button, Container };

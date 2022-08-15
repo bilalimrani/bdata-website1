@@ -31,11 +31,12 @@ const NavContainer = styled.div`
   }
   .navbar-nav .nav-item a:hover {
     cursor: pointer;
-    color: #004d88 !important;
+    font-weight: bold;
+    color: #fff !important;
   }
   .navbar-nav .nav-item .active {
-    color: #004d88 !important;
-    font-weight: 700;
+    /* color: #004d88 !important; */
+    font-weight: bold;
   }
   .navbar-nav .nav-item .active::before {
     content: "";
@@ -45,7 +46,7 @@ const NavContainer = styled.div`
     width: 100%;
     height: 2px;
     border-radius: 5px;
-    background: #004d88 !important;
+    background: #fff !important;
   }
 `;
 const NavbarLogo = styled.div`

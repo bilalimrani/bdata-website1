@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { LightWeightSectionWrapper } from "./LightWeightSection.style";
+import {
+  LightWeightSectionWrapper,
+  Section2,
+  Button,
+} from "./LightWeightSection.style";
 const Frame78 = require("public/img/frame78.png");
 
 export default function LightWeightSection() {
@@ -23,11 +27,11 @@ export default function LightWeightSection() {
         </button>
       </div>
       {/* section two */}
-      <div className="row">
-        <div className="col-md-4">
+      <Section2 className="row">
+        <div className="col-md-5">
           <Image src={Frame78} width={385} height={500} />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-7">
           <h2 className="m-0 fw-bold">Lightweight Multilayer Cyber Security</h2>
           <p>
             Achieving cyber resilience to meet cyber compliance requirements is
@@ -37,11 +41,11 @@ export default function LightWeightSection() {
             help companies to achieve cyber resilience and compliance with up to
             80% cost saving.
           </p>
-          <button type="button" className="btn btn-primary">
-            Primary
-          </button>
+          <Button type="button" className="btn btn-primary">
+            Primary1
+          </Button>
         </div>
-      </div>
+      </Section2>
       {/* section three */}
       <div className="row">
         <div className="col-md-8">
