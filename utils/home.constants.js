@@ -1,5 +1,5 @@
-import BannerImage from "public/img/banner-bg.svg";
-import bdataPattern from "public/img/bdata-logo.svg";
+const BannerImage = require("public/img/banner-bg.svg");
+const bdataPattern = require("public/img/bdata-logo.svg");
 const Jerdins = require("public/img/desjardins.svg");
 const Rogers = require("public/img/rogers.svg");
 const HelloTomarrow = require("public/img/hello.svg");
