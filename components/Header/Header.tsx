@@ -37,7 +37,7 @@ export default function Header() {
     <NavbarWrapper isIncreaseHeight={isIncreaseHeight}>
       <nav className="navbar navbar-expand-lg py-3">
         <NavContainer
-          className="container-fluid"
+          className="container"
           isIncreaseHeight={isIncreaseHeight}
         >
           <NavbarLogo>
@@ -51,7 +51,8 @@ export default function Header() {
               </a>
             </Link>
             <button className="navbar-toggler" onClick={toggleNav}>
-              <span className="navbar-toggler-icon"></span>
+              <i className="fa fa-bars"></i>
+              {/* <span className="navbar-toggler-icon"></span> */}
             </button>
           </NavbarLogo>
 
