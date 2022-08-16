@@ -22,7 +22,7 @@ const Image57 = require("public/img/partners/image_57.svg");
 export default {
   banner: {
     title: "Zero Trust for Network Security",
-    bgImage: BannerImage,
+    bgImage: "public/img/banner-bg.svg",
     sideImage: bdataPattern,
   },
   awards: {
