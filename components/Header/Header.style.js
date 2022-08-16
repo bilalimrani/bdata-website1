@@ -34,6 +34,7 @@ const NavContainer = styled.div`
     color: ${(props) => (props.isIncreaseHeight ? "black" : "white")};
     opacity: 1;
     position: relative;
+    text-transform: capitalize;
   }
   .navbar-nav .nav-item a:hover {
     cursor: pointer;
@@ -56,7 +57,6 @@ const NavContainer = styled.div`
   }
 `;
 const NavbarLogo = styled.div`
-  padding-left: 18px;
   @media (max-width: 991px) {
     display: flex !important;
     align-items: center !important;
