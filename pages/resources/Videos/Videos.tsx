@@ -48,7 +48,6 @@ export default function Videos() {
                 height="300"
                 src={item.src}
                 title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               ></iframe>
               <h4 className="m-0 my-4 fw-bold">{item.title}</h4>
               <Button>Watch Now</Button>
