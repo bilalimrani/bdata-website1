@@ -1,4 +1,6 @@
 import React from "react";
+import Banner from "../../components/ContactUs/Banner/Banner"
+import Contact from "../../components/ContactUs/ContactForm/ContactUs";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import MainWrapper from "../style.js";
@@ -8,6 +10,8 @@ const ContactUs = () => {
     <div>
   <Header />
       <MainWrapper>
+        <Banner />
+        <Contact />
       </MainWrapper>
       <Footer />
     </div>
