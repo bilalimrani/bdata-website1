@@ -1,8 +1,20 @@
 import styled from "styled-components";
+const bdataPattern = require("public/img/pattern-img.svg");
+
+const PartnerSection = styled.div`
+background-image: url(${bdataPattern});
+background-position:center right;
+background-repeat: no-repeat;
+background-size: 100px 300px;
+`;
 
 const PartnersContainer = styled.div`
-  h2 {
-    padding-bottom: 80px;
+  h3 {
+    font-size:28px;
+    padding-bottom: 30px;
+    @media (max-width: 991px) {
+      padding-bottom: 15px;
+    }
   }
   img {
     margin-bottom: 50px;
@@ -12,6 +24,7 @@ const PartnersContainer = styled.div`
 const ImageSection = styled.div`
   cursor: pointer;
   text-align: center;
+  border: 1px solid transparent;
   &:hover {
     border: 1px solid #d1d0d6;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -19,4 +32,4 @@ const ImageSection = styled.div`
   }
 `;
 
-export { PartnersContainer, ImageSection };
+export { PartnersContainer, ImageSection ,PartnerSection};
