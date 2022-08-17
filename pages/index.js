@@ -4,9 +4,9 @@ import Footer from "components/Footer/Footer";
 import Banner from "components/Home/Banner/Banner";
 import AwardsContainer from "components/Home/Awards/Awards";
 import PartnersContainer from "components/Home/Partners/Partners";
-import CustomersStories from "components/Home/CustomersStories/CustomersStories";
-import Guide from "components/Home/Guide/Guide";
 import LightWeightSection from "components/Home/LightWeightSection/LightWeightSection";
+import CustomersStories from "components/Home/CustomersStories/CustomersStories";
+
 import MainWrapper from "./style.js";
 
 const Main = () => {
@@ -16,7 +16,6 @@ const Main = () => {
       <MainWrapper>
         <Banner />
         <AwardsContainer />
-        <Guide />
         <LightWeightSection />
         <PartnersContainer />
         <CustomersStories />

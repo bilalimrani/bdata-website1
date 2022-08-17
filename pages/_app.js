@@ -6,6 +6,7 @@ import Router from "next/router";
 // import PageChange from "components/PageChange/PageChange.js";
 import "bootstrap/dist/css/bootstrap.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
+import "public/css/index.css";
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
