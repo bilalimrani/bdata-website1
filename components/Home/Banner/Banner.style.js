@@ -1,10 +1,8 @@
 import styled from "styled-components";
-import BannerImage from "public/img/banner-bg.svg";
-import bdataPattern from "public/img/bdata-logo.svg";
+import bdataPattern from "public/img/bannerSidebar.png";
 
 const BannerWrapper = styled.div`
-  height: 720px;
-  background-image: url(${BannerImage});
+  height: 480px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -20,7 +18,7 @@ const BannerWrapper = styled.div`
     height: 300px;
   }
   &::before {
-    content: url(${bdataPattern});
+    content: ${(props) => props?.sideImage && `url(${bdataPattern})`};
     position: absolute;
     right: 0;
     top: 50%;
@@ -46,7 +44,19 @@ const BannerWrapper = styled.div`
     color: white;
     font-weight: 900 !important;
     margin: 0 !important;
-    margin-bottom: 90px !important;
+    /* margin-bottom: 90px !important;
+    @media (max-width: 991px) {
+      margin-bottom: 50px !important;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 30px !important;
+    } */
+  }
+  p {
+    color: white;
+    margin: 0 !important;
+    letter-spacing: 0.18px;
+    margin: 10px 0 90px 0 !important;
     @media (max-width: 991px) {
       margin-bottom: 50px !important;
     }
@@ -65,11 +75,18 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.button`
-  color: #004d88;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
-  padding: 20px 32px;
+  padding: 17px 32px;
+  transition: 0.3s ease;
+  &:hover {
+    color: #004d88;
+    border: 1px solid transparent;
+  }
 `;
 
 export { BannerWrapper, Button };

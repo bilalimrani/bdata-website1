@@ -6,7 +6,7 @@ import AwardsContainer from "components/Home/Awards/Awards";
 import PartnersContainer from "components/Home/Partners/Partners";
 import LightWeightSection from "components/Home/LightWeightSection/LightWeightSection";
 import CustomersStories from "components/Home/CustomersStories/CustomersStories";
-
+import homeConstants from "../utils/home.constants";
 import MainWrapper from "./style.js";
 
 const Main = () => {
@@ -14,7 +14,7 @@ const Main = () => {
     <div>
       <Header />
       <MainWrapper>
-        <Banner />
+        <Banner data={homeConstants?.banner} sideImage={true} />
         <AwardsContainer />
         <LightWeightSection />
         <PartnersContainer />
