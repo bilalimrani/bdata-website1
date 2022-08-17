@@ -6,6 +6,12 @@ const NavbarWrapper = styled.div`
   left: 0; */
   width: 100%;
   background: ${(props) => (props.isIncreaseHeight ? "white" : "black")};
+  .navbar-toggler{
+    border:1px solid white;
+  }
+  .navbar-toggler i{
+    color:white;
+  }
   /* z-index: 999; */
 `;
 const NavContainer = styled.div`
@@ -28,6 +34,7 @@ const NavContainer = styled.div`
     color: ${(props) => (props.isIncreaseHeight ? "black" : "white")};
     opacity: 1;
     position: relative;
+    text-transform: capitalize;
   }
   .navbar-nav .nav-item a:hover {
     cursor: pointer;
@@ -50,7 +57,6 @@ const NavContainer = styled.div`
   }
 `;
 const NavbarLogo = styled.div`
-  padding-left: 18px;
   @media (max-width: 991px) {
     display: flex !important;
     align-items: center !important;

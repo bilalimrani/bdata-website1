@@ -7,7 +7,7 @@ const whiteLogo = require("public/img/footerlogo.svg");
 export default function Footer() {
   return (
     <FooterContainer>
-      <div className="container-fluid">
+      <div className="container">
         <div className="row">
           <div className="col-sm-6">
             <div className="logoWrapper">
