@@ -1,13 +1,14 @@
 import Image from "next/image";
 import homeConstants from "../../../utils/home.constants";
-import { PartnersContainer, ImageSection } from "./Partners.style";
+import { PartnersContainer, ImageSection,PartnerSection } from "./Partners.style";
 
 const Partners = () => {
   return (
+    <PartnerSection>
     <PartnersContainer className="container">
-      <h2 className="text-center m-0 fw-bold">
+      <h3 className="text-center custom-padding-subsection m-0 fw-bold">
         {homeConstants?.partners.title}
-      </h2>
+      </h3>
       <div className="row">
         {homeConstants?.partners?.data?.map((item, index) => (
           <ImageSection className="col-xs-6 col-sm-4 col-md-2" key={index}>
@@ -24,6 +25,7 @@ const Partners = () => {
         ))}
       </div>
     </PartnersContainer>
+    </PartnerSection>
   );
 };
 
