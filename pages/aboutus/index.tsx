@@ -5,6 +5,7 @@ import MainWrapper from "../style.js";
 import Banner from "./Banner/Banner";
 import OurMission from "./OurMission/OurMission";
 import OurValues from "./OurValues/OurValues";
+import Team from "./Team/Team";
 
 const AboutUs = () => {
   return (
@@ -13,8 +14,9 @@ const AboutUs = () => {
       <MainWrapper>
         <Banner />
         <div className="container">
-        <OurMission />
-        <OurValues />
+          <OurMission />
+          <OurValues />
+          <Team />
         </div>
       </MainWrapper>
       <Footer />

@@ -11,8 +11,8 @@ const Resources = () => {
     <div>
       <Header />
       <MainWrapper>
-      <Banner />
-      <AllResources />
+        <Banner />
+        <AllResources />
       </MainWrapper>
       <Footer />
     </div>
