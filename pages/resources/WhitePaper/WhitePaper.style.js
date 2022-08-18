@@ -30,22 +30,17 @@ text-align:center;
 
 `; 
 const Button = styled.button`
-border:1px solid #2B7BB9;
-background: transparent;
-border-radius: 8px;
-padding:16px 28px;
-font-size:16px;
-font-weight:400;
-color:#2B7BB9;
-transition:.3s ease;
-&:hover{
-background:#2B7BB9;
-border:1px solid transparent;
-color:white;
-}
+  border: 1px solid #004d88;
+  color: #004d88;
+  background: transparent;
+  padding: 9px 40px;
+
+  &:hover {
+    background-color: #004d88 !important;
+  }
 `;
 const SectionPadding = styled.div`
-padding:0 0 50px;
+padding:0 0 30px;
 `
 export {PaperWraper , CardWrapper,Button ,SectionPadding};
 

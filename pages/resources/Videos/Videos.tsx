@@ -37,7 +37,7 @@ export default function Videos() {
   return (
     <PaperWraper>
       <SectionPadding>
-        <h2 className="text-center m-0 fw-bold">Vidoes</h2>
+      <h3 className="text-center m-0  fw-bold">Videos</h3>
       </SectionPadding>
       <div className="row">
         {data?.map((item, index) => (
@@ -50,7 +50,9 @@ export default function Videos() {
                 title="YouTube video player"
               ></iframe>
               <h4 className="m-0 my-4 fw-bold">{item.title}</h4>
-              <Button>Watch Now</Button>
+              <Button type="button" className="btn btn-primary">
+              Watch Now
+              </Button>
             </CardWrapper>
           </div>
         ))}
