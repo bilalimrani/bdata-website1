@@ -4,6 +4,8 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import productConstants from "../../utils/products.constants.js";
 import { IdentityAccess, IdentityBottom } from "./Products.style";
+import BiotProduct from "../../components/Products/BiotProducts/BiotProducts";
+import ContactForm from "../../components/Products/ContactForm/ContactUs";
 import MainWrapper from "../style.js";
 
 const identityAccess = require("public/img/identityAccess.png");
@@ -23,6 +25,8 @@ const Products = () => {
         <IdentityBottom>
           <p>{productConstants?.identityBottomTxt}</p>
         </IdentityBottom>
+        <BiotProduct />
+        <ContactForm />
       </MainWrapper>
       <Footer />
     </div>

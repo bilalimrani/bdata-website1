@@ -8,6 +8,12 @@ const IdentityAccess = styled.div`
         width: 80%
         height: 80%
     }
+    @media (max-width: 767px) {
+      img {
+        margin: 50px 0px;
+        width: 90%;
+    }
+    }
 `;
 
 const IdentityBottom = styled.div`
