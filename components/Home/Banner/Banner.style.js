@@ -43,26 +43,13 @@ const BannerWrapper = styled.div`
   h2 {
     color: white;
     font-weight: 900 !important;
-    margin: 0 !important;
-    /* margin-bottom: 90px !important;
-    @media (max-width: 991px) {
-      margin-bottom: 50px !important;
-    }
-    @media (max-width: 767px) {
-      margin-bottom: 30px !important;
-    } */
+    margin: 0 0 28px !important;
+    
   }
   p {
     color: white;
-    margin: 0 !important;
-    letter-spacing: 0.18px;
-    margin: 10px 0 90px 0 !important;
-    @media (max-width: 991px) {
-      margin-bottom: 50px !important;
-    }
-    @media (max-width: 767px) {
-      margin-bottom: 30px !important;
-    }
+    margin: 0 0 50px!important;
+   
   }
   .custom-btn-white {
     background: white;
