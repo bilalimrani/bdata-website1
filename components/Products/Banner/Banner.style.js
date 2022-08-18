@@ -50,12 +50,12 @@ const BannerWrapper = styled.div`
     color: white;
     font-weight: 900 !important;
     margin: 0 !important;
-    margin-bottom: 90px !important;
+    margin-bottom: 50px !important;
     @media (max-width: 991px) {
-      margin-bottom: 50px !important;
+      margin-bottom: 30px !important;
     }
     @media (max-width: 767px) {
-      margin-bottom: 30px !important;
+      margin-bottom: 20px !important;
     }
   }
   .custom-btn-white {

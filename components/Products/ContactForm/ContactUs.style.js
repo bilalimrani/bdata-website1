@@ -1,16 +1,24 @@
 import styled from "styled-components";
-import group_1668 from "public/img/imageas.png";
+import sideimg from "public/img/imageas.png";
 
 const ContactWrapper = styled.div`
 background-color: black;
-padding-top: 50px;
-.form {
-    margin-left: 200px;
-    margin-right: 200px;
-};
+padding: 50px 0;
+background-image: url(${sideimg});
+background-repeat: no-repeat;
+background-size: 136px 330px;
+background-position: center right;
+@media (max-width: 1199px) {
+   background-image:none !important;
+  };
+.custom-container{
+    max-width:1040px;
+    margin:0 auto;
+    padding:0 20px;
+}
 form{
-    margin-bottom: 0px!important;
-};
+    margin:0 !imoortant;
+}
 @media (max-width: 991px) {
     .form {
         margin-left: 10px;
@@ -26,51 +34,39 @@ form{
 .form-control {
     border: 1px solid #A7AFC1;
 border-radius: 8px;
-height: 53px;
 background: #000000;
 color: #fff;
 };
 input[type=text]:focus {
     border: 1px solid #2F7DBA;
-    border-radius: 8px;
+   
 };
 label {
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.259387px;
 color: #fff;
 };
 input[type=text]{
 font-style: normal;
+border-radius: 8px;
 font-weight: 400;
 font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.259387px;
 color: #373737;
+box-shadow:none !important;
+outline:none !important;
 };
 p {
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;    
-    letter-spacing: -0.259387px;
+    font-size: 14px;
     color: #FFFFFF;
-    mix-blend-mode: normal;
 };
 .form-check-label{
-font-style: italic;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.4px;
-
-/* #052460 */
-
+// font-style: italic;
+font-weight: 500;
+font-size: 14px;
 color: #fff;
-
-mix-blend-mode: normal;
 };
 .form-check-input:checked {
     background-color: #00B0DF;
@@ -80,61 +76,44 @@ textarea {
     height: 148px!important;
 };
 .unsubscribe {
-font-style: italic;
-font-size: 16px;
-line-height: 19px;
-letter-spacing: 0.4px;
+font-size: 14px;
 color: #fff;
-mix-blend-mode: normal;
+margin:5px 0;
 };
-.btn {
-    background: #fff;
-    border: 1px solid #004D88;
+textarea{
+    font-style: normal;
 border-radius: 8px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-color: #004D88;
-padding: 16px 32px;
-gap: 10px;
-width: 200px;
-height: 53px;
+font-weight: 400;
+font-size: 16px;
+color: #373737;
+box-shadow:none !important;
+outline:none !important;
+}
+textarea:focus {
+    border: 1px solid #2F7DBA; 
 };
-.btnGroup {
-    display:flex;
-    gap: 30px;
 
-};
-.group_1668 {
-    content: url(${group_1668});
-    position: absolute;
-    right: 0;
-    top: 600%;
-    transform: translateY(-50%);
-    width: 110px;
-    height: 315px;
-    @media (max-width: 991px) {
-      width: 75px;
-      height: 215px;
-      right: 58px;
-    }
-    @media (max-width: 767px) {
-      display: none;
-    }
-  };
 .heading{
     font-style: normal;
 font-weight: 700;
-font-size: 35px;
-line-height: 58px;
-/* identical to box height */
-
-letter-spacing: 0.8px;
-
+font-size: 28px;
 color: #FFFFFF;
 margin-bottom: 30px;
 }
 `;
+const Button = styled.button`
+background:transparent;
+    border:1px solid white;
+    color:white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 17px 32px;
+  transition:.3s ease;
+  &:hover{
+    color: #004d88;
+    border:1px solid transparent;
+  }
+`;
 
-export { ContactWrapper };
+export { ContactWrapper, Button };

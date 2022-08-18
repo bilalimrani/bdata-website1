@@ -30,6 +30,10 @@ padding:50px 0;
     position:unset !important;
     bottom:unset !important;
     margin:20px 0 0 !important;
+    
+@media (max-width: 991px) {
+  padding: 25px 0;
+}
   }
   .slick-dots li button::before{
     content:none !important;

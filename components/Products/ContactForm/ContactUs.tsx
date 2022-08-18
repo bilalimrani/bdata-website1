@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { ContactWrapper } from "./ContactUs.style";
+import { ContactWrapper, Button } from "./ContactUs.style";
 
 export default function Contact() {
   const submit = (e) => {
@@ -18,10 +18,11 @@ export default function Contact() {
 
   return (
     <ContactWrapper>      
-      <form className="form">
+      <form >
+        <div className="custom-container">
       <div className="heading">Download Whitepaper</div>
-        <div className="row mb-4">
-          <div className="col">
+        <div className="row ">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -33,7 +34,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">First Name</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -44,9 +45,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Last Name</label>
             </div>
           </div>
-        </div>
-        <div className="row mb-4">
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="email"
@@ -57,7 +56,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Email Address</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -68,9 +67,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Phone Number</label>
             </div>
           </div>
-        </div>
-        <div className="row mb-4">
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -81,7 +78,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Company Name</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -92,9 +89,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Country / Origin</label>
             </div>
           </div>
-        </div>
-        <div className="row mb-4">
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -105,7 +100,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Job Title</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -116,16 +111,18 @@ export default function Contact() {
               <label htmlFor="floatingInput">Industry</label>
             </div>
           </div>
-        </div>
-        <div className="form-floating mb-4">
+       
+        <div className="col-md-12 py-3">
+          <div className="form-floating">
           <textarea
             id="floatingInput"
             className="form-control"
             placeholder="Comments"
           />
           <label htmlFor="floatingInput">Comments</label>
+          </div>
         </div>
-
+        </div>
         <p>
           B Data Solutions Inc. is committed to protecting and respecting your
           privacy, From time to time, we would like to contact you about our
@@ -148,13 +145,12 @@ export default function Contact() {
           You can unsubscribe from these communications at any time.{" "}
         </div>
         <br />
-        <div className="btnGroup">
-          <button className="btn btn-primary btn-block mb-4" onClick={submit}>
-            Download
-          </button>
-          <div className="group_1668"></div>
+        <div className="btnGroup">       
+          <Button className="btn btn-light" onClick={submit}>Download</Button>
+        </div>
         </div>
       </form>
+    
     </ContactWrapper>
   );
 }

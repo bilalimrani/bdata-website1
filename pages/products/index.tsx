@@ -16,14 +16,18 @@ const Products = () => {
       <Header />
       <MainWrapper>
         <Banner />
+        <div className="container">
         <IdentityAccess>
-          <h2 className="text-center m-0 fw-bold">
+          <h3 className="text-center m-0 fw-bold">
             {productConstants?.identityAccess}
-          </h2>
+          </h3>
           <img src={identityAccess} />
         </IdentityAccess>
+        </div>
         <IdentityBottom>
-          <p>{productConstants?.identityBottomTxt}</p>
+          <div className="container">
+            <p>{productConstants?.identityBottomTxt}</p>
+          </div>
         </IdentityBottom>
         <BiotProduct />
         <ContactForm />
