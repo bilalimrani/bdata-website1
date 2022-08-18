@@ -7,11 +7,12 @@ import Router from "next/router";
 import "bootstrap/dist/css/bootstrap.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 import "public/css/index.css";
+import Loader from "./resources/Loader/Loader";
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   document.body.classList.add("body-page-transition");
-  ReactDOM.render(<>Loading...</>, document.getElementById("page-transition"));
+  ReactDOM.render(<Loader />, document.getElementById("page-transition"));
 });
 Router.events.on("routeChangeComplete", () => {
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));

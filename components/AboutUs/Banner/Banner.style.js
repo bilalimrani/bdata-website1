@@ -65,12 +65,7 @@ p{
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
-  
-  letter-spacing: -0.259387px;
-  
   color: #000000;
-  
   mix-blend-mode: normal;
 };
   `

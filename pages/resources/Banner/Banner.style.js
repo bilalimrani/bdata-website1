@@ -15,7 +15,7 @@ const BannerWrapper = styled.div`
   text-align: center;
   position: relative;
   @media (max-width: 1199px){
-    background-position:bottom right -200px;
+    background-position:bottom right -90px;
   }
   @media (max-width: 991px) {
     height: 450px;

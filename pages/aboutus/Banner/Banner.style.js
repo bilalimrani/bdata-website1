@@ -3,7 +3,7 @@ import BannerImage from "public/img/aboutus.png";
 import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
-  height: 700px;
+  height: 480px;
   // background-color:black;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
@@ -14,23 +14,34 @@ const BannerWrapper = styled.div`
   justify-content: center;
   text-align: center;
   position: relative;
-
+  h2{
+    @media (max-width: 768px) {
+      color:white;
+    }
+  }
   > div {
     height: 100%;
     padding-top: 80px;
   }
 
   @media (max-width: 1199px) {
-    background-position: bottom right -200px;
+    background-position: bottom right -90px;
   }
   @media (max-width: 991px) {
     height: 450px;
+    background-position:bottom right -20px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     height: 300px;
+    background-image:none;
+    background-color:black;
+    color:white;
   }
   .banner-content-wrapper {
     text-align: left;
+    @media (max-width: 991px) {
+      max-width:320px;
+    }
   }
   &::before {
     content: url(${bdataPattern});
@@ -41,10 +52,6 @@ const BannerWrapper = styled.div`
     width: 90px;
     height: 315px;
     @media (max-width: 991px) {
-      width: 75px;
-      height: 215px;
-    }
-    @media (max-width: 767px) {
       display: none;
     }
   }
