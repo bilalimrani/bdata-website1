@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import group_1668 from "public/img/linePattern.png";
 
 const ContactWrapper = styled.div`
 margin-top: 50px;
@@ -107,7 +108,24 @@ height: 36px;
     display:flex;
     gap: 30px;
 
-}
+};
+.group_1668 {
+    content: url(${group_1668});
+    position: absolute;
+    right: 0;
+    top: 167%;
+    transform: translateY(-50%);
+    width: 390;
+    height: 300px;
+    @media (max-width: 991px) {
+      width: 75px;
+      height: 215px;
+      right: 58px;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  };
 `;
 
 export { ContactWrapper };
