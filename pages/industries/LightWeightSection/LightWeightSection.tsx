@@ -8,7 +8,13 @@ import {
   SectionImage,
   UL,
 } from "./LightWeightSection.style";
-const Frame78 = require("public/img/rectangle.png");
+const telecom = require("public/img/telecom.png");
+const defence = require("public/img/defence.png");
+const oilgas = require("public/img/oil&gas.png");
+const utilities = require("public/img/utilities.png");
+
+
+
 
 export default function LightWeightSection() {
   return (
@@ -19,7 +25,7 @@ export default function LightWeightSection() {
           <div className="row">
             <div className="col-12 col-lg-3 py-2">
               <SectionImage>
-                <img className="img w-100" src={Frame78}></img>
+                <img className="img w-100" src={telecom}></img>
               </SectionImage>
             </div>
             <div className="col-12 col-lg-9 py-2">
@@ -38,7 +44,7 @@ export default function LightWeightSection() {
            
             <div className="col-12 col-lg-3 order-lg-2 py-2">
               <SectionImage>
-                <img className="img w-100" src={Frame78} />
+                <img className="img w-100" src={defence} />
               </SectionImage>
             </div>
             <div className="col-12  col-lg-9 py-2 order-lg-1">
@@ -56,7 +62,7 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-3 py-2">
               <SectionImage>
-                <img className="img w-100" src={Frame78} />
+                <img className="img w-100" src={oilgas} />
               </SectionImage>
             </div>
             <div className="col-12  col-lg-9 py-2">
@@ -75,7 +81,7 @@ export default function LightWeightSection() {
        
             <div className="col-12  col-lg-3 order-lg-2 py-2">
               <SectionImage>
-                <img className="img w-100" src={Frame78}></img>
+                <img className="img w-100" src={utilities}></img>
               </SectionImage>
             </div>
             <div className="col-12  col-lg-9 order-lg-1 py-2">

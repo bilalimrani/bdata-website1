@@ -8,7 +8,7 @@ export default function UseCase() {
   return (
     <PaperWraper>
          <SectionPadding>
-         <h2 className="text-center m-0 fw-bold">Use Case</h2>
+         <h3 className="text-center m-0  fw-bold">Use Case</h3>
          </SectionPadding>
          <div className="row">
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -20,7 +20,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 1</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -32,7 +34,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 2</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -44,7 +48,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 3</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -56,7 +62,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 3</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -68,7 +76,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 4</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -80,7 +90,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 5</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -92,7 +104,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 6</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
             <div className="col-sm-6 col-md-4 col-lg-3 custom-padding">
@@ -104,7 +118,9 @@ export default function UseCase() {
                 className="img-responsive"
               />
               <h4 className="m-0 my-4 fw-bold">Use Case 7</h4>
-              <Button>Request Download</Button>
+              <Button type="button" className="btn btn-primary">
+              Request Download
+              </Button>
                 </CardWrapper>
             </div>
          </div>

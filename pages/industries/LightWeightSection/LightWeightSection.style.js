@@ -65,7 +65,7 @@ background-size: 120px 295px;
 
 const SectionImage = styled.div`
 max-width:320px;
-max-height:315px;
+height:395px;
 @media (max-width: 991px) {
   margin:0 auto;
 }

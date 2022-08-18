@@ -20,7 +20,7 @@ const AllResourcesWrapper = styled.div`
     border:1px solid transparent;
   }
   .custom-padding{
-    padding-bottom:50px;
+    padding-bottom:30px;
   }
 `;
 const SectionPadding = styled.div`
