@@ -6,7 +6,7 @@ export default function Banner({ data, sideImage }) {
   return (
     <BannerWrapper
       sideImage={sideImage}
-      style={{ background: `url(${bgImage}) no-repeat center center` }}
+      style={{ background: `url(${bgImage})` }}
     >
       <div className="container">
         <div className="banner-content-wrapper">
