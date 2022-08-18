@@ -1,7 +1,7 @@
 import React from "react";
 import { BannerWrapper, Button } from "./Banner.style";
 
-export default function Banner({ data, sideImage }) {
+export default function Banner({ data, sideImage = false }) {
   const { bgImage, title, subTitle } = data;
   return (
     <BannerWrapper

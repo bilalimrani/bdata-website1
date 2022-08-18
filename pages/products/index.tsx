@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import Banner from "../../components/Products/Banner/Banner";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
