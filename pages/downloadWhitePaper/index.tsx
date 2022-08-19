@@ -5,7 +5,7 @@ import Banner from "../../components/Home/Banner/Banner";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import homeConstants from "../../utils/home.constants";
-import { SectionWrapper } from "./whitePaper.style";
+import { SectionWrapper } from "../../styles/styledComponents/whitePaper.style";
 
 const DownloadWhitePaper = (props) => {
   const [selectedCountry, setSelectedCountry] = useState<any>("");

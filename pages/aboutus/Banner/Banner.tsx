@@ -1,5 +1,5 @@
 import React from "react";
-import { BannerWrapper } from "./Banner.style";
+import { BannerWrapper } from "../../../styles/styledComponents/aboutusBanner.style";
 
 export default function Banner() {
   return (

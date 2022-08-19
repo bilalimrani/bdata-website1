@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ValueWrapper } from "./Team.style";
+import { ValueWrapper } from "../../../styles/styledComponents/Team.style.js";
 const icon1 = require("public/img/Member-img-1.png");
 const icon2 = require("public/img/Member-img-2.png");
 const icon3 = require("public/img/Member-img-3.png");
