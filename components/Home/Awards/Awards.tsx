@@ -13,7 +13,7 @@ const Artc = require("public/img/agency.svg");
 
 export default function Awards() {
   var settings = {
-    arrows:false,
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 500,
@@ -55,84 +55,50 @@ export default function Awards() {
             <h3 className="text-center m-0 custom-padding-subsection fw-bold">
               {homeConstants?.awards.title}
             </h3>
-            {/* <Carousel>
-              {homeConstants?.awards?.data?.map((item, index) => (
-                <Carousel.Item key={index}>
-                  <div className="row">
-                    {item?.map((item1, index1) => (
-                      <div className="col-sm-3" key={index1}>
-                        <CarouselWrapper>
-                          <Image src={item1.image} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">{item1?.text}</p>
-                          </div>
-                        </CarouselWrapper>
-                      </div>
-                    ))}
-                  </div>
-                </Carousel.Item>
-              ))}
-            </Carousel> */}
             <Slider {...settings}>
-            {/* {homeConstants?.awards?.data?.map((item, index) => ( */}
-        <div >
-           <CarouselWrapper>
-                          <Image src={Jerdins} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        <div >
-           <CarouselWrapper>
-                          <Image src={Rogers} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        <div >
-           <CarouselWrapper>
-                          <Image src={HelloTomarrow} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        <div >
-           <CarouselWrapper>
-                          <Image src={Artc} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        <div >
-           <CarouselWrapper>
-                          <Image src={Rogers} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        <div >
-           <CarouselWrapper>
-                          <Image src={HelloTomarrow} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        <div >
-           <CarouselWrapper>
-                          <Image src={Artc} width={150} height={48} />
-                          <div className="p-3">
-                            <p className="text-center">Won Desjardins Cyber Security Competition</p>
-                          </div>
-                        </CarouselWrapper>
-        </div>
-        {/* ))} */}
-      </Slider>
+              {/* {homeConstants?.awards?.data?.map((item, index) => ( */}
+              <div>
+                <CarouselWrapper>
+                  <Image src={Jerdins} width={150} height={48} />
+                  <div className="p-3">
+                    <p className="text-center">
+                      Won Desjardins Cyber Security Competition
+                    </p>
+                  </div>
+                </CarouselWrapper>
+              </div>
+              <div>
+                <CarouselWrapper>
+                  <Image src={Rogers} width={150} height={48} />
+                  <div className="p-3">
+                    <p className="text-center">
+                      Won Desjardins Cyber Security Competition
+                    </p>
+                  </div>
+                </CarouselWrapper>
+              </div>
+              <div>
+                <CarouselWrapper>
+                  <Image src={HelloTomarrow} width={150} height={48} />
+                  <div className="p-3">
+                    <p className="text-center">
+                      Won Desjardins Cyber Security Competition
+                    </p>
+                  </div>
+                </CarouselWrapper>
+              </div>
+              <div>
+                <CarouselWrapper>
+                  <Image src={Artc} width={150} height={48} />
+                  <div className="p-3">
+                    <p className="text-center">
+                      Won Desjardins Cyber Security Competition
+                    </p>
+                  </div>
+                </CarouselWrapper>
+              </div>
+              {/* ))} */}
+            </Slider>
           </div>
         </div>
       </div>
