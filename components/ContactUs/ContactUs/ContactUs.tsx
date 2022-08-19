@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <ContactWrapper>
       <InfoArea>
-        <form className="form">
+        <form className="form" onSubmit={submit}>
           <div className="row mb-4">
             <div className="col">
               <div className="form-floating">
