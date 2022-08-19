@@ -16,10 +16,10 @@ transition: all 500ms;
     display: block;
     top: 2px;
     right: -4px;
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQIW2P8/////w8fPjAICAgwwGhGGggCAOYAMfLhHG5wAAAAAElFTkSuQmCC) repeat;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQIW2P8/////w8fPjAICAgwwGhGGggCAOYAMfLhHG5wAAAAAElFTkSuQmCC) repeat;
     width: 0;
     height: calc(100% - 3px);
-    transform: rotateY(35deg);
+    transform: rotateY(25deg);
     transform-origin: right;
     transition: all 500ms;
   }
@@ -76,12 +76,12 @@ img-area{
 }
 &:hover{
     box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.4);
-    transform: rotateY(-20deg);
+    transform: rotateY(-10deg);
 }
 &:hover:after {
     width:4px;
-    right: -15px;
-    width: 15px;
+    right: -10px;
+    width: 10px;
   }
 `
 
