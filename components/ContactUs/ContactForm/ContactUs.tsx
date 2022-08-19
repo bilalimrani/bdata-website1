@@ -3,24 +3,23 @@ import axios from "axios";
 import { ContactWrapper } from "./ContactUs.style";
 
 export default function Contact() {
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    axios
-      .post("http://localhost:3000/api/email", {
-        email: "bimrani816@gmail.com",
-      })
-      .then((res) => {
-        alert("Send Mail To You");
-        // setEmail("");
-      })
-      .catch((e) => console.log(e));
+    fetch("/api/email", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: "bimrani816@gmail.com" }),
+    });
   };
 
   return (
     <ContactWrapper className="container">
       <form className="form">
-        <div className="row mb-4">
-          <div className="col">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 mb-4">
             <div className="form-floating">
               <input
                 type="text"
@@ -32,7 +31,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">First Name</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-sm-12 col-md-6 mb-4">
             <div className="form-floating">
               <input
                 type="text"
@@ -44,8 +43,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="row mb-4">
-          <div className="col">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 mb-4">
             <div className="form-floating">
               <input
                 type="email"
@@ -56,7 +55,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Email Address</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-sm-12 col-md-6 mb-4">
             <div className="form-floating">
               <input
                 type="text"
@@ -68,8 +67,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="row mb-4">
-          <div className="col">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 mb-4">
             <div className="form-floating">
               <input
                 type="text"
@@ -80,7 +79,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">Company Name</label>
             </div>
           </div>
-          <div className="col">
+          <div className="col-sm-12 col-md-6 mb-4">
             <div className="form-floating">
               <input
                 type="text"

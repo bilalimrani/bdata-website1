@@ -27,6 +27,12 @@ another network.`,
     bgImage: require("public/img/banner-bg.svg"),
     sideImage: bdataPattern,
   },
+  whitePapper: {
+    banner: {
+      title: "Download BDATA Whitepaper",
+      bgImage: require("public/img/banner-bg.svg"),
+    },
+  },
   awards: {
     title: "Awards",
     data: [
@@ -129,4 +135,11 @@ another network.`,
       },
     ],
   },
+
+  privacyText:
+    "B Data Solutions Inc. is committed to protecting and respecting your privacy, From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:",
+  agreeTerms:
+    "I agree to receive other communications from B Data Solutions Inc..",
+  unsubscribeText:
+    "You can unsubscribe from these communications at any time. ",
 };

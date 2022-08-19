@@ -14,7 +14,7 @@ const Main = () => {
     <div>
       <Header />
       <MainWrapper>
-        <Banner data={homeConstants?.banner} sideImage={true} />
+        <Banner data={homeConstants?.banner} />
         <AwardsContainer />
         <LightWeightSection />
         <PartnersContainer />
