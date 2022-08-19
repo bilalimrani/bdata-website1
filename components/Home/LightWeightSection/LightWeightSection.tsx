@@ -9,6 +9,7 @@ import {
   UL,
 } from "./LightWeightSection.style";
 const Frame78 = require("public/img/frame78.png");
+import BookImg from "../../../components/BookImg/BookImg";
 
 export default function LightWeightSection() {
   return (
@@ -18,9 +19,10 @@ export default function LightWeightSection() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-3 py-2">
-              <SectionImage>
+              <BookImg />
+              {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
-              </SectionImage>
+              </SectionImage> */}
             </div>
             <div className="col-12 col-lg-9 py-2">
               <ContainerDefault>
