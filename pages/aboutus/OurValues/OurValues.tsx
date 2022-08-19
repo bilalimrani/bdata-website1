@@ -1,14 +1,13 @@
 import React from "react";
+import Image from "next/image";
 import {
   ValueWrapper,
   ValuesWrapperCard,
   ShapeWrapper,
 } from "../../../styles/styledComponents/OurValues.style";
-import Image from "next/image";
-
-const Passion = require("public/img/passion.svg");
-const Influential = require("public/img/influential.svg");
-const trustdiversity = require("public/img/trustdiversity.svg");
+const Passion = require("../../../public/img/passion.svg");
+const Influential = require("../../../public/img/influential.svg");
+const trustdiversity = require("../../../public/img/trustdiversity.svg");
 
 export default function OurValues() {
   return (
