@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import group_1668 from "public/img/linePattern.png";
+const bgImage = require("public/img/linePattern.png");
 
 const ContactWrapper = styled.div`
 margin-top: 50px;
 .form {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 220px;
+    margin-right: 220px;
 };
 @media (max-width: 991px) {
     .form {
@@ -109,23 +109,18 @@ height: 36px;
     gap: 30px;
 
 };
-.group_1668 {
-    content: url(${group_1668});
-    position: absolute;
-    right: 0;
-    top: 167%;
-    transform: translateY(-50%);
-    width: 390;
-    height: 300px;
-    @media (max-width: 991px) {
-      width: 75px;
-      height: 215px;
-      right: 58px;
-    }
-    @media (max-width: 767px) {
-      display: none;
-    }
-  };
 `;
 
-export { ContactWrapper };
+const InfoArea = styled.section`
+  position: relative;
+  background-image: url(${bgImage});
+  background-position: top 300px right -25px;
+  background-repeat: no-repeat;
+  background-size: 370px 300px;
+@media (max-width: 1199px) {
+  background-size: 300px 300px;
+}
+@media (max-width: 991) {
+  background-size: 250px 250px;
+}`
+export { ContactWrapper, InfoArea };

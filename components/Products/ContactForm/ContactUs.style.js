@@ -39,7 +39,11 @@ color: #fff;
 };
 input[type=text]:focus {
     border: 1px solid #2F7DBA;
-   
+    border-radius: 8px;
+};
+input[type=text], select{
+    background: #000000;
+color: #fff;
 };
 label {
 font-style: normal;
@@ -52,9 +56,9 @@ font-style: normal;
 border-radius: 8px;
 font-weight: 400;
 font-size: 16px;
-color: #373737;
-box-shadow:none !important;
-outline:none !important;
+line-height: 24px;
+letter-spacing: -0.259387px;
+color: #fff;
 };
 p {
     font-style: normal;

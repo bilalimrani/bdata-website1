@@ -1,33 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { ContactWrapper, Button } from "./ContactUs.style";
 
 export default function Contact() {
+  const [form, setForm] = useState({})
   const submit = (e) => {
     e.preventDefault();
     axios
       .post("http://localhost:3000/api/email", {
-        email: "bimrani816@gmail.com",
+        formData: form,
+        subject: "Download WhitePaper",
+        attachments:[
+          {
+            filename: 'file.pdf',
+            path: 'public/bdata-whitepaper.pdf',
+            contentType: 'application/pdf'
+          },
+        ]
       })
       .then((res) => {
-        alert("Send Mail To You");
+        alert("Email send. Kindly check your mail");
         // setEmail("");
       })
       .catch((e) => console.log(e));
   };
-
+  const onChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.id]: event.target.value
+    })
+  }
   return (
-    <ContactWrapper>      
-      <form >
-        <div className="custom-container">
-      <div className="heading">Download Whitepaper</div>
-        <div className="row ">
-          <div className="col-md-6 py-3">
+    <ContactWrapper>
+      <form className="form" onSubmit={submit}>
+        <div className="heading">Download Whitepaper</div>
+        <div className="row mb-4">
+          <div className="col">
             <div className="form-floating">
               <input
                 type="text"
-                id="floatingInput"
+                id="firstName"
                 name="firstName"
+                onChange={onChange}
                 className="form-control"
                 placeholder="First Name"
               />
@@ -38,7 +52,9 @@ export default function Contact() {
             <div className="form-floating">
               <input
                 type="text"
-                id="floatingInput"
+                id="lastName"
+                name="lastName"
+                onChange={onChange}
                 className="form-control"
                 placeholder="Last Name"
               />
@@ -49,7 +65,9 @@ export default function Contact() {
             <div className="form-floating">
               <input
                 type="email"
-                id="floatingInput"
+                id="email"
+                name="email"
+                onChange={onChange}
                 className="form-control"
                 placeholder="Email Address"
               />
@@ -59,8 +77,10 @@ export default function Contact() {
           <div className="col-md-6 py-3">
             <div className="form-floating">
               <input
-                type="text"
-                id="floatingInput"
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                onChange={onChange}
                 className="form-control"
                 placeholder="Phone Number"
               />
@@ -71,7 +91,9 @@ export default function Contact() {
             <div className="form-floating">
               <input
                 type="text"
-                id="floatingInput"
+                id="companyName"
+                name="companyName"
+                onChange={onChange}
                 className="form-control"
                 placeholder="Company Name"
               />
@@ -82,8 +104,10 @@ export default function Contact() {
             <div className="form-floating">
               <input
                 type="text"
-                id="floatingInput"
+                id="Country"
                 className="form-control"
+                name="country"
+                onChange={onChange}
                 placeholder="Country/Origin"
               />
               <label htmlFor="floatingInput">Country / Origin</label>
@@ -93,7 +117,9 @@ export default function Contact() {
             <div className="form-floating">
               <input
                 type="text"
-                id="floatingInput"
+                id="jobTitle"
+                name="jobTitle"
+                onChange={onChange}
                 className="form-control"
                 placeholder="Job Title"
               />
@@ -104,7 +130,9 @@ export default function Contact() {
             <div className="form-floating">
               <input
                 type="text"
-                id="floatingInput"
+                id="industry"
+                name="industry"
+                onChange={onChange}
                 className="form-control"
                 placeholder="Industry"
               />
@@ -115,8 +143,10 @@ export default function Contact() {
         <div className="col-md-12 py-3">
           <div className="form-floating">
           <textarea
-            id="floatingInput"
+            id="comment"
             className="form-control"
+            onChange={onChange}
+            name="comment"
             placeholder="Comments"
           />
           <label htmlFor="floatingInput">Comments</label>
@@ -134,8 +164,7 @@ export default function Contact() {
           <input
             className="form-check-input me-2"
             type="checkbox"
-            value=""
-            id="form6Example8"
+            required
           />
           <label className="form-check-label" htmlFor="form6Example8">
             I agree to receive other communications from B Data Solutions Inc..{" "}
@@ -145,9 +174,11 @@ export default function Contact() {
           You can unsubscribe from these communications at any time.{" "}
         </div>
         <br />
-        <div className="btnGroup">       
-          <Button className="btn btn-light" onClick={submit}>Download</Button>
-        </div>
+        <div className="btnGroup">
+          <button type="submit"  className="btn btn-primary btn-block mb-4">
+            Download
+          </button>
+          <div className="group_1668"></div>
         </div>
       </form>
     
