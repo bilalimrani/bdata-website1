@@ -1,35 +1,39 @@
 const nodemailer = require("nodemailer");
 
 export default async function (req, res) {
-  console.log(req.body);
-  const { email, subject, message, name } = req.body;
+  const { attachments, subject } = req.body
+  console.log(req.body)
+  // console.log(process.env)
   let transporter = nodemailer.createTransport({
     service: "gmail",
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    ignoreTLS: false,
+    pool: true,
+    host: 'smtp.gmail.com',
+    secure: true, // use TLS
     auth: {
-      user: "bimrani816@gmail.com",
-      pass: "rana7441634",
+      user: "no_reply@bdata.ca",
+      pass: "E=Q8bq>P",
     },
   });
-
   let info = await transporter.sendMail({
-    from: "bimrani816@gmail.com",
-    to: "bimrani816@gmail.com",
+    from: "no_reply@bdata.ca",
+    to: "hasnat98044@gmail.com",
     subject: subject,
-    html: `<div>Name: ${name || "N/A"}</div><div>Phone: ${
-      "fdsfsdfs" || "N/A"
-    }</div><div>Email ${email || "N/A"}</div><div>Description: ${
-      "fsdfs" || "N/A"
-    }</div>`,
+    html: 'testing',
+    // html: `<div>Name: ${name || "N/A"}</div><div>Phone: ${
+    //   "fdsfsdfs" || "N/A"
+    // }</div><div>Email ${email || "N/A"}</div><div>Description: ${
+    //   "fsdfs" || "N/A"
+    // }</div>`,
+    attachments: attachments
   });
 
-  console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+  transporter.sendMail(mailOptions, function (err, res1) {
+    if (err) {
+      console.log(err, "Asd")
+      res.status(400).end(JSON.stringify({ message: "Error" }));
 
-  // Preview only available when sending through an Ethereal account
-  console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    } else {
+      res.status(200).end(JSON.stringify({ message: "Send Mail" }));
+    }
+  });
 }
