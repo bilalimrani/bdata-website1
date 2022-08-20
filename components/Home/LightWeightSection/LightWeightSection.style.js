@@ -41,10 +41,10 @@ background-position:top -20px right;
 background-repeat: no-repeat;
 background-size: 450px 375px;
 @media (max-width: 1199px) {
-  background-size: 300px 300px;
+  background-size: 230px 230px;
 }
-@media (max-width: 991) {
-  background-size: 250px 250px;
+@media (max-width: 991px) {
+ background:none;
 }
   h3{
     font-size:28px;

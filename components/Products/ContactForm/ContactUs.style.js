@@ -8,6 +8,9 @@ background-image: url(${sideimg});
 background-repeat: no-repeat;
 background-size: 136px 330px;
 background-position: center right;
+@media (max-width: 1378px) {
+    background-size: 80px 200px;
+   };
 @media (max-width: 1199px) {
    background-image:none !important;
   };

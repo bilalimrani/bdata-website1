@@ -12,5 +12,9 @@ const MissionWrapper = styled.div`
       width: 100% !important;
     }
   }
+  h3{
+    font-size:28px;
+    margin:0 0 10px;
+  }
 `;
 export default MissionWrapper;

@@ -1,9 +1,20 @@
 import styled from "styled-components";
 // import BannerImage from "public/img/aboutus.png";
 // import bdataPattern from "public/img/right-logo.svg";
+import bg_pattern from "public/img/imageas.png";
 
 const ValueWrapper = styled.div`
 padding:25px 0;
+background-image:  url(${bg_pattern});
+background-repeat: no-repeat;
+background-size:105px  290px;
+background-position:  right center;
+@media (max-width: 1199px) {
+    background-size:  50px  150px;
+  }
+  @media (max-width: 991px) {
+   background:none;
+  }
 `;
 const ValuesWrapperCard = styled.div`
 padding:40px;

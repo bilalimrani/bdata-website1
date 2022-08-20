@@ -13,11 +13,12 @@ const trustdiversity = require("public/img/trustdiversity.svg");
 export default function OurValues() {
   return (
     <ValueWrapper>
+         <div className="container">
       <div className="row ">
         <div className="col-12">
-          <h2 className="text-center fw-bold">Our Values</h2>
+          <h3 className="text-center fw-bold m-0 pb-4">Our Values</h3>
         </div>
-        <div className="col-12 col-sm-6 col-md-4">
+        <div className="col-12 col-md-6 col-lg-4">
           <ValuesWrapperCard>
             <ShapeWrapper>
               <Image
@@ -35,7 +36,7 @@ export default function OurValues() {
             </p>
           </ValuesWrapperCard>
         </div>
-        <div className="col-12 col-sm-6 col-md-4">
+        <div className="col-12 col-md-6 col-lg-4">
           <ValuesWrapperCard>
             <ShapeWrapper>
               <Image
@@ -53,7 +54,7 @@ export default function OurValues() {
             </p>
           </ValuesWrapperCard>
         </div>
-        <div className="col-12 col-sm-6 col-md-4">
+        <div className="col-12 col-md-6 col-lg-4">
           <ValuesWrapperCard>
             <ShapeWrapper>
               <Image
@@ -71,6 +72,7 @@ export default function OurValues() {
             </p>
           </ValuesWrapperCard>
         </div>
+      </div>
       </div>
     </ValueWrapper>
   );
