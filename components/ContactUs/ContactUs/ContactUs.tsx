@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
+import CountrySelect from "react-bootstrap-country-select";
 import { ContactWrapper, InfoArea } from "./ContactUs.style";
-const icon1 = require("public/img/linePattern.png");
 
 export default function Contact() {
   const [form, setForm] = useState({})
-  const submit = (e) => {
+  const [selectedCountry, setSelectedCountry] = useState<any>("");
+  const submit = (e: any) => {
     e.preventDefault();
+    const data = {
+      ...form,
+      country: selectedCountry.name
+    }
     axios
       .post("http://localhost:3000/api/email", {
-        formData: form,
+        data,
         subject: "Contact Us",
       })
       .then((res) => {
@@ -28,8 +33,8 @@ export default function Contact() {
     <ContactWrapper>
       <InfoArea>
         <form className="form" onSubmit={submit}>
-          <div className="row mb-4">
-            <div className="col">
+          <div className="row">
+          <div className="col-sm-12 col-md-6 mb-4">
               <div className="form-floating">
                 <input
                   type="text"
@@ -42,7 +47,7 @@ export default function Contact() {
                 <label htmlFor="floatingInput">First Name</label>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-6 mb-4">
               <div className="form-floating">
                 <input
                   type="text"
@@ -56,8 +61,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="row mb-4">
-            <div className="col">
+          <div className="row">
+          <div className="col-sm-12 col-md-6 mb-4">
               <div className="form-floating">
                 <input
                   type="email"
@@ -70,7 +75,7 @@ export default function Contact() {
                 <label htmlFor="floatingInput">Email Address</label>
               </div>
             </div>
-            <div className="col">
+            <div className="col-sm-12 col-md-6 mb-4">
               <div className="form-floating">
                 <input
                   type="tel"
@@ -84,8 +89,8 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="row mb-4">
-            <div className="col">
+          <div className="row">
+          <div className="col-sm-12 col-md-6 mb-4">
               <div className="form-floating">
                 <input
                   type="text"
@@ -98,19 +103,16 @@ export default function Contact() {
                 <label htmlFor="floatingInput">Company Name</label>
               </div>
             </div>
-            <div className="col">
-              <div className="form-floating">
-                <input
-                  type="text"
-                  id="country"
-                  name="country"
-                  onChange={onChange}
-                  className="form-control"
-                  placeholder="Country/Origin"
-                />
-                <label htmlFor="floatingInput">Country / Origin</label>
-              </div>
-            </div>
+            <div className="col-sm-12 col-md-6 mb-4">
+                  <div className="form-floating">
+                    <CountrySelect
+                      onTextChange={() => null}
+                      value={selectedCountry}
+                      onChange={setSelectedCountry}
+                    />
+                    {/* <label htmlFor="floatingInput">Job Title</label> */}
+                  </div>
+                </div>
           </div>
           <div className="form-floating mb-4">
             <textarea

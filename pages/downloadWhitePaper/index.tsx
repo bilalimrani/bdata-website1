@@ -49,10 +49,14 @@ const DownloadWhitePaper = (props) => {
   }
   const submit = (e) => {
     e.preventDefault();
+    const data = {
+      ...form,
+      country: selectedCountry.name
+    }
     axios
       .post("http://localhost:3000/api/email", {
-        formData: form,
-        subject: "Contact Us",
+        data,
+        subject: "Download WhitePaper",
         attachments: [fileName]
       })
       .then((res) => {
@@ -80,8 +84,9 @@ const DownloadWhitePaper = (props) => {
                   <div className="form-floating">
                     <input
                       type="text"
-                      id="floatingInput"
+                      id="firstName"
                       name="firstName"
+                      onChange={onChange}
                       className="form-control"
                       placeholder="First Name"
                     />
@@ -92,7 +97,9 @@ const DownloadWhitePaper = (props) => {
                   <div className="form-floating">
                     <input
                       type="text"
-                      id="floatingInput"
+                      id="lastName"
+                      onChange={onChange}
+                      name="lastName"
                       className="form-control"
                       placeholder="Last Name"
                     />
@@ -105,7 +112,9 @@ const DownloadWhitePaper = (props) => {
                   <div className="form-floating">
                     <input
                       type="email"
-                      id="floatingInput"
+                      id="email"
+                      onChange={onChange}
+                      name="email"
                       className="form-control"
                       placeholder="Email Address"
                     />
@@ -116,7 +125,9 @@ const DownloadWhitePaper = (props) => {
                   <div className="form-floating">
                     <input
                       type="text"
-                      id="floatingInput"
+                      id="phoneNumber"
+                      onChange={onChange}
+                      name="phoneNumber"
                       className="form-control"
                       placeholder="Phone Number"
                     />
@@ -128,7 +139,9 @@ const DownloadWhitePaper = (props) => {
                 <div className="col-sm-12 col-md-6 mb-4">
                   <div className="form-floating">
                     <input
-                      id="floatingInput"
+                      id="companyName"
+                      onChange={onChange}
+                      name="companyName"
                       className="form-control"
                       placeholder="Company Name"
                     />
@@ -151,7 +164,9 @@ const DownloadWhitePaper = (props) => {
                   <div className="form-floating">
                     <input
                       type="text"
-                      id="floatingInput"
+                      id="jobTitle"
+                      onChange={onChange}
+                      name="jobTitle"
                       className="form-control"
                       placeholder="Job Title"
                     />
@@ -162,7 +177,9 @@ const DownloadWhitePaper = (props) => {
                   <div className="form-floating">
                     <input
                       type="text"
-                      id="floatingInput"
+                      id="industry"
+                      onChange={onChange}
+                      name="industry"
                       className="form-control"
                       placeholder="Industry"
                     />
@@ -172,7 +189,9 @@ const DownloadWhitePaper = (props) => {
               </div>
               <div className="form-floating mb-4">
                 <textarea
-                  id="floatingInput"
+                  id="comment"
+                  onChange={onChange}
+                  name="comment"
                   className="form-control"
                   placeholder="Comments"
                 />

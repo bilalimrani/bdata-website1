@@ -8,9 +8,6 @@ background-image: url(${sideimg});
 background-repeat: no-repeat;
 background-size: 136px 330px;
 background-position: center right;
-@media (max-width: 1378px) {
-    background-size: 80px 200px;
-   };
 @media (max-width: 1199px) {
    background-image:none !important;
   };
@@ -20,6 +17,8 @@ background-position: center right;
     padding:0 20px;
 }
 form{
+    margin-left: 200px;
+    margin-right: 200px;
     margin:0 !imoortant;
 }
 @media (max-width: 991px) {
@@ -33,6 +32,9 @@ form{
         margin-left: 10px;
         margin-right: 10px;
     };
+  };
+.country-select__form-control{
+    height:58px;
   };
 .form-control {
     border: 1px solid #A7AFC1;
@@ -109,14 +111,22 @@ margin-bottom: 30px;
 }
 `;
 const Button = styled.button`
-background:transparent;
-    border:1px solid white;
-    color:white;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 17px 32px;
-  transition:.3s ease;
+width: 200px;
+height: 53px;
+left: 280px;
+top: 4458px;
+
+background: #FFFFFF;
+border-radius: 8px;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+text-align: center;
+
+color: #004D88;
   &:hover{
     color: #004d88;
     border:1px solid transparent;
