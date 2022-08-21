@@ -1,7 +1,11 @@
-import { memo, useRef } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import {CustomerWrapper,ProfileWrapper} from "./CustomersStories.style";
+import { CustomerWrapper, ProfileWrapper } from "./CustomersStories.style";
+const user = require("public/img/user-img.png");
+const user2 = require("public/img/user-2.png");
+const compImage = require("public/img/slider-img.svg");
+const advantech = require("public/img/advan-tech.svg");
 
 export const data = [
   {
@@ -46,175 +50,188 @@ export const data = [
   },
 ];
 const CustomersStories = () => {
-  const user = require("public/img/user-img.png");
-  const user2 = require("public/img/user-2.png");
-  const compImage = require("public/img/slider-img.svg");
-  const advantech = require("public/img/advan-tech.svg");
-
-
-var settings = {
-  arrows:false,
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  loop:true,
-  centerMode:true,
-  responsive: [
-    {
-      breakpoint: 1378,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+  var settings = {
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    loop: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1378,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 1199,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
-    },
-    // {
-    //   breakpoint: 800,
-    //   settings: 'unslick',
-    // },
-  ],
-};
+      // {
+      //   breakpoint: 800,
+      //   settings: 'unslick',
+      // },
+    ],
+  };
   const ref = useRef();
   return (
     <CustomerWrapper>
       <div className="container">
-      <h3 className="text-center custom-padding-subsection fw-bold">
-      Customer Stories
-      </h3>
-      <Slider {...settings}>
-        <ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user2} width={48} height={48} className="img-wrapper" />
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Jeff Brown</p>
-            <p className="small-text m-0 grey-clr">CEO, CISO & CSO, Terranova Cyber Solutions</p>
+        <h3 className="text-center custom-padding-subsection fw-bold">
+          Customer Stories
+        </h3>
+        <Slider {...settings}>
+          <ProfileWrapper>
+            <div className="d-flex align-items-start justify-content-start">
+              <Image
+                src={user2}
+                width={48}
+                height={48}
+                className="img-wrapper"
+              />
+              <div className="ps-3">
+                <p className="small-text m-0 fw-semibold">Jeff Brown</p>
+                <p className="small-text m-0 grey-clr">
+                  CEO, CISO & CSO, Terranova Cyber Solutions
+                </p>
+              </div>
+            </div>
 
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={advantech} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper>
-        <ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user} width={48} height={48} className="img-wrapper"/>
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Darrell Steward</p>
-            <p className="small-text m-0 grey-clr">CEO, CISO & CSO, Terranova Cyber Solutions</p>
+            <div className="bottom-section">
+              <p className="text-left small-text dark-grey">
+                We are excited to work with BDATA and deploy BIoT technology for
+                defense high value critical application that include drones and
+                other assets. We strongly believe in the success of BIoT
+                technology deployment to protect critical infrastructures” said
+                James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.
+              </p>
+              <div className="bottom-img-wrapper">
+                <Image
+                  src={advantech}
+                  width={48}
+                  height={48}
+                  className="img-wrapper"
+                />
+              </div>
+            </div>
+          </ProfileWrapper>
+          <ProfileWrapper>
+            <div className="d-flex align-items-start justify-content-start">
+              <Image
+                src={user}
+                width={48}
+                height={48}
+                className="img-wrapper"
+              />
+              <div className="ps-3">
+                <p className="small-text m-0 fw-semibold">Darrell Steward</p>
+                <p className="small-text m-0 grey-clr">
+                  CEO, CISO & CSO, Terranova Cyber Solutions
+                </p>
+              </div>
+            </div>
 
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={compImage} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper>
-        <ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user} width={48} height={48} className="img-wrapper"/>
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Darrell Steward</p>
-            <p className="small-text m-0 grey-clr">CEO, CISO & CSO, Terranova Cyber Solutions</p>
+            <div className="bottom-section">
+              <p className="text-left small-text dark-grey">
+                We are excited to work with BDATA and deploy BIoT technology for
+                defense high value critical application that include drones and
+                other assets. We strongly believe in the success of BIoT
+                technology deployment to protect critical infrastructures” said
+                James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.
+              </p>
+              <div className="bottom-img-wrapper">
+                <Image
+                  src={compImage}
+                  width={48}
+                  height={48}
+                  className="img-wrapper"
+                />
+              </div>
+            </div>
+          </ProfileWrapper>
+          <ProfileWrapper>
+            <div className="d-flex align-items-start justify-content-start">
+              <Image
+                src={user}
+                width={48}
+                height={48}
+                className="img-wrapper"
+              />
+              <div className="ps-3">
+                <p className="small-text m-0 fw-semibold">Darrell Steward</p>
+                <p className="small-text m-0 grey-clr">
+                  CEO, CISO & CSO, Terranova Cyber Solutions
+                </p>
+              </div>
+            </div>
 
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={compImage} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper>
-        <ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user} width={48} height={48} className="img-wrapper"/>
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Darrell Steward</p>
-            <p className="small-text m-0 grey-clr">CEO, CISO & CSO, Terranova Cyber Solutions</p>
+            <div className="bottom-section">
+              <p className="text-left small-text dark-grey">
+                We are excited to work with BDATA and deploy BIoT technology for
+                defense high value critical application that include drones and
+                other assets. We strongly believe in the success of BIoT
+                technology deployment to protect critical infrastructures” said
+                James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.
+              </p>
+              <div className="bottom-img-wrapper">
+                <Image
+                  src={compImage}
+                  width={48}
+                  height={48}
+                  className="img-wrapper"
+                />
+              </div>
+            </div>
+          </ProfileWrapper>
+          <ProfileWrapper>
+            <div className="d-flex align-items-start justify-content-start">
+              <Image
+                src={user}
+                width={48}
+                height={48}
+                className="img-wrapper"
+              />
+              <div className="ps-3">
+                <p className="small-text m-0 fw-semibold">Darrell Steward</p>
+                <p className="small-text m-0 grey-clr">
+                  CEO, CISO & CSO, Terranova Cyber Solutions
+                </p>
+              </div>
+            </div>
 
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={compImage} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper><ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user} width={48} height={48} className="img-wrapper"/>
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Darrell Steward</p>
-            <p className="small-text m-0 grey-clr">CEO, CISO & CSO, Terranova Cyber Solutions</p>
-
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={compImage} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper><ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user} width={48} height={48} className="img-wrapper"/>
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Darrell Steward</p>
-            <p className="small-text grey-clr m-0">CEO, CISO & CSO, Terranova Cyber Solutions</p>
-
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={compImage} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper>
-        <ProfileWrapper >
-          <div className="d-flex align-items-start justify-content-start">
-          <Image src={user} width={48} height={48} className="img-wrapper"/>
-          <div className="ps-3">
-            <p className="small-text m-0 fw-semibold">Darrell Steward</p>
-            <p className="small-text m-0 grey-clr">CEO, CISO & CSO, Terranova Cyber Solutions</p>
-
-          </div>
-          </div>
-                        
-                          <div className="bottom-section">
-                            <p className="text-left small-text dark-grey">We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.</p>
-                            <div className="bottom-img-wrapper">
-                            <Image src={compImage} width={48} height={48} className="img-wrapper" />
-                            </div>
-                          </div>
-        </ProfileWrapper>
-      </Slider>
+            <div className="bottom-section">
+              <p className="text-left small-text dark-grey">
+                We are excited to work with BDATA and deploy BIoT technology for
+                defense high value critical application that include drones and
+                other assets. We strongly believe in the success of BIoT
+                technology deployment to protect critical infrastructures” said
+                James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.
+              </p>
+              <div className="bottom-img-wrapper">
+                <Image
+                  src={compImage}
+                  width={48}
+                  height={48}
+                  className="img-wrapper"
+                />
+              </div>
+            </div>
+          </ProfileWrapper>
+        </Slider>
       </div>
     </CustomerWrapper>
   );

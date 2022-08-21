@@ -23,8 +23,11 @@ font-size: 40px;
 line-height: 10px;
 letter-spacing: 1px;
 position: relative;
-top: 60px;
 color: #000000;
+
+}
+@media (max-width: 1500px) {
+  padding-left:50px;
 }
 @media (max-width: 991px) {
   height: 450px;

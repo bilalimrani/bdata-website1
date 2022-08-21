@@ -39,8 +39,15 @@ const BannerWrapper = styled.div`
   }
   .banner-content-wrapper {
     text-align: left;
+@media (max-width: 1479px) {
+  padding-left:50px;
+}
+@media (max-width: 1199px) {
+  padding-left:80px;
+}
     @media (max-width: 991px) {
       max-width: 320px;
+      padding:0;
     }
   }
   &::before {

@@ -3,8 +3,9 @@ import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import MainWrapper from "../style.js";
-import Banner from "./Banner/Banner";
+import Banner from "../../components/Home/Banner/Banner";
 import LightWeightSection from "./LightWeightSection/LightWeightSection";
+import industriesConstants from "../../utils/industries.constants";
 
 const Industries = () => {
   return (
@@ -14,7 +15,7 @@ const Industries = () => {
       </Head>
       <Header />
       <MainWrapper>
-        <Banner />
+        <Banner data={industriesConstants?.banner} />
         <LightWeightSection />
       </MainWrapper>
       <Footer />

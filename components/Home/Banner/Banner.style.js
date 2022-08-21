@@ -3,9 +3,6 @@ import styled from "styled-components";
 
 const BannerWrapper = styled.div`
   height: 480px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +56,7 @@ const BannerWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const A = styled.a`
   background: transparent;
   border: 1px solid white;
   color: white;
@@ -74,4 +71,4 @@ const Button = styled.button`
   }
 `;
 
-export { BannerWrapper, Button };
+export { BannerWrapper, A };

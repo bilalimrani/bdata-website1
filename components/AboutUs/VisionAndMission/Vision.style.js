@@ -56,6 +56,10 @@ height: 384px;
   
   color: #64626A;
   };
+  h3{
+    font-size:28px;
+    margin:0 0 10px;
+  }
 `;
 
 export { VisionWrapper };

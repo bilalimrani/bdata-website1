@@ -17,11 +17,9 @@ const AboutUs = () => {
       <Header />
       <MainWrapper>
         <Banner />
-        <div className="container">
-          <OurMission />
-          <OurValues />
-          <Team />
-        </div>
+        <OurMission />
+        <OurValues />
+        <Team />
       </MainWrapper>
       <Footer />
     </div>

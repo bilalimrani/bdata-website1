@@ -11,7 +11,7 @@ const Partners = () => {
       </h3>
       <div className="row">
         {homeConstants?.partners?.data?.map((item, index) => (
-          <ImageSection className="col-xs-6 col-sm-4 col-md-2" key={index}>
+          <ImageSection className="col-12 col-sm-6 col-md-4 col-lg-2" key={index}>
             <div>
               <Image
                 src={item.image}

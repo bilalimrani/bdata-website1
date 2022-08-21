@@ -16,7 +16,7 @@ export default function WhitePaper() {
         <h3 className="text-center m-0  fw-bold">Whitepapers</h3>
       </SectionPadding>
       <div className="row">
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -30,7 +30,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -44,7 +44,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -58,7 +58,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -72,7 +72,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -86,7 +86,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -100,7 +100,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}
@@ -114,7 +114,7 @@ export default function WhitePaper() {
             </Button>
           </CardWrapper>
         </div>
-        <div className="col-12 col-sm-6 col-md-4 col-lg-3 custom-padding">
+        <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <CardWrapper>
             <Image
               src={PaperImg}

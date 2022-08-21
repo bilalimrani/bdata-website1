@@ -16,7 +16,7 @@ const secndPlace = require("public/img/2ndPlace.png");
 
 export default function LightWeightSection() {
   return (
-    <LightWeightSectionWrapper className="">
+    <LightWeightSectionWrapper>
       <InfoArea>
         {/* <SideImage src="https://i.ibb.co/MV2SwwN/Group-1679-1.png" /> */}
         <div className="container">
