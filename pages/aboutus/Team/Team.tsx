@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { ValueWrapper } from "./Team.style";
+import { ValueWrapper } from "../../../styles/styledComponents/Team.style.js";
 const icon1 = require("public/img/Member-img-1.png");
 const icon2 = require("public/img/Member-img-2.png");
 const icon3 = require("public/img/Member-img-3.png");
@@ -10,7 +10,8 @@ const icon6 = require("public/img/Member-img-6.png");
 
 export default function Guide() {
   return (
-    <ValueWrapper className="container">
+    <ValueWrapper>
+      <div className="container">
       <h1 className="text-center main-heading">Our Team</h1>
       <br />
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
@@ -116,6 +117,7 @@ export default function Guide() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </ValueWrapper>
   );

@@ -9,15 +9,15 @@ export default function Guide() {
       </div>
       <div className="col-sm-6">
         <div className="mission">
-          <h2 className="fw-bold heading">
+          <h3 className="fw-bold heading">
             Our Mission
-          </h2>
+          </h3>
           <p>We secure business and industries from Cyber Attacks</p>
         </div>
         <div className="vision">
-          <h2 className="fw-bold heading">
+          <h3 className="fw-bold heading">
             Our Vision
-          </h2>
+          </h3>
           <p>We secure business and industries from Cyber Attacks</p>
         </div>
       </div>

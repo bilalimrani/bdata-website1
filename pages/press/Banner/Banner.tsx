@@ -1,5 +1,8 @@
 import React from "react";
-import { BannerWrapper,Button } from "./Banner.style";
+import {
+  BannerWrapper,
+  Button,
+} from "../../../styles/styledComponents/pressBanner.style";
 
 export default function Banner() {
   return (

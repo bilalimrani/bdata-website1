@@ -57,6 +57,9 @@ padding:50px 0;
 //   }
   .slick-center.slick-current {
     width:640px !important;
+    @media (max-width: 991px) {
+      width:320px !important;
+    }
   }
   .slick-active.slick-current .small-text{
     font-size:16px;

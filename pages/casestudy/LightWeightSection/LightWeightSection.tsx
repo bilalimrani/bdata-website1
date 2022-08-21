@@ -6,8 +6,7 @@ import {
   InfoArea,
   ContainerDefault,
   SectionImage,
-  UL,
-} from "./LightWeightSection.style";
+} from "../../../styles/styledComponents/caseStudyLightWeightSection.style";
 const telecom = require("public/img/telecom.png");
 const defence = require("public/img/defence.png");
 const oilgas = require("public/img/oil&gas.png");

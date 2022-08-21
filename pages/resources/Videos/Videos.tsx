@@ -4,7 +4,7 @@ import {
   CardWrapper,
   Button,
   SectionPadding,
-} from "./Videos.style";
+} from "../../../styles/styledComponents/resourcesVideos.style";
 
 const data = [
   {
@@ -37,7 +37,7 @@ export default function Videos() {
   return (
     <PaperWraper>
       <SectionPadding>
-      <h3 className="text-center m-0  fw-bold">Videos</h3>
+        <h3 className="text-center m-0  fw-bold">Videos</h3>
       </SectionPadding>
       <div className="row">
         {data?.map((item, index) => (
@@ -51,7 +51,7 @@ export default function Videos() {
               ></iframe>
               <h4 className="m-0 my-4 fw-bold">{item.title}</h4>
               <Button type="button" className="btn btn-primary">
-              Watch Now
+                Watch Now
               </Button>
             </CardWrapper>
           </div>

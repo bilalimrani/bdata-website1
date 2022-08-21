@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import BannerImage from "public/img/Resources.svg";
+import BannerImage from "public/img/resources.svg";
 import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
   height: 500px;
-  background-color:black;
+  background-color: black;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
   background-size: contain;
@@ -14,12 +14,12 @@ const BannerWrapper = styled.div`
   justify-content: center;
   text-align: center;
   position: relative;
-  @media (max-width: 1199px){
-    background-position:bottom right -90px;
+  @media (max-width: 1199px) {
+    background-position: bottom right -90px;
   }
   @media (max-width: 991px) {
     height: 450px;
-    background-position:bottom right 0;
+    background-position: bottom right 0;
   }
   @media (max-width: 767px) {
     height: 300px;
@@ -69,17 +69,17 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.button`
-background:transparent;
-    border:1px solid white;
-    color:white;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   padding: 17px 32px;
-  transition:.3s ease;
-  &:hover{
+  transition: 0.3s ease;
+  &:hover {
     color: #004d88;
-    border:1px solid transparent;
+    border: 1px solid transparent;
   }
 `;
 

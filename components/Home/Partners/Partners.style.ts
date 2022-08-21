@@ -6,6 +6,12 @@ background-image: url(${bdataPattern});
 background-position:center right;
 background-repeat: no-repeat;
 background-size: 100px 300px;
+@media (max-width: 1378px) {
+  background-size: 60px 200px;
+}
+@media (max-width: 1199px) {
+  background-size: 40px 160px;
+}
 `;
 
 const PartnersContainer = styled.div`

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 const bgImage = require("public/img/bg-image.png");
+import bg_pattern from "public/img/imageas.png";
 
 const LightWeightSectionWrapper = styled.div`
   padding: 50px 0 0;
@@ -36,15 +37,16 @@ max-width:650px;
 
 const InfoArea = styled.section`
   position: relative;
-  background-image: url(${bgImage});
-background-position:top -20px right;
+  background-image: url(${bgImage}) , url(${bg_pattern}) ;
+background-position:top right ,right center;
 background-repeat: no-repeat;
-background-size: 450px 375px;
+background-size: 450px 375px , 120px 300px;
 @media (max-width: 1199px) {
-  background-size: 300px 300px;
+  background-position:top 90px right ,right center;
+  background-size: 200px 200px , 70px 200px;
 }
-@media (max-width: 991) {
-  background-size: 250px 250px;
+@media (max-width: 991px) {
+  background: none;
 }
   h3{
     font-size:28px;

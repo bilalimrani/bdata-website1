@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BannerImage from "public/img/aboutus.png";
+import BannerImage from "public/img/aboutUs.png";
 import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
@@ -14,9 +14,9 @@ const BannerWrapper = styled.div`
   justify-content: center;
   text-align: center;
   position: relative;
-  h2{
+  h2 {
     @media (max-width: 768px) {
-      color:white;
+      color: white;
     }
   }
   > div {
@@ -29,18 +29,25 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 991px) {
     height: 450px;
-    background-position:bottom right -20px;
+    background-position: bottom right -20px;
   }
   @media (max-width: 768px) {
     height: 300px;
-    background-image:none;
-    background-color:black;
-    color:white;
+    background-image: none;
+    background-color: black;
+    color: white;
   }
   .banner-content-wrapper {
     text-align: left;
+@media (max-width: 1479px) {
+  padding-left:50px;
+}
+@media (max-width: 1199px) {
+  padding-left:80px;
+}
     @media (max-width: 991px) {
-      max-width:320px;
+      max-width: 320px;
+      padding:0;
     }
   }
   &::before {
