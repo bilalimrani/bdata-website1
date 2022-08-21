@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ContactWrapper, Button } from "./ContactUs.style";
+import { ContactWrapper } from "./ContactUs.style";
 
 export default function Contact() {
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({});
   const submit = (e) => {
     e.preventDefault();
     axios
       .post("http://localhost:3000/api/email", {
         formData: form,
         subject: "Download WhitePaper",
-        attachments:[
+        attachments: [
           {
-            filename: 'file.pdf',
-            path: 'public/bdata-whitepaper.pdf',
-            contentType: 'application/pdf'
+            filename: "file.pdf",
+            path: "public/bdata-whitepaper.pdf",
+            contentType: "application/pdf",
           },
-        ]
+        ],
       })
       .then((res) => {
         alert("Email send. Kindly check your mail");
@@ -27,9 +27,9 @@ export default function Contact() {
   const onChange = (event) => {
     setForm({
       ...form,
-      [event.target.id]: event.target.value
-    })
-  }
+      [event.target.id]: event.target.value,
+    });
+  };
   return (
     <ContactWrapper>
       <form className="form" onSubmit={submit}>
@@ -139,19 +139,19 @@ export default function Contact() {
               <label htmlFor="floatingInput">Industry</label>
             </div>
           </div>
-       
-        <div className="col-md-12 py-3">
-          <div className="form-floating">
-          <textarea
-            id="comment"
-            className="form-control"
-            onChange={onChange}
-            name="comment"
-            placeholder="Comments"
-          />
-          <label htmlFor="floatingInput">Comments</label>
+
+          <div className="col-md-12 py-3">
+            <div className="form-floating">
+              <textarea
+                id="comment"
+                className="form-control"
+                onChange={onChange}
+                name="comment"
+                placeholder="Comments"
+              />
+              <label htmlFor="floatingInput">Comments</label>
+            </div>
           </div>
-        </div>
         </div>
         <p>
           B Data Solutions Inc. is committed to protecting and respecting your
@@ -161,11 +161,7 @@ export default function Contact() {
           please tick below to say how you would like us to contact you:
         </p>
         <div className="form-check d-flex justify-content-left">
-          <input
-            className="form-check-input me-2"
-            type="checkbox"
-            required
-          />
+          <input className="form-check-input me-2" type="checkbox" required />
           <label className="form-check-label" htmlFor="form6Example8">
             I agree to receive other communications from B Data Solutions Inc..{" "}
           </label>
@@ -175,13 +171,12 @@ export default function Contact() {
         </div>
         <br />
         <div className="btnGroup">
-          <button type="submit"  className="btn btn-primary btn-block mb-4">
+          <button type="submit" className="btn btn-primary btn-block mb-4">
             Download
           </button>
           <div className="group_1668"></div>
         </div>
       </form>
-    
     </ContactWrapper>
   );
 }
