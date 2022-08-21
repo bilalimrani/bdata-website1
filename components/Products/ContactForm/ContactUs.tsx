@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ContactWrapper } from "./ContactUs.style";
+import { ContactWrapper } from "./ContactUs.style.js";
 
 export default function Contact() {
   const [form, setForm] = useState({});
