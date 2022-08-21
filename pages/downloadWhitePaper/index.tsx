@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "next/router";
+import Head from "next/head";
 import axios from "axios";
 import CountrySelect from "react-bootstrap-country-select";
 import Banner from "../../components/Home/Banner/Banner";
@@ -9,51 +10,51 @@ import homeConstants from "../../utils/home.constants";
 import { SectionWrapper } from "../../styles/styledComponents/whitePaper.style";
 
 const DownloadWhitePaper = (props) => {
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({});
   const [fileName, setFileName] = useState<any>({});
   const [selectedCountry, setSelectedCountry] = useState<any>("");
   useEffect(() => {
     getWhitepaper(props);
     return () => {
-      console.log('Component will be unmount')
-    }
+      console.log("Component will be unmount");
+    };
   }, []);
   const getWhitepaper = (props) => {
     if (props.section == 1)
       setFileName({
-        filename: 'file.pdf',
-        path: 'public/bdata-whitepaper.pdf',
-        contentType: 'application/pdf',
+        filename: "file.pdf",
+        path: "public/bdata-whitepaper.pdf",
+        contentType: "application/pdf",
       });
     if (props.section == 2) {
       setFileName({
-        filename: 'BDATA-Innovating Security_Usecases.pptx',
-        path: 'public/BDATA-Innovating Security_Usecases.pptx',
-        contentType: 'application/pptx',
+        filename: "BDATA-Innovating Security_Usecases.pptx",
+        path: "public/BDATA-Innovating Security_Usecases.pptx",
+        contentType: "application/pptx",
       });
     }
     if (props.section == 3) {
       setFileName({
-        filename: 'WhitePaper.docx',
-        path: 'public/WhitePaper.docx',
-        contentType: 'application/docx',
+        filename: "WhitePaper.docx",
+        path: "public/WhitePaper.docx",
+        contentType: "application/docx",
       });
     }
     if (props.section == 4) {
       setFileName({
-        filename: 'file.pdf',
-        path: 'public/bdata-whitepaper.pdf',
-        contentType: 'application/pdf',
+        filename: "file.pdf",
+        path: "public/bdata-whitepaper.pdf",
+        contentType: "application/pdf",
       });
     }
-  }
+  };
   const submit = (e) => {
     e.preventDefault();
     axios
       .post("http://localhost:3000/api/email", {
         formData: form,
         subject: "Contact Us",
-        attachments: [fileName]
+        attachments: [fileName],
       })
       .then((res) => {
         alert("Email send. Kindly check your mail");
@@ -64,11 +65,14 @@ const DownloadWhitePaper = (props) => {
   const onChange = (event) => {
     setForm({
       ...form,
-      [event.target.id]: event.target.value
-    })
-  }
+      [event.target.id]: event.target.value,
+    });
+  };
   return (
     <div>
+      <Head>
+        <title>Download White Paper</title>
+      </Head>
       <Header />
       <Banner data={homeConstants?.whitePapper?.banner} />
       <SectionWrapper className="container">
@@ -191,11 +195,15 @@ const DownloadWhitePaper = (props) => {
                   {homeConstants?.agreeTerms}
                 </label>
               </div>
-              <div className="unsubscribe">{homeConstants?.unsubscribeText}</div>
+              <div className="unsubscribe">
+                {homeConstants?.unsubscribeText}
+              </div>
               <br />
               <span className="group_1668"></span>
               <div className="btnGroup">
-                <button className="btn btn-primary btn-block mb-4">Submit</button>
+                <button className="btn btn-primary btn-block mb-4">
+                  Submit
+                </button>
               </div>
             </div>
           </div>

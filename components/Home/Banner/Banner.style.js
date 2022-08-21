@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bdataPattern from "public/img/bannerSidebar.png";
+// import bdataPattern from "public/img/bannerSidebar.png";
 
 const BannerWrapper = styled.div`
   height: 480px;
@@ -18,7 +18,7 @@ const BannerWrapper = styled.div`
     height: 300px;
   }
   &::before {
-    content: ${(props) => props?.sideImage && `url(${bdataPattern})`};
+    /* content: ${(props) => props?.sideImage && `url(${bdataPattern})`}; */
     position: absolute;
     right: 0;
     top: 50%;
@@ -44,12 +44,10 @@ const BannerWrapper = styled.div`
     color: white;
     font-weight: 900 !important;
     margin: 0 0 28px !important;
-    
   }
   p {
     color: white;
-    margin: 0 0 50px!important;
-   
+    margin: 0 0 50px !important;
   }
   .custom-btn-white {
     background: white;

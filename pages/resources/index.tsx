@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Banner from "./Banner/Banner";
@@ -9,6 +10,9 @@ import MainWrapper from "../style.js";
 const Resources = () => {
   return (
     <div>
+      <Head>
+        <title>Resources</title>
+      </Head>
       <Header />
       <MainWrapper>
         <Banner />
