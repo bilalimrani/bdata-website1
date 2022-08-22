@@ -30,7 +30,7 @@ another network.`,
   whitePapper: {
     banner: {
       title: "Download BDATA Whitepaper",
-      bgImage: require("public/img/whitePaperDownload.svg"),
+      bgImage: require("public/img/resources1.svg"),
     },
   },
   awards: {
