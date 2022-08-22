@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ContactWrapper, InfoArea } from "./ContactUs.style";
-const icon1 = require("public/img/linePattern.png");
+import { ContactWrapper, InfoArea, Button, CalendlyWrapper, CalendlyWrapperInner } from "./ContactUs.style";
+const calendly = require("public/img/calendly.png");
 
 export default function Contact() {
   const [form, setForm] = useState({});
@@ -27,11 +27,12 @@ export default function Contact() {
   return (
     <ContactWrapper>
       <InfoArea>
+      <div className="container">
         <form className="form" onSubmit={submit}>
           <div className="row">
-            <div className="col-md-8 offset-md-2">
-              <div className="row mb-4">
-                <div className="col">
+              <div className="col-lg-8 py-3">
+              <div className="row">
+                <div className="col-6 py-3">
                   <div className="form-floating">
                     <input
                       type="text"
@@ -44,7 +45,7 @@ export default function Contact() {
                     <label htmlFor="floatingInput">First Name</label>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-6 py-3">
                   <div className="form-floating">
                     <input
                       type="text"
@@ -57,9 +58,7 @@ export default function Contact() {
                     <label htmlFor="floatingInput">Last Name</label>
                   </div>
                 </div>
-              </div>
-              <div className="row mb-4">
-                <div className="col">
+                <div className="col-6 py-3">
                   <div className="form-floating">
                     <input
                       type="email"
@@ -72,7 +71,7 @@ export default function Contact() {
                     <label htmlFor="floatingInput">Email Address</label>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-6 py-3">
                   <div className="form-floating">
                     <input
                       type="tel"
@@ -85,9 +84,7 @@ export default function Contact() {
                     <label htmlFor="floatingInput">Phone Number</label>
                   </div>
                 </div>
-              </div>
-              <div className="row mb-4">
-                <div className="col">
+                <div className="col-6 py-3">
                   <div className="form-floating">
                     <input
                       type="text"
@@ -100,7 +97,7 @@ export default function Contact() {
                     <label htmlFor="floatingInput">Company Name</label>
                   </div>
                 </div>
-                <div className="col">
+                <div className="col-6 py-3">
                   <div className="form-floating">
                     <input
                       type="text"
@@ -145,24 +142,35 @@ export default function Contact() {
                   Inc..{" "}
                 </label>
               </div>
-              <div className="unsubscribe">
+              <p>
                 You can unsubscribe from these communications at any time.{" "}
-              </div>
-              <br />
-              <div className="btnGroup">
-                <button
-                  className="btn btn-primary btn-block mb-4"
+              </p>
+              <div className="btnGroup mt-4">
+                <Button
+                  type="button"
+                  className="btn btn-primary me-sm-3"
                   onClick={submit}
                 >
                   Submit
-                </button>
-                <button className="btn btn-primary btn-block mb-4">
+                </Button>
+               
+          </div>
+              </div>
+              <div className="col-lg-4 py-3">
+                <CalendlyWrapper>
+                <img className="img w-100" src={calendly} />
+                <CalendlyWrapperInner>
+                  <p className="text-center">Make Appointment with Calendly</p>
+                  </CalendlyWrapperInner>
+                <Button type="button" className="btn btn-primary" onClick={submit}>
                   Calendly
-                </button>
+                </Button>
+                </CalendlyWrapper>
+             
               </div>
             </div>
-          </div>
         </form>
+        </div>
       </InfoArea>
     </ContactWrapper>
   );

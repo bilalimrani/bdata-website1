@@ -4,12 +4,12 @@ import group_1668 from "public/img/linePattern.png";
 import bg_pattern from "public/img/imageas.png";
 
 const ContactWrapper = styled.div`
-  background-image: url(${group_1668}), url(${bg_pattern});
+  background-image: url(${group_1668});
   background-repeat: no-repeat;
-  background-size: 300px, 125px 310px;
-  background-position: bottom right, top right;
+  background-size: 300px;
+  background-position: bottom right;
   @media (max-width: 1199px) {
-    background-size: 200px, 50px 150px;
+    background-size: 200px;
   }
   @media (max-width: 991px) {
     background: none;
@@ -120,5 +120,18 @@ const Button = styled.button`
     color: white;
   }
 `;
-
-export { ContactWrapper, Button, InfoArea };
+const CalendlyWrapper = styled.div`
+    width:100%;
+    padding:20px;
+    text-align:center;
+    border: 1px solid #A7AFC1;
+    border-radius: 8px;
+    img{
+      max-width:200px;
+      margin-bottom:30px;
+    }
+`;
+const CalendlyWrapperInner = styled.div`
+min-height:100px;
+`;
+export { ContactWrapper, Button, InfoArea ,CalendlyWrapper, CalendlyWrapperInner };

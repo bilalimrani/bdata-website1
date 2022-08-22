@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ContactWrapper } from "./ContactUs.style.js";
+import { ContactWrapper,Button } from "./ContactUs.style.js";
 
 export default function Contact() {
   const [form, setForm] = useState({});
@@ -32,10 +32,11 @@ export default function Contact() {
   };
   return (
     <ContactWrapper>
+      <div className="custom-container">
       <form className="form" onSubmit={submit}>
         <div className="heading">Download Whitepaper</div>
         <div className="row mb-4">
-          <div className="col">
+          <div className="col-md-6 pb-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -48,7 +49,7 @@ export default function Contact() {
               <label htmlFor="floatingInput">First Name</label>
             </div>
           </div>
-          <div className="col-md-6 py-3">
+          <div className="col-md-6 pb-3">
             <div className="form-floating">
               <input
                 type="text"
@@ -139,7 +140,6 @@ export default function Contact() {
               <label htmlFor="floatingInput">Industry</label>
             </div>
           </div>
-
           <div className="col-md-12 py-3">
             <div className="form-floating">
               <textarea
@@ -153,30 +153,29 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <p>
+        <p className="m-0">
           B Data Solutions Inc. is committed to protecting and respecting your
           privacy, From time to time, we would like to contact you about our
           products and services, as well as other content that may be of
           interest to you. If you consent to us contacting you for this purpose,
           please tick below to say how you would like us to contact you:
         </p>
-        <div className="form-check d-flex justify-content-left">
-          <input className="form-check-input me-2" type="checkbox" required />
-          <label className="form-check-label" htmlFor="form6Example8">
+        <div className="custom-checkbox-input-wrapper py-2 ">
+          <input className="form-check-input m-0" type="checkbox" required />
+          <label className="form-check-label ps-2" htmlFor="form6Example8">
             I agree to receive other communications from B Data Solutions Inc..{" "}
           </label>
         </div>
-        <div className="unsubscribe">
+        <p className="pb-2 m-0">
           You can unsubscribe from these communications at any time.{" "}
-        </div>
-        <br />
-        <div className="btnGroup">
-          <button type="submit" className="btn btn-primary btn-block mb-4">
+        </p>
+        <div className="btnGroup mt-3">
+          <Button type="submit"  className="btn btn-light">
             Download
-          </button>
-          <div className="group_1668"></div>
+          </Button>
         </div>
       </form>
+      </div>
     </ContactWrapper>
   );
 }

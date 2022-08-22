@@ -36,7 +36,7 @@ const Products = () => {
           </div>
         </IdentityBottom>
         <BiotProduct />
-        <ContactForm />
+        {/* <ContactForm /> */}
       </MainWrapper>
       <Footer />
     </div>

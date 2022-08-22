@@ -34,6 +34,11 @@ form{
         margin-right: 10px;
     };
   };
+  .custom-checkbox-input-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+  }
 .form-control {
     border: 1px solid #A7AFC1;
 border-radius: 8px;
@@ -109,14 +114,14 @@ margin-bottom: 30px;
 }
 `;
 const Button = styled.button`
-background:transparent;
-    border:1px solid white;
-    color:white;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  padding: 17px 32px;
-  transition:.3s ease;
+background: transparent;
+border: 1px solid white;
+color: white;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+padding: 14px 32px;
+transition: 0.3s ease;
   &:hover{
     color: #004d88;
     border:1px solid transparent;
