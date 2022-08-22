@@ -1,4 +1,4 @@
-const BannerImage = require("public/img/banner-bg.svg");
+const BannerImage = require("public/img/banner-bg.png");
 const bdataPattern = require("public/img/bdata-logo.svg");
 export default {
   banner: {

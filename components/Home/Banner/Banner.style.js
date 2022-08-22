@@ -1,11 +1,8 @@
 import styled from "styled-components";
-import bdataPattern from "public/img/bannerSidebar.png";
+// import bdataPattern from "public/img/bannerSidebar.png";
 
 const BannerWrapper = styled.div`
   height: 480px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +15,7 @@ const BannerWrapper = styled.div`
     height: 300px;
   }
   &::before {
-    content: ${(props) => props?.sideImage && `url(${bdataPattern})`};
+    /* content: ${(props) => props?.sideImage && `url(${bdataPattern})`}; */
     position: absolute;
     right: 0;
     top: 50%;
@@ -44,12 +41,10 @@ const BannerWrapper = styled.div`
     color: white;
     font-weight: 900 !important;
     margin: 0 0 28px !important;
-    
   }
   p {
     color: white;
-    margin: 0 0 50px!important;
-   
+    margin: 0 0 50px !important;
   }
   .custom-btn-white {
     background: white;
@@ -61,7 +56,7 @@ const BannerWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const A = styled.a`
   background: transparent;
   border: 1px solid white;
   color: white;
@@ -76,4 +71,4 @@ const Button = styled.button`
   }
 `;
 
-export { BannerWrapper, Button };
+export { BannerWrapper, A };

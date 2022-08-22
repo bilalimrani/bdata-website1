@@ -1,4 +1,4 @@
-const BannerImage = require("public/img/banner-bg.svg");
+const BannerImage = require("public/img/banner-bg.png");
 const bdataPattern = require("public/img/bdata-logo.svg");
 const Jerdins = require("public/img/desjardins.svg");
 const Rogers = require("public/img/rogers.svg");
@@ -30,7 +30,7 @@ another network.`,
   whitePapper: {
     banner: {
       title: "Download BDATA Whitepaper",
-      bgImage: require("public/img/banner-bg.svg"),
+      bgImage: require("public/img/whitePaperDownload.svg"),
     },
   },
   awards: {

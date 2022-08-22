@@ -12,7 +12,7 @@ background-position: top right,top right;
     background-size: 200px , 50px  150px;
   }
   @media (max-width: 991px) {
-   background:none;
+    background: none;
   }
 .form {
     margin-left: 220px;
@@ -115,7 +115,7 @@ height: 36px;
 
 const InfoArea = styled.section`
   position: relative;
-  background-image: url(${bgImage});
+  /* background-image: url(${bgImage}); */
   background-position: top 300px right -25px;
   background-repeat: no-repeat;
   background-size: 370px 300px;

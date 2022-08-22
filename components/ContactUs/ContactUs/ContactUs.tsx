@@ -26,9 +26,9 @@ export default function Contact() {
   const onChange = (event) => {
     setForm({
       ...form,
-      [event.target.id]: event.target.value
-    })
-  }
+      [event.target.id]: event.target.value,
+    });
+  };
   return (
     <ContactWrapper>
       <InfoArea>
@@ -125,37 +125,45 @@ export default function Contact() {
             <label htmlFor="floatingInput">Comments</label>
           </div>
 
-          <p>
-            B Data Solutions Inc. is committed to protecting and respecting your
-            privacy, From time to time, we would like to contact you about our
-            products and services, as well as other content that may be of
-            interest to you. If you consent to us contacting you for this purpose,
-            please tick below to say how you would like us to contact you:
-          </p>
-          <div className="form-check d-flex justify-content-left">
-            <input
-              className="form-check-input me-2"
-              type="checkbox"
-              value=""
-              id="form6Example8"
-            />
-            <label className="form-check-label" htmlFor="form6Example8">
-              I agree to receive other communications from B Data Solutions Inc..{" "}
-            </label>
-          </div>
-          <div className="unsubscribe">
-            You can unsubscribe from these communications at any time.{" "}
-          </div>
-          <br />
-          <div className="btnGroup">
-            <button className="btn btn-primary btn-block mb-4" onClick={submit}>
-              Submit
-            </button>
-            <button className="btn btn-primary btn-block mb-4">Calendly</button>
+              <p>
+                B Data Solutions Inc. is committed to protecting and respecting
+                your privacy, From time to time, we would like to contact you
+                about our products and services, as well as other content that
+                may be of interest to you. If you consent to us contacting you
+                for this purpose, please tick below to say how you would like us
+                to contact you:
+              </p>
+              <div className="form-check d-flex justify-content-left">
+                <input
+                  className="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="form6Example8"
+                />
+                <label className="form-check-label" htmlFor="form6Example8">
+                  I agree to receive other communications from B Data Solutions
+                  Inc..{" "}
+                </label>
+              </div>
+              <div className="unsubscribe">
+                You can unsubscribe from these communications at any time.{" "}
+              </div>
+              <br />
+              <div className="btnGroup">
+                <button
+                  className="btn btn-primary btn-block mb-4"
+                  onClick={submit}
+                >
+                  Submit
+                </button>
+                <button className="btn btn-primary btn-block mb-4">
+                  Calendly
+                </button>
+              </div>
+            </div>
           </div>
         </form>
       </InfoArea>
-
     </ContactWrapper>
   );
 }

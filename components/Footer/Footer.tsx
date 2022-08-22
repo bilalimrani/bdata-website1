@@ -32,7 +32,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="address-wrapper py-3">
-              <p>© 2022 BDATA Inc.</p>
+              <p>© {new Date().getFullYear()} BDATA Inc.</p>
             </div>
           </div>
           <div className="col-sm-6">
@@ -41,33 +41,33 @@ export default function Footer() {
                 <h5 className="fw-bold m-0 mb-2 text-white">Main Pages</h5>
                 <ul className="footer-links-ul">
                   <li>
-                    <a href="#" className="footer-links">
+                    <a href="/" className="footer-links">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="footer-links">
+                    <a href="/aboutus" className="footer-links">
                       About Us
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="footer-links">
+                    <a href="/contactus" className="footer-links">
                       Contact Us
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="footer-links">
+                    <a href="/press" className="footer-links">
                       Press
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="footer-links">
+                    <a href="/industries" className="footer-links">
                       Industries
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="footer-links">
-                      Product
+                    <a href="/products" className="footer-links">
+                      Products
                     </a>
                   </li>
                 </ul>
@@ -75,11 +75,11 @@ export default function Footer() {
               <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">Company</h5>
                 <ul className="footer-links-ul">
-                  <li>
+                  {/* <li>
                     <a href="#" className="footer-links">
                       About Us
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#" className="footer-links">
                       Terms
