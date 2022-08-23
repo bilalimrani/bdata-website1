@@ -20,7 +20,11 @@ export default function Footer() {
               <a href="#" className="custom-round-img facebook">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#" className="custom-round-img linkdin">
+              <a
+                href="https://www.linkedin.com/company/bdatasolutions/mycompany/"
+                className="custom-round-img linkdin"
+                target="_blank"
+              >
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>

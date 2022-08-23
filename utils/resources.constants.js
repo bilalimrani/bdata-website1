@@ -1,5 +1,6 @@
-const BannerImage = require("public/img/banner-bg.png");
-const bdataPattern = require("public/img/bdata-logo.svg");
+const BannerImage = require("public/img/resources1.svg");
+const bdataPattern = require("public/img/resources1.svg");
+
 export default {
   banner: {
     title: "BDATA Resources",
