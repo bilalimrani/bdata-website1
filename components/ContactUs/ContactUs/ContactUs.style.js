@@ -109,7 +109,7 @@ const InfoArea = styled.section`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   border: 1px solid #004d88;
   color: #004d88;
   background: transparent;
@@ -121,17 +121,23 @@ const Button = styled.button`
   }
 `;
 const CalendlyWrapper = styled.div`
-    width:100%;
-    padding:20px;
-    text-align:center;
-    border: 1px solid #A7AFC1;
-    border-radius: 8px;
-    img{
-      max-width:200px;
-      margin-bottom:30px;
-    }
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #a7afc1;
+  border-radius: 8px;
+  img {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
 `;
 const CalendlyWrapperInner = styled.div`
-min-height:100px;
+  min-height: 100px;
 `;
-export { ContactWrapper, Button, InfoArea ,CalendlyWrapper, CalendlyWrapperInner };
+export {
+  ContactWrapper,
+  Button,
+  InfoArea,
+  CalendlyWrapper,
+  CalendlyWrapperInner,
+};
