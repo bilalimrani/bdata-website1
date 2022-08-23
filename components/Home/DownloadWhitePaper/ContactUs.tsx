@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CountrySelect from "react-bootstrap-country-select";
-import { ContactWrapper, InfoArea } from "./ContactUs.style";
+import { ContactWrapper, InfoArea } from "./DownloadWhitePaper.style";
 
 export default function Contact() {
   const [form, setForm] = useState({})

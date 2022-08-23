@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 // import Image from "next/image";
+import { Modal, Form } from "react-bootstrap";
+import DownlaodWhitePaper from "../DownloadWhitePaper/DownloadWhitePaper";
+import "bootstrap/dist/css/bootstrap.css";
 import Link from "next/link";
 import {
   LightWeightSectionWrapper,
@@ -13,6 +16,18 @@ const Frame78 = require("public/img/frame78.png");
 import BookImg from "../../../components/BookImg/BookImg";
 
 export default function LightWeightSection() {
+  const [show, setShow] = useState(false);
+  const [section, setSection] = useState();
+  const handleClose = () => setShow(false);
+  const handleShow = (event) => {
+    setSection(event.target.id)
+    setShow(true)
+  };
+
+  const onLoginFormSubmit = (e) => {
+    e.preventDefault();
+    handleClose();
+  };
   return (
     <LightWeightSectionWrapper className="">
       <InfoArea>
@@ -40,19 +55,9 @@ export default function LightWeightSection() {
                     Reserve a spot for Free cyber-attack awareness workshop.
                   </li>
                 </UL>
-                <Link
-                  href={{
-                    pathname: "downloadWhitePaper",
-                    query: {
-                      section: 1,
-                    },
-                  }}
-                  as="downloadWhitePaper"
-                >
-                  <Button type="button" className="btn btn-primary">
-                    Download
-                  </Button>
-                </Link>
+                <Button onClick={handleShow} id="section1" type="button" className="btn btn-primary">
+                  Download
+                </Button>
               </ContainerDefault>
             </div>
           </div>
@@ -76,19 +81,9 @@ export default function LightWeightSection() {
                   achieve cyber resilience and compliance with up to 80% cost
                   saving.
                 </p>
-                <Link
-                  href={{
-                    pathname: "downloadWhitePaper",
-                    query: {
-                      section: 2,
-                    },
-                  }}
-                  as="downloadWhitePaper"
-                >
-                  <Button type="button" className="btn btn-primary">
-                    Download
-                  </Button>
-                </Link>
+                <Button onClick={handleShow} id="section2" type="button" className="btn btn-primary">
+                  Download
+                </Button>
               </ContainerDefault>
             </div>
           </div>
@@ -112,19 +107,9 @@ export default function LightWeightSection() {
                   Modbus TCP port 502, server access, DDoS, RATs, Insiders,
                   Credential harvesting
                 </p>
-                <Link
-                  href={{
-                    pathname: "downloadWhitePaper",
-                    query: {
-                      section: 3,
-                    },
-                  }}
-                  as="downloadWhitePaper"
-                >
-                  <Button type="button" className="btn btn-primary">
+                  <Button onClick={handleShow} id="section3" type="button" className="btn btn-primary">
                     Download
                   </Button>
-                </Link>
               </ContainerDefault>
             </div>
           </div>
@@ -146,24 +131,23 @@ export default function LightWeightSection() {
                   had a root cause of credential compromise either by DDoS,
                   Insiders, or credential harvesting.
                 </p>
-                <Link
-                  href={{
-                    pathname: "downloadWhitePaper",
-                    query: {
-                      section: 4,
-                    },
-                  }}
-                  as="downloadWhitePaper"
-                >
-                  <Button type="button" className="btn btn-primary">
+                  <Button onClick={handleShow} id="section4" type="button" className="btn btn-primary">
                     Download
                   </Button>
-                </Link>
               </ContainerDefault>
             </div>
           </div>
         </div>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Download White Paper</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit} />
+          </Modal.Body>
+        </Modal>
       </InfoArea>
     </LightWeightSectionWrapper>
+
   );
 }
