@@ -35,15 +35,15 @@ export default function LightWeightSection() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-3 py-2">
-              <BookImg />
-              {/* <SectionImage>
+              {/* <BookImg /> */}
+              <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
-              </SectionImage> */}
+              </SectionImage>
             </div>
             <div className="col-12 col-lg-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Guide to create a secure network of trusted devices
+                  Guide to Create a Secure Network of Trusted Devices
                 </h3>
                 <p className="m-0">
                   Cyber-attack is not a science fiction, It’s a threat to public
@@ -96,7 +96,7 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Lightweight cyber security solution
+                  Lightweight Cyber Cecurity Solution
                 </h3>
                 <p className="custom-padding m-0">
                   Cyber-attack vulnerabilities related to Industrial Control

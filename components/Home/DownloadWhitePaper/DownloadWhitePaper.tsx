@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import homeConstants from "../../../utils/home.constants";
 import { SectionWrapper } from "./DownloadWhitePaper.style";
+import { event } from "../../../lib/ga"
 
 export default function DownlaodWhitePaper(props) {
   const [isLoading, setIsLoading] = useState(false);
@@ -9,6 +9,7 @@ export default function DownlaodWhitePaper(props) {
   const [form, setForm] = useState({});
   const [fileName, setFileName] = useState<any>({});
   useEffect(() => {
+
     setMsg("Submit")
     getWhitepaper(props);
     console.log(props.data, "Asdfasdf")
@@ -52,6 +53,10 @@ export default function DownlaodWhitePaper(props) {
       ...form
     }
     setIsLoading(true);
+    event({ actions: "downloadWhitePaper", params: {
+      ...form,
+      fileName
+    } })
     axios
       .post("http://localhost:3000/api/downloadWhitepaper", {
         data,

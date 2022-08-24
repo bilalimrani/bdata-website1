@@ -7,6 +7,7 @@ import {
   CalendlyWrapper,
   CalendlyWrapperInner,
 } from "./ContactUs.style";
+import { event } from "../../../lib/ga"
 const calendly = require("public/img/calendly.png");
 
 export default function Contact() {
@@ -23,6 +24,7 @@ export default function Contact() {
     const data = {
       ...form
     }
+    event({ actions: "contactUs", params: data })
     axios
       .post("http://localhost:3000/api/contactUs", {
         data,
