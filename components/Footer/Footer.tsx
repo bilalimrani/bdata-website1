@@ -13,30 +13,11 @@ export default function Footer() {
             <div className="logoWrapper">
               <Image src={whiteLogo} width={150} height={48} />
             </div>
-            <div className="socoalMediaLinks">
-              <a href="#" className="custom-round-img twitter">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="custom-round-img facebook">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/bdatasolutions/mycompany/"
-                className="custom-round-img linkdin"
-                target="_blank"
-              >
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-            </div>
             <div className="address-wrapper py-3">
               <p>
-                07 Agro Sr Waterdown <br />
-                ON L8B 1Y2.
+                07 Agro Sr Waterdown ON L8B 1Y2.
                 <br /> BDATA Solution Inc
               </p>
-            </div>
-            <div className="address-wrapper py-3">
-              <p>© {new Date().getFullYear()} BDATA Inc.</p>
             </div>
           </div>
           <div className="col-sm-6">
@@ -114,10 +95,30 @@ export default function Footer() {
                       License
                     </a>
                   </li>
+                  <li>
+                    <div className="socoalMediaLinks">
+                      <a href="#" className="custom-round-img twitter">
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" className="custom-round-img facebook">
+                        <i className="fab fa-facebook-f"></i>
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/company/bdatasolutions/mycompany/"
+                        className="custom-round-img linkdin"
+                        target="_blank"
+                      >
+                        <i className="fab fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+        <div className="address-wrapper1 py-3">
+          <p>© {new Date().getFullYear()} BDATA Inc.</p>
         </div>
       </div>
     </FooterContainer>

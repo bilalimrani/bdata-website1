@@ -6,7 +6,6 @@ import {
   InfoArea,
   ContainerDefault,
   SectionImage,
-  UL,
 } from "../../../styles/styledComponents/pressLightWeightSection.style";
 const microservice = require("public/img/microservice.png");
 const lionliar = require("public/img/lionliar.png");
@@ -39,8 +38,12 @@ export default function LightWeightSection() {
                   assets remote monitering and operation in iol and gas, power,
                   defence, health care and smart city projects.
                 </p>
-                <Button type="button" className="btn btn-primary">
-                  Download
+                <Button
+                  href="https://innovationfactory.ca/bdata-solutions-and-supermicro-computer-inc-announces-partnership/"
+                  target="_blank"
+                  className="btn btn-primary"
+                >
+                  Read More
                 </Button>
               </ContainerDefault>
             </div>
@@ -63,8 +66,12 @@ export default function LightWeightSection() {
                   audience during the virtual bracket style tournament that took
                   place on september 21-24.
                 </p>
-                <Button type="button" className="btn btn-primary">
-                  Download
+                <Button
+                  className="btn btn-primary"
+                  href="https://theforge.mcmaster.ca/2020/09/24/imaginable-solutions-and-bdata-win-top-prizes-in-lions-lair/"
+                  target="_blank"
+                >
+                  Read More
                 </Button>
               </ContainerDefault>
             </div>
@@ -88,8 +95,12 @@ export default function LightWeightSection() {
                   system (IPMS) as an industry 4.0 platform to process
                   industries.
                 </p>
-                <Button type="button" className="btn btn-primary">
-                  Download
+                <Button
+                  href="https://theforge.mcmaster.ca/2020/06/30/b-data-solutions-and-telus-collaboration/"
+                  target="_blank"
+                  className="btn btn-primary"
+                >
+                  Read More
                 </Button>
               </ContainerDefault>
             </div>
@@ -103,14 +114,18 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Congratulation Team BDATA{" "}
+                  Congratulation Team BDATA
                 </h3>
                 <p className="custom-padding m-0">
                   We are now in SEMI-FInal Canadian export challenge. Register
                   to watch live ‘16 september 10:30 AM - Pitch Compitition
                 </p>
-                <Button type="button" className="btn btn-primary">
-                  Download
+                <Button
+                  href="https://www.startupcan.ca/cxc-ontario/"
+                  target="_blank"
+                  className="btn btn-primary"
+                >
+                  Read More
                 </Button>
               </ContainerDefault>
             </div>
@@ -131,8 +146,12 @@ export default function LightWeightSection() {
                   IoT devices using BDATA-Blockchain on TELUS 4G/5G network in
                   Canada.
                 </p>
-                <Button type="button" className="btn btn-primary">
-                  Download
+                <Button
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:6857381812528799744/"
+                  target="_blank"
+                  className="btn btn-primary"
+                >
+                  Read More
                 </Button>
               </ContainerDefault>
             </div>

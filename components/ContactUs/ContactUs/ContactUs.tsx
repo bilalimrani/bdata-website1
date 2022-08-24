@@ -168,13 +168,7 @@ export default function Contact() {
                     className="btn btn-primary me-sm-3"
                     onClick={submit}
                   >
-                    {isLoading && (
-                      <div className="spinner-border" role="status">
-                        <span className="sr-only">Loading...</span>
-                      </div>
-                    )}
-                    {!isLoading && <span>{msg}</span>}
-
+                    Submit
                   </Button>
                 </div>
               </div>
@@ -190,7 +184,7 @@ export default function Contact() {
                     href="https://calendly.com/syed-8/identity-theft-cyber-security?month=2022-08"
                     target="_blank"
                     className="btn btn-primary"
-                  // onClick={submit}
+                    // onClick={submit}
                   >
                     Calendly
                   </Button>
