@@ -12,7 +12,11 @@ import {
   SectionImage,
   UL,
 } from "./LightWeightSection.style";
-const Frame78 = require("public/img/frame78.png");
+const Frame78 = require("public/img/bg.jpg");
+const screen = require("public/img/screen.webp");
+const technology = require("public/img/technology.webp");
+
+
 import BookImg from "../../../components/BookImg/BookImg";
 
 export default function LightWeightSection() {
@@ -35,10 +39,10 @@ export default function LightWeightSection() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-3 py-2">
-              {/* <BookImg /> */}
-              <SectionImage>
+              <BookImg title="Zero trust - a multilayer cyber security for industrial control system" img={Frame78}/>
+              {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
-              </SectionImage>
+              </SectionImage> */}
             </div>
             <div className="col-12 col-lg-9 py-2">
               <ContainerDefault>
@@ -62,9 +66,10 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-3 order-lg-2 py-2">
-              <SectionImage>
+            <BookImg title="Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices" img={screen}/>
+              {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
-              </SectionImage>
+              </SectionImage> */}
             </div>
             <div className="col-12  col-lg-9 py-2 order-lg-1">
               <ContainerDefault>
@@ -85,9 +90,11 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-3 py-2">
-              <SectionImage>
+            <BookImg title="enhance cyber security for azure and aws iot hub using biot" img={technology}/>
+
+              {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
-              </SectionImage>
+              </SectionImage> */}
             </div>
             <div className="col-12  col-lg-9 py-2">
               <ContainerDefault>
@@ -105,9 +112,10 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12  col-lg-3 order-lg-2 py-2">
-              <SectionImage>
+            <BookImg title="Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices" img={screen}/>
+              {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
-              </SectionImage>
+              </SectionImage> */}
             </div>
             <div className="col-12  col-lg-9 order-lg-1 py-2">
               <ContainerDefault>

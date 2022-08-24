@@ -20,6 +20,15 @@ img{
   margin-top:30px;
   min-height:100px;
   border-bottom:2px solid #ffc313;
+  @media  (max-width:1400px){
+    min-height:150px;
+  }
+  @media  (max-width:1199px){
+    min-height:175px;
+  }
+  @media  (max-width:991px){
+    min-height:115px;
+  }
 }
   }
   .custom-bottom-padding{

@@ -77,17 +77,19 @@ const BannerWrapper = styled.div`
 `;
 
 const A = styled.a`
-  background: transparent;
+  background: white;
   border: 1px solid white;
-  color: white;
+  color:  #2a6ef2;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  padding: 17px 32px;
+  padding: 12px 32px;
+  border-radius:30px;
   transition: 0.3s ease;
   &:hover {
-    color: #004d88;
-    border: 1px solid transparent;
+    background:transparent;
+    border:1px solid #2a6ef2;
+    color: #2a6ef2;
   }
 `;
 

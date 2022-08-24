@@ -53,7 +53,7 @@ const CustomersStories = () => {
   var settings = {
     arrows: false,
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -94,6 +94,7 @@ const CustomersStories = () => {
         <h3 className="text-center custom-padding-subsection fw-bold">
           Customer Stories
         </h3>
+        
         <Slider {...settings}>
           <ProfileWrapper>
             <div className="d-flex align-items-start justify-content-start">

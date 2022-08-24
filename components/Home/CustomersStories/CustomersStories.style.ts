@@ -20,7 +20,7 @@ padding:50px 0;
     margin:0 15px;
 }
 .slick-list{
-    padding:50px !important;
+    padding:50px 0 !important;
     
 @media (max-width: 991px) {
   padding: 25px !important;
