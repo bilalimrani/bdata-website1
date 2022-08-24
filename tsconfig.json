@@ -25,7 +25,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/aboutus/Team/Team.style.js", "pages/api/email.js"  ],
+, "pages/aboutus/Team/Team.style.js", "pages/api/downloadWhitepaper.js"  ],
   "exclude": [
     "node_modules"
   ]

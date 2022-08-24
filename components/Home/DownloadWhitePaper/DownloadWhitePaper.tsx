@@ -53,7 +53,7 @@ export default function DownlaodWhitePaper(props) {
     }
     setIsLoading(true);
     axios
-      .post("http://localhost:3000/api/email", {
+      .post("http://localhost:3000/api/downloadWhitepaper", {
         data,
         subject: "Thanks for Downlaoding our Resources!",
         attachments: [fileName]
@@ -74,7 +74,7 @@ export default function DownlaodWhitePaper(props) {
   return (
     <SectionWrapper>
       <h2 className="heading">Download BDATA Whitepaper</h2>
-      <form className="form" onSubmit={props.onSubmit}>
+      <form className="form" onSubmit={submit}>
         <div className="row">
           <div className="">
             <div className="row">
@@ -87,6 +87,7 @@ export default function DownlaodWhitePaper(props) {
                     onChange={onChange}
                     className="form-control"
                     placeholder="First Name"
+                    required
                   />
                   <label htmlFor="floatingInput">First Name</label>
                 </div>
@@ -100,6 +101,7 @@ export default function DownlaodWhitePaper(props) {
                     name="lastName"
                     className="form-control"
                     placeholder="Last Name"
+                    required
                   />
                   <label htmlFor="floatingInput">Last Name</label>
                 </div>
@@ -115,6 +117,7 @@ export default function DownlaodWhitePaper(props) {
                     name="email"
                     className="form-control"
                     placeholder="Email Address"
+                    required
                   />
                   <label htmlFor="floatingInput">Email Address</label>
                 </div>
@@ -134,6 +137,7 @@ export default function DownlaodWhitePaper(props) {
                 type="checkbox"
                 value=""
                 id="form6Example8"
+                required
               />
               <label className="form-check-label" htmlFor="form6Example8">
                 I agree to receive other communications from B Data Solutions
@@ -148,7 +152,7 @@ export default function DownlaodWhitePaper(props) {
               <button onClick={props.hanldeClose} className="btn btn-primary btn-block mb-4">
                 Cancel
               </button>
-              <button onClick={submit} disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
+              <button disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
                 {isLoading && (
                   <div className="spinner-border" role="status">
                     <span className="sr-only">Loading...</span>

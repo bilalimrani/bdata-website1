@@ -92,6 +92,16 @@ const ContactWrapper = styled.div`
     margin: 10px 10px 10px 0px;
     min-width: 200px;
   }
+  .btn1 {
+    border: 1px solid #004d88;
+  color: #004d88;
+  background: transparent;
+  padding: 9px 40px;
+  &:hover {
+    background-color: #004d88 !important;
+    color: white;
+  }
+  }
 `;
 
 const InfoArea = styled.section`

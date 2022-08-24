@@ -24,7 +24,7 @@ export default function Contact() {
       ...form
     }
     axios
-      .post("http://localhost:3000/api/email", {
+      .post("http://localhost:3000/api/contactUs", {
         data,
         subject: "Thanks for Contacting Us!",
       })
@@ -58,6 +58,7 @@ export default function Contact() {
                         onChange={onChange}
                         className="form-control"
                         placeholder="First Name"
+                        required
                       />
                       <label htmlFor="floatingInput">First Name</label>
                     </div>
@@ -71,6 +72,7 @@ export default function Contact() {
                         onChange={onChange}
                         className="form-control"
                         placeholder="Last Name"
+                        required
                       />
                       <label htmlFor="floatingInput">Last Name</label>
                     </div>
@@ -84,6 +86,7 @@ export default function Contact() {
                         onChange={onChange}
                         name="email"
                         placeholder="Email Address"
+                        required
                       />
                       <label htmlFor="floatingInput">Email Address</label>
                     </div>
@@ -153,6 +156,7 @@ export default function Contact() {
                     type="checkbox"
                     value=""
                     id="form6Example8"
+                    required
                   />
                   <label className="form-check-label" htmlFor="form6Example8">
                     I agree to receive other communications from B Data
@@ -163,13 +167,17 @@ export default function Contact() {
                   You can unsubscribe from these communications at any time.{" "}
                 </p>
                 <div className="btnGroup mt-4">
-                  <Button
-                    type="button"
-                    className="btn btn-primary me-sm-3"
-                    onClick={submit}
+                  <button
+                    type="submit"
+                    className="btn btn1 btn-primary me-sm-3"
                   >
-                    Submit
-                  </Button>
+                    {isLoading && (
+                      <div className="spinner-border" role="status">
+                        <span className="sr-only">Loading...</span>
+                      </div>
+                    )}
+                    {!isLoading && <span>{msg}</span>}
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4 py-3">
@@ -184,7 +192,7 @@ export default function Contact() {
                     href="https://calendly.com/syed-8/identity-theft-cyber-security?month=2022-08"
                     target="_blank"
                     className="btn btn-primary"
-                    // onClick={submit}
+                  // onClick={submit}
                   >
                     Calendly
                   </Button>

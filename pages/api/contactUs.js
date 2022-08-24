@@ -1,23 +1,23 @@
 const nodemailer = require("nodemailer");
 
 export default async function (req, res) {
-   const { attachments, subject, data } = req.body
-   console.log(req.body)
-   let transporter = nodemailer.createTransport({
-      service: "gmail",
-      pool: true,
-      host: 'smtp.gmail.com',
-      secure: true, // use TLS
-      auth: {
-         user: "no_reply@bdata.ca",
-         pass: "E=Q8bq>P",
-      },
-   });
-   let mailOptions = await transporter.sendMail({
-      from: "no_reply@bdata.ca",
-      to: data.email,
-      subject: subject,
-      html : `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+    const { attachments, subject, data } = req.body
+    console.log(req.body)
+    let transporter = nodemailer.createTransport({
+        service: "gmail",
+        pool: true,
+        host: 'smtp.gmail.com',
+        secure: true, // use TLS
+        auth: {
+            user: "no_reply@bdata.ca",
+            pass: "E=Q8bq>P",
+        },
+    });
+    let mailOptions = {
+        from: "no_reply@bdata.ca",
+        to: data.email,
+        subject: subject,
+        html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
          <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -107,13 +107,15 @@ export default async function (req, res) {
                                                                <tr>
                                                                   <td style="font-size: 16px;">
                                                                   Hi ${data.firstName},
+                                                                  <br />
                                                                   <br /> 
-                                                                  Thanks for downloading our white paper. we are happy to share this PDF file with you, Kindly find attachement. or you can also simply click on this link to download it manually https:bada/resources.pdf
+                                                                Thanks for contacting us.Our team will shortly connect with you with in 24 Hours.
                                                                   <br />
                                                                   <br />
                                                                   <br />
                                                                   Thanks,
                                                                   <br /> 
+                                                                  <br />
                                                                   BDATA TEAM
                                                                   <br /> 
                                                                   www.BDATA.CA
@@ -209,16 +211,15 @@ export default async function (req, res) {
             </center>
          </body>
       </html>`,
-      attachments: attachments,
-  });
+   };
 
-  transporter.sendMail(mailOptions, function (err, res1) {
+   transporter.sendMail(mailOptions, function (err, res1) {
     if (err) {
-      console.log(err, "Asd")
-      res.status(400).end(JSON.stringify({ message: "Error" }));
+       console.log(err, "Asd")
+       res.status(400).end(JSON.stringify({ message: "Error" }));
 
     } else {
-      res.status(200).end(JSON.stringify({ message: "Send Mail" }));
+       res.status(200).end(JSON.stringify({ message: "Send Mail" }));
     }
-  });
+ });
 }
