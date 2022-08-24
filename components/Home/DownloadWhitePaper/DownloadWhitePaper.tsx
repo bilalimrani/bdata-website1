@@ -55,13 +55,13 @@ export default function DownlaodWhitePaper(props) {
     axios
       .post("http://localhost:3000/api/email", {
         data,
-        subject: "Download WhitePaper",
+        subject: "Thanks for Downlaoding our Resources!",
         attachments: [fileName]
       })
       .then((res) => {
         props.handleClose();
         setMsg("Email has been sent.")
-        setIsLoading(false);
+        // setIsLoading(false);
       })
       .catch((e) => console.log(e));
   };
