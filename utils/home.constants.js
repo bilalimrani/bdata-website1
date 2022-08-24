@@ -2,7 +2,7 @@ const BannerImage = require("public/img/banner-bg.png");
 const bdataPattern = require("public/img/bdata-logo.svg");
 const Jerdins = require("public/img/desjardins.svg");
 const Rogers = require("public/img/rogers.svg");
-const HelloTomarrow = require("public/img/hello.svg");
+const HelloTomarrow = require("public/img/newWorledReport.png");
 const Artc = require("public/img/agency.svg");
 const Image42 = require("public/img/partners/image_42.svg");
 const Image43 = require("public/img/partners/image_43.svg");
@@ -36,42 +36,22 @@ another network.`,
   awards: {
     title: "Awards",
     data: [
-      [
-        {
-          image: Jerdins,
-          text: "Won Desjardins Cyber Security Competition",
-        },
-        {
-          image: Rogers,
-          text: "Won Roger 5g Cyber security competition in Canada",
-        },
-        {
-          image: HelloTomarrow,
-          text: "Won Desjardins Cyber Security Competition",
-        },
-        {
-          image: Artc,
-          text: "Finalist – Deep Tech Startup Competition",
-        },
-      ],
-      [
-        {
-          image: Jerdins,
-          text: "Won Desjardins Cyber Security Competition",
-        },
-        {
-          image: Rogers,
-          text: "Won Roger 5g Cyber security competition in Canada",
-        },
-        {
-          image: HelloTomarrow,
-          text: "Won Desjardins Cyber Security Competition",
-        },
-        {
-          image: Artc,
-          text: "Finalist – Deep Tech Startup Competition",
-        },
-      ],
+      {
+        image: Jerdins,
+        text: "2nd place desjardin bank cyber security competition",
+      },
+      {
+        image: Rogers,
+        text: "1st place Rogers 5g Cyber Security Competition",
+      },
+      {
+        image: HelloTomarrow,
+        text: "best iot cyber security product award",
+      },
+      {
+        image: Artc,
+        text: "Won singapore's secure remote operation competition",
+      },
     ],
   },
   partners: {

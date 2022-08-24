@@ -4,10 +4,21 @@ import styled from "styled-components";
 const BannerWrapper = styled.div`
   height: 480px;
   display: flex;
-  align-items: center;
+  background: black;
+  video {
+    /* object-fit: cover; */
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    z-index: 1;
+  }
+  .videoBack {
+  }
+  /* align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
+  position: relative; */
   @media (max-width: 991px) {
     height: 450px;
   }
