@@ -59,9 +59,9 @@ export default function DownlaodWhitePaper(props) {
         attachments: [fileName]
       })
       .then((res) => {
-        props.handleClose();
         setMsg("Email has been sent.")
         // setIsLoading(false);
+        props.handleClose();
       })
       .catch((e) => console.log(e));
   };

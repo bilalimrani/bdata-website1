@@ -26,7 +26,7 @@ export default function Contact() {
     axios
       .post("http://localhost:3000/api/email", {
         data,
-        subject: "Contact Us",
+        subject: "Thanks for Contacting Us!",
       })
       .then((res) => {
         setMsg("Email has been sent.")
