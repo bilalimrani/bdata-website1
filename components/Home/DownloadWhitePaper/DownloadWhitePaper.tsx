@@ -3,10 +3,13 @@ import axios from "axios";
 import homeConstants from "../../../utils/home.constants";
 import { SectionWrapper } from "./DownloadWhitePaper.style";
 
-export default function DownlaodWhitePaper(props, onSubmit) {
+export default function DownlaodWhitePaper(props) {
+  const [isLoading, setIsLoading] = useState(false);
+  const [msg, setMsg] = useState("")
   const [form, setForm] = useState({});
   const [fileName, setFileName] = useState<any>({});
   useEffect(() => {
+    setMsg("Submit")
     getWhitepaper(props);
     console.log(props.data, "Asdfasdf")
     return () => {
@@ -44,9 +47,11 @@ export default function DownlaodWhitePaper(props, onSubmit) {
   };
   const submit = (e) => {
     e.preventDefault();
+    setMsg("Submit")
     const data = {
       ...form
     }
+    setIsLoading(true);
     axios
       .post("http://localhost:3000/api/email", {
         data,
@@ -54,8 +59,9 @@ export default function DownlaodWhitePaper(props, onSubmit) {
         attachments: [fileName]
       })
       .then((res) => {
-        alert("Email send. Kindly check your mail");
-        // setEmail("");
+        props.handleClose();
+        setMsg("Email has been sent.")
+        setIsLoading(false);
       })
       .catch((e) => console.log(e));
   };
@@ -67,7 +73,8 @@ export default function DownlaodWhitePaper(props, onSubmit) {
   };
   return (
     <SectionWrapper>
-      <form onSubmit={submit}>
+      <h2 className="heading">Download BDATA Whitepaper</h2>
+      <form className="form" onSubmit={props.onSubmit}>
         <div className="row">
           <div className="">
             <div className="row">
@@ -112,24 +119,44 @@ export default function DownlaodWhitePaper(props, onSubmit) {
                   <label htmlFor="floatingInput">Email Address</label>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 mb-4">
-                <div className="form-floating">
-                  <input
-                    type="text"
-                    id="phoneNumber"
-                    onChange={onChange}
-                    name="phoneNumber"
-                    className="form-control"
-                    placeholder="Phone Number"
-                  />
-                  <label htmlFor="floatingInput">Phone Number</label>
-                </div>
-              </div>
             </div>
+            <p>
+              B Data Solutions Inc. is committed to protecting and respecting
+              your privacy, From time to time, we would like to contact you
+              about our products and services, as well as other content that
+              may be of interest to you. If you consent to us contacting you
+              for this purpose, please tick below to say how you would like us
+              to contact you:
+            </p>
+            <div className="form-check d-flex justify-content-left">
+              <input
+                className="form-check-input me-2"
+                type="checkbox"
+                value=""
+                id="form6Example8"
+              />
+              <label className="form-check-label" htmlFor="form6Example8">
+                I agree to receive other communications from B Data Solutions
+                Inc..{" "}
+              </label>
+            </div>
+            <p>
+              You can unsubscribe from these communications at any time.{" "}
+            </p>
             <br />
-            <button className="btn btn-primary btn-block mb-4">
-              Submit
-            </button>
+            <div className="btnGroup">
+              <button onClick={props.hanldeClose} className="btn btn-primary btn-block mb-4">
+                Cancel
+              </button>
+              <button onClick={submit} disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
+                {isLoading && (
+                  <div className="spinner-border" role="status">
+                    <span className="sr-only">Loading...</span>
+                  </div>
+                )}
+                {!isLoading && <span>{msg}</span>}
+              </button>
+            </div>
           </div>
         </div>
       </form>

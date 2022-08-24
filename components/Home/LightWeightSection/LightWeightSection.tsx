@@ -138,12 +138,9 @@ export default function LightWeightSection() {
             </div>
           </div>
         </div>
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Download White Paper</Modal.Title>
-          </Modal.Header>
+        <Modal className="modal-xl" show={show} onHide={handleClose}>
           <Modal.Body>
-            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit} />
+            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit}  handleClose={handleClose} />
           </Modal.Body>
         </Modal>
       </InfoArea>

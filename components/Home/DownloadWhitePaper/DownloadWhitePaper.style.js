@@ -1,7 +1,24 @@
 import styled from "styled-components";
+import bg_pattern from "public/img/imageas.png";
 
 const SectionWrapper = styled.div`
   margin-top: 10px;
+  background-image: url(${bg_pattern});
+  background-repeat: no-repeat;
+  background-size: 110px;
+  background-position: top 92px right 0px;
+  position: relative;
+  left: 15px;
+  @media (max-width: 1199px) {
+    background-size: 200px;
+    position: relative;
+    left: 0px;
+  }
+  @media (max-width: 991px) {
+    background: none;
+    position: relative;
+    left: 0px;
+  }
   .form {
     margin-left: 150px;
     margin-right: 150px;
@@ -100,8 +117,26 @@ const SectionWrapper = styled.div`
     color: #004d88;
     padding: 16px 32px;
     gap: 10px;
-    width: 150px;
-    height: 36px;
+    width: 174px;
+    height: 50px;
+  };
+  .heading {
+    font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.8px;
+
+color: #000000;
+margin-top: 30px;
+margin-bottom: 50px;
+  };
+  .btnGroup{
+    display: flex;
+    gap: 30px;
   }
 `;
 

@@ -5,6 +5,9 @@ const LightWeightSectionWrapper = styled.div`
   padding: 50px 0 0;
   @media (max-width: 991px) {
     padding-top: 25px;
+  };
+  .modal-header{
+    text-align: center;
   }
 `;
 
