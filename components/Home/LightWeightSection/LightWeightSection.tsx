@@ -42,19 +42,18 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12 col-lg-9 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
-                  Guide to Create a Secure Network of Trusted Devices
+                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
+                Zero trust - a multilayer cyber security for industrial control system
                 </h3>
-                <p className="m-0">
-                  Cyber-attack is not a science fiction, It’s a threat to public
-                  safety and business continuity.
+                <p className="custom-padding m-0">
+                BIoT Security Technology IS a lightweight multilayer cyber security solution which enables companies to achieve cyber security compliances with respect to TSA, IECT 62443, ISO, NIST, HIPAA, and other local and international standards. 
                 </p>
-                <UL>
+                {/* <UL>
                   <li>Visit B Data & Humber College Cyber Lab</li>
                   <li>
                     Reserve a spot for Free cyber-attack awareness workshop.
                   </li>
-                </UL>
+                </UL> */}
                 <Button onClick={handleShow} id="section1" type="button" className="btn btn-primary">
                   Download
                 </Button>
@@ -69,17 +68,14 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12  col-lg-9 py-2 order-lg-1">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
-                  OT System Vulnerabilities
+                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
+                Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices
                 </h3>
                 <p className="custom-padding m-0">
-                  Achieving cyber resilience to meet cyber compliance
-                  requirements is a complex, time- consuming and expensive
-                  exercise for any company. Hedgehog security technology is a
-                  ready to use cyber security solution which effectively
-                  mitigate the risk of cyber-attack and help companies to
-                  achieve cyber resilience and compliance with up to 80% cost
-                  saving.
+                BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc. 
+                </p>
+                <p className="custom-padding m-0">
+                Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers. 
                 </p>
                 <Button onClick={handleShow} id="section2" type="button" className="btn btn-primary">
                   Download
@@ -95,17 +91,11 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12  col-lg-9 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
-                  Lightweight Cyber Cecurity Solution
+                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
+                enhance cyber security for azure and aws iot hub using biot
                 </h3>
                 <p className="custom-padding m-0">
-                  Cyber-attack vulnerabilities related to Industrial Control
-                  System (ICS) or operational technology (OT) as well as
-                  industrial internet of things (IIoT) are increasing each year,
-                  with an appreciable increase in identified vulnerabilities
-                  from 2020 to 2021.Some vulnerability includes the following.
-                  Modbus TCP port 502, server access, DDoS, RATs, Insiders,
-                  Credential harvesting
+                BIoT Security technology enhance azure and aws iot hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.
                 </p>
                   <Button onClick={handleShow} id="section3" type="button" className="btn btn-primary">
                     Download
@@ -121,15 +111,14 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12  col-lg-9 order-lg-1 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
-                  Protect Credentials Using BIoT Security Technology
+                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
+                Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices
                 </h3>
                 <p className="custom-padding m-0">
-                  In addition to finance and manufacturing, professional and
-                  business services was heavily targeted in 2021 cyber-attacks,
-                  particularly by ransomware actors, each of the cyber-attacks
-                  had a root cause of credential compromise either by DDoS,
-                  Insiders, or credential harvesting.
+                BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc. 
+                </p>
+                <p className="custom-padding m-0">
+                Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers. 
                 </p>
                   <Button onClick={handleShow} id="section4" type="button" className="btn btn-primary">
                     Download

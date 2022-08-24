@@ -2,9 +2,18 @@ import styled from "styled-components";
 // import bdataPattern from "public/img/bannerSidebar.png";
 
 const BannerWrapper = styled.div`
-  height: 480px;
+  height: 660px;
   display: flex;
   background: black;
+  position:relative;
+  padding-bottom:60px;
+  a{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 90px;
+    z-index: 1;
+  }
   video {
     /* object-fit: cover; */
     /* position: absolute; */

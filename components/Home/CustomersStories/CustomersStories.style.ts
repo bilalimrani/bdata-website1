@@ -55,15 +55,24 @@ padding:50px 0;
 //   .slick-slide{
 //     width:300px !important;
 //   }
-  .slick-center.slick-current {
-    width:640px !important;
-    @media (max-width: 991px) {
-      width:320px !important;
+  // .slick-center.slick-current {
+  //   width:640px !important;
+  //   @media (max-width: 991px) {
+  //     width:320px !important;
+  //   }
+  // }
+    // .slick-active.slick-current .small-text{
+    //   font-size:16px;
+    // }
+    .slick-slide.slick-active:hover{
+      transition:.3s ease-in;
     }
-  }
-  .slick-active.slick-current .small-text{
-    font-size:16px;
-  }
+    .slick-slide.slick-active:hover{
+      transform:scale(1.2);
+      position:relative;
+      z-index:1;
+      transition:.3s ease-in;
+    }
   .slick-center.slick-current .bottom-section{
     padding:18px 0;
   }

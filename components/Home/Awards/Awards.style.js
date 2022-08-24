@@ -1,9 +1,29 @@
 import styled from "styled-components";
 
 const AwardsContainer = styled.div`
-  .custom-padding-subsection {
-    padding-bottom: 30px;
+  .head-size{
     font-size: 28px;
+    font-weight:700;
+    text-transform:uppercase;
+  }
+  .para-text-details{
+    padding:0 15px;
+    text-align: center !important;
+    font-weight: 700;
+    text-transform:uppercase;
+}
+img{
+  max-width:100%;
+  height:40px;
+}
+.custom-section-height{
+  margin-top:30px;
+  min-height:100px;
+  border-bottom:2px solid #ffc313;
+}
+  }
+  .custom-bottom-padding{
+    padding-bottom: 30px;
   }
   padding: 50px 0 0;
   .slick-dots {
@@ -36,11 +56,7 @@ const CarouselWrapper = styled.div`
     box-shadow: none !important;
   }
 
-  .bottom-line {
-    width: 100%;
-    height: 2px;
-    background: #ffc313;
-  }
+s 
 
   /* &:hover {
     border: 1px solid #d1d0d6;

@@ -57,8 +57,8 @@ const CustomersStories = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    loop: true,
-    centerMode: true,
+    // loop: true,
+    // centerMode: true,
     responsive: [
       {
         breakpoint: 1378,

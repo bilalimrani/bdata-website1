@@ -52,19 +52,21 @@ export default function Awards() {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h3 className="text-center m-0 custom-padding-subsection fw-bold">
+            <h3 className="text-center m-0 fw-bold  head-size">
               {homeConstants?.awards.title}
             </h3>
+            <h5 className="text-center custom-bottom-padding m-0">BDATA won several global cyber security competitions and awards.</h5>
             {/* <Slider {...settings}> */}
             <div className="row">
               {homeConstants?.awards?.data?.map((item, index) => (
-                <div className="col-md-3">
+                <div className="col-sm-12 col-md-6 col-lg-3">
                   <CarouselWrapper>
                     {item.image && (
-                      <Image src={item?.image} width={150} height={48} />
+                      // <Image src={item?.image} width={150} height={48} />
+                      <img src={item?.image} alt="" />
                     )}
-                    <div className="p-3">
-                      <p className="text-center">{item.text}</p>
+                    <div className="custom-section-height p-3">
+                      <p className="text-center para-text-details m-0">{item.text}</p>
                       <div className="bottom-line"></div>
                     </div>
                   </CarouselWrapper>

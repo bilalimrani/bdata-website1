@@ -37,21 +37,22 @@ another network.`,
     title: "Awards",
     data: [
       {
-        image: Jerdins,
-        text: "2nd place desjardin bank cyber security competition",
-      },
-      {
         image: Rogers,
         text: "1st place Rogers 5g Cyber Security Competition",
       },
       {
-        image: HelloTomarrow,
-        text: "best iot cyber security product award",
+        image: Jerdins,
+        text: "2nd place desjardin bank cyber security competition",
       },
       {
         image: Artc,
         text: "Won singapore's secure remote operation competition",
       },
+      {
+        image: HelloTomarrow,
+        text: "best iot cyber security product award",
+      },
+      
     ],
   },
   partners: {
