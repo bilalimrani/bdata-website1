@@ -139,5 +139,16 @@ margin-bottom: 50px;
     gap: 30px;
   }
 `;
+const Button = styled.button`
+  border: 1px solid #004d88;
+  color: #004d88;
+  background: transparent;
+  padding: 9px 40px;
 
-export { SectionWrapper };
+  &:hover {
+    color:white;
+    background-color: #004d88 !important;
+  }
+`;
+
+export { SectionWrapper,Button };

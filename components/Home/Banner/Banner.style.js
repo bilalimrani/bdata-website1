@@ -7,12 +7,25 @@ const BannerWrapper = styled.div`
   background: black;
   position:relative;
   padding-bottom:60px;
+  @media (max-width: 1199px) {
+    height: 500px;
+  }
+  @media (max-width: 767px ) {
+    padding-bottom:30px;
+  }
   a{
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
     bottom: 90px;
     z-index: 1;
+    @media (max-width: 767px) {
+      bottom: 50px;
+    }
+    @media (max-width: 480px) {
+      bottom: 30px;
+    }
+    
   }
   video {
     /* object-fit: cover; */
@@ -33,6 +46,12 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 767px) {
     height: 300px;
+  }
+  @media (max-width: 575px) {
+    height: 250px;
+  }
+  @media (max-width: 480px) {
+    height: 200px;
   }
   &::before {
     /* content: ${(props) => props?.sideImage && `url(${bdataPattern})`}; */
@@ -86,6 +105,14 @@ const A = styled.a`
   padding: 12px 32px;
   border-radius:30px;
   transition: 0.3s ease;
+  @media (max-width: 767px) {
+    padding: 8px 24px;
+    font-size:14px;
+  }
+  @media (max-width: 480px) {
+    padding: 6px 20px;
+    font-size:12px;
+  }
   &:hover {
     background:transparent;
     border:1px solid #2a6ef2;

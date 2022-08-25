@@ -39,6 +39,9 @@ max-width:600px;
 
   margin:25px 0;
 }
+@media (max-width: 767px) {
+  margin:15px 0;
+}
 `
 
 const InfoArea = styled.section`

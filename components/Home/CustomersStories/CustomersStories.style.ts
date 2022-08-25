@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 const CustomerWrapper = styled.div`
-
 padding:50px 0;
+.round-img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
 @media (max-width: 991px) {
   padding: 25px 0;
 }
@@ -95,6 +99,9 @@ padding:50px 0;
     justify-content:flex-end;
     padding:5px 0 0;
   }
+  .bottom-img-wrapper img{
+   max-width:70px;
+  }
   .slick-center.slick-current .bottom-img-wrapper > div{
     width:150px !important;
     height:70px  !important;
@@ -110,6 +117,14 @@ padding:50px 0;
   background: #FFFFFF;
   box-shadow: 0px 22.8292px 65.2263px rgba(177, 177, 207, 0.3);
   border-radius: 10.4362px;
+  height:100%;
+  transition:.3s ease-in;
+  &:hover{
+    transform:scale(1.1);
+      position:relative;
+      z-index:1;
+      transition:.3s ease-in;
+  }
   .small-text {
       font-size:10px;
       line-height:18px !important;

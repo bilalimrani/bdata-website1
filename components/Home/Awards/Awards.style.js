@@ -5,12 +5,24 @@ const AwardsContainer = styled.div`
     font-size: 28px;
     font-weight:700;
     text-transform:uppercase;
+    @media  (max-width:767px){
+      font-size: 24px;
+    }
+  }
+  h5{
+    @media  (max-width:767px){
+      font-size: 16px;
+    }
   }
   .para-text-details{
     padding:0 15px;
     text-align: center !important;
     font-weight: 700;
     text-transform:uppercase;
+    @media  (max-width:767px){
+      font-size: 16px;
+    }
+   
 }
 img{
   max-width:100%;
@@ -29,12 +41,22 @@ img{
   @media  (max-width:991px){
     min-height:115px;
   }
+  @media  (max-width:767px){
+    margin:0 !important;
+    min-height:auto;
+  }
 }
   }
   .custom-bottom-padding{
     padding-bottom: 30px;
+      @media  (max-width:767px){
+        padding-bottom: 25px;
+      }
   }
   padding: 50px 0 0;
+  @media  (max-width:767px){
+    padding: 30px 0 0;
+  }
   .slick-dots {
     position: unset !important;
     bottom: unset !important;
@@ -61,6 +83,9 @@ const CarouselWrapper = styled.div`
   padding: 30px;
   text-align: center;
   border: 1px solid transparent;
+  @media  (max-width:767px){
+    padding: 15px 30px;
+  }
   img {
     box-shadow: none !important;
   }

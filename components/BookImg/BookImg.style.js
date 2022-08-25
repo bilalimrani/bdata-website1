@@ -10,6 +10,9 @@ transform-origin: 0 0;
 transform-style: preserve-3d;
 transform: rotateY(0);
 transition: all 500ms;
+@media (max-width: 991px) {
+    max-width:400px;
+  }
 // &:after {
 //     content: "";
 //     position: absolute;

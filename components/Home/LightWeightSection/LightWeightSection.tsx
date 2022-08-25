@@ -12,7 +12,7 @@ import {
   SectionImage,
   UL,
 } from "./LightWeightSection.style";
-const Frame78 = require("public/img/bg.jpg");
+const Frame78 = require("public/img/zero-trust.webp");
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { SectionWrapper } from "./DownloadWhitePaper.style";
+import { SectionWrapper,Button } from "./DownloadWhitePaper.style";
 import { event } from "../../../lib/ga"
 
 export default function DownlaodWhitePaper(props) {
@@ -154,17 +154,17 @@ export default function DownlaodWhitePaper(props) {
             </p>
             <br />
             <div className="btnGroup">
-              <button onClick={props.hanldeClose} className="btn btn-primary btn-block mb-4">
+              <Button onClick={props.hanldeClose} className="btn btn-primary btn-block mb-4">
                 Cancel
-              </button>
-              <button disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
+              </Button>
+              <Button disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
                 {isLoading && (
                   <div className="spinner-border" role="status">
                     <span className="sr-only">Loading...</span>
                   </div>
                 )}
                 {!isLoading && <span>{msg}</span>}
-              </button>
+              </Button>
             </div>
           </div>
         </div>

@@ -33,6 +33,9 @@ const ContainerDefault = styled.div`
   @media (max-width: 991px) {
     margin: 25px 0;
   }
+  @media (max-width: 767px) {
+    margin: 15px 0;
+  }
 `;
 
 const InfoArea = styled.section`

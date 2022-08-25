@@ -15,6 +15,9 @@ background-position:  right center;
   @media (max-width: 991px) {
    background:none;
   }
+  @media (max-width: 767px) {
+    margin:15px 0;
+  }
 `;
 const ValuesWrapperCard = styled.div`
 padding:40px;

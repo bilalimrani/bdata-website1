@@ -35,6 +35,9 @@ max-width:650px;
 @media (max-width: 991px) {
   margin:25px 0;
 }
+@media (max-width: 767px) {
+  margin:15px 0;
+}
 `
 
 const InfoArea = styled.section`
@@ -44,22 +47,29 @@ background-position:top -20px right;
 background-repeat: no-repeat;
 background-size: 450px 375px;
 @media (max-width: 1199px) {
-  background-size: 230px 230px;
+  background-size: 230px 230px;\
+  background-position:top 150px right;
 }
 @media (max-width: 991px) {
  background:none;
 }
   h3{
     font-size:28px;
+    @media (max-width: 767px) {
+      font-size:22px;
+    }
   }
   .custom-padding{
     padding-bottom:20px;
     @media (max-width: 991px) {
-      padding-top: 15px;
+      padding-bottom: 10px;
     }
   }
   p{
     font-size:16px;
+    @media (max-width: 767px) {
+      font-size:14px;
+    }
   }
 `;
 
