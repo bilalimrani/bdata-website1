@@ -19,12 +19,12 @@ export default function LightWeightSection() {
         {/* <SideImage src="https://i.ibb.co/MV2SwwN/Group-1679-1.png" /> */}
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-3 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 py-2">
               <SectionImage>
                 <img className="img w-100" src={telecom}></img>
               </SectionImage>
             </div>
-            <div className="col-12 col-lg-9 py-2">
+            <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
                   Case Study 1
@@ -43,12 +43,12 @@ export default function LightWeightSection() {
             </div>
           </div>
           <div className="row my-lg-5">
-            <div className="col-12 col-lg-3 order-lg-2 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <SectionImage>
                 <img className="img w-100" src={defence} />
               </SectionImage>
             </div>
-            <div className="col-12  col-lg-9 py-2 order-lg-1">
+            <div className="col-12 col-lg-8  col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
                   Case Study 2
@@ -67,12 +67,12 @@ export default function LightWeightSection() {
             </div>
           </div>
           <div className="row my-lg-5">
-            <div className="col-12 col-lg-3 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 py-2">
               <SectionImage>
                 <img className="img w-100" src={oilgas} />
               </SectionImage>
             </div>
-            <div className="col-12  col-lg-9 py-2">
+            <div className="col-12  col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
                   Case Study 3
@@ -91,12 +91,12 @@ export default function LightWeightSection() {
             </div>
           </div>
           <div className="row my-lg-5">
-            <div className="col-12  col-lg-3 order-lg-2 py-2">
+            <div className="col-12 col-lg-4  col-xl-3 order-lg-2 py-2">
               <SectionImage>
                 <img className="img w-100" src={utilities}></img>
               </SectionImage>
             </div>
-            <div className="col-12  col-lg-9 order-lg-1 py-2">
+            <div className="col-12 col-lg-8  col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
                   Case Study 4

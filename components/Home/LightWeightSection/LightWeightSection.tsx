@@ -38,13 +38,13 @@ export default function LightWeightSection() {
         {/* <SideImage src="https://i.ibb.co/MV2SwwN/Group-1679-1.png" /> */}
         <div className="container">
           <div className="row">
-            <div className="col-12 col-lg-3 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 py-2">
               <BookImg title="Zero trust - a multilayer cyber security for industrial control system" img={Frame78}/>
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
               </SectionImage> */}
             </div>
-            <div className="col-12 col-lg-9 py-2">
+            <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
                 Zero trust - a multilayer cyber security for industrial control system
@@ -65,13 +65,13 @@ export default function LightWeightSection() {
             </div>
           </div>
           <div className="row my-lg-5">
-            <div className="col-12 col-lg-3 order-lg-2 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
             <BookImg title="Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices" img={screen}/>
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
               </SectionImage> */}
             </div>
-            <div className="col-12  col-lg-9 py-2 order-lg-1">
+            <div className="col-12 col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
                 Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices
@@ -89,14 +89,14 @@ export default function LightWeightSection() {
             </div>
           </div>
           <div className="row my-lg-5">
-            <div className="col-12 col-lg-3 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 py-2">
             <BookImg title="enhance cyber security for azure and aws iot hub using biot" img={technology}/>
 
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
               </SectionImage> */}
             </div>
-            <div className="col-12  col-lg-9 py-2">
+            <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
                 enhance cyber security for azure and aws iot hub using biot
@@ -111,13 +111,13 @@ export default function LightWeightSection() {
             </div>
           </div>
           <div className="row my-lg-5">
-            <div className="col-12  col-lg-3 order-lg-2 py-2">
+            <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
             <BookImg title="Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices" img={screen}/>
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
               </SectionImage> */}
             </div>
-            <div className="col-12  col-lg-9 order-lg-1 py-2">
+            <div className="col-12 col-lg-8 col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
                 Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices
