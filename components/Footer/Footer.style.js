@@ -9,7 +9,7 @@ const FooterContainer = styled.div`
   }
   .address-wrapper1 {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     color: rgba(255, 255, 255, 0.34);
     p {
       margin: 0px;
