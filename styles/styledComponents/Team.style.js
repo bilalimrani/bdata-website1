@@ -1,10 +1,19 @@
 import styled from "styled-components";
+import bdataPattern from "public/img/bannerSidebar.png";
 
 const ValueWrapper = styled.div`
+background-image: url(${bdataPattern});
+background-repeat: no-repeat;
+background-size: 100px 300px;
+background-position: top right;
+@media (max-width: 1199px) {
+ background:none;
+}
   .custom-card{
     padding:40px;
     border: 1px solid transparent;
     border-radius: 12px;
+    background:white;
     &:hover{
       border: 1px solid #2B7BB9;
       .custom-round-img {

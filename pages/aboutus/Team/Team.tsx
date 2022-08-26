@@ -16,8 +16,7 @@ export default function Guide() {
   return (
     <ValueWrapper>
       <div className="container">
-        <h1 className="text-center main-heading m-0">Our Team</h1>
-        {/* <br /> */}
+      <h2 className="fw-bold text-center m-0">Our Team</h2>
         <div className="row my-3 mb-5">
           <div className="col-12 col-lg-6 col-xl-4 py-3">
             <div className="custom-card">
