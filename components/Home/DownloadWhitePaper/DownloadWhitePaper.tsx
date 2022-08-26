@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { SectionWrapper,Button } from "./DownloadWhitePaper.style";
+import { SectionWrapper, Button } from "./DownloadWhitePaper.style";
 import { event } from "../../../lib/ga"
 
 export default function DownlaodWhitePaper(props) {
@@ -45,6 +45,13 @@ export default function DownlaodWhitePaper(props) {
         contentType: "application/pdf",
       });
     }
+    if (props.data == "useCase1") {
+      setFileName({
+        filename: "file.pdf",
+        path: "public/BIoT-Security-One-Pager.pdf",
+        contentType: "application/pdf",
+      });
+    }
   };
   const submit = (e) => {
     e.preventDefault();
@@ -53,10 +60,12 @@ export default function DownlaodWhitePaper(props) {
       ...form
     }
     setIsLoading(true);
-    event({ actions: "downloadWhitePaper", params: {
-      ...form,
-      fileName
-    } })
+    event({
+      actions: "downloadWhitePaper", params: {
+        ...form,
+        fileName
+      }
+    })
     axios
       .post("http://localhost:3000/api/downloadWhitepaper", {
         data,
@@ -76,6 +85,9 @@ export default function DownlaodWhitePaper(props) {
       [event.target.id]: event.target.value,
     });
   };
+  const handleClose = () => {
+    props.handleClose();
+  }
   return (
     <SectionWrapper>
       <h2 className="heading">Download BDATA Whitepaper</h2>
@@ -154,7 +166,7 @@ export default function DownlaodWhitePaper(props) {
             </p>
             <br />
             <div className="btnGroup">
-              <Button onClick={props.hanldeClose} className="btn btn-primary btn-block mb-4">
+              <Button onClick={handleClose} className="btn btn-primary btn-block mb-4">
                 Cancel
               </Button>
               <Button disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
