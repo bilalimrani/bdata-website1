@@ -19,7 +19,7 @@ export default function AllResources() {
             <SectionPadding>
               <WhitePaper />
               <UseCase />
-              <Videos />
+              {/* <Videos /> */}
             </SectionPadding>
           </Tab>
           <Tab eventKey="whitepapers" title="White Papers">
@@ -32,11 +32,11 @@ export default function AllResources() {
               <UseCase />
             </SectionPadding>
           </Tab>
-          <Tab eventKey="videos" title="Videos">
+          {/* <Tab eventKey="videos" title="Videos">
             <SectionPadding>
               <Videos />
             </SectionPadding>
-          </Tab>
+          </Tab> */}
         </Tabs>
       </div>
     </AllResourcesWrapper>

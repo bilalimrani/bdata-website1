@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import resourceConstant from "../../../utils/resources.constants"
 import { SectionWrapper, Button } from "./DownloadWhitePaper.style";
 import { event } from "../../../lib/ga"
 
 export default function DownlaodWhitePaper(props) {
   const [isLoading, setIsLoading] = useState(false);
   const [msg, setMsg] = useState("")
+  const [name, setName] = useState("")
   const [form, setForm] = useState({});
   const [fileName, setFileName] = useState<any>({});
   useEffect(() => {
@@ -18,39 +20,63 @@ export default function DownlaodWhitePaper(props) {
     };
   }, []);
   const getWhitepaper = (props) => {
-    if (props.data == "section1")
+    if (props.data == "section1") {
+      setName(resourceConstant.section1.title)
       setFileName({
         filename: "file.pdf",
         path: "public/bdata-whitepaper.pdf",
         contentType: "application/pdf",
       });
+    }
     if (props.data == "section2") {
-      setFileName({
-        filename: "BDATA-Innovating Security_Usecases.pptx",
-        path: "public/BDATA-Innovating Security_Usecases.pptx",
-        contentType: "application/pptx",
-      });
+      setName(resourceConstant.section2.title)
+      {
+        setFileName({
+          filename: "BDATA-Innovating Security_Usecases.pptx",
+          path: "public/BDATA-Innovating Security_Usecases.pptx",
+          contentType: "application/pptx",
+        });
+      }
     }
     if (props.data == "section3") {
-      setFileName({
-        filename: "WhitePaper.docx",
-        path: "public/WhitePaper.docx",
-        contentType: "application/docx",
-      });
+      setName(resourceConstant.section3.title)
+      {
+        setFileName({
+          filename: "WhitePaper.docx",
+          path: "public/WhitePaper.docx",
+          contentType: "application/docx",
+        });
+      }
     }
     if (props.data == "section4") {
-      setFileName({
-        filename: "file.pdf",
-        path: "public/bdata-whitepaper.pdf",
-        contentType: "application/pdf",
-      });
+      setName(resourceConstant.section4.title)
+      {
+        setFileName({
+          filename: "file.pdf",
+          path: "public/bdata-whitepaper.pdf",
+          contentType: "application/pdf",
+        });
+      }
     }
     if (props.data == "useCase1") {
-      setFileName({
-        filename: "file.pdf",
-        path: "public/BIoT-Security-One-Pager.pdf",
-        contentType: "application/pdf",
-      });
+      setName(resourceConstant.useCase1.title)
+      {
+        setFileName({
+          filename: "file.pdf",
+          path: "public/Cyber-Security-for-Automotive.pdf",
+          contentType: "application/pdf",
+        });
+      }
+    }
+    if (props.data == "useCase2") {
+      setName(resourceConstant.useCase2.title)
+      {
+        setFileName({
+          filename: "file.pdf",
+          path: "public/Cyber-Security-for-Gold-Mine.pdf",
+          contentType: "application/pdf",
+        });
+      }
     }
   };
   const submit = (e) => {
@@ -90,7 +116,7 @@ export default function DownlaodWhitePaper(props) {
   }
   return (
     <SectionWrapper>
-      <h2 className="heading">Download BDATA Whitepaper</h2>
+      <h2 className="heading fw-bold text-uppercase">{name}</h2>
       <form className="form" onSubmit={submit}>
         <div className="row">
           <div className="">
