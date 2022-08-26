@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { ValueWrapper } from "../../../styles/styledComponents/Team.style.js";
-const icon1 = require("public/img/bari.svg");
-const icon2 = require("public/img/owen.svg");
-const icon3 = require("public/img/pratik.svg");
-const icon4 = require("public/img/Member-img-4.png");
-const icon5 = require("public/img/sajal.svg");
-const icon6 = require("public/img/Member-img-6.png");
+const icon1 = require("public/img/founder.svg");
+const icon2 = require("public/img/cofounder.svg");
+const icon3 = require("public/img/dirctor-cyberSecurity.svg");
+const icon4 = require("public/img/automotion.svg");
+const icon5 = require("public/img/accounting.svg");
+const icon6 = require("public/img/vp-finance.svg");
 const linkdin = require("public/img/linkdin.svg");
-const dummy = require("public/img/dummy.png");
+const dummy = require("public/img/dummy.svg");
 
 
 
