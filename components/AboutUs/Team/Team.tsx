@@ -10,7 +10,7 @@ const icon6 = require("public/img/Member-img-6.png");
 
 export default function Guide() {
   return <ValueWrapper className="container">
-    <h1 className="text-center main-heading">Our Team</h1>
+    <h1 className="text-center main-heading m-0">Our Team</h1>
     <br />
     <div className="row row-cols-1 row-cols-md-3 g-4">
       <div className="col">

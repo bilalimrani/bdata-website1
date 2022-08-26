@@ -1,29 +1,25 @@
 import styled from "styled-components";
 
 const ValueWrapper = styled.div`
-  margin-bottom: 50px;
-  .row {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  @media (max-width: 991px) {
-    .row {
-      margin-left: 30px;
-      margin-right: 30px;
+  .custom-card{
+    padding:40px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    &:hover{
+      border: 1px solid #2B7BB9;
+      .custom-round-img {
+        border: 2px solid #2B7BB9;
+      } 
     }
-  }
-  @media (max-width: 767px) {
-    .row {
-      margin-left: 10px;
-      margin-right: 10px;
     }
-  }
   .imageCenter {
     text-align: center;
   }
-  .imageCenter > img {
-    width: 100px;
-    height: 100px;
+  .imageCenter .custom-round-img {
+    width: 146px;
+    height: 146px;
+    border: 2px solid #D1D0D6;
+    border-radius:50%;
   }
   .card {
     padding: 20px;
@@ -34,19 +30,19 @@ const ValueWrapper = styled.div`
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
     text-align: center;
-    letter-spacing: -0.259387px;
     color: #3b3a40;
+    margin:10px 0;
   }
   .card-text {
     font-style: italic;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
     text-align: center;
-    letter-spacing: 0.4px;
-    color: #8e8c95;
+    color: #8E8C95;
+  }
+  .card-text img{
+    margin-right:8px;
   }
   .main-heading {
     font-style: normal;

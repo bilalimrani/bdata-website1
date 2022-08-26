@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 import MainWrapper from "../style.js";
 import Banner from "./Banner/Banner";
 import OurMission from "./OurMission/OurMission";
-import OurValues from "./OurValues/OurValues";
+// import OurValues from "./OurValues/OurValues";
 import Team from "./Team/Team";
 
 const AboutUs = () => {
@@ -18,7 +18,7 @@ const AboutUs = () => {
       <MainWrapper>
         <Banner />
         <OurMission />
-        <OurValues />
+        {/* <OurValues /> */}
         <Team />
       </MainWrapper>
       <Footer />

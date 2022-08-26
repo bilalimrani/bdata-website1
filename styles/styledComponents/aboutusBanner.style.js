@@ -3,17 +3,23 @@ import BannerImage from "public/img/aboutUs.png";
 import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
-  height: 480px;
+  height: 680px;
   // background-color:black;
-  background-image: url(${BannerImage});
+  background-image: url(${BannerImage}) , url(${bdataPattern});
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
+  background-size: contain , 160px 380px;
+  background-position: bottom right, bottom left -20px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+  @media (max-width: 1199px) {
+    height:500px;
+  }
+  @media (max-width: 992px) {
+    height:400px;
+  }
   h2 {
     @media (max-width: 768px) {
       color: white;
@@ -21,46 +27,45 @@ const BannerWrapper = styled.div`
   }
   > div {
     height: 100%;
-    padding-top: 80px;
+   padding-top:80px;
+   @media (max-width: 768px) {
+    padding:40px 20px;
+   }
+   @media (max-width:479px) {
+    padding:20px;
+   }
+
   }
 
-  @media (max-width: 1199px) {
-    background-position: bottom right -90px;
+   @media (max-width: 1199px) {
+    background-image: url(${BannerImage});
+    background-position: bottom right, bottom left -20px;
   }
-  @media (max-width: 991px) {
-    height: 450px;
-    background-position: bottom right -20px;
-  }
+  // @media (max-width: 991px) {
+  //   height: 450px;
+  //   background-position: bottom right -20px;
+  // }
   @media (max-width: 768px) {
-    height: 300px;
+    height:auto;
     background-image: none;
     background-color: black;
     color: white;
   }
   .banner-content-wrapper {
     text-align: left;
-@media (max-width: 1479px) {
-  padding-left:50px;
-}
-@media (max-width: 1199px) {
-  padding-left:80px;
-}
+
     @media (max-width: 991px) {
       max-width: 320px;
       padding:0;
     }
   }
-  &::before {
-    content: url(${bdataPattern});
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 90px;
-    height: 315px;
-    @media (max-width: 991px) {
-      display: none;
+ 
+  .banner-content-wrapper{
+    max-width:400px;
+    @media (max-width: 992px) {
+      max-width:320px;
     }
   }
+  
 `;
 export { BannerWrapper };
