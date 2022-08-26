@@ -23,7 +23,7 @@ export default function DownlaodWhitePaper(props) {
     if (props.data == "section1") {
       setName(resourceConstant.section1.title)
       setFileName({
-        filename: "file.pdf",
+        filename: resourceConstant.section1.title,
         path: "public/bdata-whitepaper.pdf",
         contentType: "application/pdf",
       });
@@ -32,7 +32,7 @@ export default function DownlaodWhitePaper(props) {
       setName(resourceConstant.section2.title)
       {
         setFileName({
-          filename: "BDATA-Innovating Security_Usecases.pptx",
+          filename: resourceConstant.section2.title,
           path: "public/BDATA-Innovating Security_Usecases.pptx",
           contentType: "application/pptx",
         });
@@ -42,7 +42,7 @@ export default function DownlaodWhitePaper(props) {
       setName(resourceConstant.section3.title)
       {
         setFileName({
-          filename: "WhitePaper.docx",
+          filename: resourceConstant.section3.title,
           path: "public/WhitePaper.docx",
           contentType: "application/docx",
         });
@@ -52,7 +52,7 @@ export default function DownlaodWhitePaper(props) {
       setName(resourceConstant.section4.title)
       {
         setFileName({
-          filename: "file.pdf",
+          filename: resourceConstant.section4.title,
           path: "public/bdata-whitepaper.pdf",
           contentType: "application/pdf",
         });
@@ -62,7 +62,7 @@ export default function DownlaodWhitePaper(props) {
       setName(resourceConstant.useCase1.title)
       {
         setFileName({
-          filename: "file.pdf",
+          filename: resourceConstant.useCase1.title,
           path: "public/Cyber-Security-for-Automotive.pdf",
           contentType: "application/pdf",
         });
@@ -72,7 +72,7 @@ export default function DownlaodWhitePaper(props) {
       setName(resourceConstant.useCase2.title)
       {
         setFileName({
-          filename: "file.pdf",
+          filename: resourceConstant.useCase2.title,
           path: "public/Cyber-Security-for-Gold-Mine.pdf",
           contentType: "application/pdf",
         });
