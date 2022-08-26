@@ -13,6 +13,7 @@ import resourceConstant from "../../../utils/resources.constants"
 import { Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 const screen = require("public/img/screen.webp");
+const technology = require("public/img/technology.webp");
 
 export default function LightWeightSection() {
   const [show, setShow] = useState(false);
@@ -58,7 +59,7 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <SectionImage>
-                <BookImg title={resourceConstant.useCase2.title} img={screen} />
+                <BookImg title={resourceConstant.useCase2.title} img={technology} />
                 {/* <img className="img w-100" src={defence} /> */}
               </SectionImage>
             </div>

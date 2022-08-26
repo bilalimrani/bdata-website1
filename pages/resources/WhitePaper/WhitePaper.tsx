@@ -15,6 +15,12 @@ import BookImg from "../../../components/BookImg/BookImg";
 import resourceConstant from "../../../utils/resources.constants"
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
+const telecom = require("public/img/telecom.png");
+const defence = require("public/img/defence.png");
+const oilgas = require("public/img/oil&gas.png");
+const utilities = require("public/img/utilities.png");
+const Frame78 = require("public/img/zero-trust.webp");
+
 export default function WhitePaper() {
   const [show, setShow] = useState(false);
   const [section, setSection] = useState();
@@ -47,7 +53,7 @@ export default function WhitePaper() {
       </SectionPadding>
       <div className="row">
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
-          <BookImg title={resourceConstant.section1.title} img={screen} />
+          <BookImg title={resourceConstant.section1.title} img={Frame78} />
           <CardWrapper>
             <OverlayTrigger placement="bottom" overlay={section1}>
               <h4 className="m-0 my-4 fw-bold heading">{resourceConstant.section1.title}</h4>
@@ -69,7 +75,7 @@ export default function WhitePaper() {
           </CardWrapper>
         </div>
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
-          <BookImg title={resourceConstant.section3.title} img={technology} />
+          <BookImg title={resourceConstant.section3.title} img={defence} />
 
           <CardWrapper>
             {/* <Image
@@ -87,7 +93,7 @@ export default function WhitePaper() {
           </CardWrapper>
         </div>
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
-          <BookImg title={resourceConstant.section4.title} img={screen} />
+          <BookImg title={resourceConstant.section4.title} img={technology} />
           <CardWrapper>
             {/* <Image
               src={PaperImg}
