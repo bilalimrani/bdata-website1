@@ -8,6 +8,7 @@ import {
   CalendlyWrapperInner,
 } from "./ContactUs.style";
 import { event } from "../../../lib/ga"
+import contactUsConstant from "../../../utils/contactUs.constants";
 const calendly = require("public/img/calendly.png");
 
 export default function Contact() {
@@ -145,12 +146,7 @@ export default function Contact() {
                 </div>
 
                 <p>
-                  B Data Solutions Inc. is committed to protecting and
-                  respecting your privacy, From time to time, we would like to
-                  contact you about our products and services, as well as other
-                  content that may be of interest to you. If you consent to us
-                  contacting you for this purpose, please tick below to say how
-                  you would like us to contact you:
+                  {contactUsConstant.form.text1}:
                 </p>
                 <div className="form-check d-flex justify-content-left">
                   <input
@@ -161,12 +157,11 @@ export default function Contact() {
                     required
                   />
                   <label className="form-check-label" htmlFor="form6Example8">
-                    I agree to receive other communications from B Data
-                    Solutions Inc..{" "}
+                  {contactUsConstant.form.text2}{" "}
                   </label>
                 </div>
                 <p>
-                  You can unsubscribe from these communications at any time.{" "}
+                {contactUsConstant.form.text3}{" "}
                 </p>
                 <div className="btnGroup mt-4">
                   <button

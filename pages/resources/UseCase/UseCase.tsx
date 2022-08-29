@@ -13,10 +13,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import DownlaodWhitePaper from "../../../components/Home/DownloadWhitePaper/DownloadWhitePaper";
 import BookImg from "../../../components/BookImg/BookImg";
 import resourceConstant from "../../../utils/resources.constants"
-const Frame78 = require("public/img/zero-trust.webp");
-const screen = require("public/img/screen.webp");
-const technology = require("public/img/technology.webp");
-const PaperImg = require("public/img/paperimg.svg");
+const automotive = require("public/img/automotive.png");
+const goldmine = require("public/img/goldmine.png");
 
 export default function UseCase() {
   const [show, setShow] = useState(false);
@@ -43,7 +41,7 @@ export default function UseCase() {
       </SectionPadding>
       <div className="row">
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
-          <BookImg title={resourceConstant.useCase1.title} img={screen} />
+          <BookImg title={resourceConstant.useCase1.title} img={automotive} />
           <CardWrapper>
             {/* <Image
               src={PaperImg}
@@ -60,7 +58,7 @@ export default function UseCase() {
           </CardWrapper>
         </div>
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
-        <BookImg title={resourceConstant.useCase2.title} img={screen} />
+        <BookImg title={resourceConstant.useCase2.title} img={goldmine} />
           <CardWrapper>
             {/* <Image
               src={PaperImg}

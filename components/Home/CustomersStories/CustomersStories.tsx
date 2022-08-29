@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import { CustomerWrapper, ProfileWrapper } from "./CustomersStories.style";
+import homeConstants from "../../../utils/home.constants";
 const user = require("public/img/user-img.png");
 const user2 = require("public/img/user-2.png");
 const compImage = require("public/img/slider-img.svg");
@@ -96,85 +97,85 @@ const CustomersStories = () => {
     <CustomerWrapper>
       <div className="container">
         <h3 className="text-center custom-padding-subsection fw-bold">
-          Customer Stories
+          {homeConstants.customers.title}
         </h3>
-        
+
         {/* <Slider {...settings}> */}
         <div className="row mt-lg-5 mt-sm-3">
-        <div className="col-md-6 col-lg-4 py-3">
-          <ProfileWrapper>
-            <div className="d-flex align-items-center justify-content-start">
-                <img  src={user} alt="" className="round-img"/>
+          <div className="col-md-6 col-lg-4 py-3">
+            <ProfileWrapper>
+              <div className="d-flex align-items-center justify-content-start">
+                <img src={user} alt="" className="round-img" />
 
-              <div className="ps-3">
-                <p className="small-text m-0 fw-semibold">James Castle</p>
-                <p className="small-text m-0 grey-clr">
-                CEO, CISO & CSO, Terranova Cyber Solutions
+                <div className="ps-3">
+                  <p className="small-text m-0 fw-semibold">{homeConstants.customers.story1.name}</p>
+                  <p className="small-text m-0 grey-clr">
+                    {homeConstants.customers.story1.designation}
+                  </p>
+                </div>
+              </div>
+
+              <div className="bottom-section">
+                <p className="text-left small-text dark-grey">
+                  {homeConstants.customers.story1.message}
                 </p>
-              </div>
-            </div>
+                <div className="bottom-img-wrapper">
 
-            <div className="bottom-section">
-              <p className="text-left small-text dark-grey">
-              We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions.
-              </p>
-              <div className="bottom-img-wrapper">
-                
-                 <img  src={compImage} alt=""/>
+                  <img src={compImage} alt="" />
+                </div>
               </div>
-            </div>
-          </ProfileWrapper>
+            </ProfileWrapper>
           </div>
           <div className="col-md-6 col-lg-4 py-3">
-          <ProfileWrapper>
-            <div className="d-flex align-items-center justify-content-start">
-                  <img  src={user2} alt="" className="round-img"/>
-              <div className="ps-3">
-                <p className="small-text m-0 fw-semibold">Jeff Brown</p>
-                <p className="small-text m-0 grey-clr">
-                Senior sales director
-                </p>
+            <ProfileWrapper>
+              <div className="d-flex align-items-center justify-content-start">
+                <img src={user2} alt="" className="round-img" />
+                <div className="ps-3">
+                  <p className="small-text m-0 fw-semibold">{homeConstants.customers.story2.name}</p>
+                  <p className="small-text m-0 grey-clr">
+                    {homeConstants.customers.story2.designation}
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="bottom-section">
-              <p className="text-left small-text dark-grey">
-              Our industrial-grade connectivity devices are an ideal fit for BDATA’s blockchain-enabled IoT solution,” said Jeff Brown, senior sales director for Advantech’s Industrial IoT Group. “We’re continually looking for domain-focused, strategic partnerships that help our customers achieve successful IoT connections–all more securely, and with fewer challenges”
-              </p>
-              <div className="bottom-img-wrapper">
-                  <img  src={advantech} alt=""/>
+              <div className="bottom-section">
+                <p className="text-left small-text dark-grey">
+                  {homeConstants.customers.story2.message}
+                </p>
+                <div className="bottom-img-wrapper">
+                  <img src={advantech} alt="" />
+                </div>
               </div>
-            </div>
-          </ProfileWrapper>
+            </ProfileWrapper>
           </div>
-          
+
           <div className="col-md-6 col-lg-4 py-3">
-          <ProfileWrapper>
-            <div className="d-flex align-items-center justify-content-start">
-              
-              <img src={wasim} alt="" className="round-img"/>
+            <ProfileWrapper>
+              <div className="d-flex align-items-center justify-content-start">
 
-              <div className="ps-3">
-                <p className="small-text m-0 fw-semibold">Wassim Ghadban</p>
-                <p className="small-text m-0 grey-clr">
-                Vice President, Global Digital & Innovation
+                <img src={wasim} alt="" className="round-img" />
+
+                <div className="ps-3">
+                  <p className="small-text m-0 fw-semibold">{homeConstants.customers.story3.name}</p>
+                  <p className="small-text m-0 grey-clr">
+                    {homeConstants.customers.story3.designation}
+                  </p>
+                </div>
+              </div>
+
+              <div className="bottom-section">
+                <p className="text-left small-text dark-grey">
+                  {homeConstants.customers.story3.message}
                 </p>
-              </div>
-            </div>
+                <div className="bottom-img-wrapper">
+                  <img src={sncLogo} alt="" />
 
-            <div className="bottom-section">
-              <p className="text-left small-text dark-grey">
-              Many digital transformation projects are lacking strong cyber security, considering BIoT with 8D digital twin will enable companies to achieve financial and operational benefits without compromising security on critical infrastructure, said Wassim Ghadban, Vice President, Global Digital & Innovation, SNC Lavalin.
-              </p>
-              <div className="bottom-img-wrapper">
-                <img src={sncLogo} alt=""/>
-                
+                </div>
               </div>
-            </div>
-          </ProfileWrapper>
+            </ProfileWrapper>
           </div>
-          </div>
-          {/* <ProfileWrapper>
+        </div>
+        {/* <ProfileWrapper>
             <div className="d-flex align-items-center justify-content-start">
               <Image
                 src={user}

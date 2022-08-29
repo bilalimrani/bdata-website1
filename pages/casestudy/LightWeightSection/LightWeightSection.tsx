@@ -9,11 +9,11 @@ import {
 } from "../../../styles/styledComponents/caseStudyLightWeightSection.style";
 import DownlaodWhitePaper from "../../../components/Home/DownloadWhitePaper/DownloadWhitePaper";
 import BookImg from "../../../components/BookImg/BookImg";
-import resourceConstant from "../../../utils/resources.constants"
+import caseStudyConstants from "../../../utils/caseStudy.constants"
 import { Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-const screen = require("public/img/screen.webp");
-const technology = require("public/img/technology.webp");
+const automotive = require("public/img/automotive.png");
+const goldmine = require("public/img/goldmine.png");
 
 export default function LightWeightSection() {
   const [show, setShow] = useState(false);
@@ -36,19 +36,17 @@ export default function LightWeightSection() {
           <div className="row">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <SectionImage>
-                <BookImg title={resourceConstant.useCase1.title} img={screen} />
+                <BookImg title={caseStudyConstants.useCase.section1.title} img={automotive} />
                 {/* <img className="img w-100" src={telecom}></img> */}
               </SectionImage>
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  {resourceConstant.useCase1.title}
+                {caseStudyConstants.useCase.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  The automotive manufacturing floor is filled with robotics and other machines which are required to
-                  connect and communicate with each other; in case of a cyber attack, the company's entire operation will
-                  be disrupted, which will be a revenue loss, as well as a risk to the business continuit.
+                {caseStudyConstants.useCase.section1.subTitle}
                 </p>
                 <Button onClick={handleShow} id="useCase1" type="button" className="btn btn-primary">
                   Read More
@@ -59,20 +57,17 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <SectionImage>
-                <BookImg title={resourceConstant.useCase2.title} img={technology} />
+                <BookImg title={caseStudyConstants.useCase.section2.title} img={goldmine} />
                 {/* <img className="img w-100" src={defence} /> */}
               </SectionImage>
             </div>
             <div className="col-12 col-lg-8  col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  {resourceConstant.useCase2.title}
+                {caseStudyConstants.useCase.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  The gold mine processing facility, as well as IT infrastructure, is filled with robotics, equipment, conveyors,
-                  computer and other machines which are required to connect and communicate with each other; in case
-                  of a cyber attack, the company's entire operation will be disrupted, which will be a revenue loss, as well as
-                  a risk to the business continuity.
+                {caseStudyConstants.useCase.section2.subTitle}
                 </p>
                 <Button onClick={handleShow} id="useCase2" type="button" className="btn btn-primary">
                   Read More

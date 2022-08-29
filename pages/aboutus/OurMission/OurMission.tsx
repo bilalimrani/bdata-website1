@@ -1,6 +1,7 @@
 import React from "react";
 import MissionWrapper from "./OurMission.style";
 import Image from "next/image";
+import aboutUsConstant from "../../../utils/aboutUs.constants";
 
 const OurMissionImg = require("public/img/oruMission.gif");
 
@@ -27,12 +28,9 @@ export default function OurMission() {
           </div>
           <div className="col-12 col-md-6 col-lg-5">
             <div className="head-wrapper mb-5">
-              <h3 className="fw-bold">Our Mission</h3>
+              <h3 className="fw-bold">{aboutUsConstant.mission.title}</h3>
               <p>
-                At BDATA, We are on a mission to provide a password less robust
-                machine based multilayer cyber security soulution that is
-                affordable for customers to achive offensive and defensive cyber
-                security.
+              {aboutUsConstant.mission.subTitle}
               </p>
             </div>
             {/* <div className="head-wrapper mb-5">

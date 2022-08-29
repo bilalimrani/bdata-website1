@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { ValueWrapper } from "../../../styles/styledComponents/Team.style.js";
+import aboutUsConstant from "../../../utils/aboutUs.constants";
 const icon1 = require("public/img/founder.svg");
 const icon2 = require("public/img/cofounder.svg");
 const icon3 = require("public/img/dirctor-cyberSecurity.svg");
@@ -16,7 +17,7 @@ export default function Guide() {
   return (
     <ValueWrapper>
       <div className="container">
-      <h2 className="fw-bold text-center m-0">Our Team</h2>
+      <h2 className="fw-bold text-center m-0">{aboutUsConstant.team.title}</h2>
         <div className="row my-3 mb-5">
           <div className="col-12 col-lg-6 col-xl-4 py-3">
             <div className="custom-card">

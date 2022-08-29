@@ -38,7 +38,7 @@ const Button = styled.button`
   border: 1px solid #004d88;
   color: #004d88;
   background: transparent;
-  padding: 9px 40px;
+  padding: 9px 60px;
 
   &:hover {
     background-color: #004d88 !important;

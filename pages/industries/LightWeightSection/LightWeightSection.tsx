@@ -8,6 +8,7 @@ import {
   SectionImage,
   UL,
 } from "../../../styles/styledComponents/industriesLightWeightSection.style";
+import industriesConstants from "../../../utils/industries.constants";
 const telecom = require("public/img/telecom.png");
 const defence = require("public/img/defence.png");
 const oilgas = require("public/img/oil&gas.png");
@@ -28,13 +29,10 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Telecom
+                  {industriesConstants.lightWeightSection.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  Telecommunications is one of the most vulnerable industries to
-                  cyber-attacks. Large customer bases provide large areas of
-                  attack, and a successful cyber-attack could have far-reaching
-                  consequences.
+                {industriesConstants.lightWeightSection.section1.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More
@@ -51,13 +49,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Defense
+                {industriesConstants.lightWeightSection.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  High-volume secure data-streaming has become a necessity for
-                  many critical defense applications. A comprehensive intrusion
-                  detection system that protects against ransomware, malware,
-                  and other advanced cyber-attacks.
+                {industriesConstants.lightWeightSection.section2.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More
@@ -74,13 +69,10 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Oil & Gas
+                {industriesConstants.lightWeightSection.section3.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  The Oil & Gas industry relies on an array of pumps, sensors,
-                  meters, and other machinery. Unexpected maintenance or
-                  malicious interference can halt production and cause immense
-                  losses.
+                {industriesConstants.lightWeightSection.section3.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More
@@ -97,12 +89,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Utilities
+                {industriesConstants.lightWeightSection.section4.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  Critical infrastructures are more and more dependent upon an
-                  increasingly scattered network of sensors and meters. Our
-                  remote access identity management and device auditing.
+                {industriesConstants.lightWeightSection.section4.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More

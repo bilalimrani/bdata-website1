@@ -26,6 +26,7 @@ export default {
 another network.`,
     bgImage: require("public/img/banner-bg.svg"),
     sideImage: bdataPattern,
+    button: "Start free trial"
   },
   whitePapper: {
     banner: {
@@ -33,8 +34,47 @@ another network.`,
       bgImage: require("public/img/resources1.svg"),
     },
   },
+  lightWeightSection: {
+    section1: {
+      title: "Zero trust - a multilayer cyber security for industrial control system",
+      subTitle: "BIoT Security Technology IS a lightweight multilayer cyber security solution which enables companies to achieve cyber security compliances with respect to TSA, IECT 62443, ISO, NIST, HIPAA, and other local and international standards."
+    },
+    section2: {
+      title: "Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices",
+      subTitle1: "BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc.",
+      subTitle2: "Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers."
+    },
+    section3: {
+      title: "enhance cyber security for azure and aws iot hub using biot",
+      subTitle: "BIoT Security technology enhance azure and aws iot hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication."
+    },
+    section4: {
+      title: "Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices",
+      subTitle1: "BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc.",
+      subTitle2: "Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers."
+    },
+  },
+  customers: {
+    title: "Customer Stories",
+    story1: {
+      name: "James Castle",
+      designation: "CEO, CISO & CSO, Terranova Cyber Solutions",
+      message: "We are excited to work with BDATA and deploy BIoT technology for defense high value critical application that include drones and other assets. We strongly believe in the success of BIoT technology deployment to protect critical infrastructures” said James Castle, CEO, CISO & CSO, Terranova Cyber Solutions."
+    },
+    story2: {
+      name: "Jeff Brown",
+      designation: "Senior sales director",
+      message: "Our industrial-grade connectivity devices are an ideal fit for BDATA’s blockchain-enabled IoT solution,” said Jeff Brown, senior sales director for Advantech’s Industrial IoT Group. “We’re continually looking for domain-focused, strategic partnerships that help our customers achieve successful IoT connections–all more securely, and with fewer challenges”"
+    },
+    story3: {
+      name: "Wassim Ghadban",
+      designation: "Vice President, Global Digital & Innovation",
+      message: "Many digital transformation projects are lacking strong cyber security, considering BIoT with 8D digital twin will enable companies to achieve financial and operational benefits without compromising security on critical infrastructure, said Wassim Ghadban, Vice President, Global Digital & Innovation, SNC Lavalin."
+    }
+  },
   awards: {
     title: "Awards",
+    subTitle: "BDATA won several global cyber security competitions and awards.",
     data: [
       {
         image: Rogers,
@@ -52,7 +92,7 @@ another network.`,
         image: HelloTomarrow,
         text: "best iot cyber security product award",
       },
-      
+
     ],
   },
   partners: {

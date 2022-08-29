@@ -2,6 +2,7 @@ import React from "react";
 // import ReactPlayer from "react-player";
 import { BannerWrapper, A } from "./Banner.style";
 // import BannerVideo from "../../../public/img/homeBanner.mp4";
+import homeConstants from "../../../utils/home.constants";
 
 export default function Banner({ data = {}, sideImage = true }) {
   const { bgImage, title, subTitle }: any = data;
@@ -31,7 +32,7 @@ export default function Banner({ data = {}, sideImage = true }) {
         target="_blank"
         className="btn btn-light"
       >
-        Start free trial
+       {homeConstants.banner.button}
       </A>
       {/* <div className="container">
         <div className="banner-content-wrapper">

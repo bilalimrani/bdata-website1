@@ -56,7 +56,7 @@ export default function Awards() {
               {homeConstants?.awards.title}
             </h3>
             <h5 className="text-center custom-bottom-padding m-0">
-              BDATA won several global cyber security competitions and awards.
+            {homeConstants?.awards.subTitle}
             </h5>
             {/* <Slider {...settings}> */}
             <div className="row">

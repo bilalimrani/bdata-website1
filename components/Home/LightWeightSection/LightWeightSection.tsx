@@ -12,6 +12,7 @@ import {
   SectionImage,
   UL,
 } from "./LightWeightSection.style";
+import homeConstants from "../../../utils/home.constants";
 const Frame78 = require("public/img/zero-trust.webp");
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
@@ -39,15 +40,15 @@ export default function LightWeightSection() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
-              <BookImg title="Zero trust - a multilayer cyber security for industrial control system" img={Frame78}/>
+              <BookImg title={homeConstants.lightWeightSection.section1.title} img={Frame78} />
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
-                Zero trust - a multilayer cyber security for industrial control system
+                  {homeConstants.lightWeightSection.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
-                BIoT Security Technology IS a lightweight multilayer cyber security solution which enables companies to achieve cyber security compliances with respect to TSA, IECT 62443, ISO, NIST, HIPAA, and other local and international standards. 
+                  {homeConstants.lightWeightSection.section1.subTitle}
                 </p>
                 {/* <UL>
                   <li>Visit B Data & Humber College Cyber Lab</li>
@@ -63,7 +64,7 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
-            <BookImg title="Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices" img={screen}/>
+              <BookImg title={homeConstants.lightWeightSection.section2.title} img={screen} />
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
               </SectionImage> */}
@@ -71,13 +72,13 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
-                Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices
+                  {homeConstants.lightWeightSection.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
-                BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc. 
+                  {homeConstants.lightWeightSection.section2.subTitle1}
                 </p>
                 <p className="custom-padding m-0">
-                Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers. 
+                  {homeConstants.lightWeightSection.section2.subTitle2}
                 </p>
                 <Button onClick={handleShow} id="section2" type="button" className="btn btn-primary">
                   Download
@@ -87,7 +88,7 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
-            <BookImg title="enhance cyber security for azure and aws iot hub using biot" img={technology}/>
+              <BookImg title={homeConstants.lightWeightSection.section3.title} img={technology} />
 
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
@@ -96,20 +97,20 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
-                enhance cyber security for azure and aws iot hub using biot
+                {homeConstants.lightWeightSection.section3.title}
                 </h3>
                 <p className="custom-padding m-0">
-                BIoT Security technology enhance azure and aws iot hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.
+                {homeConstants.lightWeightSection.section3.subTitle}
                 </p>
-                  <Button onClick={handleShow} id="section3" type="button" className="btn btn-primary">
-                    Download
-                  </Button>
+                <Button onClick={handleShow} id="section3" type="button" className="btn btn-primary">
+                  Download
+                </Button>
               </ContainerDefault>
             </div>
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
-            <BookImg title="Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices" img={screen}/>
+              <BookImg title={homeConstants.lightWeightSection.section4.title} img={screen} />
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
               </SectionImage> */}
@@ -117,24 +118,24 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
-                Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices
+                {homeConstants.lightWeightSection.section4.title}
                 </h3>
                 <p className="custom-padding m-0">
-                BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc. 
+                {homeConstants.lightWeightSection.section4.subTitle1}
                 </p>
                 <p className="custom-padding m-0">
-                Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers. 
+                {homeConstants.lightWeightSection.section4.subTitle2}
                 </p>
-                  <Button onClick={handleShow} id="section4" type="button" className="btn btn-primary">
-                    Download
-                  </Button>
+                <Button onClick={handleShow} id="section4" type="button" className="btn btn-primary">
+                  Download
+                </Button>
               </ContainerDefault>
             </div>
           </div>
         </div>
         <Modal className="modal-xl" show={show} onHide={handleClose}>
           <Modal.Body>
-            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit}  handleClose={handleClose} />
+            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit} handleClose={handleClose} />
           </Modal.Body>
         </Modal>
       </InfoArea>

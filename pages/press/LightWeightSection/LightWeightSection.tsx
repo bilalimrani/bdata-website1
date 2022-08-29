@@ -7,6 +7,7 @@ import {
   ContainerDefault,
   SectionImage,
 } from "../../../styles/styledComponents/pressLightWeightSection.style";
+import pressConstant from "../../../utils/press.constants";
 const microservice = require("public/img/microservice.png");
 const lionliar = require("public/img/lionliar.png");
 const telus = require("public/img/telus.png");
@@ -28,15 +29,10 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Collaboration with Supermicro computer Inc.
+                  {pressConstant.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  BDATA Solution and Supermicro computerInc are collaborating to
-                  offer the one of it’s kind, multi-layared end to end highly
-                  secured Blockchain IOT (BIOT) embeded Gateway Devices to
-                  provide data immulability and secure connectivity for critical
-                  assets remote monitering and operation in iol and gas, power,
-                  defence, health care and smart city projects.
+                  {pressConstant.section1.subTitle}
                 </p>
                 <Button
                   href="https://innovationfactory.ca/bdata-solutions-and-supermicro-computer-inc-announces-partnership/"
@@ -57,14 +53,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  BDATA win top prizes in Lions Lair competition
+                  {pressConstant.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  BDATA Solution won the 2nd prices in Innovation factory’s
-                  annual Lions Lair pitch competition sixteen innovativestartups
-                  pitch to three industry - leading judges and a television
-                  audience during the virtual bracket style tournament that took
-                  place on september 21-24.
+                  {pressConstant.section2.subTitle}
                 </p>
                 <Button
                   className="btn btn-primary"
@@ -85,15 +77,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-8 col-xl-9  py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Collaboration with Telus
+                  {pressConstant.section3.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  BDATA Solutions Inc is collaborating with Telus to implement
-                  blockchain connectivity of IOT devices using BDATA-Blockchain
-                  on Telus 4G/5G network in canada. This provides password-less
-                  highly secure and desirable intelligent plant management
-                  system (IPMS) as an industry 4.0 platform to process
-                  industries.
+                  {pressConstant.section3.subTitle}
                 </p>
                 <Button
                   href="https://theforge.mcmaster.ca/b-data-solutions-and-telus-collaboration/"
@@ -114,11 +101,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-8 col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Congratulation Team BDATA
+                  {pressConstant.section4.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  We are now in SEMI-FInal Canadian export challenge. Register
-                  to watch live ‘16 september 10:30 AM - Pitch Compitition
+                  {pressConstant.section4.subTitle}
                 </p>
                 <Button
                   href="https://www.startupcan.ca/cxc-ontario/"
@@ -139,12 +125,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                  Win 2nd Place
+                  {pressConstant.section5.title}
                 </h3>
                 <p className="custom-padding m-0">
-                  BDATA is collaborating with Telus to implement connectivity of
-                  IoT devices using BDATA-Blockchain on TELUS 4G/5G network in
-                  Canada.
+                  {pressConstant.section5.subTitle}
                 </p>
                 <Button
                   href="https://www.linkedin.com/feed/update/urn:li:activity:6857381812528799744/"
