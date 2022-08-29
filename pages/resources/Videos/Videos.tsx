@@ -40,7 +40,9 @@ export default function Videos() {
         <h3 className="text-center m-0  fw-bold">Videos</h3>
       </SectionPadding>
       <div className="row">
-        {data?.map((item, index) => (
+        
+        <h3 className="text-center m-0 ">Coming Soon!</h3>
+        {/* {data?.map((item, index) => (
           <div key={index} className="col-sm-6 col-lg-4 custom-padding">
             <CardWrapper>
               <iframe
@@ -55,7 +57,7 @@ export default function Videos() {
               </Button>
             </CardWrapper>
           </div>
-        ))}
+        ))} */}
       </div>
     </PaperWraper>
   );

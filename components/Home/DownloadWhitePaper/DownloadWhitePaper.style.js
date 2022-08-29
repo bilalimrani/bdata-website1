@@ -131,8 +131,10 @@ text-align: center;
 letter-spacing: 0.8px;
 
 color: #000000;
-margin-top: 30px;
-margin-bottom: 50px;
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 120px;
+margin-right: 120px;
   };
   .btnGroup{
     display: flex;

@@ -23,6 +23,11 @@ img{
     max-height:300px !important;
    
 }
+.heading{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 767px) {
 text-align:center;
   }

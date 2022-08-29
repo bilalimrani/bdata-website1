@@ -40,9 +40,6 @@ export default function LightWeightSection() {
           <div className="row">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <BookImg title="Zero trust - a multilayer cyber security for industrial control system" img={Frame78}/>
-              {/* <SectionImage>
-                <img className="img w-100" src={Frame78}></img>
-              </SectionImage> */}
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
