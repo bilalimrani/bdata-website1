@@ -68,7 +68,7 @@ export default function LightWeightSection() {
                 </p>
                 <Button
                   className="btn btn-primary"
-                  href="https://theforge.mcmaster.ca/2020/09/24/imaginable-solutions-and-bdata-win-top-prizes-in-lions-lair/"
+                  href="https://theforge.mcmaster.ca/imaginable-solutions-and-bdata-win-top-prizes-in-lions-lair/"
                   target="_blank"
                 >
                   Read More
@@ -96,7 +96,7 @@ export default function LightWeightSection() {
                   industries.
                 </p>
                 <Button
-                  href="https://theforge.mcmaster.ca/2020/06/30/b-data-solutions-and-telus-collaboration/"
+                  href="https://theforge.mcmaster.ca/b-data-solutions-and-telus-collaboration/"
                   target="_blank"
                   className="btn btn-primary"
                 >

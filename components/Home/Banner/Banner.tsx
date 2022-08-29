@@ -18,12 +18,14 @@ export default function Banner({ data = {}, sideImage = true }) {
     >
       {/* <ReactPlayer url={BannerVideo} /> */}
 
-      <video autoPlay loop muted>
+      <img src="../../../public/img/homeBanner.gif" />
+
+      {/* <video autoPlay loop muted>
         <source
           type="video/mp4"
           src="https://res.cloudinary.com/dzyw7ozvf/video/upload/v1661409304/website_VIDEO_xwwqsv.mp4"
         />
-      </video>
+      </video> */}
       <A
         href="https://demo.org.bdata.ca"
         target="_blank"
