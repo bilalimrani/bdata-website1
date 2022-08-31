@@ -2,7 +2,6 @@ import React from "react";
 // import ReactPlayer from "react-player";
 import { BannerWrapper, A } from "./Banner.style";
 // import BannerVideo from "../../../public/img/homeBanner.mp4";
-import homeConstants from "../../../utils/home.constants";
 
 export default function Banner({ data = {}, sideImage = true }) {
   const { bgImage, title, subTitle }: any = data;
@@ -17,6 +16,10 @@ export default function Banner({ data = {}, sideImage = true }) {
     //   backgroundRepeat: "no-repeat",
     // }}
     >
+      {/* <video autoplay muted loop id="myVideo">
+        <source src={BannerVideo} type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video> */}
       {/* <ReactPlayer url={BannerVideo} /> */}
 
       {/* <img src="../../../public/img/homeBanner.gif" /> */}
@@ -24,7 +27,7 @@ export default function Banner({ data = {}, sideImage = true }) {
       <video autoPlay loop muted>
         <source
           type="video/mp4"
-          src="https://res.cloudinary.com/dzyw7ozvf/video/upload/v1661409304/website_VIDEO_xwwqsv.mp4"
+          src="https://s3.ca-central-1.amazonaws.com/dev.bdata.ca/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(1).mp4"
         />
       </video>
       <A
@@ -32,9 +35,9 @@ export default function Banner({ data = {}, sideImage = true }) {
         target="_blank"
         className="btn btn-light"
       >
-       {homeConstants.banner.button}
+        Start free trial
       </A>
-      {/* <div className="container">
+    {/* <div className="container">
         <div className="banner-content-wrapper">
           <h2 className="fw-bold">{title}</h2>
           {subTitle && <p>{subTitle}</p>}
