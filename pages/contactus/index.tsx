@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Banner from "../../components/Home/Banner/Banner";
+import Banner from "../../components/ContactUs/Banner/Banner";
 import Contact from "../../components/ContactUs/ContactUs/ContactUs";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -15,7 +15,7 @@ const ContactUs = () => {
       </Head>
       <Header />
       <MainWrapper>
-        <Banner data={contactUsConstants?.banner} />
+        <Banner />
         <Contact />
       </MainWrapper>
       <Footer />

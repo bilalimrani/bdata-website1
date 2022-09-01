@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import Banner from "../../components/Home/Banner/Banner";
+import Banner from "./Banner/Banner";
 import AllResources from "./AllResources/AllResources";
 import MainWrapper from "../style.js";
 import resourcesConsonents from "../../utils/resources.constants";
@@ -15,7 +15,7 @@ const Resources = () => {
       </Head>
       <Header />
       <MainWrapper>
-        <Banner data={resourcesConsonents?.banner} />
+        <Banner />
         <AllResources />
       </MainWrapper>
       <Footer />
