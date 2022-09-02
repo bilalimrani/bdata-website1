@@ -12,6 +12,9 @@ import BiotProduct from "../../components/Products/BiotProducts/BiotProducts";
 import ContactForm from "../../components/Products/ContactForm/ContactUs";
 import MainWrapper from "../style.js";
 const identityAccess = require("public/img/identityAccess.png");
+import PrductsListing from "./PrductsListing/PrductsListing";
+// import ProductDetailsHub from "./PrductsListing/ProductDetailsHub";
+// import ProductDetailsFingerPrint from "./PrductsListing/ProductDetailsFingerPrint";
 
 const Products = () => {
   return (
@@ -21,21 +24,24 @@ const Products = () => {
       </Head>
       <Header />
       <MainWrapper>
-        <Banner data={productConstants?.banner} />
-        <div className="container">
+      <PrductsListing />
+      {/* <ProductDetailsHub /> */}
+      {/* <ProductDetailsFingerPrint /> */}
+        {/* <Banner data={productConstants?.banner} /> */}
+        {/* <div className="container">
           <IdentityAccess>
             <h3 className="text-center m-0 fw-bold">
               {productConstants?.identityAccess}
             </h3>
             <img src={identityAccess} />
           </IdentityAccess>
-        </div>
-        <IdentityBottom>
+        </div> */}
+        {/* <IdentityBottom>
           <div className="container">
             <p>{productConstants?.identityBottomTxt}</p>
           </div>
-        </IdentityBottom>
-        <BiotProduct />
+        </IdentityBottom> */}
+        {/* <BiotProduct /> */}
         {/* <ContactForm /> */}
       </MainWrapper>
       <Footer />
