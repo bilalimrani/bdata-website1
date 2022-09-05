@@ -13,7 +13,7 @@ import BiotProduct from "../../components/Products/BiotProducts/BiotProducts";
 import ContactForm from "../../components/Products/ContactForm/ContactUs";
 import MainWrapper from "../style.js";
 const identityAccess = require("public/img/identityAccess.png");
-import PrductsListing from "./PrductsListing/PrductsListing";
+import ProductsListing from "./ProductsListing/PrductsListing";
 // import ProductDetailsHub from "./PrductsListing/ProductDetailsHub";
 // import ProductDetailsFingerPrint from "./PrductsListing/ProductDetailsFingerPrint";
 
@@ -24,8 +24,9 @@ const Products = () => {
         <title>Products</title>
       </Head>
       <Header />
+      <Banner />
       <MainWrapper>
-      <PrductsListing />
+      <ProductsListing />
       {/* <ProductDetailsHub /> */}
       {/* <ProductDetailsFingerPrint /> */}
         {/* <Banner /> */}
