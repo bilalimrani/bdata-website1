@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import BannerImage from "public/img/resources.svg";
-import bdataPattern from "public/img/right-logo.svg";
+import BannerImage from "public/img/banner/resources.svg";
 
 const BannerWrapper = styled.div`
-  height: 500px;
+  height: 480px;
   background-color: black;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: bottom right;
   display: flex;
   align-items: center;
@@ -22,22 +21,6 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 767px) {
     height: 300px;
-  }
-  &::before {
-    content: url(${bdataPattern});
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 90px;
-    height: 315px;
-    @media (max-width: 991px) {
-      width: 75px;
-      height: 215px;
-    }
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
   .banner-content-wrapper {
     max-width: 680px;

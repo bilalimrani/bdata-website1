@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BannerImage from "public/img/contactus-banner.svg";
+import BannerImage from "public/img/banner/contact.svg";
 // import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`

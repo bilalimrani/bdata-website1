@@ -1,37 +1,55 @@
 import styled from "styled-components";
+import BannerImage from "public/img/banner/press.svg";
 
 const BannerWrapper = styled.div`
   height: 480px;
-  background-color:black;
+  background-color: black;
+  background-image: url(${BannerImage});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  color:white !important;
+  @media (max-width: 1199px) {
+    background-position: bottom right -90px;
+  }
   @media (max-width: 991px) {
-    height: 380px;
+    height: 450px;
   }
   @media (max-width: 767px) {
     height: 300px;
   }
-  h2{
-    color:white;
-    margin-bottom:50px;
-    @media (max-width: 1199px) {
-      margin-bottom:40px;
-    }
+  .banner-content-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 111;
+  }
+  h2 {
+    color: white;
+    font-weight: 900 !important;
+    margin: 0 !important;
+    margin-bottom: 50px !important;
     @media (max-width: 991px) {
-      margin-bottom:35px;
+      margin-bottom: 30px !important;
     }
     @media (max-width: 767px) {
-      margin-bottom:25px;
+      margin-bottom: 20px !important;
     }
   }
-
-
-  
+  .custom-btn-white {
+    background: white;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #004d88;
+    box-shadow: inset 0px -2px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+  }
 `;
+
 const Button = styled.button`
   background: transparent;
   border: 1px solid white;
@@ -47,4 +65,4 @@ const Button = styled.button`
   }
 `;
 
-export { BannerWrapper,Button };
+export { BannerWrapper, Button };

@@ -3,7 +3,7 @@ import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import MainWrapper from "../style.js";
-import Banner from "../../components/Home/Banner/Banner";
+import Banner from "./Banner/Banner";
 import LightWeightSection from "./LightWeightSection/LightWeightSection";
 import pressConstants from "../../utils/press.constants";
 
@@ -15,7 +15,7 @@ const ContactUs = () => {
       </Head>
       <Header />
       <MainWrapper>
-        <Banner data={pressConstants.banner} />
+        <Banner />
         <LightWeightSection />
       </MainWrapper>
       <Footer />

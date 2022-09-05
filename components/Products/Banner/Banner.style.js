@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import BannerImage from "public/img/resources.svg";
+import BannerImage from "public/img/banner/product.svg";
 import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
-  height: 500px;
+  height: 480px;
   background-color: black;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,22 +23,6 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 767px) {
     height: 300px;
-  }
-  &::before {
-    content: url(${bdataPattern});
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 90px;
-    height: 315px;
-    @media (max-width: 991px) {
-      width: 75px;
-      height: 215px;
-    }
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
   .banner-content-wrapper {
     max-width: 680px;
@@ -69,17 +53,27 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.button`
-  background: transparent;
+background: white;
   border: 1px solid white;
-  color: white;
+  color:  #004D88;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  padding: 17px 32px;
+  padding: 12px 32px;
+  border-radius:8px;
   transition: 0.3s ease;
+  @media (max-width: 767px) {
+    padding: 8px 24px;
+    font-size:14px;
+  }
+  @media (max-width: 480px) {
+    padding: 6px 20px;
+    font-size:12px;
+  }
   &:hover {
-    color: #004d88;
-    border: 1px solid transparent;
+    background:transparent;
+    border:1px solid white;
+    color: white;
   }
 `;
 
