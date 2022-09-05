@@ -13,7 +13,7 @@ import BiotProduct from "../../components/Products/BiotProducts/BiotProducts";
 import ContactForm from "../../components/Products/ContactForm/ContactUs";
 import MainWrapper from "../style.js";
 const identityAccess = require("public/img/identityAccess.png");
-import ProductsListing from "./ProductsListing/PrductsListing";
+import ProductsListing from "./ProductsListing/ProductsListing";
 // import ProductDetailsHub from "./PrductsListing/ProductDetailsHub";
 // import ProductDetailsFingerPrint from "./PrductsListing/ProductDetailsFingerPrint";
 

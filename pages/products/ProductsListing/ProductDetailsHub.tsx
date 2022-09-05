@@ -7,7 +7,7 @@ import {
   FullContainer,
   CustomUl,
   FeatureListing,
-} from "./productListing.style";
+} from "../../../styles/styledComponents/ProductListing.style";
 const product2 = require("public/img/product2.svg");
 const Product1 = require("public/img/product1.svg");
 import productConstants from "../../../utils/products.constants";

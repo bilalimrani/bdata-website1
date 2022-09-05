@@ -1,5 +1,4 @@
 import styled from "styled-components";
-// const bgImage = require("public/img/bg-image.png");
 import bg_pattern from "public/img/imageas.png";
 
 const ProuctListing = styled.div`
@@ -157,9 +156,7 @@ margin:0;
     background: #2B7BB9;
   }
 `
-
-export {
-  ProuctListing,
+export {   ProuctListing,
   Section2,
   Button,
   InfoArea,
@@ -168,5 +165,4 @@ export {
   UL,
   CustomUl,
   FeatureListing,
-  FullContainer
-};
+  FullContainer };
