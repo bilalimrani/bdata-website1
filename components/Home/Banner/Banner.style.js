@@ -2,7 +2,7 @@ import styled from "styled-components";
 // import bdataPattern from "public/img/bannerSidebar.png";
 
 const BannerWrapper = styled.div`
-  height: 775px;
+  height: auto;
   display: flex;
   background: black;
   position:relative;
@@ -10,30 +10,30 @@ const BannerWrapper = styled.div`
    align-items: center;
   justify-content: center;
   text-align: center;
-  @media (max-width: 1649px) {
-    height: 615px;
-  }
-  @media (max-width: 1530px) {
-    height: 560px;
-  }
-  @media (max-width: 1378px) {
-    height: 485px;
-  }
-  @media (max-width: 1199px) {
-    height: 400px;
-  }
-  @media (max-width: 991px) {
-    height: 310px;
-  }
-  @media (max-width: 767px) {
-    height: 235px;
-  }
-  @media (max-width: 575px) {
-    height: 195px;
-  }
-  @media (max-width: 479px) {
-    height: 130px;
-  }
+  // @media (max-width: 1700px) {
+  //   height: 615px;
+  // }
+  // @media (max-width: 1530px) {
+  //   height: 560px;
+  // }
+  // @media (max-width: 1378px) {
+  //   height: 485px;
+  // }
+  // @media (max-width: 1199px) {
+  //   height: 400px;
+  // }
+  // @media (max-width: 991px) {
+  //   height: 310px;
+  // }
+  // @media (max-width: 767px) {
+  //   height: 235px;
+  // }
+  // @media (max-width: 575px) {
+  //   height: 195px;
+  // }
+  // @media (max-width: 479px) {
+  //   height: 130px;
+  // }
   
   a{
     position: absolute;

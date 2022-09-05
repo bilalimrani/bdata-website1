@@ -3,12 +3,12 @@ import BannerImage from "public/img/banner/contact.svg";
 // import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
-  height: 500px;
+  height: 620px;
   background-color: black;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
