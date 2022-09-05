@@ -93,7 +93,7 @@ export default function DownlaodWhitePaper(props) {
       }
     })
     axios
-      .post("http://localhost:3000/api/downloadWhitepaper", {
+      .post("http://54.202.19.104:3000/api/downloadWhitepaper", {
         data,
         subject: "Thanks for Downlaoding our Resources!",
         attachments: [fileName]

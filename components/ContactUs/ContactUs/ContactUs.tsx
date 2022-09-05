@@ -27,7 +27,7 @@ export default function Contact() {
     }
     event({ actions: "contactUs", params: data })
     axios
-      .post("http://localhost:3000/api/contactUs", {
+      .post("http://54.202.19.104:3000/api/contactUs", {
         data,
         subject: "Thanks for Contacting Us!",
       })

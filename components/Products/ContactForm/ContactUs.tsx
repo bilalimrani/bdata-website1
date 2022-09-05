@@ -13,7 +13,7 @@ export default function Contact() {
       country: selectedCountry.name
     }
     axios
-      .post("http://localhost:3000/api/email", {
+      .post("http://54.202.19.104:3000/api/email", {
         data,
         subject: "Download WhitePaper",
         attachments: [
