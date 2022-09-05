@@ -5,6 +5,7 @@ import {
   InfoArea,
   ContainerDefault,
 } from "../../../styles/styledComponents/ProductListing.style";
+import links from "../../../utils/navbar.constants";
 const product2 = require("public/img/product2.svg");
 const Product1 = require("public/img/product1.svg");
 import productConstants from "../../../utils/products.constants";
@@ -28,9 +29,10 @@ export default function LightWeightSection() {
                 <p className="custom-padding m-0">
                   {productConstants.products.section1.subTitle}
                 </p>
+
                 <Button
+                  href="/products/ProductsListing/ProductDetailsHub"
                   className="btn btn-primary"
-                  href="/products/ProductsListing/ProductDetailsFingerPrint"
                 >
                   Read More
                 </Button>
@@ -52,7 +54,7 @@ export default function LightWeightSection() {
                   {productConstants.products.section2.subTitle}
                 </p>
                 <Button
-                  href="/products/ProductsListing/ProductDetailsHub"
+                  href="/products/ProductsListing/ProductDetailsFingerPrint"
                   className="btn btn-primary"
                 >
                   Read More

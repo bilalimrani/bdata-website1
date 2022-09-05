@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import links from "../../utils/navbar.constants";
 import { NavContainer, NavbarLogo, NavbarWrapper } from "./Header.style";
+import { route } from "next/dist/next-server/server/router";
 const whiteLogo = require("public/img/footerlogo.svg");
 const Logo = require("public/img/logo.svg");
 
@@ -66,9 +67,8 @@ export default function Header() {
                     <li key={index} className="nav-item">
                       <Link href={item?.link}>
                         <a
-                          className={`${
-                            router.pathname == item.link ? "active" : ""
-                          } nav-link`}
+                          className={`${router.pathname == item.link || router.pathname == item.subLink || router.pathname == item.subLink1 ? "active" : ""
+                            } nav-link`}
                         >
                           {item?.name}
                         </a>

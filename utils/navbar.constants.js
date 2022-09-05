@@ -6,6 +6,8 @@ export default [
   {
     name: "products",
     link: "/products",
+    subLink: "/products/ProductsListing/ProductDetailsFingerPrint",
+    subLink1: "/products/ProductsListing/ProductDetailsHub"
   },
   {
     name: "Industries",
