@@ -31,7 +31,6 @@ export default function LightWeightSection() {
                 <Button
                   className="btn btn-primary"
                   href="/products/ProductsListing/ProductDetailsFingerPrint"
-                  target="_blank"
                 >
                   Read More
                 </Button>
@@ -54,7 +53,6 @@ export default function LightWeightSection() {
                 </p>
                 <Button
                   href="/products/ProductsListing/ProductDetailsHub"
-                  target="_blank"
                   className="btn btn-primary"
                 >
                   Read More
