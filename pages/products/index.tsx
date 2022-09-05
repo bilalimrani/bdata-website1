@@ -26,9 +26,9 @@ const Products = () => {
       <Header />
       <Banner />
       <MainWrapper>
-      <ProductsListing />
-      {/* <ProductDetailsHub /> */}
-      {/* <ProductDetailsFingerPrint /> */}
+        <ProductsListing />
+        {/* <ProductDetailsHub /> */}
+        {/* <ProductDetailsFingerPrint /> */}
         {/* <Banner /> */}
         {/* <div className="container">
           <IdentityAccess>
