@@ -5,9 +5,7 @@ export default async function (req, res) {
     console.log(req.body)
     let transporter = nodemailer.createTransport({
         service: "gmail",
-        pool: true,
         host: 'smtp.gmail.com',
-        secure: true, // use TLS
         auth: {
             user: "no_reply@bdata.ca",
             pass: "E=Q8bq>P",
