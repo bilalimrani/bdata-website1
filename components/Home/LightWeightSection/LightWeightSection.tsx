@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 // import Image from "next/image";
-import { Modal, Form } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import DownlaodWhitePaper from "../DownloadWhitePaper/DownloadWhitePaper";
 import "bootstrap/dist/css/bootstrap.css";
-import Link from "next/link";
+// import Link from "next/link";
 import {
   LightWeightSectionWrapper,
   Button,
   InfoArea,
   ContainerDefault,
-  SectionImage,
-  UL,
+  // SectionImage,
+  // UL,
 } from "./LightWeightSection.style";
 import homeConstants from "../../../utils/home.constants";
 const Frame78 = require("public/img/zero-trust.webp");
-const screen = require("public/img/screen.webp");
+const screen = require("public/img/section4.svg");
 const technology = require("public/img/technology.webp");
 
 import BookImg from "../../../components/BookImg/BookImg";
