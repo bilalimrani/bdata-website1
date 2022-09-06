@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import resourceConstant from "../../../utils/resources.constants"
+import resourceConstant from "../../../utils/resources.constants";
 import { SectionWrapper, Button } from "./DownloadWhitePaper.style";
-import { event } from "../../../lib/ga"
+import { event } from "../../../lib/ga";
 
 export default function DownlaodWhitePaper(props) {
   const [isLoading, setIsLoading] = useState(false);
-  const [msg, setMsg] = useState("")
-  const [name, setName] = useState("")
+  const [msg, setMsg] = useState("");
+  const [name, setName] = useState("");
   const [form, setForm] = useState({});
   const [fileName, setFileName] = useState<any>({});
-  useEffect(() => {
 
-    setMsg("Submit")
+  useEffect(() => {
+    setMsg("Submit");
     getWhitepaper(props);
-    console.log(props.data, "Asdfasdf")
+    console.log(props.data, "Asdfasdf");
     return () => {
       console.log("Component will be unmount");
     };
   }, []);
+
   const getWhitepaper = (props) => {
     if (props.data == "section1") {
-      setName(resourceConstant.section1.title)
+      setName(resourceConstant.section1.title);
       setFileName({
         filename: resourceConstant.section1.title,
         path: "public/bdata-whitepaper.pdf",
@@ -29,7 +30,7 @@ export default function DownlaodWhitePaper(props) {
       });
     }
     if (props.data == "section2") {
-      setName(resourceConstant.section2.title)
+      setName(resourceConstant.section2.title);
       {
         setFileName({
           filename: resourceConstant.section2.title,
@@ -39,7 +40,7 @@ export default function DownlaodWhitePaper(props) {
       }
     }
     if (props.data == "section3") {
-      setName(resourceConstant.section3.title)
+      setName(resourceConstant.section3.title);
       {
         setFileName({
           filename: resourceConstant.section3.title,
@@ -49,7 +50,7 @@ export default function DownlaodWhitePaper(props) {
       }
     }
     if (props.data == "section4") {
-      setName(resourceConstant.section4.title)
+      setName(resourceConstant.section4.title);
       {
         setFileName({
           filename: resourceConstant.section4.title,
@@ -59,7 +60,7 @@ export default function DownlaodWhitePaper(props) {
       }
     }
     if (props.data == "useCase1") {
-      setName(resourceConstant.useCase1.title)
+      setName(resourceConstant.useCase1.title);
       {
         setFileName({
           filename: resourceConstant.useCase1.title,
@@ -69,7 +70,7 @@ export default function DownlaodWhitePaper(props) {
       }
     }
     if (props.data == "useCase2") {
-      setName(resourceConstant.useCase2.title)
+      setName(resourceConstant.useCase2.title);
       {
         setFileName({
           filename: resourceConstant.useCase2.title,
@@ -81,25 +82,26 @@ export default function DownlaodWhitePaper(props) {
   };
   const submit = (e) => {
     e.preventDefault();
-    setMsg("Submit")
+    setMsg("Submit");
     const data = {
-      ...form
-    }
+      ...form,
+    };
     setIsLoading(true);
     event({
-      actions: "downloadWhitePaper", params: {
+      actions: "downloadWhitePaper",
+      params: {
         ...form,
-        fileName
-      }
-    })
+        fileName,
+      },
+    });
     axios
       .post("http://54.202.19.104:3000/api/downloadWhitepaper", {
         data,
         subject: "Thanks for Downlaoding our Resources!",
-        attachments: [fileName]
+        attachments: [fileName],
       })
       .then((res) => {
-        setMsg("Email has been sent.")
+        setMsg("Email has been sent.");
         // setIsLoading(false);
         props.handleClose();
       })
@@ -113,7 +115,7 @@ export default function DownlaodWhitePaper(props) {
   };
   const handleClose = () => {
     props.handleClose();
-  }
+  };
   return (
     <SectionWrapper>
       <h2 className="heading fw-bold">{name}</h2>
@@ -169,10 +171,10 @@ export default function DownlaodWhitePaper(props) {
             <p>
               B Data Solutions Inc. is committed to protecting and respecting
               your privacy, From time to time, we would like to contact you
-              about our products and services, as well as other content that
-              may be of interest to you. If you consent to us contacting you
-              for this purpose, please tick below to say how you would like us
-              to contact you:
+              about our products and services, as well as other content that may
+              be of interest to you. If you consent to us contacting you for
+              this purpose, please tick below to say how you would like us to
+              contact you:
             </p>
             <div className="form-check d-flex justify-content-left">
               <input
@@ -187,15 +189,20 @@ export default function DownlaodWhitePaper(props) {
                 Inc..{" "}
               </label>
             </div>
-            <p>
-              You can unsubscribe from these communications at any time.{" "}
-            </p>
+            <p>You can unsubscribe from these communications at any time. </p>
             <br />
             <div className="btnGroup">
-              <Button onClick={handleClose} className="btn btn-primary btn-block mb-4">
+              <Button
+                onClick={handleClose}
+                className="btn btn-primary btn-block mb-4"
+              >
                 Cancel
               </Button>
-              <Button disabled={isLoading} type="submit" className="btn btn-primary btn-block mb-4">
+              <Button
+                disabled={isLoading}
+                type="submit"
+                className="btn btn-primary btn-block mb-4"
+              >
                 {isLoading && (
                   <div className="spinner-border" role="status">
                     <span className="sr-only">Loading...</span>
@@ -209,4 +216,4 @@ export default function DownlaodWhitePaper(props) {
       </form>
     </SectionWrapper>
   );
-};
+}
