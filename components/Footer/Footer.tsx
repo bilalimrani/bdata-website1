@@ -101,25 +101,25 @@ export default function Footer() {
         </div>
         <div className="address-wrapper1 row">
           <div className="col-12 py-2 py-lg-3 col-lg-10 text-center-responsivness">
-              <p>© {new Date().getFullYear()} BDATA Inc.</p>
+            <p>© {new Date().getFullYear()} BDATA Solution Inc.</p>
           </div>
           <div className="col-12 py-2 py-lg-3 col-lg-2 text-center-responsivness">
-          <div className="socoalMediaLinks">
-                      <a href="#" className="custom-round-img twitter">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                      <a href="#" className="custom-round-img facebook">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/bdatasolutions/mycompany/"
-                        className="custom-round-img linkdin"
-                        target="_blank"
-                      >
-                        <i className="fab fa-linkedin-in"></i>
-                      </a>
-                    </div>
-                    </div>
+            <div className="socoalMediaLinks">
+              <a href="#" className="custom-round-img twitter">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="#" className="custom-round-img facebook">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/bdatasolutions/mycompany/"
+                className="custom-round-img linkdin"
+                target="_blank"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </FooterContainer>
