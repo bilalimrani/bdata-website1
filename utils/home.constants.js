@@ -50,9 +50,9 @@ another network.`,
         "Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers.",
     },
     section3: {
-      title: "enhance cyber security for azure and aws iot hub using biot",
+      title: "enhance cyber security for azure and AWS IoT hub using BIoT",
       subTitle:
-        "BIoT Security technology enhance azure and aws iot hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.",
+        "BIoT Security technology enhance azure and AWS IoT hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.",
     },
     section4: {
       title: "Protect Credentials Using BIoT Security Technology",
@@ -102,7 +102,7 @@ another network.`,
       },
       {
         image: HelloTomarrow,
-        text: "best iot cyber security product award",
+        text: "best IoT cyber security product award",
       },
     ],
   },

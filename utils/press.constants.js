@@ -8,7 +8,7 @@ export default {
     title: "Collaboration with Supermicro computer Inc.",
     subTitle: `BDATA Solution and Supermicro computerInc are collaborating to
     offer the one of it’s kind, multi-layared end to end highly
-    secured Blockchain IOT (BIOT) embeded Gateway Devices to
+    secured Blockchain IoT (BIoT) embeded Gateway Devices to
     provide data immulability and secure connectivity for critical
     assets remote monitering and operation in iol and gas, power,
     defence, health care and smart city projects.`,
@@ -24,7 +24,7 @@ export default {
   section3: {
     title: "Collaboration with Telus",
     subTitle: `BDATA Solutions Inc is collaborating with Telus to implement
-    blockchain connectivity of IOT devices using BDATA-Blockchain
+    blockchain connectivity of IoT devices using BDATA-Blockchain
     on Telus 4G/5G network in canada. This provides password-less
     highly secure and desirable intelligent plant management
     system (IPMS) as an industry 4.0 platform to process
@@ -40,5 +40,5 @@ export default {
     subTitle: `BDATA is collaborating with Telus to implement connectivity of
     IoT devices using BDATA-Blockchain on TELUS 4G/5G network in
     Canada.`,
-  }
+  },
 };
