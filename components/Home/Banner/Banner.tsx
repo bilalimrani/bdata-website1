@@ -27,7 +27,7 @@ export default function Banner({ data = {}, sideImage = true }) {
       <video autoPlay loop muted>
         <source
           type="video/mp4"
-          src="https://s3.ca-central-1.amazonaws.com/dev.bdata.ca/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(1).mp4"
+          src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(3).mp4"
         />
       </video>
       <A
@@ -37,7 +37,7 @@ export default function Banner({ data = {}, sideImage = true }) {
       >
         Start free trial
       </A>
-    {/* <div className="container">
+      {/* <div className="container">
         <div className="banner-content-wrapper">
           <h2 className="fw-bold">{title}</h2>
           {subTitle && <p>{subTitle}</p>}
