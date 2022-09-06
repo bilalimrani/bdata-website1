@@ -94,8 +94,14 @@ export default function Footer() {
                       License
                     </a>
                   </li>
-                  <li>
-                    <div className="socoalMediaLinks">
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="address-wrapper1 py-3">
+          <p>© {new Date().getFullYear()} BDATA Inc.</p>
+          <div className="socoalMediaLinks">
                       <a href="#" className="custom-round-img twitter">
                         <i className="fab fa-twitter"></i>
                       </a>
@@ -110,14 +116,6 @@ export default function Footer() {
                         <i className="fab fa-linkedin-in"></i>
                       </a>
                     </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="address-wrapper1 py-3">
-          <p>© {new Date().getFullYear()} BDATA Inc.</p>
         </div>
       </div>
     </FooterContainer>

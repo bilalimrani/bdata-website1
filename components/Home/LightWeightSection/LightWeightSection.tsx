@@ -17,7 +17,6 @@ const Frame78 = require("public/img/zero-trust.webp");
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
 
-
 import BookImg from "../../../components/BookImg/BookImg";
 
 export default function LightWeightSection() {
@@ -25,8 +24,8 @@ export default function LightWeightSection() {
   const [section, setSection] = useState();
   const handleClose = () => setShow(false);
   const handleShow = (event) => {
-    setSection(event.target.id)
-    setShow(true)
+    setSection(event.target.id);
+    setShow(true);
   };
 
   const onLoginFormSubmit = (e) => {
@@ -40,11 +39,14 @@ export default function LightWeightSection() {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
-              <BookImg title={homeConstants.lightWeightSection.section1.title} img={Frame78} />
+              <BookImg
+                title={homeConstants.lightWeightSection.section1.title}
+                img={Frame78}
+              />
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
+                <h3 className="text-left m-0 custom-padding fw-bold">
                   {homeConstants.lightWeightSection.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
@@ -56,7 +58,12 @@ export default function LightWeightSection() {
                     Reserve a spot for Free cyber-attack awareness workshop.
                   </li>
                 </UL> */}
-                <Button onClick={handleShow} id="section1" type="button" className="btn btn-primary">
+                <Button
+                  onClick={handleShow}
+                  id="section1"
+                  type="button"
+                  className="btn btn-primary"
+                >
                   Download
                 </Button>
               </ContainerDefault>
@@ -64,14 +71,17 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
-              <BookImg title={homeConstants.lightWeightSection.section2.title} img={screen} />
+              <BookImg
+                title={homeConstants.lightWeightSection.section2.title}
+                img={screen}
+              />
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
               </SectionImage> */}
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
+                <h3 className="text-left m-0 custom-padding fw-bold">
                   {homeConstants.lightWeightSection.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
@@ -80,7 +90,12 @@ export default function LightWeightSection() {
                 <p className="custom-padding m-0">
                   {homeConstants.lightWeightSection.section2.subTitle2}
                 </p>
-                <Button onClick={handleShow} id="section2" type="button" className="btn btn-primary">
+                <Button
+                  onClick={handleShow}
+                  id="section2"
+                  type="button"
+                  className="btn btn-primary"
+                >
                   Download
                 </Button>
               </ContainerDefault>
@@ -88,7 +103,10 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
-              <BookImg title={homeConstants.lightWeightSection.section3.title} img={technology} />
+              <BookImg
+                title={homeConstants.lightWeightSection.section3.title}
+                img={technology}
+              />
 
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
@@ -96,13 +114,18 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
-                {homeConstants.lightWeightSection.section3.title}
+                <h3 className="text-left m-0 custom-padding fw-bold">
+                  {homeConstants.lightWeightSection.section3.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {homeConstants.lightWeightSection.section3.subTitle}
+                  {homeConstants.lightWeightSection.section3.subTitle}
                 </p>
-                <Button onClick={handleShow} id="section3" type="button" className="btn btn-primary">
+                <Button
+                  onClick={handleShow}
+                  id="section3"
+                  type="button"
+                  className="btn btn-primary"
+                >
                   Download
                 </Button>
               </ContainerDefault>
@@ -110,23 +133,31 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
-              <BookImg title={homeConstants.lightWeightSection.section4.title} img={screen} />
+              <BookImg
+                title={homeConstants.lightWeightSection.section4.title}
+                img={screen}
+              />
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
               </SectionImage> */}
             </div>
             <div className="col-12 col-lg-8 col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold text-uppercase">
-                {homeConstants.lightWeightSection.section4.title}
+                <h3 className="text-left m-0 custom-padding fw-bold">
+                  {homeConstants.lightWeightSection.section4.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {homeConstants.lightWeightSection.section4.subTitle1}
+                  {homeConstants.lightWeightSection.section4.subTitle}
                 </p>
-                <p className="custom-padding m-0">
-                {homeConstants.lightWeightSection.section4.subTitle2}
-                </p>
-                <Button onClick={handleShow} id="section4" type="button" className="btn btn-primary">
+                {/* <p className="custom-padding m-0">
+                  {homeConstants.lightWeightSection.section4.subTitle2}
+                </p> */}
+                <Button
+                  onClick={handleShow}
+                  id="section4"
+                  type="button"
+                  className="btn btn-primary"
+                >
                   Download
                 </Button>
               </ContainerDefault>
@@ -135,11 +166,14 @@ export default function LightWeightSection() {
         </div>
         <Modal className="modal-xl" show={show} onHide={handleClose}>
           <Modal.Body>
-            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit} handleClose={handleClose} />
+            <DownlaodWhitePaper
+              data={section}
+              onSubmit={onLoginFormSubmit}
+              handleClose={handleClose}
+            />
           </Modal.Body>
         </Modal>
       </InfoArea>
     </LightWeightSectionWrapper>
-
   );
 }

@@ -116,7 +116,7 @@ export default function DownlaodWhitePaper(props) {
   }
   return (
     <SectionWrapper>
-      <h2 className="heading fw-bold text-uppercase">{name}</h2>
+      <h2 className="heading fw-bold">{name}</h2>
       <form className="form" onSubmit={submit}>
         <div className="row">
           <div className="">

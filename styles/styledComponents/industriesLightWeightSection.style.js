@@ -63,7 +63,7 @@ const InfoArea = styled.section`
 
   h3 {
     font-size: 28px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
   .custom-padding {
     padding-bottom: 20px;

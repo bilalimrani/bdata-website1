@@ -55,7 +55,7 @@ const InfoArea = styled.section`
     font-size: 28px;
   }
   .custom-padding {
-    text-transform: uppercase;
+    // text-transform: uppercase;
     padding-bottom: 20px;
 
     @media (max-width: 991px) {

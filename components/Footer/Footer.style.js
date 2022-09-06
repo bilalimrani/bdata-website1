@@ -9,8 +9,19 @@ const FooterContainer = styled.div`
   }
   .address-wrapper1 {
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     color: rgba(255, 255, 255, 0.34);
+    @media (max-width: 767px) {
+      flex-direction:column;
+      justify-content:center;
+      text-align:center;
+    }
+    .socoalMediaLinks{
+      @media (max-width: 767px) {
+       padding-top:10px;
+       justify-content:center;
+      }
+    }
     p {
       margin: 0px;
     }

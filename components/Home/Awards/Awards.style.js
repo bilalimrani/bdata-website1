@@ -14,8 +14,8 @@ const AwardsContainer = styled.div`
     }
   }
   .para-text-details{
-    padding:0 15px;
-    text-align: center !important;
+    /* padding:0 15px; */
+    text-align: left !important;
     font-weight: 700;
     @media  (max-width:767px){
       font-size: 16px;
@@ -31,7 +31,7 @@ img{
   min-height:100px;
   border-bottom:2px solid #ffc313;
   @media  (max-width:1400px){
-    min-height:150px;
+    min-height:120px;
   }
   @media  (max-width:1199px){
     min-height:175px;
