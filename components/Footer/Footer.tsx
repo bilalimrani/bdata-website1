@@ -15,8 +15,7 @@ export default function Footer() {
             </div>
             <div className="address-wrapper py-3">
               <p>
-                07 Agro Sr Waterdown ON L8B 1Y2.
-                <br /> BDATA Solution Inc
+                07 Agro Sr Waterdown <br /> ON L8B 1Y2
               </p>
             </div>
           </div>

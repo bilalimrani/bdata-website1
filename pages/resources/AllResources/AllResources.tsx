@@ -7,7 +7,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import WhitePaper from "../WhitePaper/WhitePaper";
 import UseCase from "../UseCase/UseCase";
-import Videos from "../Videos/Videos";
+// import Videos from "../Videos/Videos";
 
 export default function AllResources() {
   // const [key, setKey] = useState('allresources');

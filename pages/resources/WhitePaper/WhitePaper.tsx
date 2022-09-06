@@ -12,7 +12,7 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import DownlaodWhitePaper from "../../../components/Home/DownloadWhitePaper/DownloadWhitePaper";
 import BookImg from "../../../components/BookImg/BookImg";
-import resourceConstant from "../../../utils/resources.constants"
+import resourceConstant from "../../../utils/resources.constants";
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
 const telecom = require("public/img/telecom.png");
@@ -26,24 +26,24 @@ export default function WhitePaper() {
   const [section, setSection] = useState();
   const handleClose = () => setShow(false);
   const handleShow = (event) => {
-    setSection(event.target.id)
-    setShow(true)
+    setSection(event.target.id);
+    setShow(true);
   };
 
   const onLoginFormSubmit = (e) => {
     e.preventDefault();
     handleClose();
   };
-  const section1 = props => (
+  const section1 = (props) => (
     <Tooltip {...props}>{resourceConstant.section1.title}</Tooltip>
   );
-  const section2 = props => (
+  const section2 = (props) => (
     <Tooltip {...props}>{resourceConstant.section2.title}</Tooltip>
   );
-  const section3 = props => (
+  const section3 = (props) => (
     <Tooltip {...props}>{resourceConstant.section3.title}</Tooltip>
   );
-  const section4 = props => (
+  const section4 = (props) => (
     <Tooltip {...props}>{resourceConstant.section4.title}</Tooltip>
   );
   return (
@@ -55,10 +55,17 @@ export default function WhitePaper() {
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <BookImg title={resourceConstant.section1.title} img={Frame78} />
           <CardWrapper>
-            <OverlayTrigger placement="bottom" overlay={section1}>
-              <h4 className="m-0 my-4 fw-bold heading">{resourceConstant.section1.title}</h4>
-            </OverlayTrigger>
-            <Button onClick={handleShow} id="section1" type="button" className="btn btn-primary">
+            {/* <OverlayTrigger placement="bottom" overlay={section1}> */}
+            <h4 className="m-0 my-4 fw-bold">
+              {resourceConstant.section1.title}
+            </h4>
+            {/* </OverlayTrigger> */}
+            <Button
+              onClick={handleShow}
+              id="section1"
+              type="button"
+              className="btn btn-primary"
+            >
               Request Download
             </Button>
           </CardWrapper>
@@ -66,10 +73,17 @@ export default function WhitePaper() {
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">
           <BookImg title={resourceConstant.section2.title} img={screen} />
           <CardWrapper>
-            <OverlayTrigger placement="bottom" overlay={section2}>
-              <h4 className="m-0 my-4 fw-bold heading">{resourceConstant.section2.title}</h4>
-            </OverlayTrigger>
-            <Button onClick={handleShow} id="section2" type="button" className="btn btn-primary">
+            {/* <OverlayTrigger placement="bottom" overlay={section2}> */}
+            <h4 className="m-0 my-4 fw-bold">
+              {resourceConstant.section2.title}
+            </h4>
+            {/* </OverlayTrigger> */}
+            <Button
+              onClick={handleShow}
+              id="section2"
+              type="button"
+              className="btn btn-primary"
+            >
               Request Download
             </Button>
           </CardWrapper>
@@ -84,10 +98,17 @@ export default function WhitePaper() {
               height="300px"
               className="img-responsive"
             /> */}
-            <OverlayTrigger placement="bottom" overlay={section3}>
-              <h4 className="m-0 my-4 fw-bold heading">{resourceConstant.section3.title}</h4>
-            </OverlayTrigger>
-            <Button onClick={handleShow} id="section3" type="button" className="btn btn-primary">
+            {/* <OverlayTrigger placement="bottom" overlay={section3}> */}
+            <h4 className="m-0 my-4 fw-bold">
+              {resourceConstant.section3.title}
+            </h4>
+            {/* </OverlayTrigger> */}
+            <Button
+              onClick={handleShow}
+              id="section3"
+              type="button"
+              className="btn btn-primary"
+            >
               Request Download
             </Button>
           </CardWrapper>
@@ -101,10 +122,17 @@ export default function WhitePaper() {
               height="300px"
               className="img-responsive"
             /> */}
-            <OverlayTrigger placement="bottom" overlay={section4}>
-              <h4 className="m-0 my-4 fw-bold heading">{resourceConstant.section4.title}</h4>
-            </OverlayTrigger>
-            <Button onClick={handleShow} id="section4" type="button" className="btn btn-primary">
+            {/* <OverlayTrigger placement="bottom" overlay={section4}> */}
+            <h4 className="m-0 my-4 fw-bold">
+              {resourceConstant.section4.title}
+            </h4>
+            {/* </OverlayTrigger> */}
+            <Button
+              onClick={handleShow}
+              id="section4"
+              type="button"
+              className="btn btn-primary"
+            >
               Request Download
             </Button>
           </CardWrapper>
@@ -168,7 +196,11 @@ export default function WhitePaper() {
       </div>
       <Modal className="modal-xl" show={show} onHide={handleClose}>
         <Modal.Body>
-          <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit} handleClose={handleClose} />
+          <DownlaodWhitePaper
+            data={section}
+            onSubmit={onLoginFormSubmit}
+            handleClose={handleClose}
+          />
         </Modal.Body>
       </Modal>
     </PaperWraper>

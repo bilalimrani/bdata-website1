@@ -7,12 +7,12 @@ export default [
     name: "products",
     link: "/products",
     subLink: "/products/ProductsListing/ProductDetailsFingerPrint",
-    subLink1: "/products/ProductsListing/ProductDetailsHub"
+    subLink1: "/products/ProductsListing/ProductDetailsHub",
   },
-  {
-    name: "Industries",
-    link: "/industries",
-  },
+  // {
+  //   name: "Industries",
+  //   link: "/industries",
+  // },
   {
     name: "Resources",
     link: "/resources",

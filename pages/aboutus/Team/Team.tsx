@@ -160,14 +160,19 @@ export default function Guide() {
                 />
               </div>
               <div className="card-body">
-                <h5 className="card-title text-center">Jayden Frazier</h5>
+                <h5 className="card-title text-center">Brandon Lee</h5>
                 <p className="card-text text-center">
-                  <img
-                    src={linkdin}
-                    alt="linkdin link"
-                    className="linkdin-link"
-                  />
-                  VP of Finance
+                  <a
+                    href="https://www.linkedin.com/in/kokhohbrandonlee/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
+                  General Manager - Asia Pacific
                 </p>
               </div>
             </div>
@@ -182,14 +187,19 @@ export default function Guide() {
                 />
               </div>
               <div className="card-body">
-                <h5 className="card-title text-center">Mino Mehta</h5>
+                <h5 className="card-title text-center">Minoo Mehta</h5>
                 <p className="card-text text-center">
-                  <img
-                    src={linkdin}
-                    alt="linkdin link"
-                    className="linkdin-link"
-                  />
-                  Business Development Adviser
+                  <a
+                    href="https://www.linkedin.com/in/minoomehta/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
+                  Sales Adviser
                 </p>
               </div>
             </div>
@@ -206,11 +216,16 @@ export default function Guide() {
               <div className="card-body">
                 <h5 className="card-title text-center">Carlo Cristofari</h5>
                 <p className="card-text text-center">
-                  <img
-                    src={linkdin}
-                    alt="linkdin link"
-                    className="linkdin-link"
-                  />
+                  <a
+                    href="https://www.linkedin.com/in/carlocristofari/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
                   Growth Advisor
                 </p>
               </div>
@@ -226,14 +241,21 @@ export default function Guide() {
                 />
               </div>
               <div className="card-body">
-                <h5 className="card-title text-center">Nadia Diakun</h5>
+                <h5 className="card-title text-center">
+                  Nadia Diakun-Thibault, ABD (PhD), MPA, BSc
+                </h5>
                 <p className="card-text text-center">
-                  <img
-                    src={linkdin}
-                    alt="linkdin link"
-                    className="linkdin-link"
-                  />
-                  Thibault, ABD (PHD)
+                  <a
+                    href="https://www.linkedin.com/in/nadia-diakun-thibault-abd-phd-mpa-bsc-%F0%9F%87%BA%F0%9F%87%A6-79b35b126/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
+                  Healthcare Adviser
                 </p>
               </div>
             </div>

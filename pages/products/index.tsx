@@ -24,7 +24,7 @@ const Products = () => {
         <title>Products</title>
       </Head>
       <Header />
-      <Banner />
+      {/* <Banner /> */}
       <MainWrapper>
         <ProductsListing />
         {/* <ProductDetailsHub /> */}
