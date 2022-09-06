@@ -50,9 +50,9 @@ export default function UseCase() {
               className="img-responsive"
             /> */}
             {/* <OverlayTrigger placement="bottom" overlay={useCase1}> */}
-            <h4 className="m-0 my-4 fw-bold">
+            <h5 className="m-0 my-4 fw-bold">
               {resourceConstant.useCase1.title}
-            </h4>
+            </h5>
             {/* </OverlayTrigger> */}
             <Button
               onClick={handleShow}
@@ -74,9 +74,9 @@ export default function UseCase() {
               className="img-responsive"
             /> */}
             {/* <OverlayTrigger placement="bottom" overlay={useCase2}> */}
-            <h4 className="m-0 my-4 fw-bold">
+            <h5 className="m-0 my-4 fw-bold">
               {resourceConstant.useCase2.title}
-            </h4>
+            </h5>
             {/* </OverlayTrigger> */}
             <Button
               onClick={handleShow}

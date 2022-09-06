@@ -52,7 +52,7 @@ export default function Contact() {
             <div className="row">
               <div className="col-lg-8 py-3">
                 <div className="row">
-                  <div className="col-6 py-3">
+                  <div className="col-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -66,7 +66,7 @@ export default function Contact() {
                       <label htmlFor="floatingInput">First Name</label>
                     </div>
                   </div>
-                  <div className="col-6 py-3">
+                  <div className="col-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="text"

@@ -11,14 +11,14 @@ const FooterContainer = styled.div`
     display: flex;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.34);
-    @media (max-width: 767px) {
-      flex-direction:column;
-      justify-content:center;
-      text-align:center;
+    .text-center-responsivness{
+      @media (max-width: 991px) {
+        text-align:center;
+      }
     }
+   
     .socoalMediaLinks{
-      @media (max-width: 767px) {
-       padding-top:10px;
+      @media (max-width: 991px) {
        justify-content:center;
       }
     }

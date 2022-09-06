@@ -99,8 +99,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="address-wrapper1 py-3">
-          <p>© {new Date().getFullYear()} BDATA Inc.</p>
+        <div className="address-wrapper1 row">
+          <div className="col-12 py-2 py-lg-3 col-lg-10 text-center-responsivness">
+              <p>© {new Date().getFullYear()} BDATA Inc.</p>
+          </div>
+          <div className="col-12 py-2 py-lg-3 col-lg-2 text-center-responsivness">
           <div className="socoalMediaLinks">
                       <a href="#" className="custom-round-img twitter">
                         <i className="fab fa-twitter"></i>
@@ -115,6 +118,7 @@ export default function Footer() {
                       >
                         <i className="fab fa-linkedin-in"></i>
                       </a>
+                    </div>
                     </div>
         </div>
       </div>

@@ -25,6 +25,9 @@ const CardWrapper = styled.div`
     overflow: hidden;
     /* text-overflow: ellipsis; */
   }
+  h5{
+    min-height:90px;
+  }
   @media (max-width: 767px) {
     text-align: center;
   }

@@ -56,9 +56,9 @@ export default function WhitePaper() {
           <BookImg title={resourceConstant.section1.title} img={Frame78} />
           <CardWrapper>
             {/* <OverlayTrigger placement="bottom" overlay={section1}> */}
-            <h4 className="m-0 my-4 fw-bold">
+            <h5 className="m-0 my-4 fw-bold">
               {resourceConstant.section1.title}
-            </h4>
+            </h5>
             {/* </OverlayTrigger> */}
             <Button
               onClick={handleShow}
@@ -74,9 +74,9 @@ export default function WhitePaper() {
           <BookImg title={resourceConstant.section2.title} img={screen} />
           <CardWrapper>
             {/* <OverlayTrigger placement="bottom" overlay={section2}> */}
-            <h4 className="m-0 my-4 fw-bold">
+            <h5 className="m-0 my-4 fw-bold">
               {resourceConstant.section2.title}
-            </h4>
+            </h5>
             {/* </OverlayTrigger> */}
             <Button
               onClick={handleShow}
@@ -99,9 +99,9 @@ export default function WhitePaper() {
               className="img-responsive"
             /> */}
             {/* <OverlayTrigger placement="bottom" overlay={section3}> */}
-            <h4 className="m-0 my-4 fw-bold">
+            <h5 className="m-0 my-4 fw-bold">
               {resourceConstant.section3.title}
-            </h4>
+            </h5>
             {/* </OverlayTrigger> */}
             <Button
               onClick={handleShow}
@@ -123,9 +123,9 @@ export default function WhitePaper() {
               className="img-responsive"
             /> */}
             {/* <OverlayTrigger placement="bottom" overlay={section4}> */}
-            <h4 className="m-0 my-4 fw-bold">
+            <h5 className="m-0 my-4 fw-bold">
               {resourceConstant.section4.title}
-            </h4>
+            </h5>
             {/* </OverlayTrigger> */}
             <Button
               onClick={handleShow}

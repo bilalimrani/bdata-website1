@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const BookImgWrapper = styled.div`
   width: 100%;
-  min-height: 400px;
+  min-height: 430px;
   background: #032054;
   position: relative;
   transform-origin: 0 0;
