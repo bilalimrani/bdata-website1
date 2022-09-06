@@ -102,10 +102,12 @@ const SectionWrapper = styled.div`
     gap: 10px;
     width: 150px;
     height: 36px;
+    box-shadow:none;
   }
   .btnGroup {
     display: flex;
     gap: 30px;
+    box-shadow:none;
   }
 `;
 

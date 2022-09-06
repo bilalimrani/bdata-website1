@@ -119,6 +119,7 @@ const SectionWrapper = styled.div`
     gap: 10px;
     width: 174px;
     height: 50px;
+    box-shadow:none;
   };
   .heading {
     font-style: normal;

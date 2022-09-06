@@ -69,17 +69,32 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.button`
-  background: transparent;
+position:absolute;
+left:50%;
+bottom:50px;
+transform:translateX(-50%);
+background: white;
   border: 1px solid white;
-  color: white;
+  color:  #004D88;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  padding: 17px 32px;
+  padding: 12px 32px;
+  border-radius:8px;
   transition: 0.3s ease;
+  box-shadow:none !important;
+  @media (max-width: 767px) {
+    padding: 8px 24px;
+    font-size:14px;
+  }
+  @media (max-width: 480px) {
+    padding: 6px 20px;
+    font-size:12px;
+  }
   &:hover {
-    color: #004d88;
-    border: 1px solid transparent;
+    background:transparent;
+    border:1px solid white;
+    color: white;
   }
 `;
 

@@ -39,7 +39,7 @@ const BannerWrapper = styled.div`
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
-    top: 50%;
+    bottom: 30px;
     z-index: 1;
   
     

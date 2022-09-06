@@ -91,12 +91,14 @@ const ContactWrapper = styled.div`
   .btnGroup button {
     margin: 10px 10px 10px 0px;
     min-width: 200px;
+    box-shadow:none !important;
   }
   .btn1 {
     border: 1px solid #004d88;
   color: #004d88;
   background: transparent;
   padding: 9px 40px;
+  box-shadow:none !important;
   &:hover {
     background-color: #004d88 !important;
     color: white;
@@ -123,6 +125,7 @@ const Button = styled.a`
   color: #004d88;
   background: transparent;
   padding: 9px 40px;
+  box-shadow:none !important;
   &:hover {
     background-color: #004d88 !important;
     color: white;

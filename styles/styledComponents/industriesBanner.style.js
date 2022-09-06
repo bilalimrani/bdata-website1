@@ -52,6 +52,10 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.button`
+position:absolute;
+left:50%;
+bottom:50px;
+transform:translateX(-50%);
 background: white;
   border: 1px solid white;
   color:  #004D88;
@@ -61,6 +65,7 @@ background: white;
   padding: 12px 32px;
   border-radius:8px;
   transition: 0.3s ease;
+  box-shadow:none !important;
   @media (max-width: 767px) {
     padding: 8px 24px;
     font-size:14px;

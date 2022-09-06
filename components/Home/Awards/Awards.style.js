@@ -4,7 +4,6 @@ const AwardsContainer = styled.div`
   .head-size{
     font-size: 28px;
     font-weight:700;
-    text-transform:uppercase;
     @media  (max-width:767px){
       font-size: 24px;
     }
@@ -18,7 +17,6 @@ const AwardsContainer = styled.div`
     padding:0 15px;
     text-align: center !important;
     font-weight: 700;
-    text-transform:uppercase;
     @media  (max-width:767px){
       font-size: 16px;
     }

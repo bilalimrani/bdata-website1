@@ -10,9 +10,10 @@ export default function Banner() {
       <div className="container">
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">Press</h2>
-          <Button className="btn btn-light">Start Free Trial</Button>
+          
         </div>
       </div>
+      <Button className="btn btn-light">Start Free Trial</Button>
     </BannerWrapper>
   );
 }

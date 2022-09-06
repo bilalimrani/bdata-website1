@@ -185,14 +185,13 @@ export default function Contact() {
                       Make Appointment with Calendly
                     </p>
                   </CalendlyWrapperInner>
-                  <Button
+                  <a
                     href="https://calendly.com/syed-8/identity-theft-cyber-security?month=2022-08"
                     target="_blank"
-                    className="btn btn-primary"
-                  // onClick={submit}
+                    className="btn btn1 btn-primary"
                   >
-                    Calendly
-                  </Button>
+                 Calendly
+                  </a>
                 </CalendlyWrapper>
               </div>
             </div>

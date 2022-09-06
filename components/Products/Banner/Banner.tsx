@@ -7,9 +7,9 @@ export default function Banner() {
       <div className="container">
         <div className="banner-content-wrapper">
           <h2 className="fw-bold">BDATA Products</h2>
-          <Button className="btn btn-light">Start free trial</Button>
         </div>
       </div>
+      <Button className="btn btn-light">Start free trial</Button>
     </BannerWrapper>
   );
 }
