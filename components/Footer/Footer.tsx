@@ -101,7 +101,10 @@ export default function Footer() {
         </div>
         <div className="address-wrapper1 row">
           <div className="col-12 py-2 py-lg-3 col-lg-10 text-center-responsivness">
-            <p>© {new Date().getFullYear()} BDATA Solutions Inc.</p>
+            <p>
+              © Copyright {new Date().getFullYear()}, BData. All Rights
+              Reserved.
+            </p>
           </div>
           <div className="col-12 py-2 py-lg-3 col-lg-2 text-center-responsivness">
             <div className="socoalMediaLinks">
