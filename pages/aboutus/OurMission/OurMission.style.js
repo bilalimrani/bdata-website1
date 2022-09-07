@@ -10,6 +10,9 @@ const MissionWrapper = styled.div`
   @media (max-width: 992px) {
     margin: 25px 0;
     }  
+    p{
+      font-size:16px;
+    }
   .img-Wrapper {
     > div {
       width: 100% !important;

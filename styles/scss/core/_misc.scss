@@ -81,7 +81,6 @@ h4 {
 h5 {
   font-size: 1.0625rem;
   line-height: 1.55em;
-  text-transform: capitalize;
 }
 h6 {
   font-size: 0.75rem;
@@ -97,6 +96,7 @@ h6 {
 p {
   font-size: 14px;
   margin: 0 0 10px;
+  color:black;
   @media (max-width:767px){
     font-size: 12px;
     margin: 0 0 5px;

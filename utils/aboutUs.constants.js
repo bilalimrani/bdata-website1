@@ -1,6 +1,6 @@
 export default {
     banner: {
-      title: "About Bdata",
+      title: "About BDATA",
       subTitle1: "We are experience team of experts in offensive and in defensive security implementation and product development.",
       subTitle2: "We are passionate and aligned on our mission to deliver multilayer and robust cyber security that is affordable and accessible to all."
   },

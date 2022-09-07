@@ -1,3 +1,4 @@
+
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
@@ -7,10 +8,19 @@ const FooterContainer = styled.div`
   .logoWrapper {
     margin-bottom: 15px;
   }
+  .address-wrapper{
+    p{
+      color:white;
+    }
+    
+  }
   .address-wrapper1 {
     display: flex;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.34);
+    p{
+      color:#64626a;
+    }
     .text-center-responsivness{
       @media (max-width: 991px) {
         text-align:center;
@@ -90,6 +100,12 @@ const FooterContainer = styled.div`
   }
   .footer-links-ul li .footer-links:hover {
     color: white;
+  }
+  .bdata-links-p{
+    display:block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
   }
 `;
 

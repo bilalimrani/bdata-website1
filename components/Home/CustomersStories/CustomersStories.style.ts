@@ -126,7 +126,7 @@ padding:50px 0;
       transition:.3s ease-in;
   }
   .small-text {
-      font-size:10px;
+      font-size:12px;
       line-height:18px !important;
   }
   .grey-clr{
