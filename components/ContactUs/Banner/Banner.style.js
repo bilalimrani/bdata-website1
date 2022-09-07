@@ -44,8 +44,8 @@ const BannerWrapper = styled.div`
     margin: 0 auto;
     position: relative;
     z-index: 111;
-    p{
-      font-size:16px;
+    p {
+      font-size: 16px;
     }
   }
   h2 {
@@ -70,7 +70,7 @@ const BannerWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   position: absolute;
   left: 50%;
   bottom: 50px;

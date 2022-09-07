@@ -12,7 +12,13 @@ export default function Banner() {
           <h2 className="fw-bold text-center">Press</h2>
         </div>
       </div>
-      <Button className="btn btn-light">Start Free Trial</Button>
+      <Button
+        target="_blank"
+        href="https://demo.org.bdata.ca"
+        className="btn btn-light"
+      >
+        Start Free Trial
+      </Button>
     </BannerWrapper>
   );
 }

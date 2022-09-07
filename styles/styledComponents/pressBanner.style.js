@@ -50,7 +50,7 @@ const BannerWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   position: absolute;
   left: 50%;
   bottom: 50px;

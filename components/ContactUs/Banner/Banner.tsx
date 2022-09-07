@@ -11,7 +11,13 @@ export default function Banner() {
           <h2 className="fw-bold">Contact BDATA</h2>
         </div>
       </div>
-      <Button className="btn btn-light">Start free trial</Button>
+      <Button
+        target="_blank"
+        href="https://demo.org.bdata.ca"
+        className="btn btn-light"
+      >
+        Start free trial
+      </Button>
     </BannerWrapper>
   );
 }
