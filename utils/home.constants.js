@@ -50,7 +50,8 @@ another network.`,
         "Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers.",
     },
     section3: {
-      title: "Enhance cyber security for azure and AWS IoT hub using BIoT",
+      title:
+        "Enhance cyber security for Azure and AWS IoT hub using BIoT security technology",
       subTitle:
         "BIoT security technology enhance Azure and AWS IoT hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.",
     },

@@ -18,7 +18,7 @@ export default {
       "Immutable device fingerprint based segregated/airgap network for IT/OT/IoT devices",
   },
   section3: {
-    title: "Enhance cyber security for azure and AWS IoT hub using BIoT",
+    title: "Enhance cyber security for Azure and AWS IoT hub using BIoT",
   },
   section4: {
     title: "Protect credentials using BIoT security technology",

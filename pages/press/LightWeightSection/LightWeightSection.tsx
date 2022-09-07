@@ -124,9 +124,12 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12  col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
-                  {pressConstant.section5.title}
-                </h3>
+                <h3
+                  className="text-left m-0 custom-padding fw-bold"
+                  dangerouslySetInnerHTML={{
+                    __html: pressConstant.section5.title,
+                  }}
+                ></h3>
                 <p className="custom-padding m-0">
                   {pressConstant.section5.subTitle}
                 </p>

@@ -36,7 +36,7 @@ export default {
     to watch live ‘16 september 10:30 AM - pitch compitition`,
   },
   section5: {
-    title: " Win 2nd Place",
+    title: " Win 2<sup>nd</sup> Place",
     subTitle: `BDATA is collaborating with Telus to implement connectivity of
     IoT devices using BDATA-Blockchain on TELUS 4G/5G network in
     Canada.`,
