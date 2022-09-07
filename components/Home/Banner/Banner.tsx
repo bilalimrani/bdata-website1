@@ -80,28 +80,26 @@ export default function Banner({ data = {}, sideImage = true }) {
           />
         </video>
         <SecondVideoOverlay>
-          <Reveal effect="fadeInUp">
-            <AnimatedText
-              type="words" // animate words or chars
-              animation={{
-                x: "200px",
-                y: "-20px",
-                scale: 1.1,
-                ease: "ease-in-out",
-              }}
-              animationType="float"
-              interval={0.06}
-              duration={0.8}
-              tag="p"
-              className="animated-paragraph"
-              includeWhiteSpaces
-              threshold={0.1}
-              rootMargin="20%"
-            >
-              Apply zero trust using device immutable fingerprints to end
-              ransomware
-            </AnimatedText>
-          </Reveal>
+          <AnimatedText
+            type="words" // animate words or chars
+            animation={{
+              x: "200px",
+              y: "-20px",
+              scale: 1.1,
+              ease: "ease-in-out",
+            }}
+            animationType="float"
+            interval={0.06}
+            duration={0.8}
+            tag="p"
+            className="animated-paragraph"
+            includeWhiteSpaces
+            threshold={0.1}
+            rootMargin="20%"
+          >
+            Apply zero trust using device immutable fingerprints to end
+            ransomware
+          </AnimatedText>
         </SecondVideoOverlay>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
