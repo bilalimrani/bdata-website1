@@ -15,7 +15,8 @@ export default function Footer() {
             </div>
             <div className="address-wrapper py-3">
               <p>
-                07 Agro Sr Waterdown <br /> ON L8B 1Y2
+                107 Agro St Waterdown <br /> Ontario , Canada <br />
+                L8B 1Y2
               </p>
             </div>
           </div>
