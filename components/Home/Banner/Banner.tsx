@@ -59,7 +59,7 @@ export default function Banner({ data = {}, sideImage = true }) {
 
     <Carousel fade indicators={false}>
       <Carousel.Item interval={5000}>
-        <video autoPlay muted>
+        <video autoPlay muted loop>
           <source
             type="video/mp4"
             src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(5).mp4"
@@ -72,8 +72,8 @@ export default function Banner({ data = {}, sideImage = true }) {
           </Reveal>
         </FirstVideoOverlay>
       </Carousel.Item>
-      <Carousel.Item interval={20000}>
-        <video autoPlay muted>
+      <Carousel.Item interval={8000}>
+        <video autoPlay muted loop>
           <source
             type="video/mp4"
             src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(6).mp4"
@@ -103,7 +103,7 @@ export default function Banner({ data = {}, sideImage = true }) {
         </SecondVideoOverlay>
       </Carousel.Item>
       <Carousel.Item interval={8000}>
-        <video autoPlay muted>
+        <video autoPlay muted loop>
           <source
             type="video/mp4"
             src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(4).mp4"
