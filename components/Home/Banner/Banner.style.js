@@ -23,21 +23,10 @@ const BannerWrapper = styled.div`
     /* position: absolute; */
     width: 100%;
     height: 100%;
-   position:relative;
+    position:relative;
     z-index: 0;
   }
-  .overlay {
-    position:absolute;
-    top:0;
-    left:0;
-    z-index:1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-    height: 100%;
-    color: white;
-}
+  
   .videoBack {
   }
 
@@ -127,4 +116,61 @@ const A = styled.a`
   }
 `;
 
-export { BannerWrapper, A };
+const FirstVideoOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  color: white;
+
+  h1 {
+    color: white;
+  }
+`;
+
+const SecondVideoOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  color: white;
+
+  h1 {
+    color: white;
+  }
+`;
+
+const ThirdVideoOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  color: white;
+
+  h1 {
+    color: white;
+  }
+`;
+
+export {
+  BannerWrapper,
+  A,
+  FirstVideoOverlay,
+  SecondVideoOverlay,
+  ThirdVideoOverlay,
+};
