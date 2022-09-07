@@ -44,6 +44,9 @@ const BannerWrapper = styled.div`
     margin: 0 auto;
     position: relative;
     z-index: 111;
+    p{
+      font-size:16px;
+    }
   }
   h2 {
     color: white;

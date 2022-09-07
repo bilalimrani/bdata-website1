@@ -58,6 +58,9 @@ const BannerWrapper = styled.div`
     align-items:center;
     justify-content:center;
     flex-direction:column;
+    p{
+      font-size:16px;
+    }
   }
   h2 {
     max-width:400px;

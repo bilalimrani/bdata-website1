@@ -9,7 +9,7 @@ export default function Banner() {
         </div>
         <div className="banner-content-wrapper">
           <h2 className="fw-bold heading">
-            About Bdata
+            About <span className="text-uppercase">BDATA</span>
           </h2>
           <p>We are experience team of experts in offensive and in defensive security implementation and product development</p>
           <p>We are passionate and aligned on our mission to deliver multilayer and robust cyber security that is affordable and accessible to all</p>

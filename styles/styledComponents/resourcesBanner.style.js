@@ -77,6 +77,9 @@ const BannerWrapper = styled.div`
  
   .banner-content-wrapper{
     max-width:400px;
+    p{
+      font-size:16px;
+    }
     @media (max-width: 992px) {
       max-width:320px;
     }
