@@ -6,14 +6,14 @@ const ProuctListing = styled.div`
   @media (max-width: 991px) {
     padding-top: 25px;
   }
-  .max-image-content{
-    max-width:450px;
+  .max-image-content {
+    max-width: 450px;
   }
-  .max-width-100{
-    max-width:100%;
+  .max-width-100 {
+    max-width: 100%;
   }
-  p{
-    text-transform:captilize !important;
+  p {
+    text-transform: captilize !important;
   }
 `;
 
@@ -38,6 +38,9 @@ const Button = styled.a`
 `;
 const ContainerDefault = styled.div`
   max-width: 650px;
+  h3 {
+    text-transform: none;
+  }
   @media (max-width: 991px) {
     margin: 25px 0;
   }
@@ -47,25 +50,25 @@ const ContainerDefault = styled.div`
 `;
 
 const FullContainer = styled.div`
-max-width: 850px;
-@media (max-width: 1600px) {
-  max-width:750px;
-}
-@media (max-width: 991px) {
-  margin: 25px 0;
-}
-@media (max-width: 767px) {
-  margin: 15px 0;
-}
+  max-width: 850px;
+  @media (max-width: 1600px) {
+    max-width: 750px;
+  }
+  @media (max-width: 991px) {
+    margin: 25px 0;
+  }
+  @media (max-width: 767px) {
+    margin: 15px 0;
+  }
 `;
 
 const InfoArea = styled.section`
   position: relative;
-  background-image:  url(${bg_pattern});
+  background-image: url(${bg_pattern});
   background-position: right center;
   background-repeat: no-repeat;
-  background-size:120px 300px;
-  
+  background-size: 120px 300px;
+
   @media (max-width: 1199px) {
     background: none;
   }
@@ -115,37 +118,37 @@ const UL = styled.ul`
   }
 `;
 const CustomUl = styled.ul`
-margin:0;
-li{
-    display:flex;
-    align-items:flex-start;
-    font-size:16px;
-    margin-bottom:10px;
-}
-  li span{
-    width:36px;
-    min-width:36px;
-    height:36px;
+  margin: 0;
+  li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  li span {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
     border-radius: 50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:2px solid #2B7BB9;
-    font-size:22px;
-    margin-right:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2b7bb9;
+    font-size: 22px;
+    margin-right: 10px;
   }
 `;
 
 const FeatureListing = styled.ul`
-padding:20px 0;
-margin:0;
-  li{
-    padding-bottom:10px;
-    position:relative;
-    padding-left:25px;
+  padding: 20px 0;
+  margin: 0;
+  li {
+    padding-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
   }
-  li::before{
-    content: '';
+  li::before {
+    content: "";
     position: absolute;
     top: 35%;
     left: 0px;
@@ -153,10 +156,11 @@ margin:0;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #2B7BB9;
+    background: #2b7bb9;
   }
-`
-export {   ProuctListing,
+`;
+export {
+  ProuctListing,
   Section2,
   Button,
   InfoArea,
@@ -165,4 +169,5 @@ export {   ProuctListing,
   UL,
   CustomUl,
   FeatureListing,
-  FullContainer };
+  FullContainer,
+};

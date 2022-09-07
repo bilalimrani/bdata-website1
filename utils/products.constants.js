@@ -5,7 +5,7 @@ export default {
   },
   products: {
     section1: {
-      title: "BIoT Security Hub Platform",
+      title: "BIoT security hub platform",
       subTitle:
         "BIoT security hub platform is a multilayer cyber security platform for IT/OT/IoT and Cloud infrastructure, which enable companies to be managed and monitor endpoints without compromising the single point failure such as stolen certificates. ",
       point1: "Real time monetering",
@@ -26,7 +26,7 @@ export default {
       feature10: "Secure File Transfer",
     },
     section2: {
-      title: "BIoT Immutable Fingerprints",
+      title: "BIoT immutable fingerprints",
       subTitle:
         "BIoT immutable finger printing is a patent pending technology, BIoT immutable fingerprints are created containing the hardware multifactor and container metadata, ",
       feature1: "Mitigated Cyber Risk by using BIoT Immutable Fingerprints",

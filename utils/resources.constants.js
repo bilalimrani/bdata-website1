@@ -11,22 +11,22 @@ export default {
   },
   section1: {
     title:
-      "Zero trust - a multilayer cyber security for industrial control system",
+      "Zero trust - A multilayer cyber security for industrial control system",
   },
   section2: {
     title:
-      "Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices",
+      "Immutable device fingerprint based segregated/airgap network for IT/OT/IoT devices",
   },
   section3: {
-    title: "enhance cyber security for azure and AWS IoT hub using BIoT",
+    title: "Enhance cyber security for azure and AWS IoT hub using BIoT",
   },
   section4: {
-    title: "Protect Credentials Using BIoT Security Technology",
+    title: "Protect credentials using BIoT security technology",
   },
   useCase1: {
-    title: "Cyber Security for Automotive",
+    title: "Cyber security for automotive",
   },
   useCase2: {
-    title: "Cyber Security for Gold Mine",
+    title: "Cyber security for gold mine",
   },
 };

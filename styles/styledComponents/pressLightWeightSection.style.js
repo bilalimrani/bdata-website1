@@ -30,6 +30,9 @@ const Button = styled.a`
 `;
 const ContainerDefault = styled.div`
   max-width: 650px;
+  h3 {
+    text-transform: none;
+  }
   @media (max-width: 991px) {
     margin: 25px 0;
   }

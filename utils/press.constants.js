@@ -5,8 +5,8 @@ export default {
     bgImage: require("public/img/pressImage.svg"),
   },
   section1: {
-    title: "Collaboration with Supermicro computer Inc.",
-    subTitle: `BDATA Solution and Supermicro computerInc are collaborating to
+    title: "Collaboration with Supermicro computer Inc",
+    subTitle: `BDATA solution and supermicro computerInc are collaborating to
     offer the one of it’s kind, multi-layared end to end highly
     secured Blockchain IoT (BIoT) embeded Gateway Devices to
     provide data immulability and secure connectivity for critical
@@ -23,7 +23,7 @@ export default {
   },
   section3: {
     title: "Collaboration with Telus",
-    subTitle: `BDATA Solutions Inc is collaborating with Telus to implement
+    subTitle: `BDATA solutions Inc is collaborating with Telus to implement
     blockchain connectivity of IoT devices using BDATA-Blockchain
     on Telus 4G/5G network in canada. This provides password-less
     highly secure and desirable intelligent plant management
@@ -31,9 +31,9 @@ export default {
     industries.`,
   },
   section4: {
-    title: "Congratulation Team BDATA",
-    subTitle: ` We are now in SEMI-FInal Canadian export challenge. Register
-    to watch live ‘16 september 10:30 AM - Pitch Compitition`,
+    title: "Congratulation team BDATA",
+    subTitle: ` We are now in semi-final canadian export challenge. Register
+    to watch live ‘16 september 10:30 AM - pitch compitition`,
   },
   section5: {
     title: " Win 2nd Place",

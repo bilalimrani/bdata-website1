@@ -5,8 +5,8 @@ const LightWeightSectionWrapper = styled.div`
   padding: 50px 0 0;
   @media (max-width: 991px) {
     padding-top: 25px;
-  };
-  .modal-header{
+  }
+  .modal-header {
     text-align: center;
   }
 `;
@@ -31,14 +31,17 @@ const Button = styled.button`
   }
 `;
 const ContainerDefault = styled.div`
-max-width:650px;
-@media (max-width: 991px) {
-  margin:25px 0;
-}
-@media (max-width: 767px) {
-  margin:15px 0;
-}
-`
+  max-width: 650px;
+  h3 {
+    text-transform: none;
+  }
+  @media (max-width: 991px) {
+    margin: 25px 0;
+  }
+  @media (max-width: 767px) {
+    margin: 15px 0;
+  }
+`;
 
 const InfoArea = styled.section`
   position: relative;
@@ -74,33 +77,31 @@ background-size: 450px 375px;
 `;
 
 const SectionImage = styled.div`
-max-width:300px;
-max-height:395px;
-@media (max-width: 991px) {
-  margin:0 auto;
-}
-img{
-  height:100%;
-}
+  max-width: 300px;
+  max-height: 395px;
+  @media (max-width: 991px) {
+    margin: 0 auto;
+  }
+  img {
+    height: 100%;
+  }
   &:hover {
     transition-duration: 0.5s;
     box-shadow: 0px 7px 11px 14px rgb(0 0 0 / 24%);
     // margin-top: -20px;
-    transform:scale(1.05);
+    transform: scale(1.05);
   }
 `;
 
-
-
 const UL = styled.ul`
-padding-bottom:20px;
-padding-left:20px;
-@media (max-width: 991px) {
-  padding:0 10px 10px 0;
-}
-margin:0;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  @media (max-width: 991px) {
+    padding: 0 10px 10px 0;
+  }
+  margin: 0;
   li {
-    font-size:16px;
+    font-size: 16px;
     list-style: disc;
   }
 `;

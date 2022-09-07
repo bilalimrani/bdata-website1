@@ -11,7 +11,7 @@ const BookImgWrapper = styled.div`
   transition: all 500ms;
   @media (max-width: 991px) {
     max-width: 400px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 
   &::before {
@@ -33,11 +33,11 @@ const BookImgWrapper = styled.div`
     padding-top: 5px;
     color: white !important;
     margin: 0 !important;
-    text-transform: capitalize;
+    text-transform: none;
     overflow: hidden;
     /* text-overflow: ellipsis; */
     display: -webkit-box;
-    line-clamp: 2;
+    /* line-clamp: 2; */
     -webkit-box-orient: vertical;
   }
   p {

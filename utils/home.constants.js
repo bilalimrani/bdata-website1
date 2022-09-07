@@ -37,25 +37,25 @@ another network.`,
   lightWeightSection: {
     section1: {
       title:
-        "Zero trust - a multilayer cyber security for industrial control system",
+        "Zero trust - A multilayer cyber security for industrial control system",
       subTitle:
-        "BIoT Security Technology IS a lightweight multilayer cyber security solution which enables companies to achieve cyber security compliances with respect to TSA, IECT 62443, ISO, NIST, HIPAA, and other local and international standards.",
+        "BIoT security technology is a lightweight multilayer cyber security solution which enables companies to achieve cyber security compliances with respect to TSA, IECT 62443, ISO, NIST, HIPAA, and other local and international standards.",
     },
     section2: {
       title:
-        "Immutable Device Fingerprint Based Segregated/Airgap network for IT/OT/IoT devices",
+        "Immutable device fingerprint based segregated/airgap network for IT/OT/IoT devices",
       subTitle1:
         "BIoT technology creates immutable fingerprints for each device before it gets enabled to connect and communicate with designated servers/cloud infrastructure. Each device is uniquely identified based on the fingerprints, which contain information about the device hardware, processors etc.",
       subTitle2:
         "Based on the fingerprints, devices are identified as IT or OT and can only communicate with designated servers.",
     },
     section3: {
-      title: "enhance cyber security for azure and AWS IoT hub using BIoT",
+      title: "Enhance cyber security for azure and AWS IoT hub using BIoT",
       subTitle:
-        "BIoT Security technology enhance azure and AWS IoT hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.",
+        "BIoT security technology enhance Azure and AWS IoT hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.",
     },
     section4: {
-      title: "Protect Credentials Using BIoT Security Technology",
+      title: "Protect credentials using BIoT security technology",
       subTitle:
         "In addition to finance and manufacturing, professional and business services was heavily targeted in 2021 cyber-attacks, particularly by ransomware actors, each of the cyber-attacks had a root cause of credential compromise either by DDoS, Insiders, or credential harvesting",
       subTitle2:
@@ -102,7 +102,7 @@ another network.`,
       },
       {
         image: HelloTomarrow,
-        text: "best IoT cyber security product award",
+        text: "Best IoT cyber security product award",
       },
     ],
   },
