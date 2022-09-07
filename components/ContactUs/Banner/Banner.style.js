@@ -51,7 +51,7 @@ const BannerWrapper = styled.div`
     margin: 0 !important;
     margin-bottom: 50px !important;
     @media (max-width: 991px) {
-      margin-bottom: 30px !important;
+      margin-bottom: 50px !important;
     }
     @media (max-width: 767px) {
       margin-bottom: 20px !important;
@@ -68,32 +68,32 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.button`
-position:absolute;
-left:50%;
-bottom:50px;
-transform:translateX(-50%);
-background: white;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  background: transparent;
   border: 1px solid white;
-  color:  #004D88;
+  color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   padding: 12px 32px;
-  border-radius:8px;
+  border-radius: 8px;
   transition: 0.3s ease;
-  box-shadow:none !important;
+  box-shadow: none !important;
   @media (max-width: 767px) {
     padding: 8px 24px;
-    font-size:14px;
+    font-size: 14px;
   }
   @media (max-width: 480px) {
     padding: 6px 20px;
-    font-size:12px;
+    font-size: 12px;
   }
   &:hover {
-    background:transparent;
-    border:1px solid white;
-    color: white;
+    background: white;
+    border: 1px solid white;
+    color: #004d88;
   }
 `;
 

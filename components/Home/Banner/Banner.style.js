@@ -10,51 +10,36 @@ const BannerWrapper = styled.div`
    align-items: center;
   justify-content: center;
   text-align: center;
-  // @media (max-width: 1700px) {
-  //   height: 615px;
-  // }
-  // @media (max-width: 1530px) {
-  //   height: 560px;
-  // }
-  // @media (max-width: 1378px) {
-  //   height: 485px;
-  // }
-  // @media (max-width: 1199px) {
-  //   height: 400px;
-  // }
-  // @media (max-width: 991px) {
-  //   height: 310px;
-  // }
-  // @media (max-width: 767px) {
-  //   height: 235px;
-  // }
-  // @media (max-width: 575px) {
-  //   height: 195px;
-  // }
-  // @media (max-width: 479px) {
-  //   height: 130px;
-  // }
   
   a{
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
-    bottom: 30px;
+    bottom: 50px;
     z-index: 1;
-  
-    
   }
   video {
     /* object-fit: cover; */
     /* position: absolute; */
     width: 100%;
     height: 100%;
-    /* position: absolute; */
-    z-index: 1;
+   position:relative;
+    z-index: 0;
   }
+  .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
   .videoBack {
   }
- 
 
   &::before {
     /* content: ${(props) => props?.sideImage && `url(${bdataPattern})`}; */
@@ -118,27 +103,27 @@ const BannerWrapper = styled.div`
 `;
 
 const A = styled.a`
-  background: white;
+  background: transparent;
   border: 1px solid white;
-  color:  #004D88;
+  color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   padding: 12px 32px;
-  border-radius:8px;
+  border-radius: 8px;
   transition: 0.3s ease;
   @media (max-width: 767px) {
     padding: 8px 24px;
-    font-size:14px;
+    font-size: 14px;
   }
   @media (max-width: 480px) {
     padding: 6px 20px;
-    font-size:12px;
+    font-size: 12px;
   }
   &:hover {
-    background:transparent;
-    border:1px solid white;
-    color: white;
+    background: white;
+    border: 1px solid white;
+    color: #004d88;
   }
 `;
 

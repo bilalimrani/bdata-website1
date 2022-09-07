@@ -5,13 +5,13 @@ import { ContactWrapper, Button } from "./ContactUs.style";
 
 export default function Contact() {
   const [selectedCountry, setSelectedCountry] = useState<any>("");
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState({});
   const submit = (e) => {
     e.preventDefault();
     const data = {
       ...form,
-      country: selectedCountry.name
-    }
+      country: selectedCountry.name,
+    };
     axios
       .post("http://54.202.19.104:3000/api/email", {
         data,
@@ -160,23 +160,22 @@ export default function Contact() {
             B Data Solutions Inc. is committed to protecting and respecting your
             privacy, From time to time, we would like to contact you about our
             products and services, as well as other content that may be of
-            interest to you. If you consent to us contacting you for this purpose,
-            please tick below to say how you would like us to contact you:
+            interest to you. If you consent to us contacting you for this
+            purpose, please tick below to say how you would like us to contact
+            you:
           </p>
           <div className="custom-checkbox-input-wrapper py-2 ">
             <input className="form-check-input m-0" type="checkbox" required />
             <label className="form-check-label ps-2" htmlFor="form6Example8">
-              I agree to receive other communications from B Data Solutions Inc..{" "}
+              I agree to receive other communications from B Data Solutions Inc.
             </label>
           </div>
           <div className="pb-2 m-0">
-            You can unsubscribe from these communications at any time.{" "}
+            You can unsubscribe from these communications at any time.
           </div>
           <br />
           <div className="btnGroup">
-            <Button>
-              Download
-            </Button>
+            <Button>Download</Button>
 
             <div className="group_1668"></div>
           </div>
