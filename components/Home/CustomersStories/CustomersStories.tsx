@@ -10,8 +10,6 @@ const advantech = require("public/img/advan-tech.svg");
 const wasim = require("public/img/wasim.png");
 const sncLogo = require("public/img/snc-logo.png");
 
-
-
 export const data = [
   {
     cover: "https://images6.alphacoders.com/679/thumb-1920-679459.jpg",
@@ -108,19 +106,20 @@ const CustomersStories = () => {
                 <img src={user} alt="" className="round-img" />
 
                 <div className="ps-3">
-                  <p className="small-text m-0 fw-semibold">{homeConstants.customers.story1.name}</p>
-                  <p className="small-text m-0 grey-clr">
+                  <p className="small-text m-0 fw-semibold">
+                    {homeConstants.customers.story1.name}
+                  </p>
+                  <p className="small-text m-0 dark-grey">
                     {homeConstants.customers.story1.designation}
                   </p>
                 </div>
               </div>
 
               <div className="bottom-section">
-                <p className="text-left small-text dark-grey">
+                <p className="text-left small-text black-clr">
                   {homeConstants.customers.story1.message}
                 </p>
                 <div className="bottom-img-wrapper">
-
                   <img src={compImage} alt="" />
                 </div>
               </div>
@@ -131,15 +130,17 @@ const CustomersStories = () => {
               <div className="d-flex align-items-center justify-content-start">
                 <img src={user2} alt="" className="round-img" />
                 <div className="ps-3">
-                  <p className="small-text m-0 fw-semibold">{homeConstants.customers.story2.name}</p>
-                  <p className="small-text m-0 grey-clr">
+                  <p className="small-text m-0 fw-semibold">
+                    {homeConstants.customers.story2.name}
+                  </p>
+                  <p className="small-text m-0 dark-grey">
                     {homeConstants.customers.story2.designation}
                   </p>
                 </div>
               </div>
 
               <div className="bottom-section">
-                <p className="text-left small-text dark-grey">
+                <p className="text-left small-text black-clr">
                   {homeConstants.customers.story2.message}
                 </p>
                 <div className="bottom-img-wrapper">
@@ -152,24 +153,24 @@ const CustomersStories = () => {
           <div className="col-md-6 col-lg-4 py-3">
             <ProfileWrapper>
               <div className="d-flex align-items-center justify-content-start">
-
                 <img src={wasim} alt="" className="round-img" />
 
                 <div className="ps-3">
-                  <p className="small-text m-0 fw-semibold">{homeConstants.customers.story3.name}</p>
-                  <p className="small-text m-0 grey-clr">
+                  <p className="small-text m-0 fw-semibold">
+                    {homeConstants.customers.story3.name}
+                  </p>
+                  <p className="small-text m-0 dark-grey">
                     {homeConstants.customers.story3.designation}
                   </p>
                 </div>
               </div>
 
               <div className="bottom-section">
-                <p className="text-left small-text dark-grey">
+                <p className="text-left small-text black-clr">
                   {homeConstants.customers.story3.message}
                 </p>
                 <div className="bottom-img-wrapper">
                   <img src={sncLogo} alt="" />
-
                 </div>
               </div>
             </ProfileWrapper>
