@@ -19,18 +19,15 @@ export default function Footer() {
               <Image src={whiteLogo} width={150} height={48} />
             </div>
             <div className="address-wrapper py-3">
-              <div className="location">
-                <div>
-                  <p className="mb-0">BDATA Solutions Inc</p>
-                </div>
-
-                <div className="bdata-location">
-                  <IoLocationOutline />
-                  <p>
-                    107 Agro St Waterdown <br /> Ontario , Canada <br />
-                    L8B 1Y2
-                  </p>
-                </div>
+              {/* <div className="location">
+                <p className="mb-0">BDATA Solutions Inc</p>
+              </div> */}
+              <div className="bdata-location">
+                <IoLocationOutline />
+                <p>
+                  107 Agro St Waterdown <br /> Ontario , Canada <br />
+                  L8B 1Y2
+                </p>
               </div>
 
               <div className="phone">
@@ -139,10 +136,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="address-wrapper1 row">
-          <div className="col-12 py-2 py-lg-3 col-lg-10 text-center-responsivness">
+          <div className="col-12 py-2 py-lg-3 col-lg-10 text-center-responsivness text1">
             <p>
-              © Copyright {new Date().getFullYear()}, BDATA. All Rights
-              Reserved.
+              © Copyright {new Date().getFullYear()}, BDATA Solutions Inc. All
+              Rights Reserved.
             </p>
           </div>
           <div className="col-12 py-2 py-lg-3 col-lg-2 text-center-responsivness">

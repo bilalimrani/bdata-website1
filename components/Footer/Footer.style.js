@@ -14,15 +14,20 @@ const FooterContainer = styled.div`
   }
   .location {
     display: flex;
-    .bdata-location {
-      padding-left: 7px;
-    }
     svg {
       margin-top: 4px;
     }
   }
+  .bdata-location {
+    display: flex;
+    p {
+      line-height: 1;
+      padding-left: 7px;
+    }
+  }
   .phone {
     display: flex;
+    height: 18px;
     .phone1 {
       padding-left: 7px;
       margin-top: 4px;
@@ -54,6 +59,11 @@ const FooterContainer = styled.div`
       }
     }
 
+    .text1 {
+      p {
+        font-size: 11px;
+      }
+    }
     .socoalMediaLinks {
       @media (max-width: 991px) {
         justify-content: center;

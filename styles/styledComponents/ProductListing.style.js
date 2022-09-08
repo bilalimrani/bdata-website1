@@ -60,6 +60,15 @@ const FullContainer = styled.div`
   @media (max-width: 767px) {
     margin: 15px 0;
   }
+
+  .product-img {
+    width: 500px;
+    height: 500px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
 `;
 
 const InfoArea = styled.section`

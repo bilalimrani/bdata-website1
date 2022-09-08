@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
+import { IoArrowUp } from "react-icons/io5";
 // import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
@@ -27,6 +28,7 @@ Router.events.on("routeChangeError", () => {
 
 export default (props) => {
   const router = useRouter();
+  const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -43,6 +45,24 @@ export default (props) => {
     };
   }, [router.events]);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
+
   const { Component, pageProps } = props;
 
   return (
@@ -52,7 +72,7 @@ export default (props) => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Bdata</title>
+        <title>BDATA Solutions Inc</title>
         <script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=G-HG5BPBLEBL`}
@@ -69,6 +89,11 @@ export default (props) => {
         </script>
       </Head>
       <Component {...pageProps} />
+      {showButton && (
+        <div onClick={scrollToTop} className="back-to-top">
+          <IoArrowUp />
+        </div>
+      )}
     </React.Fragment>
   );
 };

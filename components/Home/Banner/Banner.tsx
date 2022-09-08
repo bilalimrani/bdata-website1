@@ -61,7 +61,7 @@ export default function Banner({ data = {}, sideImage = true }) {
     // </BannerWrapper>
     <BannerWrapper>
       <Carousel fade indicators={false}>
-        <Carousel.Item>
+        <Carousel.Item interval={10000}>
           <video autoPlay muted loop>
             <source
               type="video/mp4"
@@ -80,7 +80,7 @@ export default function Banner({ data = {}, sideImage = true }) {
             </Reveal>
           </FirstVideoOverlay>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={10000}>
           <video autoPlay muted loop>
             <source
               type="video/mp4"
@@ -95,7 +95,7 @@ export default function Banner({ data = {}, sideImage = true }) {
             </Jump>
           </SecondVideoOverlay>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={10000}>
           <video autoPlay muted loop>
             <source
               type="video/mp4"
