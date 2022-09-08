@@ -141,7 +141,7 @@ export default function Footer() {
         <div className="address-wrapper1 row">
           <div className="col-12 py-2 py-lg-3 col-lg-10 text-center-responsivness">
             <p>
-              © Copyright {new Date().getFullYear()}, BData. All Rights
+              © Copyright {new Date().getFullYear()}, BDATA. All Rights
               Reserved.
             </p>
           </div>

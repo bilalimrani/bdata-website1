@@ -65,7 +65,7 @@ export default function Banner({ data = {}, sideImage = true }) {
           <video autoPlay muted loop>
             <source
               type="video/mp4"
-              src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(5).mp4"
+              src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(7).mp4"
             />
           </video>
           <FirstVideoOverlay>
@@ -84,7 +84,7 @@ export default function Banner({ data = {}, sideImage = true }) {
           <video autoPlay muted loop>
             <source
               type="video/mp4"
-              src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(6).mp4"
+              src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(8).mp4"
             />
           </video>
           <SecondVideoOverlay>
@@ -99,7 +99,7 @@ export default function Banner({ data = {}, sideImage = true }) {
           <video autoPlay muted loop>
             <source
               type="video/mp4"
-              src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(4).mp4"
+              src="https://bdata-files.s3.us-west-2.amazonaws.com/1.mp4"
             />
           </video>
           <ThirdVideoOverlay>
