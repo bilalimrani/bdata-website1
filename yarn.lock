@@ -1370,6 +1370,11 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+animejs@^3.1.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
+  integrity sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==
+
 anser@1.4.9:
   version "1.4.9"
   resolved "https://registry.npmjs.org/anser/-/anser-1.4.9.tgz"
@@ -4111,6 +4116,13 @@ move-concurrently@^1.0.1:
     mkdirp "^0.5.1"
     rimraf "^2.5.4"
     run-queue "^1.0.3"
+
+moving-letters@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/moving-letters/-/moving-letters-1.0.1.tgz#67a4fd03db9a229f2b4919e438a64c257a4e3886"
+  integrity sha512-819kOfUHOY1VNtlF7pjHik84EEiMow3kC0fETGe+y1L6iaj7QAJrVepurDDWulosdzY3prbvhFedOL3z5qNLLg==
+  dependencies:
+    animejs "^3.1.0"
 
 ms@2.0.0:
   version "2.0.0"

@@ -142,9 +142,11 @@ const FirstVideoOverlay = styled.div`
   }
 
   h2 {
-    font-size: 42px;
     color: white;
-    font-weight: 400 !important;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.8px;
     width: 100%;
     margin: 0 !important;
     max-width: 100%;
@@ -187,7 +189,10 @@ const SecondVideoOverlay = styled.div`
 
   h2 {
     color: white;
-    font-weight: 400 !important;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.8px;
     width: 100%;
     margin: 0 !important;
     max-width: 100%;
@@ -204,7 +209,10 @@ const SecondVideoOverlay = styled.div`
   }
   h3 {
     color: white;
-    font-weight: 400 !important;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.8px;
     width: 100%;
     margin: 0 !important;
     max-width: 100%;
@@ -222,12 +230,15 @@ const SecondVideoOverlay = styled.div`
 `;
 
 const ThirdVideoOverlay = styled.div`
+  display: flex;
+  justify-content: center !important;
   position: absolute;
   top: 20%;
   left: 0;
   max-width: 720px;
   padding: 0 120px;
   width: 100%;
+  min-width: 100%;
   margin: 0 auto;
   @media (max-width: 1199px) {
     top: 10%;
@@ -245,10 +256,15 @@ const ThirdVideoOverlay = styled.div`
   }
 
   h2 {
-    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-weight: 400 !important;
     width: 100%;
+    font-weight: 900 !important;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.8px;
     margin: 0 !important;
     max-width: 100%;
     text-transform: inherit !important;
