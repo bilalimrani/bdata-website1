@@ -87,6 +87,7 @@ export default function LightWeightSection() {
                 <p className=" m-0">
                   {homeConstants.lightWeightSection.section2.subTitle1}
                 </p>
+                <br />
                 <p className="custom-padding m-0">
                   {homeConstants.lightWeightSection.section2.subTitle2}
                 </p>

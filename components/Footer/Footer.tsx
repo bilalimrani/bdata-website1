@@ -1,5 +1,10 @@
 /*eslint-disable*/
 import React from "react";
+import {
+  IoLocationOutline,
+  IoCallOutline,
+  IoMailOutline,
+} from "react-icons/io5";
 import { FooterContainer } from "./Footer.style";
 import Image from "next/image";
 const whiteLogo = require("public/img/footerlogo.svg");
@@ -14,13 +19,39 @@ export default function Footer() {
               <Image src={whiteLogo} width={150} height={48} />
             </div>
             <div className="address-wrapper py-3">
-              <p>BDATA</p>
-              <p>
-                107 Agro St Waterdown <br /> Ontario , Canada <br />
-                L8B 1Y2
-              </p>
-              <a href="tel:1-647-920-1701" target="_self" title="1-647-920-1701"  className="bdata-links-p"><span>1-647-920-1701</span></a>
-              <a href="mailto:info@Bdata.ca" target="_self" title="info@Bdata.ca"  className="bdata-links-p"><span>info@Bdata.ca</span></a>
+              <div className="location">
+                <IoLocationOutline />
+                <div className="bdata-location">
+                  <p className="mb-0">BDATA Solutions Inc</p>
+                  <p>
+                    107 Agro St Waterdown <br /> Ontario , Canada <br />
+                    L8B 1Y2
+                  </p>
+                </div>
+              </div>
+
+              <div className="phone">
+                <IoCallOutline />
+                <a
+                  href="tel:1-647-920-1701"
+                  target="_self"
+                  title="1-647-920-1701"
+                  className="bdata-links-p phone1"
+                >
+                  <span>1-647-920-1701</span>
+                </a>
+              </div>
+              <div className="email">
+                <IoMailOutline />
+                <a
+                  href="mailto:info@Bdata.ca"
+                  target="_self"
+                  title="info@Bdata.ca"
+                  className="bdata-links-p email1"
+                >
+                  <span>info@Bdata.ca</span>
+                </a>
+              </div>
             </div>
           </div>
           <div className="col-sm-6">
@@ -53,14 +84,12 @@ export default function Footer() {
                       Contact Us
                     </a>
                   </li>
-                 
+
                   {/* <li>
                     <a href="/industries" className="footer-links">
                       Industries
                     </a>
                   </li> */}
-                 
-
                 </ul>
               </div>
               <div className="col-lg-4 col-sm-6 col-12">

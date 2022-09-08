@@ -121,166 +121,181 @@ const A = styled.a`
 `;
 
 const FirstVideoOverlay = styled.div`
-position:absolute;
-top:20%;
-left:50%;
-transform:translateX(-50%);
-max-width:700px;
-padding:0 50px;
-width:100%;
-margin:0 auto;
-@media (max-width: 991px) {
-     top:10%;
-    padding:0 140px !important;
-}
-@media (max-width: 575px) {
-  padding:0 100px !important;
-}
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 700px;
+  padding: 0 50px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 991px) {
+    top: 10%;
+    padding: 0 140px !important;
+  }
+  @media (max-width: 575px) {
+    padding: 0 100px !important;
+  }
 
-@media (max-width: 479px) {
-  padding:0 50px !important;
-}
+  @media (max-width: 479px) {
+    padding: 0 50px !important;
+  }
 
- h2{
+  h2 {
     font-size: 42px;
     color: white;
     font-weight: 400 !important;
     width: 100%;
     margin: 0 !important;
     max-width: 100%;
-    text-transform:inherit !important;
+    text-transform: inherit !important;
     @media (max-width: 991px) {
-      font-size:32px;
+      font-size: 32px;
     }
     @media (max-width: 767px) {
-      font-size:26px;
+      font-size: 26px;
     }
     @media (max-width: 480px) {
-      font-size:18px;
+      font-size: 18px;
     }
- }
- h2 span{
-  font-weight:700;
- }
+  }
+  h2 span {
+    font-weight: 700;
+  }
 `;
 
 const SecondVideoOverlay = styled.div`
-position:absolute;
-top:20%;
-left:50%;
-transform:translateX(-50%);
-max-width:900px;
-padding:0 50px;
-width:100%;
-margin:0 auto;
-@media (max-width: 991px) {
-     top:10%;
-    padding:0 140px !important;
-}
-@media (max-width: 575px) {
-  padding:0 100px !important;
-}
-
-@media (max-width: 479px) {
-  padding:0 50px !important;
-}
-
-h2{
-  font-size: 42px;
-  color: white;
-  font-weight: 400 !important;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 900px;
+  padding: 0 50px;
   width: 100%;
-  margin: 0 !important;
-  max-width: 100%;
-  text-transform:inherit !important;
+  margin: 0 auto;
   @media (max-width: 991px) {
-    font-size:32px;
+    top: 10%;
+    padding: 0 140px !important;
   }
-  @media (max-width: 767px) {
-    font-size:26px;
+  @media (max-width: 575px) {
+    padding: 0 100px !important;
   }
-  @media (max-width: 480px) {
-    font-size:18px;
+
+  @media (max-width: 479px) {
+    padding: 0 50px !important;
   }
-}
+
+  h2 {
+    color: white;
+    font-weight: 400 !important;
+    width: 100%;
+    margin: 0 !important;
+    max-width: 100%;
+    text-transform: inherit !important;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+  h3 {
+    color: white;
+    font-weight: 400 !important;
+    width: 100%;
+    margin: 0 !important;
+    max-width: 100%;
+    text-transform: inherit !important;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
 `;
 
 const ThirdVideoOverlay = styled.div`
-position:absolute;
-top:20%;
-left:0;
-max-width:720px;
-padding:0 120px;
-width:100%;
-margin:0 auto;
-@media (max-width: 1199px) {
-  top:10%;
-  max-width:800px;
-}
-@media (max-width: 991px) {
-    
-    padding:0 50px !important;
-}
-@media (max-width: 575px) {
-  padding:0 50px !important;
-}
-
-@media (max-width: 479px) {
-  padding:0 50px !important;
-}
-
-h2{
-  font-size: 42px;
-  color: white;
-  font-weight: 400 !important;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  max-width: 720px;
+  padding: 0 120px;
   width: 100%;
-  margin: 0 !important;
-  max-width: 100%;
-  text-transform:inherit !important;
-  text-align:left;
+  margin: 0 auto;
   @media (max-width: 1199px) {
-    font-size:36px;
+    top: 10%;
+    max-width: 800px;
   }
   @media (max-width: 991px) {
-    font-size:26px;
+    padding: 0 50px !important;
   }
-  @media (max-width: 767px) {
-    font-size:26px;
+  @media (max-width: 575px) {
+    padding: 0 50px !important;
   }
-  @media (max-width: 480px) {
-    font-size:18px;
+
+  @media (max-width: 479px) {
+    padding: 0 50px !important;
   }
-}
-ul{
-  text-align:left;
-  color:white;
-  padding:15px 0;
-  @media (max-width: 991px) {
-    padding:5px 0;
-    margin:0;
+
+  h2 {
+    font-size: 42px;
+    color: white;
+    font-weight: 400 !important;
+    width: 100%;
+    margin: 0 !important;
+    max-width: 100%;
+    text-transform: inherit !important;
+    text-align: left;
+    @media (max-width: 1199px) {
+      font-size: 36px;
+    }
+    @media (max-width: 991px) {
+      font-size: 26px;
+    }
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
-}
-ul li{
-  position:relative;
-  font-size:16px;
-  padding-left:10px;
-  @media (max-width: 1199px) {
-    font-size:14px;
+  ul {
+    text-align: left;
+    color: white;
+    padding: 15px 0;
+    @media (max-width: 991px) {
+      padding: 5px 0;
+      margin: 0;
+    }
   }
-  @media (max-width: 991px) {
-    font-size:12px;
+  ul li {
+    position: relative;
+    font-size: 16px;
+    padding-left: 10px;
+    @media (max-width: 1199px) {
+      font-size: 14px;
+    }
+    @media (max-width: 991px) {
+      font-size: 12px;
+    }
   }
-}
-ul li::before{
-  content:'';
-  width:5px;
-  height:5px;
-  background:white;
-  border-radius:50%;
-  position:absolute;
-  left:0;
-  top:50%;
-}
+  ul li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
 `;
 
 export {

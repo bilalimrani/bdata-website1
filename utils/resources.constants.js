@@ -4,7 +4,7 @@ const bdataPattern = require("public/img/resources1.svg");
 export default {
   banner: {
     title: "BDATA Resources",
-    subTitle: "",
+    subTitle: "Whitepapers, data sheets, use cases and videos",
     bgImage: BannerImage,
     sideImage: bdataPattern,
   },

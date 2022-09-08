@@ -16,7 +16,7 @@ import resourceConstant from "../../../utils/resources.constants";
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
 const telecom = require("public/img/telecom.png");
-const defence = require("public/img/defence.png");
+const defence = require("public/img/helecoptr.svg");
 const oilgas = require("public/img/oil&gas.png");
 const utilities = require("public/img/utilities.png");
 const Frame78 = require("public/img/zero-trust.webp");

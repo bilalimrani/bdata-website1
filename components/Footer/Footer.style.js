@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
@@ -8,28 +7,56 @@ const FooterContainer = styled.div`
   .logoWrapper {
     margin-bottom: 15px;
   }
-  .address-wrapper{
-    p{
-      color:white;
+  .address-wrapper {
+    p {
+      color: white;
     }
-    
+  }
+  .location {
+    display: flex;
+    .bdata-location {
+      padding-left: 7px;
+    }
+    svg {
+      margin-top: 4px;
+    }
+  }
+  .phone {
+    display: flex;
+    .phone1 {
+      padding-left: 7px;
+      margin-top: 4px;
+    }
+    svg {
+      margin-top: 7px;
+    }
+  }
+  .email {
+    display: flex;
+    .email1 {
+      padding-left: 7px;
+      margin-top: 4px;
+    }
+    svg {
+      margin-top: 8px;
+    }
   }
   .address-wrapper1 {
     display: flex;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.34);
-    p{
-      color:#64626a;
+    p {
+      color: #78777b;
     }
-    .text-center-responsivness{
+    .text-center-responsivness {
       @media (max-width: 991px) {
-        text-align:center;
+        text-align: center;
       }
     }
-   
-    .socoalMediaLinks{
+
+    .socoalMediaLinks {
       @media (max-width: 991px) {
-       justify-content:center;
+        justify-content: center;
       }
     }
     p {
@@ -94,15 +121,15 @@ const FooterContainer = styled.div`
     padding: 10px 0;
   }
   .footer-links-ul li .footer-links {
-    color: #64626a;
+    color: #78777b;
     font-size: 14px;
     font-weight: 400;
   }
   .footer-links-ul li .footer-links:hover {
     color: white;
   }
-  .bdata-links-p{
-    display:block;
+  .bdata-links-p {
+    display: block;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
