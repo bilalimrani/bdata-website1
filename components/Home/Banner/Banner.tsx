@@ -57,7 +57,7 @@ export default function Banner({ data = {}, sideImage = true }) {
 
     // </BannerWrapper>
     <BannerWrapper>
-      <Carousel fade indicators={false}>
+      <Carousel fade indicators={true}>
         <Carousel.Item interval={5000}>
           <video autoPlay muted loop>
             <source
@@ -66,11 +66,11 @@ export default function Banner({ data = {}, sideImage = true }) {
             />
             <source src="movie.ogg" type="video/ogg" />
           </video>
-          <FirstVideoOverlay>
-            <Reveal effect="fadeInUp">
-              <h1>Securing the world one device at a time</h1>
-            </Reveal>
-          </FirstVideoOverlay>
+            <FirstVideoOverlay>
+              <Reveal effect="fadeInUp">
+                <h2>Securing the world <span>one device at a time</span></h2>
+              </Reveal>
+            </FirstVideoOverlay>
         </Carousel.Item>
         <Carousel.Item interval={8000}>
           <video autoPlay muted loop>
@@ -91,14 +91,12 @@ export default function Banner({ data = {}, sideImage = true }) {
               animationType="float"
               interval={0.06}
               duration={0.8}
-              tag="h1"
+              tag="h2"
               className="animated-paragraph"
               includeWhiteSpaces
               threshold={0.1}
-              rootMargin="20%"
             >
-              Apply zero trust using device immutable fingerprints to end
-              ransomware
+              Apply zero trust using device immutable fingerprints to end ransomware
             </AnimatedText>
           </SecondVideoOverlay>
         </Carousel.Item>
@@ -111,10 +109,19 @@ export default function Banner({ data = {}, sideImage = true }) {
           </video>
           <ThirdVideoOverlay>
             <Fade left>
-              <h1>
-                Apply zero trust using device immutable fingerprints to end
-                ransomware
-              </h1>
+              <h2>
+               A Robust Multilayer Cyber Security
+              </h2>
+              <ul>
+                <li>Immutable Fingerprint based Segragated IT/IO Network.</li>
+                <li>Realtime malware hunting.</li>
+                <li>Firewall Management.</li>
+                <li>Endpoint Monitoring.</li>
+                <li>Vulnerability Detection.</li>
+                <li>Automated Cyber Response.</li>
+                <li>Endpoint Monitoring.</li>
+                <li>Anomaly Detection.</li>
+              </ul>
             </Fade>
           </ThirdVideoOverlay>
         </Carousel.Item>
