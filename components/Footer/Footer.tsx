@@ -20,9 +20,12 @@ export default function Footer() {
             </div>
             <div className="address-wrapper py-3">
               <div className="location">
-                <IoLocationOutline />
-                <div className="bdata-location">
+                <div>
                   <p className="mb-0">BDATA Solutions Inc</p>
+                </div>
+
+                <div className="bdata-location">
+                  <IoLocationOutline />
                   <p>
                     107 Agro St Waterdown <br /> Ontario , Canada <br />
                     L8B 1Y2
