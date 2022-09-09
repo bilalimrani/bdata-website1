@@ -1,16 +1,21 @@
 import React from "react";
 import { BannerWrapper, Button } from "./Banner.style";
-const icon1 = require("public/img/main-asset.svg");
-const bdataPattern = require("public/img/logohalf.svg");
+// const icon1 = require("public/img/main-asset.svg");
+// const bdataPattern = require("public/img/logohalf.svg");
 
 export default function Banner() {
   return (
     <BannerWrapper>
-      <div className="container">
-        <div className="banner-content-wrapper">
-          <h2 className="fw-bold">Contact BDATA</h2>
-        </div>
+      <video autoPlay muted>
+        <source
+          type="video/mp4"
+          src="https://bdata-files.s3.us-west-2.amazonaws.com/contactus.mp4"
+        />
+      </video>
+      <div className="banner-content-wrapper">
+        <h2 className="fw-bold">Contact BDATA</h2>
       </div>
+
       <Button
         target="_blank"
         href="https://demo.org.bdata.ca"

@@ -1,32 +1,25 @@
 import styled from "styled-components";
-import BannerImage from "public/img/banner/press.svg";
+// import BannerImage from "public/img/banner/press.svg";
 
 const BannerWrapper = styled.div`
-  height: 480px;
-  background-color: black;
-  background-image: url(${BannerImage});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  height: 100%;
   position: relative;
   @media (max-width: 1199px) {
     background-position: bottom right -90px;
   }
-  @media (max-width: 991px) {
+  /* @media (max-width: 991px) {
     height: 450px;
   }
   @media (max-width: 767px) {
     height: 300px;
-  }
+  } */
   .banner-content-wrapper {
     max-width: 680px;
     margin: 0 auto;
-    position: relative;
-    z-index: 111;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
   }
   h2 {
     color: white;

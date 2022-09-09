@@ -3,7 +3,7 @@ import BannerImage from "public/img/banner/contact.svg";
 // import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
-  height: 480px;
+  /* height: 480px;
   background-color: black;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ const BannerWrapper = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
+  position: relative; */
   @media (max-width: 1199px) {
     background-position: bottom right -90px;
   }
@@ -42,8 +42,10 @@ const BannerWrapper = styled.div`
   .banner-content-wrapper {
     max-width: 680px;
     margin: 0 auto;
-    position: relative;
-    z-index: 111;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
     p {
       font-size: 16px;
     }

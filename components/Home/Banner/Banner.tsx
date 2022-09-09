@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Reveal from "react-reveal/Reveal";
 import Jump from "react-reveal/Jump";
 import Fade from "react-reveal/Fade";
@@ -17,13 +17,13 @@ import {
 
 export default function Banner({ data = {}, sideImage = true }) {
   const { bgImage, title, subTitle }: any = data;
-  // const BannerVideo = require("public/img/homeBanner.mp4");
+  const [showComponent, setShowComponent] = useState(false);
 
   useEffect(() => {
-    setTimeout(function () {
-      // document.getElementById("alarmmsg").innerHTML = 'sfas';
-    }, 2000);
-  });
+    setTimeout(() => {
+      setShowComponent(true);
+    }, 1000);
+  }, []);
 
   return (
     <BannerWrapper>
@@ -35,15 +35,17 @@ export default function Banner({ data = {}, sideImage = true }) {
               src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(7).mp4"
             />
           </video>
-          <FirstVideoOverlay>
-            <Reveal bottom cascade>
-              <h2>
-                Securing the world
-                <br />
-                <span>one device at a time</span>
-              </h2>
-            </Reveal>
-          </FirstVideoOverlay>
+          {showComponent && (
+            <FirstVideoOverlay>
+              <Reveal bottom cascade>
+                <h2>
+                  Securing the world
+                  <br />
+                  <span>one device at a time</span>
+                </h2>
+              </Reveal>
+            </FirstVideoOverlay>
+          )}
         </Carousel.Item>
         <Carousel.Item interval={8000}>
           <video autoPlay muted>
