@@ -16,6 +16,10 @@ import homeConstants from "../../../utils/home.constants";
 const Frame78 = require("public/img/zero-trust.webp");
 const screen = require("public/img/section4.svg");
 const technology = require("public/img/technology.webp");
+const first = require("public/gif/one.gif")
+const second = require("public/gif/2.gif")
+const third = require("public/gif/3.gif")
+const fourth = require("public/gif/4.gif")
 
 import BookImg from "../../../components/BookImg/BookImg";
 
@@ -41,7 +45,7 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <BookImg
                 title={homeConstants.lightWeightSection.section1.title}
-                img={Frame78}
+                img={first}
               />
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
@@ -73,7 +77,7 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <BookImg
                 title={homeConstants.lightWeightSection.section2.title}
-                img={screen}
+                img={second}
               />
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78} />
@@ -106,7 +110,7 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <BookImg
                 title={homeConstants.lightWeightSection.section3.title}
-                img={technology}
+                img={third}
               />
 
               {/* <SectionImage>
@@ -136,7 +140,7 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <BookImg
                 title={homeConstants.lightWeightSection.section4.title}
-                img={screen}
+                img={fourth}
               />
               {/* <SectionImage>
                 <img className="img w-100" src={Frame78}></img>
