@@ -57,7 +57,7 @@ export default function Banner({ data = {}, sideImage = true }) {
           <SecondVideoOverlay>
             <Jump>
               <h2>Apply Zero Trust</h2>
-              <h3>using device immutable fingerprints</h3>
+              <h2>using device immutable fingerprints</h2>
               <h2>to end Ransomware</h2>
             </Jump>
           </SecondVideoOverlay>

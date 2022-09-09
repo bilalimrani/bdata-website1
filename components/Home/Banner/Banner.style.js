@@ -15,7 +15,7 @@ const BannerWrapper = styled.div`
     bottom: 50px;
     z-index: 1;
     @media (max-width: 479px) {
-      bottom: 20px;
+      bottom: 15px;
     }
   }
   video {
@@ -110,8 +110,8 @@ const A = styled.a`
     font-size: 14px;
   }
   @media (max-width: 480px) {
-    padding: 6px 20px;
-    font-size: 12px;
+    padding: 4px 16px;
+    font-size: 10px;
   }
   &:hover {
     background: white;
@@ -139,6 +139,7 @@ const FirstVideoOverlay = styled.div`
 
   @media (max-width: 479px) {
     padding: 0 50px !important;
+    top: 5%;
   }
 
   h2 {
@@ -155,10 +156,11 @@ const FirstVideoOverlay = styled.div`
       font-size: 32px;
     }
     @media (max-width: 767px) {
-      font-size: 26px;
+      font-size: 22px;
     }
     @media (max-width: 480px) {
-      font-size: 18px;
+      font-size: 16px;
+      line-height:normal;
     }
   }
   h2 span {
@@ -177,16 +179,16 @@ const SecondVideoOverlay = styled.div`
   margin: 0 auto;
   @media (max-width: 991px) {
     top: 10%;
-    padding: 0 140px !important;
+    padding: 0 80px !important;
   }
   @media (max-width: 575px) {
-    padding: 0 100px !important;
+    padding: 0 50px !important;
   }
 
   @media (max-width: 479px) {
     padding: 0 50px !important;
+    top: 5%;
   }
-
   h2 {
     color: white;
     font-weight: 900;
@@ -201,31 +203,15 @@ const SecondVideoOverlay = styled.div`
       font-size: 32px;
     }
     @media (max-width: 767px) {
-      font-size: 26px;
+      font-size: 22px;
     }
     @media (max-width: 480px) {
-      font-size: 18px;
+      font-size: 16px;
+      line-height:normal;
     }
   }
-  h3 {
-    color: white;
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 43px;
-    letter-spacing: 0.8px;
-    width: 100%;
-    margin: 0 !important;
-    max-width: 100%;
-    text-transform: inherit !important;
-    @media (max-width: 991px) {
-      font-size: 32px;
-    }
-    @media (max-width: 767px) {
-      font-size: 26px;
-    }
-    @media (max-width: 480px) {
-      font-size: 18px;
-    }
+  h2 span {
+    font-weight: 700;
   }
 `;
 
@@ -248,39 +234,37 @@ const ThirdVideoOverlay = styled.div`
     padding: 0 50px !important;
   }
   @media (max-width: 575px) {
-    padding: 0 50px !important;
+    padding: 0 80px !important;
   }
 
   @media (max-width: 479px) {
     padding: 0 50px !important;
+    top: 5%;
   }
 
   h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
-    width: 100%;
-    font-weight: 900 !important;
+    font-weight: 900;
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.8px;
+    width: 100%;
     margin: 0 !important;
     max-width: 100%;
     text-transform: inherit !important;
-    text-align: left;
-    @media (max-width: 1199px) {
-      font-size: 36px;
-    }
     @media (max-width: 991px) {
-      font-size: 26px;
+      font-size: 32px;
     }
     @media (max-width: 767px) {
-      font-size: 26px;
+      font-size: 22px;
     }
     @media (max-width: 480px) {
-      font-size: 18px;
+      font-size: 16px;
+      line-height:normal;
     }
+  }
+  h2 span {
+    font-weight: 700;
   }
   ul {
     text-align: left;
