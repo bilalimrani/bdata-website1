@@ -29,7 +29,7 @@ export default function Banner({ data = {}, sideImage = true }) {
     <BannerWrapper>
       <Carousel fade indicators={false}>
         <Carousel.Item interval={8000}>
-          <video autoPlay muted loop>
+          <video autoPlay muted>
             <source
               type="video/mp4"
               src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(7).mp4"
@@ -46,7 +46,7 @@ export default function Banner({ data = {}, sideImage = true }) {
           </FirstVideoOverlay>
         </Carousel.Item>
         <Carousel.Item interval={8000}>
-          <video autoPlay muted loop>
+          <video autoPlay muted>
             <source
               type="video/mp4"
               src="https://bdata-files.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(8).mp4"
@@ -56,12 +56,12 @@ export default function Banner({ data = {}, sideImage = true }) {
             <Jump>
               <h2>Apply Zero Trust</h2>
               <h3>using device immutable fingerprints</h3>
-              <h2>to end ransomware</h2>
+              <h2>to end Ransomware</h2>
             </Jump>
           </SecondVideoOverlay>
         </Carousel.Item>
         <Carousel.Item interval={8000}>
-          <video autoPlay muted loop>
+          <video autoPlay muted>
             <source
               type="video/mp4"
               src="https://bdata-files.s3.us-west-2.amazonaws.com/1.mp4"
@@ -70,8 +70,8 @@ export default function Banner({ data = {}, sideImage = true }) {
           <ThirdVideoOverlay>
             <Fade left>
               <h2 className="text-center">
-                A Robust Multilayer
-                <br /> Cyber Security
+                A robust multilayer
+                <br /> cyber security
               </h2>
               {/* <ul>
                 <li>Immutable Fingerprint based Segragated IT/IO Network.</li>

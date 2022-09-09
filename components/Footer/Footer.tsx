@@ -25,6 +25,8 @@ export default function Footer() {
               <div className="bdata-location">
                 <IoLocationOutline />
                 <p>
+                  BDATA Solutions Inc
+                  <br />
                   107 Agro St Waterdown <br /> Ontario , Canada <br />
                   L8B 1Y2
                 </p>
