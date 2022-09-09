@@ -3,8 +3,8 @@ import Reveal from "react-reveal/Reveal";
 import Jump from "react-reveal/Jump";
 import Fade from "react-reveal/Fade";
 import Carousel from "react-bootstrap/Carousel";
-import ReactPlayer from "react-player";
-import AnimatedText from "react-animated-text-content";
+// import ReactPlayer from "react-player";
+// import AnimatedText from "react-animated-text-content";
 // import ReactPlayer from "react-player";
 import {
   BannerWrapper,
@@ -15,8 +15,7 @@ import {
 } from "./Banner.style";
 // import BannerVideo from "../../../public/img/homeBanner.mp4";
 
-export default function Banner({ data = {}, sideImage = true }) {
-  const { bgImage, title, subTitle }: any = data;
+export default function Banner() {
   const [showComponent, setShowComponent] = useState(false);
 
   useEffect(() => {

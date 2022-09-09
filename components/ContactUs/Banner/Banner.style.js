@@ -49,6 +49,19 @@ const BannerWrapper = styled.div`
     p {
       font-size: 16px;
     }
+
+    h2 {
+      color: white;
+      font-weight: 900 !important;
+      margin: 0 !important;
+      margin-bottom: 50px !important;
+      @media (max-width: 991px) {
+        margin-bottom: 30px !important;
+      }
+      @media (max-width: 767px) {
+        margin-bottom: 20px !important;
+      }
+    }
   }
   h2 {
     color: white;

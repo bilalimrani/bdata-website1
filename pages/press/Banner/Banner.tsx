@@ -16,7 +16,7 @@ export default function Banner() {
 
   return (
     <BannerWrapper>
-      <video autoPlay muted>
+      <video autoPlay muted loop>
         <source
           type="video/mp4"
           src="https://bdata-files.s3.us-west-2.amazonaws.com/press.mp4"
@@ -26,15 +26,10 @@ export default function Banner() {
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">
             <TypeAnimation
-              sequence={[
-                "Press",
-                () => {
-                  // e.g. return fetch("https://test.com"), will be awaited
-                  return new Promise((resolve) => setTimeout(resolve, 200000));
-                },
-              ]}
+              sequence={["Press for tech by tech"]}
               speed={30}
               wrapper="div"
+              style={{ textTransform: "inherit" }}
               // repeat={Infinity}
             />
           </h2>
