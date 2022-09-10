@@ -63,17 +63,21 @@ export default function Header() {
                   return (
                     <li key={index} className="nav-item">
                       <Link href={item?.link}>
-                        <a
-                          className={`${
-                            router.pathname == item.link ||
-                            router.pathname == item.subLink ||
-                            router.pathname == item.subLink1
-                              ? "active"
-                              : ""
-                          } nav-link`}
-                        >
-                          {item?.name}
-                        </a>
+                        {item?.type === "outer" ? (
+                          <a target="_blank">{item?.name}</a>
+                        ) : (
+                          <a
+                            className={`${
+                              router.pathname == item.link ||
+                              router.pathname == item.subLink ||
+                              router.pathname == item.subLink1
+                                ? "active"
+                                : ""
+                            } nav-link`}
+                          >
+                            {item?.name}
+                          </a>
+                        )}
                       </Link>
                     </li>
                   );

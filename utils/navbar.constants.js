@@ -9,10 +9,11 @@ export default [
     subLink: "/products/ProductsListing/ProductDetailsFingerPrint",
     subLink1: "/products/ProductsListing/ProductDetailsHub",
   },
-  // {
-  //   name: "Industries",
-  //   link: "/industries",
-  // },
+  {
+    name: "Soracom",
+    link: "http://soracom.biot.bdata.ca",
+    type: "outer",
+  },
   {
     name: "Resources",
     link: "/resources",

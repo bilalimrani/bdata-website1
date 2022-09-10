@@ -5,6 +5,10 @@ const path = require("path");
 
 module.exports = withPlugins([[withImages]], {
   webpack5: false,
+  images: {
+    loader: "imgix",
+    path: "",
+  },
   webpack(config, options) {
     config.resolve.modules.push(path.resolve("./"));
     config.plugins.push(

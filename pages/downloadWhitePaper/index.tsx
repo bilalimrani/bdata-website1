@@ -52,13 +52,13 @@ const DownloadWhitePaper = (props) => {
     e.preventDefault();
     const data = {
       ...form,
-      country: selectedCountry.name
-    }
+      country: selectedCountry.name,
+    };
     axios
       .post("http://54.202.19.104:3000/api/email", {
         data,
         subject: "Download WhitePaper",
-        attachments: [fileName]
+        attachments: [fileName],
       })
       .then((res) => {
         alert("Email send. Kindly check your mail");
@@ -78,7 +78,7 @@ const DownloadWhitePaper = (props) => {
         <title>Download White Paper</title>
       </Head>
       <Header />
-      <Banner data={homeConstants?.whitePapper?.banner} />
+      <Banner />
       <SectionWrapper className="container">
         <form onSubmit={submit}>
           <div className="row">
@@ -233,7 +233,7 @@ const DownloadWhitePaper = (props) => {
   );
 };
 
-export async function getServerSideProps(context) {
+async function getServerSideProps(context) {
   return {
     props: {
       section: context.query.section || "",

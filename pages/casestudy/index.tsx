@@ -15,7 +15,7 @@ const CaseStudy = () => {
       </Head>
       <Header />
       <MainWrapper>
-        <Banner data={caseStudyConstants?.banner} />
+        <Banner />
         <LightWeightSection />
       </MainWrapper>
       <Footer />
