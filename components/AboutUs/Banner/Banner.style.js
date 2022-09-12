@@ -73,6 +73,9 @@ p{
   line-height: 24px;
   color: #000000;
   mix-blend-mode: normal;
+  @media (max-width: 767px) {
+    color:white;
+  }
 };
   `
 

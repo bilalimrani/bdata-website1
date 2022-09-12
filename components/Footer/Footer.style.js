@@ -20,31 +20,36 @@ const FooterContainer = styled.div`
   }
   .bdata-location {
     display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    &.text-svg-center{
+      align-items:center;
+    }
+    svg{
+      margin-right:10px;
+      width:15px;
+      height:15px;
+    }
     p {
-      line-height: 1;
-      /* padding-left: 7px; */
-      padding-top: 2px;
+      margin:0;
     }
   }
   .phone {
     display: flex;
-    height: 18px;
-    .phone1 {
-      padding-left: 7px;
-      margin-top: 2px;
-    }
+    align-items:center;
     svg {
-      margin-top: 7px;
+      margin-right:10px;
+      width:15px;
+      height:15px;
     }
   }
   .email {
     display: flex;
-    .email1 {
-      padding-left: 7px;
-      margin-top: 4px;
-    }
+    align-items:center;
     svg {
-      margin-top: 8px;
+      margin-right:10px;
+      width:15px;
+      height:15px;
     }
   }
   .address-wrapper1 {
