@@ -9,7 +9,7 @@ export default function DownlaodWhitePaper(props) {
   const [msg, setMsg] = useState("");
   const [name, setName] = useState("");
   const [form, setForm] = useState({});
-  const [fileName, setFileName] = useState<any>({});
+  const [fileName, setFileName] = useState<any>("");
 
   useEffect(() => {
     setMsg("Submit");
@@ -23,65 +23,37 @@ export default function DownlaodWhitePaper(props) {
   const getWhitepaper = (props) => {
     if (props.data == "section1") {
       setName(resourceConstant.section1.title);
-      setFileName({
-        filename: resourceConstant.section1.title,
-        path: "public/bdata-whitepaper.pdf",
-        contentType: "application/pdf",
-      });
+      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_PLC.pdf");
     }
     if (props.data == "section2") {
       setName(resourceConstant.section2.title);
-      {
-        setFileName({
-          filename: resourceConstant.section2.title,
-          path: "public/BDATA-Innovating Security_Usecases.pptx",
-          contentType: "application/pptx",
-        });
-      }
+      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_Airgap.pdf");
+
     }
     if (props.data == "section3") {
       setName(resourceConstant.section3.title);
-      {
-        setFileName({
-          filename: resourceConstant.section3.title,
-          path: "public/WhitePaper.docx",
-          contentType: "application/docx",
-        });
-      }
+      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_IoT.pdf");
     }
     if (props.data == "section4") {
       setName(resourceConstant.section4.title);
-      {
-        setFileName({
-          filename: resourceConstant.section4.title,
-          path: "public/bdata-whitepaper.pdf",
-          contentType: "application/pdf",
-        });
-      }
+      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_MalwareHunting.pdf");
     }
     if (props.data == "useCase1") {
       setName(resourceConstant.useCase1.title);
-      {
-        setFileName({
-          filename: resourceConstant.useCase1.title,
-          path: "public/Cyber-Security-for-Automotive.pdf",
-          contentType: "application/pdf",
-        });
-      }
+      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/usecases/Cyber-Security-for-Automotive.pdf");
+
     }
     if (props.data == "useCase2") {
       setName(resourceConstant.useCase2.title);
-      {
-        setFileName({
-          filename: resourceConstant.useCase2.title,
-          path: "public/Cyber-Security-for-Gold-Mine.pdf",
-          contentType: "application/pdf",
-        });
-      }
+      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/usecases/Cyber-Security-for-Gold-Mine.pdf");
+
     }
   };
   const submit = (e) => {
     e.preventDefault();
+    console.log(fileName)
+    window.open(fileName, '_blank');
+    props.handleClose();
     setMsg("Submit");
     const data = {
       ...form,
@@ -91,18 +63,15 @@ export default function DownlaodWhitePaper(props) {
       actions: "downloadWhitePaper",
       params: {
         ...form,
-        fileName,
       },
     });
     axios
       .post("http://54.202.19.104:3000/api/downloadWhitepaper", {
         data,
         subject: "Thanks for Downlaoding our Resources!",
-        attachments: [fileName],
       })
       .then((res) => {
         setMsg("Email has been sent.");
-        // setIsLoading(false);
         props.handleClose();
       })
       .catch((e) => console.log(e));

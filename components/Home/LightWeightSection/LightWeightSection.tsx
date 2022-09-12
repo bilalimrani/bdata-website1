@@ -13,9 +13,6 @@ import {
   // UL,
 } from "./LightWeightSection.style";
 import homeConstants from "../../../utils/home.constants";
-const Frame78 = require("public/img/zero-trust.webp");
-const screen = require("public/img/section4.svg");
-const technology = require("public/img/technology.webp");
 const first = require("public/gif/one.gif")
 const second = require("public/gif/2.gif")
 const third = require("public/gif/3.gif")

@@ -15,7 +15,7 @@ export default async function (req, res) {
    });
    let mailOptions = {
       from: "no_reply@bdata.ca",
-      to: data.email,
+      to: "hasnat@bdata.ca",
       subject: subject,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
@@ -106,11 +106,15 @@ export default async function (req, res) {
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0 40px;">
                                                                <tr>
                                                                   <td style="font-size: 16px;">
-                                                                  Hi ${data.firstName},
+                                                                  <strong>Contact Information</strong>
                                                                   <br />
-                                                                  <br /> 
-                                                                  Thanks for downloading our white paper. we are happy to share this PDF file with you, Kindly find attachement. or you can also simply click on this link to download it manually <a href="https://bdata.ca/resources.pdf">https://bdata.ca/resources.pdf</a>
                                                                   <br />
+                                                                  <br />
+                                                                  FirstName: ${data.firstName}
+                                                                  <br />
+                                                                  LastName:  ${data.lastName}
+                                                                  <br />
+                                                                  Email: ${data.email}
                                                                   <br />
                                                                   <br />
                                                                   Thanks,
@@ -219,6 +223,7 @@ export default async function (req, res) {
          res.status(400).end(JSON.stringify({ message: "Error" }));
 
       } else {
+         console.log("email sent")
          res.status(200).end(JSON.stringify({ message: "Send Mail" }));
       }
    });
