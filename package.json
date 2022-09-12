@@ -1,6 +1,6 @@
 {
   "name": "bdata",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "BData-Zero Trust Technology for Network Security",
   "main": "index.js",
   "scripts": {
