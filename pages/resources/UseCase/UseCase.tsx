@@ -37,7 +37,7 @@ export default function UseCase() {
   return (
     <PaperWraper>
       <SectionPadding>
-        <h3 className="text-center m-0  fw-bold">Use Case</h3>
+        <h3 className="text-center m-0  fw-bold">Use Cases</h3>
       </SectionPadding>
       <div className="row">
         <div className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding">

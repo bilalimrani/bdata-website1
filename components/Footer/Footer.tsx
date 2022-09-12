@@ -8,6 +8,7 @@ import {
 import { FooterContainer } from "./Footer.style";
 import Image from "next/image";
 const whiteLogo = require("public/img/footerlogo.svg");
+const footerLogo = require("public/img/footerLogo1.svg");
 
 export default function Footer() {
   return (
@@ -23,10 +24,12 @@ export default function Footer() {
                 <p className="mb-0">BDATA Solutions Inc</p>
               </div> */}
               <div className="bdata-location">
+                <img src={footerLogo} alt="" />
+                <p>BDATA Solutions Inc</p>
+              </div>
+              <div className="bdata-location">
                 <IoLocationOutline />
                 <p>
-                  BDATA Solutions Inc
-                  <br />
                   107 Agro St Waterdown <br /> Ontario , Canada <br />
                   L8B 1Y2
                 </p>
@@ -97,11 +100,6 @@ export default function Footer() {
               <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">Company</h5>
                 <ul className="footer-links-ul">
-                  {/* <li>
-                    <a href="#" className="footer-links">
-                      About Us
-                    </a>
-                  </li> */}
                   <li>
                     <a href="#" className="footer-links">
                       Terms

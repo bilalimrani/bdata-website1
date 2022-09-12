@@ -91,7 +91,7 @@ export default function Guide() {
                       className="linkdin-link"
                     />
                   </a>
-                  Director Cyber Security
+                  Product Architect
                 </p>
               </div>
             </div>

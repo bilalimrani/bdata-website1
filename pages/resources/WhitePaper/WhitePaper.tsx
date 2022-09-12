@@ -5,20 +5,20 @@ import {
   Button,
   SectionPadding,
 } from "../../../styles/styledComponents/WhitePaperPage.style";
-import Image from "next/image";
-import { Modal, Form } from "react-bootstrap";
+// import Image from "next/image";
+import { Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import DownlaodWhitePaper from "../../../components/Home/DownloadWhitePaper/DownloadWhitePaper";
 import BookImg from "../../../components/BookImg/BookImg";
 import resourceConstant from "../../../utils/resources.constants";
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/technology.webp");
-const telecom = require("public/img/telecom.png");
+// const telecom = require("public/img/telecom.png");
 const defence = require("public/img/helecoptr.svg");
-const oilgas = require("public/img/oil&gas.png");
-const utilities = require("public/img/utilities.png");
+// const oilgas = require("public/img/oil&gas.png");
+// const utilities = require("public/img/utilities.png");
 const Frame78 = require("public/img/zero-trust.webp");
 
 export default function WhitePaper() {

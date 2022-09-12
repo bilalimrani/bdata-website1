@@ -26,7 +26,7 @@ export default function Banner() {
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">
             <TypeAnimation
-              sequence={["Press for tech by tech"]}
+              sequence={["Press"]}
               speed={30}
               wrapper="div"
               style={{ textTransform: "inherit" }}

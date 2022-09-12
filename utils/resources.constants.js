@@ -4,28 +4,29 @@ const bdataPattern = require("public/img/resources1.svg");
 export default {
   banner: {
     title: "BDATA Resources",
-    subTitle: "Whitepapers, data sheets, use cases and videos",
+    subTitle: "Whitepapers, Data sheets, Use cases and Videos",
     bgImage: BannerImage,
     sideImage: bdataPattern,
   },
   section1: {
     title:
-      "Zero trust - A multilayer cyber security for industrial control system",
+      "Zero Trust - A multilayer cyber security for industrial control system",
   },
   section2: {
     title:
       "Immutable device fingerprint based segregated/airgap network for IT/OT/IoT devices",
   },
   section3: {
-    title: "Enhance cyber security for Azure and AWS IoT hub using BIoT",
+    title:
+      "Enhance cyber security for Azure and AWS IoT hub using BIoT Security Technology",
   },
   section4: {
-    title: "Protect credentials using BIoT security technology",
+    title: "Protect credentials using BIoT Security Technology",
   },
   useCase1: {
-    title: "Cyber security for automotive",
+    title: "Cyber security for Automotive Industry",
   },
   useCase2: {
-    title: "Cyber security for gold mine",
+    title: "Cyber security for Mining Industry",
   },
 };

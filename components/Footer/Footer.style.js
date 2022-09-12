@@ -22,7 +22,8 @@ const FooterContainer = styled.div`
     display: flex;
     p {
       line-height: 1;
-      padding-left: 7px;
+      /* padding-left: 7px; */
+      padding-top: 2px;
     }
   }
   .phone {
@@ -30,7 +31,7 @@ const FooterContainer = styled.div`
     height: 18px;
     .phone1 {
       padding-left: 7px;
-      margin-top: 4px;
+      margin-top: 2px;
     }
     svg {
       margin-top: 7px;

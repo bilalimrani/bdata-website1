@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import BannerImage from "public/img/banner/Press-1.svg";
+import BannerImage from "public/img/thumb.gif";
 import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
   height: 480px;
   background-image: url(${BannerImage});
   background-repeat: no-repeat;
-  background-size: contain , 160px 380px;
+  background-size: contain, 160px 380px;
   background-position: bottom right, bottom left -20px;
   display: flex;
   align-items: center;
@@ -30,10 +30,10 @@ const BannerWrapper = styled.div`
     }
   }
   @media (max-width: 1199px) {
-    height:500px;
+    height: 500px;
   }
   @media (max-width: 992px) {
-    height:400px;
+    height: 400px;
   }
   h2 {
     @media (max-width: 768px) {
@@ -42,17 +42,16 @@ const BannerWrapper = styled.div`
   }
   > div {
     height: 100%;
-   padding-top:80px;
-   @media (max-width: 768px) {
-    padding:40px 20px;
-   }
-   @media (max-width:479px) {
-    padding:20px;
-   }
-
+    padding-top: 80px;
+    @media (max-width: 768px) {
+      padding: 40px 20px;
+    }
+    @media (max-width: 479px) {
+      padding: 20px;
+    }
   }
 
-   @media (max-width: 1199px) {
+  @media (max-width: 1199px) {
     background-image: url(${BannerImage});
     background-position: bottom right, bottom left -20px;
   }
@@ -61,7 +60,7 @@ const BannerWrapper = styled.div`
   //   background-position: bottom right -20px;
   // }
   @media (max-width: 768px) {
-    height:auto;
+    height: auto;
     background-image: none;
     background-color: black;
     color: white;
@@ -71,19 +70,18 @@ const BannerWrapper = styled.div`
 
     @media (max-width: 991px) {
       max-width: 320px;
-      padding:0;
+      padding: 0;
     }
   }
- 
-  .banner-content-wrapper{
-    max-width:400px;
-    p{
-      font-size:16px;
+
+  .banner-content-wrapper {
+    max-width: 400px;
+    p {
+      font-size: 16px;
     }
     @media (max-width: 992px) {
-      max-width:320px;
+      max-width: 320px;
     }
   }
-  
 `;
 export { BannerWrapper };

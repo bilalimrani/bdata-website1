@@ -10,7 +10,7 @@ export default [
     subLink1: "/products/ProductsListing/ProductDetailsHub",
   },
   {
-    name: "Soracom",
+    name: "Buy Now",
     link: "http://soracom.biot.bdata.ca",
     type: "outer",
   },

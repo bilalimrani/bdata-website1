@@ -55,7 +55,7 @@ export default function Guide() {
             </div>
             <div className="card-body">
               <h5 className="card-title text-center">Pratik Patel</h5>
-              <p className="card-text text-center">Director Cyber Security</p>
+              <p className="card-text text-center">Product Architect</p>
             </div>
           </div>
         </div>

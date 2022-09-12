@@ -1,9 +1,8 @@
 import React from "react";
 import {
   BannerWrapper,
-  Button,
+  // Button,
 } from "../../../styles/styledComponents/resourcesBanner.style";
-
 import resroucesConstant from "../../../utils/resources.constants";
 
 export default function Banner() {
