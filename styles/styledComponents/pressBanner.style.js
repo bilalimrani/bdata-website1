@@ -13,6 +13,9 @@ const BannerWrapper = styled.div`
   @media (max-width: 767px) {
     height: 300px;
   } */
+  video{
+    width:100%;
+  }
   .banner-content-wrapper {
     max-width: 680px;
     margin: 0 auto;
