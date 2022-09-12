@@ -10,7 +10,7 @@ import {
 } from "../../styles/styledComponents/Products.style";
 import Banner from "../../components/Products/Banner/Banner";
 import BiotProduct from "../../components/Products/BiotProducts/BiotProducts";
-import ContactForm from "../../components/Products/ContactForm/ContactUs";
+// import ContactForm from "../../components/Products/ContactForm/ContactUs";
 import MainWrapper from "../style.js";
 const identityAccess = require("public/img/identityAccess.png");
 import ProductsListing from "./ProductsListing/ProductsListing";
