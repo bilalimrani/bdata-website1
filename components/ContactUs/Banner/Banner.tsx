@@ -25,7 +25,7 @@ export default function Banner() {
         <h2 className="fw-bold text-center">
           {showComponent && (
             <TypeAnimation
-              sequence={["BDATA is here to help you contact us"]}
+              sequence={["Contact us to achieve cyber resilience"]}
               speed={30}
               wrapper="div"
               style={{ textTransform: "inherit" }}
