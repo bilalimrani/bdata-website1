@@ -64,6 +64,9 @@ const BannerWrapper = styled.div`
     max-width:400px;
     p{
       font-size:16px;
+      @media (max-width: 767px) {
+        color:white;
+      }
     }
     @media (max-width: 992px) {
       max-width:320px;

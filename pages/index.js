@@ -8,6 +8,7 @@ import LightWeightSection from "components/Home/LightWeightSection/LightWeightSe
 import CustomersStories from "components/Home/CustomersStories/CustomersStories";
 import homeConstants from "../utils/home.constants";
 import MainWrapper from "./style.js";
+import Cookies from "../components/Cookie/Cookie";
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
         <LightWeightSection />
         <PartnersContainer />
         <CustomersStories />
+        <Cookies />
       </MainWrapper>
       <Footer />
     </div>
