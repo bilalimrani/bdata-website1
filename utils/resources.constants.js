@@ -21,7 +21,7 @@ export default {
       "Enhance cyber security for Azure and AWS IoT hub using BIoT Security Technology",
   },
   section4: {
-    title: "Protect credentials using BIoT Security Technology",
+    title: "Realtime Malware Hunting and Response",
   },
   useCase1: {
     title: "Cyber security for Automotive Industry",

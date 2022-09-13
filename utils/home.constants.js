@@ -56,7 +56,7 @@ another network.`,
         "BIoT security technology enhance Azure and AWS IoT hub security and ensures complete autonomy of cyber security using pki (public private key infrastructure) and immutable device fingerprint authentication.",
     },
     section4: {
-      title: "Protect credentials using BIoT security technology",
+      title: "Realtime Malware Hunting and Response",
       subTitle:
         "In addition to finance and manufacturing, professional and business services was heavily targeted in 2021 cyber-attacks, particularly by ransomware actors, each of the cyber-attacks had a root cause of credential compromise either by DDoS, Insiders, or credential harvesting",
       subTitle2:
