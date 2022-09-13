@@ -13,8 +13,8 @@ const BannerWrapper = styled.div`
   @media (max-width: 767px) {
     height: 300px;
   } */
-  video{
-    width:100%;
+  video {
+    width: 100%;
   }
   .banner-content-wrapper {
     max-width: 680px;
@@ -23,6 +23,12 @@ const BannerWrapper = styled.div`
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
+    @media (max-width: 767px) {
+      top: 20%;
+    }
+    @media (max-width: 480px) {
+      top: 10%;
+    }
   }
   h2 {
     color: white;
