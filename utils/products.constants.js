@@ -38,7 +38,7 @@ export default {
       feature7: "Unidentified devices connect with network",
       application1: "BIoT Immutable Fingerprints Application",
       application2:
-        "BIoT Immutable Fingerprint is used for Kubernetes/ docker containers and hardware’s in IT/OT and IoT use cases to create an autonomous, password less, zero trust based secure network of trusted devices/containers. ",
+        "BIoT Immutable Fingerprint is used for Kubernetes/ docker containers and hardware’s in IT/OT and IoT use cases to create an autonomous, password less, Zero Trust based secure network of trusted devices/containers. ",
       valunerability: "Possible Cyber Attacks Vulnerabilities",
       valunerabilities1:
         " Remote VPN support through Enterprise desktop to application servers may be compromised with stolen CA certificates. ",

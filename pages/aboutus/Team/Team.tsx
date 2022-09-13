@@ -79,7 +79,7 @@ export default function Guide() {
                 <img src={icon3} alt="Director" className="custom-round-img" />
               </div>
               <div className="card-body">
-                <h5 className="card-title text-center">Pratik Patel</h5>
+                <h5 className="card-title text-center">Pratik Patil</h5>
                 <p className="card-text text-center">
                   <a
                     href="https://www.linkedin.com/in/pratik-patil-820286144/"

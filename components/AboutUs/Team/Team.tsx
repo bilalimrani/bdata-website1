@@ -54,7 +54,7 @@ export default function Guide() {
               />
             </div>
             <div className="card-body">
-              <h5 className="card-title text-center">Pratik Patel</h5>
+              <h5 className="card-title text-center">Pratik Patil</h5>
               <p className="card-text text-center">Product Architect</p>
             </div>
           </div>

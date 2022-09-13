@@ -37,7 +37,7 @@ another network.`,
   lightWeightSection: {
     section1: {
       title:
-        "Zero trust - A multilayer cyber security for industrial control system",
+        "Zero Trust - A multilayer cyber security for industrial control system",
       subTitle:
         "BIoT security technology is a lightweight multilayer cyber security solution which enables companies to achieve cyber security compliances with respect to TSA, IECT 62443, ISO, NIST, HIPAA, and other local and international standards.",
     },
