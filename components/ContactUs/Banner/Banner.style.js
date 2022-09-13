@@ -47,6 +47,7 @@ const BannerWrapper = styled.div`
       font-weight: 900 !important;
       margin: 0 !important;
       margin-bottom: 50px !important;
+      text-transform: inherit;
       @media (max-width: 991px) {
         margin-bottom: 30px !important;
       }
