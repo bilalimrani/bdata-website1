@@ -7,33 +7,33 @@ import {
   CalendlyWrapper,
   CalendlyWrapperInner,
 } from "./ContactUs.style";
-import { event } from "../../../lib/ga"
+import { event } from "../../../lib/ga";
 import contactUsConstant from "../../../utils/contactUs.constants";
 const calendly = require("public/img/calendly.png");
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
-  const [msg, setMsg] = useState("")
+  const [msg, setMsg] = useState("");
   const [form, setForm] = useState({});
   useEffect(() => {
-    setMsg("Submit")
+    setMsg("Submit");
   }, []);
   const submit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    setMsg("Submit")
+    setMsg("Submit");
     const data = {
-      ...form
-    }
-    event({ actions: "contactUs", params: data })
+      ...form,
+    };
+    event({ actions: "contactUs", params: data });
     axios
       .post("http://54.202.19.104:3000/api/contactUs", {
         data,
         subject: "Thanks for Contacting Us!",
       })
       .then((res) => {
-        setMsg("Email has been sent.")
-        setIsLoading(false)
+        setMsg("Email has been sent.");
+        setIsLoading(false);
         // setEmail("");
       })
       .catch((e) => console.log(e));
@@ -52,7 +52,7 @@ export default function Contact() {
             <div className="row">
               <div className="col-lg-8 py-3">
                 <div className="row">
-                  <div className="col-6 pb-3">
+                  <div className="col-sm-12 col-md-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -66,7 +66,7 @@ export default function Contact() {
                       <label htmlFor="floatingInput">First Name</label>
                     </div>
                   </div>
-                  <div className="col-6 pb-3">
+                  <div className="col-sm-12 col-md-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -80,7 +80,7 @@ export default function Contact() {
                       <label htmlFor="floatingInput">Last Name</label>
                     </div>
                   </div>
-                  <div className="col-6 py-3">
+                  <div className="col-sm-12 col-md-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="email"
@@ -94,7 +94,7 @@ export default function Contact() {
                       <label htmlFor="floatingInput">Email Address</label>
                     </div>
                   </div>
-                  <div className="col-6 py-3">
+                  <div className="col-sm-12 col-md-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="tel"
@@ -107,7 +107,7 @@ export default function Contact() {
                       <label htmlFor="floatingInput">Phone Number</label>
                     </div>
                   </div>
-                  <div className="col-6 py-3">
+                  <div className="col-sm-12 col-md-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -120,7 +120,7 @@ export default function Contact() {
                       <label htmlFor="floatingInput">Company Name</label>
                     </div>
                   </div>
-                  <div className="col-6 py-3">
+                  <div className="col-sm-12 col-md-6 pb-3">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -145,9 +145,7 @@ export default function Contact() {
                   <label htmlFor="floatingInput">Comments</label>
                 </div>
 
-                <p>
-                  {contactUsConstant.form.text1}:
-                </p>
+                <p>{contactUsConstant.form.text1}:</p>
                 <div className="form-check d-flex justify-content-left">
                   <input
                     className="form-check-input me-2"
@@ -157,12 +155,10 @@ export default function Contact() {
                     required
                   />
                   <label className="form-check-label" htmlFor="form6Example8">
-                  {contactUsConstant.form.text2}{" "}
+                    {contactUsConstant.form.text2}{" "}
                   </label>
                 </div>
-                <p>
-                {contactUsConstant.form.text3}{" "}
-                </p>
+                <p>{contactUsConstant.form.text3} </p>
                 <div className="btnGroup mt-4">
                   <button
                     type="submit"
@@ -190,7 +186,7 @@ export default function Contact() {
                     target="_blank"
                     className="btn btn1 btn-primary"
                   >
-                 Calendly
+                    Calendly
                   </a>
                 </CalendlyWrapper>
               </div>

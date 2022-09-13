@@ -198,6 +198,16 @@ const SecondVideoOverlay = styled.div`
     margin: 0 !important;
     max-width: 100%;
     text-transform: inherit !important;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 480px) {
+      font-size: 14px;
+      line-height: normal;
+    }
   }
   h3 {
     color: white;
@@ -208,6 +218,16 @@ const SecondVideoOverlay = styled.div`
     margin: 0 !important;
     max-width: 100%;
     text-transform: inherit !important;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 480px) {
+      font-size: 12px;
+      line-height: normal;
+    }
   }
   h2 span {
     font-weight: 700;
@@ -245,6 +265,16 @@ const ThirdVideoOverlay = styled.div`
     letter-spacing: 0.8px;
     text-align: left !important;
     text-transform: inherit !important;
+    @media (max-width: 991px) {
+      font-size: 32px;
+    }
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+    @media (max-width: 480px) {
+      font-size: 16px;
+      line-height: normal;
+    }
   }
   h2 span {
     font-weight: 700;

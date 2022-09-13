@@ -3,25 +3,17 @@ import BannerImage from "public/img/banner/contact.svg";
 // import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
-  /* height: 480px;
-  background-color: black;
-  background-image: url(${BannerImage});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative; */
+  video {
+    height: 100%;
+  }
   @media (max-width: 1199px) {
     background-position: bottom right -90px;
   }
   @media (max-width: 991px) {
-    height: 450px;
+    /* height: 450px; */
   }
   @media (max-width: 767px) {
-    height: 300px;
+    /* height: 300px; */
   }
   &::before {
     /* content: url(${bdataPattern}); */
