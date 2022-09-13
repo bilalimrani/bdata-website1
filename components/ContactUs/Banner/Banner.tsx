@@ -23,14 +23,7 @@ export default function Banner() {
       </video>
       <div className="banner-content-wrapper">
         <h2 className="fw-bold text-center">
-          {showComponent && (
-            <TypeAnimation
-              sequence={["Contact us to achieve cyber resilience"]}
-              speed={30}
-              wrapper="div"
-              style={{ textTransform: "inherit" }}
-            />
-          )}
+          Contact us to achieve cyber resilience
         </h2>
       </div>
 
