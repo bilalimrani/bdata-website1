@@ -160,7 +160,7 @@ const FirstVideoOverlay = styled.div`
     }
     @media (max-width: 480px) {
       font-size: 16px;
-      line-height:normal;
+      line-height: normal;
     }
   }
   h2 span {
@@ -192,23 +192,22 @@ const SecondVideoOverlay = styled.div`
   h2 {
     color: white;
     font-weight: 900;
-    font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.8px;
     width: 100%;
     margin: 0 !important;
     max-width: 100%;
     text-transform: inherit !important;
-    @media (max-width: 991px) {
-      font-size: 32px;
-    }
-    @media (max-width: 767px) {
-      font-size: 22px;
-    }
-    @media (max-width: 480px) {
-      font-size: 16px;
-      line-height:normal;
-    }
+  }
+  h3 {
+    color: white;
+    font-weight: 900;
+    line-height: 43px;
+    letter-spacing: 0.8px;
+    width: 100%;
+    margin: 0 !important;
+    max-width: 100%;
+    text-transform: inherit !important;
   }
   h2 span {
     font-weight: 700;
@@ -221,11 +220,7 @@ const ThirdVideoOverlay = styled.div`
   position: absolute;
   top: 20%;
   left: 0;
-  max-width: 720px;
   padding: 0 120px;
-  width: 100%;
-  min-width: 100%;
-  margin: 0 auto;
   @media (max-width: 1199px) {
     top: 10%;
     max-width: 800px;
@@ -248,20 +243,8 @@ const ThirdVideoOverlay = styled.div`
     font-size: 36px;
     line-height: 43px;
     letter-spacing: 0.8px;
-    width: 100%;
-    margin: 0 !important;
-    max-width: 100%;
+    text-align: left !important;
     text-transform: inherit !important;
-    @media (max-width: 991px) {
-      font-size: 32px;
-    }
-    @media (max-width: 767px) {
-      font-size: 22px;
-    }
-    @media (max-width: 480px) {
-      font-size: 16px;
-      line-height:normal;
-    }
   }
   h2 span {
     font-weight: 700;

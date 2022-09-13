@@ -20,7 +20,7 @@ const Main = () => {
         <LightWeightSection />
         <PartnersContainer />
         <CustomersStories />
-        <Cookies />
+        {/* <Cookies /> */}
       </MainWrapper>
       <Footer />
     </div>

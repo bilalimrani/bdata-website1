@@ -16,6 +16,7 @@ module.exports = withPlugins([[withImages]], {
     };
     config.plugins.push(
       new webpack.ProvidePlugin({
+        webpack5: true,
         $: "jquery",
         jQuery: "jquery",
         "window.jQuery": "jquery",

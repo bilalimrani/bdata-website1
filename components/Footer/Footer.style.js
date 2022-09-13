@@ -18,38 +18,48 @@ const FooterContainer = styled.div`
       margin-top: 4px;
     }
   }
+  .address1 {
+    p {
+      line-height: 1.2;
+    }
+  }
   .bdata-location {
     display: flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    &.text-svg-center{
-      align-items:center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    &.text-svg-center {
+      align-items: center;
     }
-    svg{
-      margin-right:10px;
-      width:15px;
-      height:15px;
+    .svg1 {
+      margin-right: 2px;
+      width: 15px;
+      height: 15px;
+    }
+    svg {
+      /* margin-right: 5px; */
+      width: 15px;
+      height: 15px;
     }
     p {
-      margin:0;
+      margin: 0;
     }
   }
   .phone {
     display: flex;
-    align-items:center;
+    align-items: center;
     svg {
-      margin-right:10px;
-      width:15px;
-      height:15px;
+      /* margin-right: 10px; */
+      width: 15px;
+      height: 13px;
     }
   }
   .email {
     display: flex;
-    align-items:center;
+    align-items: center;
     svg {
-      margin-right:10px;
-      width:15px;
-      height:15px;
+      margin-right: 3px;
+      width: 15px;
+      height: 13px;
     }
   }
   .address-wrapper1 {
