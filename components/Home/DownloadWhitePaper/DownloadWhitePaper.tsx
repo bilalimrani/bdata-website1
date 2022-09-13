@@ -87,9 +87,12 @@ export default function DownlaodWhitePaper(props) {
   };
   return (
     <SectionWrapper>
-      <h2 className="heading fw-bold">{name}</h2>
+      <div className="custom-modal-header">
+      <h2 className="heading fw-bold m-0">{name}</h2>
+      <button onClick={handleClose}><i className="fa fa-times"></i></button>
+      </div>
       <form className="form" onSubmit={submit}>
-        <div className="row">
+        <div className="row custom-body-wrapper">
           <div className="">
             <div className="row">
               <div className="col-sm-12 col-md-6 mb-4">
@@ -159,18 +162,20 @@ export default function DownlaodWhitePaper(props) {
               </label>
             </div>
             <p>You can unsubscribe from these communications at any time. </p>
-            <br />
-            <div className="btnGroup">
+          
+          </div>
+        </div>
+        <div className="btnGroup">
               <Button
                 onClick={handleClose}
-                className="btn btn-primary btn-block mb-4"
+                className="btn btn-primary btn-block me-4"
               >
                 Cancel
               </Button>
               <Button
                 disabled={isLoading}
                 type="submit"
-                className="btn btn-primary btn-block mb-4"
+                className="btn btn-primary btn-block"
               >
                 {isLoading && (
                   <div className="spinner-border" role="status">
@@ -180,8 +185,6 @@ export default function DownlaodWhitePaper(props) {
                 {!isLoading && <span>{msg}</span>}
               </Button>
             </div>
-          </div>
-        </div>
       </form>
     </SectionWrapper>
   );

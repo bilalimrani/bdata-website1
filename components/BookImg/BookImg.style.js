@@ -11,7 +11,7 @@ const BookImgWrapper = styled.div`
   transition: all 500ms;
   @media (max-width: 991px) {
     max-width: 400px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   &::before {

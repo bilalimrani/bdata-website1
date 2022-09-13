@@ -194,8 +194,8 @@ export default function WhitePaper() {
           </CardWrapper>
         </div> */}
       </div>
-      <Modal className="modal-xl" show={show} onHide={handleClose}>
-        <Modal.Body>
+      <Modal className="modal-xl" show={show} onHide={handleClose} centered>
+        <Modal.Body className="p-0">
           <DownlaodWhitePaper
             data={section}
             onSubmit={onLoginFormSubmit}

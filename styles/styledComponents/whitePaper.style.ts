@@ -64,18 +64,15 @@ const SectionWrapper = styled.div`
     font-style: italic;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.4px;
-
-    /* #052460 */
-
     color: #052460;
-
     mix-blend-mode: normal;
   }
+  .form-check-input{
+    min-width:16px;
+  }
   .form-check-input:checked {
-    background-color: #00b0df;
-    border-color: #00b0df;
+    background-color: #052460;
+    border-color: #052460;
   }
   textarea {
     height: 148px !important;
@@ -93,13 +90,9 @@ const SectionWrapper = styled.div`
     background: #fff;
     border: 1px solid #004d88;
     border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
     color: #004d88;
-    padding: 16px 32px;
-    gap: 10px;
+    padding: 16px 32px;s
     width: 150px;
     height: 36px;
     box-shadow:none;

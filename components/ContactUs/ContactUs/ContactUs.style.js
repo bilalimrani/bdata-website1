@@ -73,9 +73,12 @@ const ContactWrapper = styled.div`
   .form-check-input {
     min-width: 16px;
   }
+  .form-check-input{
+    min-width:16px;
+  }
   .form-check-input:checked {
-    background-color: #00b0df;
-    border-color: #00b0df;
+    background-color: #052460;
+    border-color: #052460;
   }
   textarea {
     height: 148px !important;
@@ -129,6 +132,9 @@ const Button = styled.a`
   &:hover {
     background-color: #004d88 !important;
     color: white;
+  }
+  @media (max-width: 991) {
+    padding: 6px 25px;
   }
 `;
 const CalendlyWrapper = styled.div`
