@@ -50,7 +50,7 @@ background-position:top -20px right;
 background-repeat: no-repeat;
 background-size: 450px 375px;
 @media (max-width: 1199px) {
-  background-size: 230px 230px;\
+  background-size: 230px 230px;
   background-position:top 150px right;
 }
 @media (max-width: 991px) {

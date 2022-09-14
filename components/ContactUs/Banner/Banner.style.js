@@ -3,18 +3,15 @@ import BannerImage from "public/img/banner/contact.svg";
 // import bdataPattern from "public/img/right-logo.svg";
 
 const BannerWrapper = styled.div`
+position:relative;
   video {
+    width:100%;
     height: 100%;
   }
   @media (max-width: 1199px) {
     background-position: bottom right -90px;
   }
-  @media (max-width: 991px) {
-    /* height: 450px; */
-  }
-  @media (max-width: 767px) {
-    /* height: 300px; */
-  }
+
   &::before {
     /* content: url(${bdataPattern}); */
     position: absolute;
@@ -38,6 +35,16 @@ const BannerWrapper = styled.div`
     left: 50%;
     top: 40%;
     transform: translateX(-50%);
+    @media (max-width: 991px) {
+      top: 20%;
+    }
+    @media (max-width: 767px){
+      width: 100%;
+      padding: 0 30px;
+    }
+    @media (max-width: 575px){
+      top:10%;
+    }
     p {
       font-size: 16px;
     }
@@ -53,6 +60,9 @@ const BannerWrapper = styled.div`
       }
       @media (max-width: 767px) {
         margin-bottom: 20px !important;
+      }
+      @media (max-width: 479px){
+        font-size:18px;
       }
     }
   }
@@ -79,33 +89,35 @@ const BannerWrapper = styled.div`
 `;
 
 const Button = styled.a`
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
-  transform: translateX(-50%);
-  background: transparent;
+position: absolute;
+left: 50%;
+bottom: 50px;
+transform: translateX(-50%);
+background: transparent;
+border: 1px solid white;
+color: white;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+padding: 12px 32px;
+border-radius: 8px;
+transition: 0.3s ease;
+box-shadow: none !important;
+@media (max-width: 767px) {
+  padding: 8px 24px;
+  font-size: 14px;
+  bottom:30px;
+}
+@media (max-width: 480px) {
+  padding: 6px 20px;
+  font-size: 12px;
+  bottom:20px;
+}
+&:hover {
+  background: white;
   border: 1px solid white;
-  color: white;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  padding: 12px 32px;
-  border-radius: 8px;
-  transition: 0.3s ease;
-  box-shadow: none !important;
-  @media (max-width: 767px) {
-    padding: 8px 24px;
-    font-size: 14px;
-  }
-  @media (max-width: 480px) {
-    padding: 6px 20px;
-    font-size: 12px;
-  }
-  &:hover {
-    background: white;
-    border: 1px solid white;
-    color: #004d88;
-  }
+  color: #004d88;
+}
 `;
 
 export { BannerWrapper, Button };

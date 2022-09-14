@@ -2,17 +2,21 @@ import styled from "styled-components";
 import bg_pattern from "public/img/imageas.png";
 
 const SectionWrapper = styled.div`
-  margin-top: 10px;
   background-image: url(${bg_pattern});
   background-repeat: no-repeat;
   background-size: 110px;
-  background-position: top 92px right 0px;
+  background-position: center right;
   position: relative;
-  left: 15px;
+  .custom-body-wrapper{
+    padding:30px 150px 30px 15px;
+    @media (max-width: 991px) {
+     padding:30px 15px;
+    }
+  }
+
   @media (max-width: 1199px) {
-    background-size: 200px;
+    // background-size: 200px;
     position: relative;
-    left: 0px;
   }
   @media (max-width: 991px) {
     background: none;
@@ -20,8 +24,7 @@ const SectionWrapper = styled.div`
     left: 0px;
   }
   .form {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin:0 0 0 0;
   }
   @media (max-width: 991px) {
     .form {
@@ -49,7 +52,6 @@ const SectionWrapper = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.259387px;
     color: #373737;
   }
   input[type="text"] {
@@ -57,42 +59,28 @@ const SectionWrapper = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.259387px;
     color: #373737;
   }
   p {
-    /* Paragraph Regular 16 */
-
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    /* or 150% */
-
-    letter-spacing: -0.259387px;
-
-    /* #5E6471 */
-
     color: #5e6471;
-
-    mix-blend-mode: normal;
   }
   .form-check-label {
     font-style: italic;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
     letter-spacing: 0.4px;
-
-    /* #052460 */
-
     color: #052460;
-
     mix-blend-mode: normal;
   }
+  .form-check-input{
+    min-width:16px;
+  }
   .form-check-input:checked {
-    background-color: #00b0df;
-    border-color: #00b0df;
+    background-color: #052460;
+    border-color: #052460;
   }
   textarea {
     height: 148px !important;
@@ -101,8 +89,6 @@ const SectionWrapper = styled.div`
     font-style: italic;
     font-weight: 600;
     font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.4px;
     color: #5e6471;
     mix-blend-mode: normal;
   }
@@ -110,36 +96,64 @@ const SectionWrapper = styled.div`
     background: #fff;
     border: 1px solid #004d88;
     border-radius: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     color: #004d88;
-    padding: 16px 32px;
-    gap: 10px;
-    width: 174px;
-    height: 50px;
+    padding: 8px 24px;
+    min-width:150px;
     box-shadow:none;
   };
   .heading {
     font-style: normal;
 font-weight: 700;
 font-size: 28px;
-line-height: 34px;
-/* identical to box height */
-
-text-align: center;
-letter-spacing: 0.8px;
-
+text-align: left;
 color: #000000;
 margin-top: 20px;
 margin-bottom: 20px;
-margin-left: 120px;
-margin-right: 120px;
   };
+  .custom-modal-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px;
+    border-bottom:1px solid #ccc;
+    
+  }
+  .custom-modal-header h2{
+    padding-right:30px;
+    @media (max-width: 991px) {
+     font-size:22px;
+     }
+     @media (max-width: 767px) {
+      font-size:18px;
+      padding-right:40px;
+      }
+  }
+  .custom-modal-header button{
+    background:transparent;
+    border:1px solid transparent;
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    position:absolute;
+    right:15px;
+    top:24px;
+  }
+  .custom-modal-header button:hover{
+    background:#ccc;
+  }
   .btnGroup{
     display: flex;
-    gap: 30px;
+    justify-content:flex-end;
+    padding:15px;
+    border-top:1px solid #ccc;
+    @media (max-width: 767px) {
+      flex-direction:column;
+      }
+  }
+  .btnGroup .btn-block{
+    @media (max-width: 479px) {
+      margin:0 0 15px !important;
+      }
   }
 `;
 const Button = styled.button`
