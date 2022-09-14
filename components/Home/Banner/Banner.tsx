@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { BannerWrapper, A } from "./Banner.style";
 
 export default function Banner() {
-  const [showComponent, setShowComponent] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowComponent(true);
-    }, 1000);
-  }, []);
-
   return (
     <BannerWrapper>
       <video autoPlay muted loop>
