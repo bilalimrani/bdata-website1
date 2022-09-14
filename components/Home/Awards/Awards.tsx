@@ -2,6 +2,7 @@
 import React from "react";
 import homeConstants from "../../../utils/home.constants";
 import { AwardsContainer, CarouselWrapper } from "./Awards.style";
+import Image from 'next/image';
 
 export default function Awards() {
   return (
@@ -20,7 +21,7 @@ export default function Awards() {
               {homeConstants?.awards?.data?.map((item, index) => (
                 <div className="col-sm-12 col-md-6 col-lg-3" key={index}>
                   <CarouselWrapper>
-                    {item.image && <img src={item?.image} alt="" />}
+                    {item.image &&<Image src={item?.image} alt="Picture of the author" width={100} height={100} className="custom-next-js"/>}
                     <div className="custom-section-height p-3">
                       <p
                         className="text-center para-text-details m-0"
