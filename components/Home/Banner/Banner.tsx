@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";/ requires a loader
+import React, { useEffect, useState } from "react";
 
 import { BannerWrapper, A } from "./Banner.style";
 
