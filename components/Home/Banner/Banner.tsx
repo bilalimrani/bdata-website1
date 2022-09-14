@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import Reveal from "react-reveal/Reveal";
 import Jump from "react-reveal/Jump";
 import Fade from "react-reveal/Fade";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 // import ReactPlayer from "react-player";
 // import AnimatedText from "react-animated-text-content";
 // import ReactPlayer from "react-player";
@@ -15,6 +17,20 @@ import {
 } from "./Banner.style";
 // import BannerVideo from "../../../public/img/homeBanner.mp4";
 
+const slides = [
+  {
+    video:
+      "https://bdatawebsitenew.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(9).mp4",
+  },
+  {
+    video:
+      "https://bdatawebsitenew.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(14).mp4",
+  },
+  {
+    video: "https://bdata-files.s3.us-west-2.amazonaws.com/1.mp4",
+  },
+];
+
 export default function Banner() {
   const [showComponent, setShowComponent] = useState(false);
 
@@ -26,7 +42,13 @@ export default function Banner() {
 
   return (
     <BannerWrapper>
-      <Carousel fade indicators={false}>
+      <video autoPlay muted loop>
+        <source
+          type="video/mp4"
+          src="https://bdatawebsite.s3.us-west-1.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(17).mp4"
+        />
+      </video>
+      {/* <Carousel fade indicators={false}>
         <Carousel.Item interval={4000}>
           <video autoPlay muted>
             <source
@@ -74,20 +96,10 @@ export default function Banner() {
                 A robust multilayer
                 <br /> cyber security
               </h2>
-              {/* <ul>
-                <li>Immutable Fingerprint based Segragated IT/IO Network.</li>
-                <li>Realtime malware hunting.</li>
-                <li>Firewall Management.</li>
-                <li>Endpoint Monitoring.</li>
-                <li>Vulnerability Detection.</li>
-                <li>Automated Cyber Response.</li>
-                <li>Endpoint Monitoring.</li>
-                <li>Anomaly Detection.</li>
-              </ul> */}
             </Fade>
           </ThirdVideoOverlay>
         </Carousel.Item>
-      </Carousel>
+      </Carousel> */}
       <A
         href="https://demo.org.bdata.ca"
         target="_blank"
