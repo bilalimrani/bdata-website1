@@ -8,7 +8,6 @@ import {
 import { FooterContainer } from "./Footer.style";
 import Image from "next/image";
 const whiteLogo = require("public/img/footerlogo.svg");
-const footerLogo = require("public/img/footerLogo1.svg");
 
 export default function Footer() {
   return (

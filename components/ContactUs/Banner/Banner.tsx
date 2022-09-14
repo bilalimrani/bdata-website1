@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { TypeAnimation } from "react-type-animation";
 import { BannerWrapper, Button } from "./Banner.style";
 // const icon1 = require("public/img/main-asset.svg");
 // const bdataPattern = require("public/img/logohalf.svg");

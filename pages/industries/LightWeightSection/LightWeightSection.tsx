@@ -6,7 +6,6 @@ import {
   InfoArea,
   ContainerDefault,
   SectionImage,
-  UL,
 } from "../../../styles/styledComponents/industriesLightWeightSection.style";
 import industriesConstants from "../../../utils/industries.constants";
 const telecom = require("public/img/telecom.png");
@@ -32,7 +31,7 @@ export default function LightWeightSection() {
                   {industriesConstants.lightWeightSection.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {industriesConstants.lightWeightSection.section1.subTitle}
+                  {industriesConstants.lightWeightSection.section1.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More
@@ -49,10 +48,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                {industriesConstants.lightWeightSection.section2.title}
+                  {industriesConstants.lightWeightSection.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {industriesConstants.lightWeightSection.section2.subTitle}
+                  {industriesConstants.lightWeightSection.section2.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More
@@ -69,10 +68,10 @@ export default function LightWeightSection() {
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                {industriesConstants.lightWeightSection.section3.title}
+                  {industriesConstants.lightWeightSection.section3.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {industriesConstants.lightWeightSection.section3.subTitle}
+                  {industriesConstants.lightWeightSection.section3.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More
@@ -89,10 +88,10 @@ export default function LightWeightSection() {
             <div className="col-12  col-lg-9 order-lg-1 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                {industriesConstants.lightWeightSection.section4.title}
+                  {industriesConstants.lightWeightSection.section4.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {industriesConstants.lightWeightSection.section4.subTitle}
+                  {industriesConstants.lightWeightSection.section4.subTitle}
                 </p>
                 <Button type="button" className="btn btn-primary">
                   Read More

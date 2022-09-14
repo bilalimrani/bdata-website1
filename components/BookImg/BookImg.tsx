@@ -1,17 +1,14 @@
 import React from "react";
 import BookImgWrapper from "./BookImg.style";
 const LogoHeader = require("public/img/bdataLogo.svg");
-const CenterImg = require("public/img/bg.jpg");
 
-const BookImg = ({title, img}) => {
+const BookImg = ({ title, img }) => {
   return (
     <>
       <BookImgWrapper>
         <div className="header-area">
           <img className="img w-100" src={LogoHeader}></img>
-          <h6 className="fw-bold">
-            {title}
-          </h6>
+          <h6 className="fw-bold">{title}</h6>
           {/* <p>Craete Trusted network for devices.</p> */}
         </div>
         <div className="img-area">

@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-// import Image from "next/image";
 import { Modal } from "react-bootstrap";
 import DownlaodWhitePaper from "../DownloadWhitePaper/DownloadWhitePaper";
 import "bootstrap/dist/css/bootstrap.css";
-// import Link from "next/link";
 import {
   LightWeightSectionWrapper,
   Button,
   InfoArea,
   ContainerDefault,
-  // SectionImage,
-  // UL,
 } from "./LightWeightSection.style";
 import homeConstants from "../../../utils/home.constants";
-const first = require("public/gif/one.gif")
-const second = require("public/gif/2.gif")
-const third = require("public/gif/3.gif")
-const fourth = require("public/gif/4.gif")
+const first = require("public/gif/one.gif");
+const second = require("public/gif/2.gif");
+const third = require("public/gif/3.gif");
+const fourth = require("public/gif/4.gif");
 
 import BookImg from "../../../components/BookImg/BookImg";
 

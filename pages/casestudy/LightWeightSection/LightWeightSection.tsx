@@ -9,8 +9,8 @@ import {
 } from "../../../styles/styledComponents/caseStudyLightWeightSection.style";
 import DownlaodWhitePaper from "../../../components/Home/DownloadWhitePaper/DownloadWhitePaper";
 import BookImg from "../../../components/BookImg/BookImg";
-import caseStudyConstants from "../../../utils/caseStudy.constants"
-import { Modal, Form } from "react-bootstrap";
+import caseStudyConstants from "../../../utils/caseStudy.constants";
+import { Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 const automotive = require("public/img/automotive.png");
 const goldmine = require("public/img/goldmine.png");
@@ -20,8 +20,8 @@ export default function LightWeightSection() {
   const [section, setSection] = useState();
   const handleClose = () => setShow(false);
   const handleShow = (event) => {
-    setSection(event.target.id)
-    setShow(true)
+    setSection(event.target.id);
+    setShow(true);
   };
 
   const onLoginFormSubmit = (e) => {
@@ -36,19 +36,27 @@ export default function LightWeightSection() {
           <div className="row">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <SectionImage>
-                <BookImg title={caseStudyConstants.useCase.section1.title} img={automotive} />
+                <BookImg
+                  title={caseStudyConstants.useCase.section1.title}
+                  img={automotive}
+                />
                 {/* <img className="img w-100" src={telecom}></img> */}
               </SectionImage>
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                {caseStudyConstants.useCase.section1.title}
+                  {caseStudyConstants.useCase.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {caseStudyConstants.useCase.section1.subTitle}
+                  {caseStudyConstants.useCase.section1.subTitle}
                 </p>
-                <Button onClick={handleShow} id="useCase1" type="button" className="btn btn-primary">
+                <Button
+                  onClick={handleShow}
+                  id="useCase1"
+                  type="button"
+                  className="btn btn-primary"
+                >
                   Read More
                 </Button>
               </ContainerDefault>
@@ -57,19 +65,27 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <SectionImage>
-                <BookImg title={caseStudyConstants.useCase.section2.title} img={goldmine} />
+                <BookImg
+                  title={caseStudyConstants.useCase.section2.title}
+                  img={goldmine}
+                />
                 {/* <img className="img w-100" src={defence} /> */}
               </SectionImage>
             </div>
             <div className="col-12 col-lg-8  col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
                 <h3 className="text-left m-0 custom-padding fw-bold">
-                {caseStudyConstants.useCase.section2.title}
+                  {caseStudyConstants.useCase.section2.title}
                 </h3>
                 <p className="custom-padding m-0">
-                {caseStudyConstants.useCase.section2.subTitle}
+                  {caseStudyConstants.useCase.section2.subTitle}
                 </p>
-                <Button onClick={handleShow} id="useCase2" type="button" className="btn btn-primary">
+                <Button
+                  onClick={handleShow}
+                  id="useCase2"
+                  type="button"
+                  className="btn btn-primary"
+                >
                   Read More
                 </Button>
               </ContainerDefault>
@@ -126,7 +142,11 @@ export default function LightWeightSection() {
         </div>
         <Modal className="modal-xl" show={show} onHide={handleClose} centered>
           <Modal.Body className="p-0">
-            <DownlaodWhitePaper data={section} onSubmit={onLoginFormSubmit} handleClose={handleClose} />
+            <DownlaodWhitePaper
+              data={section}
+              onSubmit={onLoginFormSubmit}
+              handleClose={handleClose}
+            />
           </Modal.Body>
         </Modal>
       </InfoArea>

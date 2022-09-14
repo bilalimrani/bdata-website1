@@ -1,6 +1,5 @@
 import React from "react";
 import MissionWrapper from "./OurMission.style";
-import Image from "next/image";
 import aboutUsConstant from "../../../utils/aboutUs.constants";
 
 const OurMissionImg = require("public/img/oruMission.gif");
@@ -29,9 +28,7 @@ export default function OurMission() {
           <div className="col-12 col-md-6 col-lg-5">
             <div className="head-wrapper mb-5">
               <h3 className="fw-bold">{aboutUsConstant.mission.title}</h3>
-              <p>
-              {aboutUsConstant.mission.subTitle}
-              </p>
+              <p>{aboutUsConstant.mission.subTitle}</p>
             </div>
             {/* <div className="head-wrapper mb-5">
               <h3 className="fw-bold">Our Vision</h3>

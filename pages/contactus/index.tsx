@@ -4,7 +4,6 @@ import Banner from "../../components/ContactUs/Banner/Banner";
 import Contact from "../../components/ContactUs/ContactUs/ContactUs";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-// import contactUsConstants from "../../utils/contactUs.constants";
 import MainWrapper from "../style.js";
 
 const ContactUs = () => {

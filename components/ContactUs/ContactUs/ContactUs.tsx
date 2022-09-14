@@ -3,7 +3,6 @@ import axios from "axios";
 import {
   ContactWrapper,
   InfoArea,
-  Button,
   CalendlyWrapper,
   CalendlyWrapperInner,
 } from "./ContactUs.style";

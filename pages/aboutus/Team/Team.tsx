@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { ValueWrapper } from "../../../styles/styledComponents/Team.style.js";
 import aboutUsConstant from "../../../utils/aboutUs.constants";
 const icon1 = require("public/img/founder.svg");

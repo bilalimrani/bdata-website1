@@ -1,6 +1,4 @@
 import { useRef } from "react";
-import Slider from "react-slick";
-import Image from "next/image";
 import { CustomerWrapper, ProfileWrapper } from "./CustomersStories.style";
 import homeConstants from "../../../utils/home.constants";
 const user = require("public/img/user-img.png");

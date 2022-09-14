@@ -5,7 +5,6 @@ import Footer from "../../components/Footer/Footer";
 import MainWrapper from "../style.js";
 import Banner from "./Banner/Banner";
 import LightWeightSection from "./LightWeightSection/LightWeightSection";
-import pressConstants from "../../utils/press.constants";
 
 const ContactUs = () => {
   return (

@@ -1,35 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Reveal from "react-reveal/Reveal";
-import Jump from "react-reveal/Jump";
-import Fade from "react-reveal/Fade";
-// import Carousel from "react-bootstrap/Carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-// import ReactPlayer from "react-player";
-// import AnimatedText from "react-animated-text-content";
-// import ReactPlayer from "react-player";
-import {
-  BannerWrapper,
-  A,
-  FirstVideoOverlay,
-  SecondVideoOverlay,
-  ThirdVideoOverlay,
-} from "./Banner.style";
-// import BannerVideo from "../../../public/img/homeBanner.mp4";
+import React, { useEffect, useState } from "react";/ requires a loader
 
-const slides = [
-  {
-    video:
-      "https://bdatawebsitenew.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(9).mp4",
-  },
-  {
-    video:
-      "https://bdatawebsitenew.s3.us-west-2.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(14).mp4",
-  },
-  {
-    video: "https://bdata-files.s3.us-west-2.amazonaws.com/1.mp4",
-  },
-];
+import { BannerWrapper, A } from "./Banner.style";
 
 export default function Banner() {
   const [showComponent, setShowComponent] = useState(false);

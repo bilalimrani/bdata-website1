@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import caseStudyConstants from "../../utils/caseStudy.constants";
 import Banner from "../../components/Home/Banner/Banner";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";

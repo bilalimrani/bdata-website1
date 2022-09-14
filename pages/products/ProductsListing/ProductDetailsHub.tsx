@@ -1,21 +1,16 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
-
-// import Image from "next/image";
 import {
   ProuctListing,
-  Button,
   InfoArea,
   FullContainer,
-  CustomUl,
   FeatureListing,
 } from "../../../styles/styledComponents/ProductListing.style";
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer/Footer";
+import productConstants from "../../../utils/products.constants";
 const product2 = require("public/img/product1.1.svg");
 const Product1 = require("public/img/product1.svg");
-import productConstants from "../../../utils/products.constants";
 
 export default function ProductDetailsHub() {
   return (
