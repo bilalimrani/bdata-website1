@@ -1,11 +1,18 @@
 import React from "react";
-import Header from "components/Header/Header";
-import Footer from "components/Footer/Footer";
-import Banner from "components/Home/Banner/Banner";
-import AwardsContainer from "components/Home/Awards/Awards";
-import PartnersContainer from "components/Home/Partners/Partners";
-import LightWeightSection from "components/Home/LightWeightSection/LightWeightSection";
-import CustomersStories from "components/Home/CustomersStories/CustomersStories";
+import dynamic from "next/dynamic";
+const Header = dynamic(() => import("components/Header/Header"));
+const Footer = dynamic(() => import("components/Footer/Footer"));
+const Banner = dynamic(() => import("components/Home/Banner/Banner"));
+const AwardsContainer = dynamic(() => import("components/Home/Awards/Awards"));
+const PartnersContainer = dynamic(() =>
+  import("components/Home/Partners/Partners")
+);
+const LightWeightSection = dynamic(() =>
+  import("components/Home/LightWeightSection/LightWeightSection")
+);
+const CustomersStories = dynamic(() =>
+  import("components/Home/CustomersStories/CustomersStories")
+);
 import homeConstants from "../utils/home.constants";
 import MainWrapper from "./style.js";
 // import Cookies from "../components/Cookie/Cookie";
