@@ -1,7 +1,7 @@
 {
   "name": "bdata",
   "version": "1.2.1",
-  "description": "BData-Zero Trust Technology for Network Security",
+  "description": "BDATA-Zero Trust Technology for Network Security",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -11,7 +11,7 @@ export default [
   },
   {
     name: "Buy Now",
-    link: "http://soracom.biot.bdata.ca",
+    link: "https://soracom.bdata.ca",
     type: "outer",
   },
   {
