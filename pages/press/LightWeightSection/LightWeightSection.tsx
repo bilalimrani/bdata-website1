@@ -131,7 +131,7 @@ export default function LightWeightSection() {
                   {pressConstant.section5.subTitle}
                 </p>
                 <Button
-                  href="https://www.marketwatch.com/press-release/secure-edge-connectivity-bundle-is-a-secure-[…]ission-critical-iot-projects-2022-09-14?mod=search_headline"
+                  href="https://www.marketwatch.com/press-release/secure-edge-connectivity-bundle-is-a-secure-cost-effective-and-off-the-shelf-solution-which-provides-cyber-resilience-global-connectivity-and-endpoint-management-for-mission-critical-iot-projects-2022-09-14?mod=search_headline"
                   target="_blank"
                   className="btn btn-primary"
                 >
