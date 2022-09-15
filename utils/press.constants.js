@@ -31,14 +31,11 @@ export default {
     industries.`,
   },
   section4: {
-    title: "Congratulation team BDATA",
-    subTitle: ` We are now in semi-final canadian export challenge. Register
-    to watch live ‘16 september 10:30 AM - pitch compitition`,
+    title: "BDATA won Desjardin Bank Cyber Security Competition.",
+    subTitle: ``,
   },
   section5: {
-    title: " Win 2<sup>nd</sup> Place",
-    subTitle: `BDATA is collaborating with Telus to implement connectivity of
-    IoT devices using BDATA-Blockchain on TELUS 4G/5G network in
-    Canada.`,
+    title: "Secure edge connectivity bundle is a secure and cost-effective.",
+    subTitle: `Secure edge connectivity bundle is a secure, cost-effective, and Off-the-shelf solution which provides cyber resilience, global connectivity, and endpoint management for mission critical IoT projects.`,
   },
 };

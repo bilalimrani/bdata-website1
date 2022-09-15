@@ -7,12 +7,13 @@ import {
   ContainerDefault,
   SectionImage,
 } from "../../../styles/styledComponents/pressLightWeightSection.style";
+import BookImg from "../../../components/BookImg/BookImg";
 import pressConstant from "../../../utils/press.constants";
 const microservice = require("public/img/microservice.png");
 const lionliar = require("public/img/lionliar.png");
 const telus = require("public/img/telus.png");
-const bdata = require("public/img/team-bdata.png");
-const secndPlace = require("public/img/2ndPlace.png");
+const press4 = require("public/img/4press.svg");
+const press5 = require("public/img/5press.svg");
 
 export default function LightWeightSection() {
   return (
@@ -94,9 +95,7 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12  col-lg-4 col-xl-3 order-lg-2 py-2">
-              <SectionImage>
-                <img className="img w-100" src={bdata}></img>
-              </SectionImage>
+              <BookImg title={pressConstant.section4.title} img={press4} />
             </div>
             <div className="col-12  col-lg-8 col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
@@ -107,7 +106,7 @@ export default function LightWeightSection() {
                   {pressConstant.section4.subTitle}
                 </p>
                 <Button
-                  href="https://www.startupcan.ca/cxc-ontario/"
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:6857381812528799744/"
                   target="_blank"
                   className="btn btn-primary"
                 >
@@ -118,9 +117,7 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
-              <SectionImage>
-                <img className="img w-100" src={secndPlace} />
-              </SectionImage>
+              <BookImg title={pressConstant.section5.title} img={press5} />
             </div>
             <div className="col-12  col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
@@ -134,7 +131,7 @@ export default function LightWeightSection() {
                   {pressConstant.section5.subTitle}
                 </p>
                 <Button
-                  href="https://www.linkedin.com/feed/update/urn:li:activity:6857381812528799744/"
+                  href="https://www.marketwatch.com/press-release/secure-edge-connectivity-bundle-is-a-secure-[…]ission-critical-iot-projects-2022-09-14?mod=search_headline"
                   target="_blank"
                   className="btn btn-primary"
                 >
