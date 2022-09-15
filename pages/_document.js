@@ -16,13 +16,13 @@ class MyDocument extends Document {
           />
           {/* Fonts and icons */}
           <link
-            rel="stylesheet"
+            rel="preload"
             type="text/css"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons&display=swap"
           />
           <link
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-            rel="stylesheet"
+            rel="preload"
           />
           <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
