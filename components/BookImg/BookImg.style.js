@@ -58,8 +58,14 @@ const BookImgWrapper = styled.div`
   // .img-area{
   //     height:150px;
   // }
-  .img-area img {
-    height: 210px;
+  .img-area {
+    > div {
+      max-width: 100%;
+      width: 100%;
+    }
+    img {
+      height: 210px;
+    }
   }
   .bottom-area {
     padding: 14px;
