@@ -7,7 +7,6 @@
       "esnext"
     ],
     "noImplicitAny": false,
-    "jsxImportSource": "bootstrap",
     "strict": true,
     "allowJs": false,
     "skipLibCheck": true,
