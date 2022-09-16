@@ -1,12 +1,12 @@
 /*eslint-disable*/
 import React from "react";
+import Image from "next/image";
 import {
   IoLocationOutline,
   IoCallOutline,
   IoMailOutline,
 } from "react-icons/io5";
 import { FooterContainer } from "./Footer.style";
-import Image from "next/image";
 const whiteLogo = require("public/img/footerlogo.svg");
 
 export default function Footer() {
@@ -38,8 +38,7 @@ export default function Footer() {
               <div className="bdata-location address1 py-1">
                 <IoLocationOutline />
                 <p>
-                  107 Agro St Waterdown <br /> ON L8B 1Y2, <br />
-                  Canada
+                  107 Agro St Waterdown <br /> ON L8B 1Y2
                 </p>
               </div>
 
