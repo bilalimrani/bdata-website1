@@ -14,7 +14,7 @@ export default function Footer() {
     <FooterContainer>
       <div className="container">
         <div className="row">
-          <div className="col-sm-7">
+          <div className="col-sm-6">
             <div className="logoWrapper">
               <Image src={whiteLogo} width={150} height={48} />
             </div>
@@ -67,7 +67,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-sm-5">
+          <div className="col-sm-6">
             <div className="row">
               <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">Main Pages</h5>
@@ -113,11 +113,11 @@ export default function Footer() {
                       Terms
                     </a>
                   </li>
-                  {/* <li>
+                  <li>
                     <a href="/privacy-policy" className="footer-links">
                       Privacy Policy
                     </a>
-                  </li> */}
+                  </li>
                   {/* <li>
                     <a href="#" className="footer-links">
                       Careers
