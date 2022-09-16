@@ -8,6 +8,7 @@ const ContactWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: bottom right;
+
   @media (max-width: 1199px) {
     background-size: 200px;
   }
@@ -115,6 +116,7 @@ const InfoArea = styled.section`
   background-position: top 300px right -25px;
   background-repeat: no-repeat;
   background-size: 370px 300px;
+
   @media (max-width: 1199px) {
     background-size: 300px 300px;
   }
