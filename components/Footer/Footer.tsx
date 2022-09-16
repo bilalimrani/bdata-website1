@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
           <div className="col-sm-5">
             <div className="row">
-              <div className="col-lg-7 col-sm-6 col-12">
+              <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">Main Pages</h5>
                 <ul className="footer-links-ul">
                   <li>
@@ -125,7 +125,7 @@ export default function Footer() {
                   </li> */}
                 </ul>
               </div>
-              <div className="col-lg-5 col-sm-6 col-12">
+              <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">More</h5>
                 <ul className="footer-links-ul">
                   <li>
