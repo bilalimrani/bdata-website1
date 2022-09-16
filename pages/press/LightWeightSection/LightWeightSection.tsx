@@ -95,7 +95,7 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12  col-lg-4 col-xl-3 order-lg-2 py-2">
-              <BookImg title={pressConstant.section4.title} img={press4} />
+              <BookImg title={pressConstant.section4.title} img={press5} />
             </div>
             <div className="col-12  col-lg-8 col-xl-9 order-lg-1 py-2">
               <ContainerDefault>
@@ -117,7 +117,7 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
-              <BookImg title={pressConstant.section5.title} img={press5} />
+              <BookImg title={pressConstant.section5.title} img={press4} />
             </div>
             <div className="col-12  col-lg-8 col-xl-9 py-2">
               <ContainerDefault>
