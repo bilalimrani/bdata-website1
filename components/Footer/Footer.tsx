@@ -38,8 +38,8 @@ export default function Footer() {
               <div className="bdata-location address1 py-1">
                 <IoLocationOutline />
                 <p>
-                  107 Agro St Waterdown <br /> Ontario , Canada <br />
-                  L8B 1Y2
+                  107 Agro St Waterdown <br /> ON L8B 1Y2, <br />
+                  Canada
                 </p>
               </div>
 
