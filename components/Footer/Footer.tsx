@@ -105,7 +105,7 @@ export default function Footer() {
                   </li> */}
                 </ul>
               </div>
-              <div className="col-lg-4 col-sm-6 col-12">
+              {/* <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">Company</h5>
                 <ul className="footer-links-ul">
                   <li>
@@ -118,13 +118,13 @@ export default function Footer() {
                       Privacy Policy
                     </a>
                   </li>
-                  {/* <li>
+                  <li>
                     <a href="#" className="footer-links">
                       Careers
                     </a>
-                  </li> */}
+                  </li>
                 </ul>
-              </div>
+              </div> */}
               <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">More</h5>
                 <ul className="footer-links-ul">
