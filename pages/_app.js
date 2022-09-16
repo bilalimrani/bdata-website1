@@ -7,7 +7,7 @@ import Router from "next/router";
 import { useRouter } from "next/router";
 import Loader from "./resources/Loader/Loader";
 import * as ga from "../lib/ga";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 import "public/css/index.css";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
