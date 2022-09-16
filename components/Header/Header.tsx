@@ -64,7 +64,9 @@ export default function Header() {
                     <li key={index} className="nav-item">
                       <Link href={item?.link}>
                         {item?.type === "outer" ? (
-                          <a target="_blank">{item?.name}</a>
+                          <a target="_blank" className="nav-link">
+                            {item?.name}
+                          </a>
                         ) : (
                           <a
                             className={`${
