@@ -31,7 +31,7 @@ export default {
     industries.`,
   },
   section4: {
-    title: "BDATA won Desjardin Bank Cyber Security Competition.",
+    title: "BDATA won Desjardins Bank Cyber Security Competition.",
     subTitle: ``,
   },
   section5: {
