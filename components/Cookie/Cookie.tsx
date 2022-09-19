@@ -7,6 +7,7 @@ const Cookie = () => {
       location="bottom"
       declineButtonText="I decline"
       enableDeclineButton
+      flipButtons
       cookieName="general"
       expires={999}
       overlay
