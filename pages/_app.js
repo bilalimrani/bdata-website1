@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
+import Cookie from "../components/Cookie/Cookie";
 import { IoArrowUp } from "react-icons/io5";
 // import App from "next/app";
 import Head from "next/head";
@@ -95,6 +96,7 @@ export default (props) => {
                 `}
         </script>
       </Head>
+      <Cookie />
       {isLoading ? <Loader /> : <Component {...pageProps} />}
 
       {showButton && (
