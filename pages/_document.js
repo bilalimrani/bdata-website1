@@ -15,6 +15,8 @@ class MyDocument extends Document {
             href="/img/apple-icon.png"
           />
           {/* Fonts and icons */}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link
             rel="stylesheet"
             type="text/css"

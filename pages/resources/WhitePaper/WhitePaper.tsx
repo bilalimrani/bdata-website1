@@ -34,18 +34,7 @@ export default function WhitePaper() {
     e.preventDefault();
     handleClose();
   };
-  const section1 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section1.title}</Tooltip>
-  );
-  const section2 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section2.title}</Tooltip>
-  );
-  const section3 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section3.title}</Tooltip>
-  );
-  const section4 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section4.title}</Tooltip>
-  );
+
   return (
     <PaperWraper>
       <SectionPadding>

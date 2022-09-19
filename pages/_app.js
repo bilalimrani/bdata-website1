@@ -5,7 +5,7 @@ import { IoArrowUp } from "react-icons/io5";
 import Head from "next/head";
 import Router from "next/router";
 import { useRouter } from "next/router";
-import Loader from "./resources/Loader/Loader";
+import Loader from "../components/Loader/Loader";
 import * as ga from "../lib/ga";
 import "bootstrap/dist/css/bootstrap.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
@@ -28,6 +28,7 @@ Router.events.on("routeChangeError", () => {
 
 export default (props) => {
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(true);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -44,6 +45,12 @@ export default (props) => {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -88,7 +95,8 @@ export default (props) => {
                 `}
         </script>
       </Head>
-      <Component {...pageProps} />
+      {isLoading ? <Loader /> : <Component {...pageProps} />}
+
       {showButton && (
         <div onClick={scrollToTop} className="back-to-top">
           <IoArrowUp />
