@@ -117,11 +117,11 @@ export default function Footer() {
                       Privacy Policy
                     </a>
                   </li>
-                  {/* <li>
-                    <a href="#" className="footer-links">
+                  <li>
+                    <a href="/careers" className="footer-links">
                       Careers
                     </a>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
               <div className="col-lg-4 col-sm-6 col-12">
