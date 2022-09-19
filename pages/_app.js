@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { IoArrowUp } from "react-icons/io5";
 // import App from "next/app";
 import Head from "next/head";
+import TagManager from "react-gtm-module";
 import Router from "next/router";
 import { useRouter } from "next/router";
 import Loader from "./resources/Loader/Loader";
@@ -26,11 +27,16 @@ Router.events.on("routeChangeError", () => {
   document.body.classList.remove("body-page-transition");
 });
 
+const tagManagerArgs = {
+  gtmId: "GTM-MSDPSDK",
+};
+
 export default (props) => {
   const router = useRouter();
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
     const handleRouteChange = (url) => {
       ga.pageview(url);
     };
@@ -46,6 +52,7 @@ export default (props) => {
   }, [router.events]);
 
   useEffect(() => {
+    TagManager.initialize(tagManagerArgs);
     window.addEventListener("scroll", () => {
       if (window.pageYOffset > 300) {
         setShowButton(true);

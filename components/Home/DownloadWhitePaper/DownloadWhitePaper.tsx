@@ -23,36 +23,45 @@ export default function DownlaodWhitePaper(props) {
   const getWhitepaper = (props) => {
     if (props.data == "section1") {
       setName(resourceConstant.section1.title);
-      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_PLC.pdf");
+      setFileName(
+        "https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_PLC.pdf"
+      );
     }
     if (props.data == "section2") {
       setName(resourceConstant.section2.title);
-      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_Airgap.pdf");
-
+      setFileName(
+        "https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_Airgap.pdf"
+      );
     }
     if (props.data == "section3") {
       setName(resourceConstant.section3.title);
-      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_IoT.pdf");
+      setFileName(
+        "https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_IoT.pdf"
+      );
     }
     if (props.data == "section4") {
       setName(resourceConstant.section4.title);
-      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_MalwareHunting.pdf");
+      setFileName(
+        "https://bdatawebsite.s3.us-west-1.amazonaws.com/whitepapers/BIoT_Security_Technical_MalwareHunting.pdf"
+      );
     }
     if (props.data == "useCase1") {
       setName(resourceConstant.useCase1.title);
-      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/usecases/Cyber-Security-for-Automotive.pdf");
-
+      setFileName(
+        "https://bdatawebsite.s3.us-west-1.amazonaws.com/usecases/Cyber-Security-for-Automotive.pdf"
+      );
     }
     if (props.data == "useCase2") {
       setName(resourceConstant.useCase2.title);
-      setFileName("https://bdatawebsite.s3.us-west-1.amazonaws.com/usecases/Cyber-Security-for-Gold-Mine.pdf");
-
+      setFileName(
+        "https://bdatawebsite.s3.us-west-1.amazonaws.com/usecases/Cyber-Security-for-Gold-Mine.pdf"
+      );
     }
   };
   const submit = (e) => {
     e.preventDefault();
-    console.log(fileName)
-    window.open(fileName, '_blank');
+    console.log(fileName);
+    window.open(fileName, "_blank");
     props.handleClose();
     setMsg("Submit");
     const data = {
@@ -88,8 +97,10 @@ export default function DownlaodWhitePaper(props) {
   return (
     <SectionWrapper>
       <div className="custom-modal-header">
-      <h2 className="heading fw-bold m-0">{name}</h2>
-      <button onClick={handleClose}><i className="fa fa-times"></i></button>
+        <h2 className="heading fw-bold m-0">{name}</h2>
+        <button onClick={handleClose}>
+          <i className="fa fa-times"></i>
+        </button>
       </div>
       <form className="form" onSubmit={submit}>
         <div className="row custom-body-wrapper">
@@ -162,29 +173,28 @@ export default function DownlaodWhitePaper(props) {
               </label>
             </div>
             <p>You can unsubscribe from these communications at any time. </p>
-          
           </div>
         </div>
         <div className="btnGroup">
-              <Button
-                onClick={handleClose}
-                className="btn btn-primary btn-block me-4"
-              >
-                Cancel
-              </Button>
-              <Button
-                disabled={isLoading}
-                type="submit"
-                className="btn btn-primary btn-block"
-              >
-                {isLoading && (
-                  <div className="spinner-border" role="status">
-                    <span className="sr-only">Loading...</span>
-                  </div>
-                )}
-                {!isLoading && <span>{msg}</span>}
-              </Button>
-            </div>
+          <Button
+            onClick={handleClose}
+            className="btn btn-primary btn-block me-4"
+          >
+            Cancel
+          </Button>
+          <Button
+            disabled={isLoading}
+            type="submit"
+            className="btn btn-primary btn-block gtm-resource-download-clicked"
+          >
+            {isLoading && (
+              <div className="spinner-border" role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+            )}
+            {!isLoading && <span>{msg}</span>}
+          </Button>
+        </div>
       </form>
     </SectionWrapper>
   );
