@@ -3,7 +3,7 @@ import Image from "next/image";
 // import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import LoaderWrapper from "./Loader.style";
 
-const Logo = require("../../public/imganimatedLoader.gif");
+const Logo = require("../../public/img/animatedLoader.gif");
 
 const LogoLoader = () => {
   return (
