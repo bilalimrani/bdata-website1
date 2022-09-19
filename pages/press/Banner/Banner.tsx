@@ -4,6 +4,7 @@ import {
   BannerWrapper,
   Button,
 } from "../../../styles/styledComponents/pressBanner.style";
+const press3 = require("public/img/press3.gif");
 
 export default function Banner() {
   const [showComponent, setShowComponent] = useState(false);
@@ -16,12 +17,7 @@ export default function Banner() {
 
   return (
     <BannerWrapper>
-      <video autoPlay muted loop>
-        <source
-          type="video/mp4"
-          src="https://bdata-files.s3.us-west-2.amazonaws.com/press.mp4"
-        />
-      </video>
+      <img src={press3} alt="" />
       {showComponent && (
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">

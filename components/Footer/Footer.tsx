@@ -1,12 +1,12 @@
 /*eslint-disable*/
 import React from "react";
+import Image from "next/image";
 import {
   IoLocationOutline,
   IoCallOutline,
   IoMailOutline,
 } from "react-icons/io5";
 import { FooterContainer } from "./Footer.style";
-import Image from "next/image";
 const whiteLogo = require("public/img/footerlogo.svg");
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
     <FooterContainer>
       <div className="container">
         <div className="row">
-          <div className="col-sm-7">
+          <div className="col-sm-6">
             <div className="logoWrapper">
               <Image src={whiteLogo} width={150} height={48} />
             </div>
@@ -38,8 +38,7 @@ export default function Footer() {
               <div className="bdata-location address1 py-1">
                 <IoLocationOutline />
                 <p>
-                  107 Agro St Waterdown <br /> Ontario , Canada <br />
-                  L8B 1Y2
+                  107 Agro St Waterdown <br /> ON L8B 1Y2
                 </p>
               </div>
 
@@ -67,9 +66,9 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="col-sm-5">
+          <div className="col-sm-6">
             <div className="row">
-              <div className="col-lg-7 col-sm-6 col-12">
+              <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">Main Pages</h5>
                 <ul className="footer-links-ul">
                   <li>
@@ -125,7 +124,7 @@ export default function Footer() {
                   </li> */}
                 </ul>
               </div>
-              <div className="col-lg-5 col-sm-6 col-12">
+              <div className="col-lg-4 col-sm-6 col-12">
                 <h5 className="fw-bold m-0 mb-2 text-white">More</h5>
                 <ul className="footer-links-ul">
                   <li>

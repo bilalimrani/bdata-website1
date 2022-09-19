@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import { MainWrapper } from "../../styles/styledComponents/terms.style.js";
+import { MainWrapper } from "../../styles/styledComponents/terms.style";
 
 const TermsConditions = () => {
   return (

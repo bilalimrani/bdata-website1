@@ -3,8 +3,6 @@ const desjandis = require("public/img/desjardinsPress.png");
 const microservice = require("public/img/microservice.png");
 const lionliar = require("public/img/lionliar.png");
 const telus = require("public/img/telus.png");
-const bdata = require("public/img/team-bdata.png");
-const secndPlace = require("public/img/2ndPlace.png");
 
 export default {
   banner: {

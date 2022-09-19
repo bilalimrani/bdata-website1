@@ -29,7 +29,7 @@ const Button = styled.a`
   }
 `;
 const ContainerDefault = styled.div`
-  max-width: 650px;
+  /* max-width: 650px; */
   h3 {
     text-transform: none;
   }
