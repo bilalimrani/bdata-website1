@@ -6,7 +6,7 @@ import { IoArrowUp } from "react-icons/io5";
 import Head from "next/head";
 import Router from "next/router";
 import { useRouter } from "next/router";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import Loader from "../components/Loader/Loader";
 import * as ga from "../lib/ga";
 import "bootstrap/dist/css/bootstrap.css";
