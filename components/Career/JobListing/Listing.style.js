@@ -9,6 +9,9 @@ const MainWrapperAccordian = styled.div`
         h2{
             margin:0 0 0 10px;
             font-weight:700;
+            @media (max-width: 575px) {
+                font-size:18px
+               }
         }
         p{
             margin:0;
@@ -23,16 +26,23 @@ const MainWrapperAccordian = styled.div`
     .accordian-body-wrapper{
         .accordian-body-header{
             .job-details{
-                display:flex;
+                    display:flex;
                     align-items:center;
                     justify-content:flex-start;
                     border-bottom:1px solid #ccc;
                     padding-bottom:10px;
+                    @media (max-width: 575px) {
+                       flex-direction:column;
+                       align-items:flex-start;
+                      }
                 .job-details-list{
                     display:flex;
                     align-items:center;
                     justify-content:center;
                     margin-left:20px;
+                    @media (max-width: 575px) {
+                        margin:0 0 10px;
+                       }
                     &:nth-child(1){
                         margin-left:0;
                     }
