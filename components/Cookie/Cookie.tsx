@@ -1,18 +1,21 @@
 import CookieConsent, { Cookies } from "react-cookie-consent";
-import CookieContainer from "./Cookie.style";
 
 const Cookie = () => {
   return (
     <CookieConsent
       location="bottom"
       declineButtonText="I decline"
+      buttonText="Accept All"
       enableDeclineButton
       flipButtons
       cookieName="general"
       expires={999}
       overlay
     >
-      This website uses cookies to enhance the user experience.
+      We use cookies on our website to give you the most relevant experience by
+      remembering your preferences and repeat visits. By clicking “Accept All”,
+      you consent to the use of ALL the cookies. However, you may visit “Cookie
+      Settings” to provide a controlled consent.
     </CookieConsent>
   );
 };
