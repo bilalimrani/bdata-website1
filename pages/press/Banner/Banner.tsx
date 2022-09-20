@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import {
   BannerWrapper,
@@ -17,7 +18,7 @@ export default function Banner() {
 
   return (
     <BannerWrapper>
-      <img src={press3} alt="" />
+      <Image priority src={press3} alt="" layout="fill" />
       {showComponent && (
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">

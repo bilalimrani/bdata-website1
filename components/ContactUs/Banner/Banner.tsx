@@ -1,5 +1,5 @@
 import React from "react";
-// import Image from "next/image";
+import Image from "next/image";
 import { BannerWrapper, Button } from "./Banner.style";
 const contact3 = require("public/img/contact3.gif");
 // const icon1 = require("public/img/main-asset.svg");
@@ -8,7 +8,7 @@ const contact3 = require("public/img/contact3.gif");
 export default function Banner() {
   return (
     <BannerWrapper>
-      <img src={contact3} alt="" />
+      <Image priority src={contact3} alt="" layout="fill" />
       <div className="banner-content-wrapper">
         <h2 className="fw-bold text-center">
           Contact us to achieve Cyber Resilience
