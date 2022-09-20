@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Banner from "../../components/Home/Banner/Banner";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import LightWeightSection from "./LightWeightSection/LightWeightSection";
 import MainWrapper from "../style.js";
 
@@ -12,12 +10,10 @@ const CaseStudy = () => {
       <Head>
         <title>Case Stuudy</title>
       </Head>
-      <Header />
       <MainWrapper>
         <Banner />
         <LightWeightSection />
       </MainWrapper>
-      <Footer />
     </div>
   );
 };

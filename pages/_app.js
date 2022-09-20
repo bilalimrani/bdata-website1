@@ -6,6 +6,7 @@ import { IoArrowUp } from "react-icons/io5";
 import Head from "next/head";
 import Router from "next/router";
 import { useRouter } from "next/router";
+import Layout from "../components/layout";
 import Loader from "../components/Loader/Loader";
 import * as ga from "../lib/ga";
 import "bootstrap/dist/css/bootstrap.css";
@@ -97,7 +98,13 @@ export default (props) => {
         </script>
       </Head>
       <Cookie />
-      {isLoading ? <Loader /> : <Component {...pageProps} />}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
 
       {showButton && (
         <div onClick={scrollToTop} className="back-to-top">

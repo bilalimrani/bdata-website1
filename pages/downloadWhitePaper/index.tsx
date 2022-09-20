@@ -4,8 +4,6 @@ import Head from "next/head";
 import axios from "axios";
 import CountrySelect from "react-bootstrap-country-select";
 import Banner from "../../components/Home/Banner/Banner";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import homeConstants from "../../utils/home.constants";
 import { SectionWrapper } from "../../styles/styledComponents/whitePaper.style";
 
@@ -77,7 +75,6 @@ const DownloadWhitePaper = (props) => {
       <Head>
         <title>Download White Paper</title>
       </Head>
-      <Header />
       <Banner />
       <SectionWrapper className="container">
         <form onSubmit={submit}>
@@ -228,7 +225,6 @@ const DownloadWhitePaper = (props) => {
           </div>
         </form>
       </SectionWrapper>
-      <Footer />
     </div>
   );
 };

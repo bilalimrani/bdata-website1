@@ -6,6 +6,7 @@ import {
   IoCallOutline,
   IoMailOutline,
 } from "react-icons/io5";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { FooterContainer } from "./Footer.style";
 const whiteLogo = require("public/img/footerlogo.svg");
 
@@ -152,17 +153,17 @@ export default function Footer() {
           <div className="col-12 py-2 py-lg-3 col-lg-2 text-center-responsivness">
             <div className="socoalMediaLinks">
               <a href="#" className="custom-round-img twitter">
-                <i className="fab fa-twitter"></i>
+                <FaTwitter />
               </a>
               <a href="#" className="custom-round-img facebook">
-                <i className="fab fa-facebook-f"></i>
+                <FaFacebookF />
               </a>
               <a
                 href="https://www.linkedin.com/company/bdatasolutions/mycompany/"
                 className="custom-round-img linkdin"
                 target="_blank"
               >
-                <i className="fab fa-linkedin-in"></i>
+                <FaLinkedinIn />
               </a>
             </div>
           </div>
