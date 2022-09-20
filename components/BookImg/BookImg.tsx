@@ -13,7 +13,13 @@ const BookImg = ({ title, img }) => {
           {/* <p>Craete Trusted network for devices.</p> */}
         </div>
         <div className="img-area">
-          <Image className="img w-100" width={100} height={100} src={img} />
+          <Image
+            className="img w-100"
+            placeholder="blur"
+            width={100}
+            height={100}
+            src={img}
+          />
         </div>
         <div className="bottom-area">
           <p className="fw-bold text-center yellow-text m-0">
