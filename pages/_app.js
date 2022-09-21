@@ -78,10 +78,7 @@ export default (props) => {
   return (
     <React.Fragment>
       <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BDATA Solutions Inc</title>
         <meta
           name="description"
@@ -90,10 +87,15 @@ export default (props) => {
           }
         />
         <meta
+          name="keywords"
+          content="BIoT, BIoT Security, IoT, Finger Print, Immutable Finger Print, Zero Trust"
+        />
+        <meta
           property="og:description"
           content="BDATA BIoT Security: Apply zero trust using BIoT device immutable fingerprint"
           key="description"
         />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content="BDATA BIoT Security" />
         <meta property="og:image" content={Logo} />
 

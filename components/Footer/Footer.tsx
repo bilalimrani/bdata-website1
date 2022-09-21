@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-sm-6">
             <div className="logoWrapper">
-              <Image src={whiteLogo} width={150} height={48} />
+              <Image alt="bdata" src={whiteLogo} width={150} height={48} />
             </div>
             <div className="address-wrapper py-3">
               <div className="bdata-location text-svg-center">

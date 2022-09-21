@@ -23,7 +23,7 @@ const JobListing = () => {
                     <div className="left-align-text">
                       <Image
                         src={favicon}
-                        alt="Picture of the author"
+                        alt="bdata"
                         width="25px"
                         height="30px"
                         className="imageIcons"
@@ -42,7 +42,7 @@ const JobListing = () => {
                         <div className="job-details-list">
                           <Image
                             src={Internetimg}
-                            alt="Picture of the author"
+                            alt="bdata"
                             width="18px"
                             height="18px"
                             className="imageIcons"
@@ -52,7 +52,7 @@ const JobListing = () => {
                         <div className="job-details-list">
                           <Image
                             src={fulltime}
-                            alt="Picture of the author"
+                            alt="bdata"
                             width="18px"
                             height="18px"
                             className="imageIcons"
@@ -62,7 +62,7 @@ const JobListing = () => {
                         <div className="job-details-list">
                           <Image
                             src={remote}
-                            alt="Picture of the author"
+                            alt="bdata"
                             width="18px"
                             height="18px"
                             className="imageIcons"

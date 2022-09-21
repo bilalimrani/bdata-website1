@@ -45,6 +45,7 @@ export default function Header() {
                   src={!isIncreaseHeight ? whiteLogo : Logo}
                   width={150}
                   height={48}
+                  alt="bdata"
                 />
               </a>
             </Link>

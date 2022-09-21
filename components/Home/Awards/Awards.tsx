@@ -25,7 +25,7 @@ export default function Awards() {
                       <Image
                         placeholder="blur"
                         src={item?.image}
-                        alt="Picture of the author"
+                        alt="bdata"
                         width={100}
                         height={100}
                         className="custom-next-js"
