@@ -82,6 +82,26 @@ export default (props) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <title>BDATA Solutions Inc</title>
+        <meta
+          name="description"
+          content={
+            "BDATA BIoT Security: Apply zero trust using BIoT device immutable fingerprint"
+          }
+        />
+        <meta
+          property="og:description"
+          content="BDATA BIoT Security: Apply zero trust using BIoT device immutable fingerprint"
+          key="description"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="bdata.ca" />
+        <link
+          rel="canonical"
+          property="og:title"
+          content="BDATA BIoT Security"
+          key="title"
+          href="bdata.ca"
+        ></link>
         <script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=G-HG5BPBLEBL`}
