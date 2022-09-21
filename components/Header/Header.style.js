@@ -8,6 +8,9 @@ const NavbarWrapper = styled.div`
   background: ${(props) => (props.isIncreaseHeight ? "white" : "black")};
   .navbar-toggler{
     border:1px solid white;
+    svg{
+      color:white;
+    }
   }
   .navbar-toggler i{
     color:white;
