@@ -14,6 +14,10 @@ const BannerWrapper = styled.div`
   }
   @media (max-width: 1199px) {
     background-position: bottom right -90px;
+    min-height: 450px;
+  }
+  @media (max-width: 767px) {
+    min-height: 350px;
   }
 
   &::before {
@@ -47,7 +51,10 @@ const BannerWrapper = styled.div`
       padding: 0 30px;
     }
     @media (max-width: 575px) {
-      top: 10%;
+      top: 30%;
+    }
+    @media (max-width: 480px) {
+      top: 50%;
     }
     p {
       font-size: 16px;
