@@ -16,7 +16,7 @@ export default function OurMission() {
                 src={OurMissionImg}
                 className="w-100"
                 height="485px"
-                alt=""
+                alt="bdata"
                 width="100%"
               />
             </div>

@@ -18,7 +18,11 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-6 col-xl-5 order-lg-2 py-2">
               {/* <SectionImage> */}
-              <img className="img w-100 max-image-content" src={Product1} />
+              <img
+                className="img w-100 max-image-content"
+                alt="bdata"
+                src={Product1}
+              />
               {/* </SectionImage> */}
             </div>
             <div className="col-12  col-lg-6 col-xl-7 py-2 order-lg-1">
@@ -42,7 +46,11 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-6 col-xl-5 py-2">
               {/* <SectionImage> */}
-              <img className="img w-100 max-image-content" src={product2}></img>
+              <img
+                className="img w-100 max-image-content"
+                alt="bdata"
+                src={product2}
+              ></img>
               {/* </SectionImage> */}
             </div>
             <div className="col-12  col-lg-6 col-xl-7 py-2">

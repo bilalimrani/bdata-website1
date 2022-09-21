@@ -101,7 +101,7 @@ const CustomersStories = () => {
           <div className="col-md-6 col-lg-4 py-3">
             <ProfileWrapper>
               <div className="d-flex align-items-center justify-content-start">
-                <img src={user} alt="" className="round-img" />
+                <img src={user} alt="bdata" className="round-img" />
 
                 <div className="ps-3">
                   <p className="small-text m-0 fw-semibold">
@@ -118,7 +118,7 @@ const CustomersStories = () => {
                   {homeConstants.customers.story1.message}
                 </p>
                 <div className="bottom-img-wrapper">
-                  <img src={compImage} alt="" />
+                  <img src={compImage} alt="bdata" />
                 </div>
               </div>
             </ProfileWrapper>
@@ -126,7 +126,7 @@ const CustomersStories = () => {
           <div className="col-md-6 col-lg-4 py-3">
             <ProfileWrapper>
               <div className="d-flex align-items-center justify-content-start">
-                <img src={user2} alt="" className="round-img" />
+                <img src={user2} alt="bdata" className="round-img" />
                 <div className="ps-3">
                   <p className="small-text m-0 fw-semibold">
                     {homeConstants.customers.story2.name}
@@ -142,7 +142,7 @@ const CustomersStories = () => {
                   {homeConstants.customers.story2.message}
                 </p>
                 <div className="bottom-img-wrapper">
-                  <img src={advantech} alt="" />
+                  <img src={advantech} alt="bdata" />
                 </div>
               </div>
             </ProfileWrapper>
@@ -151,7 +151,7 @@ const CustomersStories = () => {
           <div className="col-md-6 col-lg-4 py-3">
             <ProfileWrapper>
               <div className="d-flex align-items-center justify-content-start">
-                <img src={wasim} alt="" className="round-img" />
+                <img src={wasim} alt="bdata" className="round-img" />
 
                 <div className="ps-3">
                   <p className="small-text m-0 fw-semibold">
@@ -168,7 +168,7 @@ const CustomersStories = () => {
                   {homeConstants.customers.story3.message}
                 </p>
                 <div className="bottom-img-wrapper">
-                  <img src={sncLogo} alt="" />
+                  <img src={sncLogo} alt="bdata" />
                 </div>
               </div>
             </ProfileWrapper>

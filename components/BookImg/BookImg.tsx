@@ -8,7 +8,7 @@ const BookImg = ({ title, img }) => {
     <>
       <BookImgWrapper>
         <div className="header-area">
-          <img className="img w-100" src={LogoHeader}></img>
+          <img className="img w-100" src={LogoHeader} alt="bdata" />
           <h6 className="fw-bold">{title}</h6>
           {/* <p>Craete Trusted network for devices.</p> */}
         </div>
@@ -16,6 +16,7 @@ const BookImg = ({ title, img }) => {
           <Image
             className="img w-100"
             placeholder="blur"
+            alt="bdata"
             width={100}
             height={100}
             src={img}

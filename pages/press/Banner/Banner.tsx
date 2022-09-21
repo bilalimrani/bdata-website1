@@ -18,7 +18,7 @@ export default function Banner() {
 
   return (
     <BannerWrapper>
-      <Image priority src={press3} alt="" layout="fill" />
+      <Image priority src={press3} alt="bdata" layout="fill" />
       {showComponent && (
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">

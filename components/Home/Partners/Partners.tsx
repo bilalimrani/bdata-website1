@@ -26,6 +26,7 @@ const Partners = () => {
                   height={70}
                   className="img-responsive"
                   key={index}
+                  alt="bdata"
                 />
               </div>
             </ImageSection>

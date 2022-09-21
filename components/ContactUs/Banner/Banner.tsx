@@ -8,7 +8,7 @@ const contact3 = require("public/img/contact3.gif");
 export default function Banner() {
   return (
     <BannerWrapper>
-      <Image priority src={contact3} alt="" layout="fill" />
+      <Image priority src={contact3} alt="bdata" layout="fill" />
       <div className="banner-content-wrapper">
         <h2 className="fw-bold text-center">
           Contact us to achieve Cyber Resilience

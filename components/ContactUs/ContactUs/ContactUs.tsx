@@ -174,7 +174,7 @@ export default function Contact() {
               </div>
               <div className="col-lg-4 py-3">
                 <CalendlyWrapper>
-                  <img className="img w-100" src={calendly} />
+                  <img className="img w-100" src={calendly} alt="bdata" />
                   <CalendlyWrapperInner>
                     <p className="text-center">
                       Make Appointment with Calendly

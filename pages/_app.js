@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 import "public/css/index.css";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
+const Logo = require("public/img/logo.svg");
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
@@ -77,11 +78,36 @@ export default (props) => {
   return (
     <React.Fragment>
       <Head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>BDATA Solutions Inc</title>
+        <meta
+          name="description"
+          content={
+            "BDATA BIoT Security: Apply zero trust using BIoT device immutable fingerprint"
+          }
+        />
+        <meta
+          name="keywords"
+          content="BIoT, BIoT Security, IoT, Finger Print, Immutable Finger Print, Zero Trust"
+        />
+        <meta
+          property="og:description"
+          content="BDATA BIoT Security: Apply zero trust using BIoT device immutable fingerprint"
+          key="description"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="BDATA BIoT Security" />
+        <meta property="og:image" content={Logo} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="bdata.ca" />
+        <link
+          rel="canonical"
+          property="og:title"
+          content="BDATA BIoT Security"
+          key="title"
+          href="bdata.ca"
+        ></link>
         <script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=G-HG5BPBLEBL`}

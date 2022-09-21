@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { HeaderWrapper ,MainWrapperAccordian } from "./Accordian.style";
-import Image from 'next/image';
+import { HeaderWrapper, MainWrapperAccordian } from "./Accordian.style";
+import Image from "next/image";
 const favicon = require("public/img/favicon.png");
 
 export default function Accordion(props) {
@@ -11,32 +11,32 @@ export default function Accordion(props) {
   };
 
   return (
-    <div >
-        <MainWrapperAccordian >
+    <div>
+      <MainWrapperAccordian>
         <HeaderWrapper>
-        <div onClick={toggle} className="header-wrapper-inner">
+          <div onClick={toggle} className="header-wrapper-inner">
             <div className="left-align-text">
-             <Image
-            src={favicon}
-            alt="Picture of the author"
-            width="25px"
-            height="30px"
-            className="imageIcons"
-          />
-            <h2>{props.title}</h2>
+              <Image
+                src={favicon}
+                alt="Picture of the author"
+                width="25px"
+                height="30px"
+                className="imageIcons"
+              />
+              <h3>{props.title}</h3>
             </div>
             <div className="timer-counter">
-                <p>{props.time}</p>
+              <p>{props.time}</p>
             </div>
-        </div>
-      </HeaderWrapper>
-      <div
-        style={{ display: isShowing ? "block" : "none", padding: "5px" }}
-        className="accordian-body"
-        dangerouslySetInnerHTML={{
-          __html: props.content
-        }}
-      />
+          </div>
+        </HeaderWrapper>
+        <div
+          style={{ display: isShowing ? "block" : "none", padding: "5px" }}
+          className="accordian-body"
+          dangerouslySetInnerHTML={{
+            __html: props.content,
+          }}
+        />
       </MainWrapperAccordian>
     </div>
   );
