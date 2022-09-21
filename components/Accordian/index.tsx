@@ -32,6 +32,7 @@ export default function Accordion(props) {
         </HeaderWrapper>
         <div
           style={{ display: isShowing ? "block" : "none", padding: "5px" }}
+          className="accordian-body"
           dangerouslySetInnerHTML={{
             __html: props.content,
           }}

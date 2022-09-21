@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import aboutUs from "public/img/career-page.png";
+import aboutUs from "public/img/career.gif";
 import bdataPattern from "public/img/logohalf.svg";
 
 const BannerWrapper = styled.div`
