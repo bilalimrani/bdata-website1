@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 import "public/css/index.css";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
+const Logo = require("public/img/logo.svg");
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
@@ -93,6 +94,9 @@ export default (props) => {
           content="BDATA BIoT Security: Apply zero trust using BIoT device immutable fingerprint"
           key="description"
         />
+        <meta property="og:title" content="BDATA BIoT Security" />
+        <meta property="og:image" content={Logo} />
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content="bdata.ca" />
         <link
