@@ -14,6 +14,7 @@ const JobListing = () => {
       <div className="section-wrapper">
         {/* <Accordion title="Product Manager" content="this is content 1" time="3 days Ago" />
             <Accordion title="Sale Manager" content="this is content 2" time="5 days Ago"/> */}
+        <h3>We are looking for the following positions:</h3>
         <MainWrapperAccordian>
           <Accordion defaultActiveKey="0" flush>
             {careerConstants?.jobListing.map((item, index) => (
