@@ -137,6 +137,13 @@ margin-bottom: 20px;
     position:absolute;
     right:15px;
     top:24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .custom-modal-header button svg{
+    width:30px;
+    height:30px;
   }
   .custom-modal-header button:hover{
     background:#ccc;
