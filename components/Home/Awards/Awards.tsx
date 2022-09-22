@@ -23,6 +23,7 @@ export default function Awards() {
                   <CarouselWrapper>
                     {item.image && (
                       <Image
+                        priority
                         placeholder="blur"
                         src={item?.image}
                         alt="bdata"

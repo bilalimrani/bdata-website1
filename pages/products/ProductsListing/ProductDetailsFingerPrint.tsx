@@ -7,8 +7,6 @@ import {
   CustomUl,
   FeatureListing,
 } from "../../../styles/styledComponents/ProductListing.style";
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
 import productConstants from "../../../utils/products.constants";
 const product2 = require("public/img/product2.svg");
 const valunerability = require("public/img/valunerability.png");
@@ -19,7 +17,6 @@ export default function ProductDetailsFingerPrint() {
       <Head>
         <title>Product Details FingerPrint</title>
       </Head>
-      <Header />
       <ProuctListing>
         <InfoArea>
           <div className="container">
@@ -99,7 +96,6 @@ export default function ProductDetailsFingerPrint() {
           </div>
         </InfoArea>
       </ProuctListing>
-      <Footer />
     </div>
   );
 }

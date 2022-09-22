@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AllResourcesWrapper,
   SectionPadding,
@@ -32,11 +32,6 @@ export default function AllResources() {
               <UseCase />
             </SectionPadding>
           </Tab>
-          {/* <Tab eventKey="videos" title="Videos">
-            <SectionPadding>
-              <Videos />
-            </SectionPadding>
-          </Tab> */}
         </Tabs>
       </div>
     </AllResourcesWrapper>

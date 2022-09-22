@@ -6,8 +6,6 @@ import {
   FullContainer,
   FeatureListing,
 } from "../../../styles/styledComponents/ProductListing.style";
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
 import productConstants from "../../../utils/products.constants";
 const product2 = require("public/img/product1.1.svg");
 const Product1 = require("public/img/product1.svg");
@@ -18,7 +16,6 @@ export default function ProductDetailsHub() {
       <Head>
         <title>Product Details Hub</title>
       </Head>
-      <Header />
       <ProuctListing>
         <InfoArea>
           <div className="container">
@@ -93,7 +90,6 @@ export default function ProductDetailsHub() {
           </div>
         </InfoArea>
       </ProuctListing>
-      <Footer />
     </div>
   );
 }
