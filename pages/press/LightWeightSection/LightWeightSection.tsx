@@ -26,7 +26,16 @@ export default function LightWeightSection() {
                   }`}
                 >
                   <SectionImage>
-                    <img className="img w-100" alt="bdata" src={item.img}></img>
+                    <Image
+                      className="img w-100"
+                      alt="bdata"
+                      src={item.img}
+                      width={100}
+                      height={130}
+                      layout="responsive"
+                      priority
+                    />
+                    {/* <img className="img w-100" alt="bdata" src={item.img}></img> */}
                   </SectionImage>
                 </div>
                 <div className="col-12 col-lg-8 col-xl-9 py-2">
