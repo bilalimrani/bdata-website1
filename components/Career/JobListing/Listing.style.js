@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const Wrapper = styled.div`
+  h3 {
+    text-transform: inherit;
+  }
+`;
+
 const MainWrapperAccordian = styled.div`
   .accordian-btn {
     button {
@@ -90,4 +96,4 @@ const ListWrapper = styled.div`
   }
 `;
 
-export { MainWrapperAccordian, ListWrapper };
+export { MainWrapperAccordian, ListWrapper, Wrapper };

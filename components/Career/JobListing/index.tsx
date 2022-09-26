@@ -2,7 +2,7 @@
 import Accordion from "react-bootstrap/Accordion";
 import Image from "next/image";
 import careerConstants from "../../../utils/career.constants";
-import { MainWrapperAccordian, ListWrapper } from "./Listing.style";
+import { MainWrapperAccordian, ListWrapper, Wrapper } from "./Listing.style";
 const favicon = require("public/img/favicon.png");
 const Internetimg = require("public/img/internet-img.svg");
 const remote = require("public/img/fullname.svg");
@@ -10,7 +10,7 @@ const fulltime = require("public/img/location.svg");
 
 const JobListing = () => {
   return (
-    <>
+    <Wrapper>
       <div className="section-wrapper">
         {/* <Accordion title="Product Manager" content="this is content 1" time="3 days Ago" />
             <Accordion title="Sale Manager" content="this is content 2" time="5 days Ago"/> */}
@@ -100,7 +100,7 @@ const JobListing = () => {
           </Accordion>
         </MainWrapperAccordian>
       </div>
-    </>
+    </Wrapper>
   );
 };
 export default JobListing;
