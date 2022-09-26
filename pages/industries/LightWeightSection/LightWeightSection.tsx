@@ -22,7 +22,7 @@ export default function LightWeightSection() {
           <div className="row">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <SectionImage>
-                <img className="img w-100" src={telecom}></img>
+                <img className="img w-100" alt="bdata" src={telecom}></img>
               </SectionImage>
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
@@ -42,7 +42,7 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 order-lg-2 py-2">
               <SectionImage>
-                <img className="img w-100" src={defence} />
+                <img className="img w-100" alt="bdata" src={defence} />
               </SectionImage>
             </div>
             <div className="col-12  col-lg-8 col-xl-9 py-2 order-lg-1">
@@ -62,7 +62,7 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12 col-lg-4 col-xl-3 py-2">
               <SectionImage>
-                <img className="img w-100" src={oilgas} />
+                <img className="img w-100" alt="bdata" src={oilgas} />
               </SectionImage>
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2">
@@ -82,7 +82,7 @@ export default function LightWeightSection() {
           <div className="row my-lg-5">
             <div className="col-12  col-lg-3 order-lg-2 py-2">
               <SectionImage>
-                <img className="img w-100" src={utilities}></img>
+                <img className="img w-100" alt="bdata" src={utilities}></img>
               </SectionImage>
             </div>
             <div className="col-12  col-lg-9 order-lg-1 py-2">

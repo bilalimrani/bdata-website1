@@ -1,7 +1,5 @@
 import React from "react";
 import dynamic from "next/dynamic";
-const Header = dynamic(() => import("components/Header/Header"));
-const Footer = dynamic(() => import("components/Footer/Footer"));
 const Banner = dynamic(() => import("components/Home/Banner/Banner"));
 const AwardsContainer = dynamic(() => import("components/Home/Awards/Awards"));
 const PartnersContainer = dynamic(() =>
@@ -20,7 +18,6 @@ import MainWrapper from "./style.js";
 const Main = () => {
   return (
     <div>
-      <Header />
       <MainWrapper>
         <Banner data={homeConstants?.banner} />
         <AwardsContainer />
@@ -29,7 +26,6 @@ const Main = () => {
         <CustomersStories />
         {/* <Cookies /> */}
       </MainWrapper>
-      <Footer />
     </div>
   );
 };

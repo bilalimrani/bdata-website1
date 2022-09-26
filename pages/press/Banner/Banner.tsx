@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import {
   BannerWrapper,
   Button,
 } from "../../../styles/styledComponents/pressBanner.style";
+const press3 = require("public/img/press3.gif");
 
 export default function Banner() {
   const [showComponent, setShowComponent] = useState(false);
@@ -16,12 +18,7 @@ export default function Banner() {
 
   return (
     <BannerWrapper>
-      <video autoPlay muted loop>
-        <source
-          type="video/mp4"
-          src="https://bdata-files.s3.us-west-2.amazonaws.com/press.mp4"
-        />
-      </video>
+      <Image priority src={press3} alt="bdata" layout="fill" />
       {showComponent && (
         <div className="banner-content-wrapper">
           <h2 className="fw-bold text-center">

@@ -2,6 +2,7 @@ import styled from "styled-components";
 // import BannerImage from "public/img/banner/press.svg";
 
 const BannerWrapper = styled.div`
+  min-height: 550px;
   height: 100%;
   position: relative;
   @media (max-width: 1199px) {
@@ -70,12 +71,12 @@ const Button = styled.a`
   @media (max-width: 767px) {
     padding: 8px 24px;
     font-size: 14px;
-    bottom:30px;
+    bottom: 30px;
   }
   @media (max-width: 480px) {
     padding: 6px 20px;
     font-size: 12px;
-    bottom:20px;
+    bottom: 20px;
   }
   &:hover {
     background: white;

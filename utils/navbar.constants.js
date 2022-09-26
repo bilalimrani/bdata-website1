@@ -30,6 +30,10 @@ export default [
     name: "Contact Us",
     link: "/contactus",
   },
+  {
+    name: "Career",
+    link: "/careers",
+  },
   // {
   //   name: "Case Studies",
   //   link: "/casestudy",

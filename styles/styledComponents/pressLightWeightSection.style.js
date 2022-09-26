@@ -3,7 +3,7 @@ const bgImage = require("public/img/bg-image.png");
 import bg_pattern from "public/img/imageas.png";
 
 const LightWeightSectionWrapper = styled.div`
-  padding: 50px 0 0;
+  padding: 50px 0 50px 0;
   @media (max-width: 991px) {
     padding-top: 25px;
   }

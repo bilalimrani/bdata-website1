@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 import {
   PaperWraper,
   CardWrapper,
@@ -6,19 +7,14 @@ import {
   SectionPadding,
 } from "../../../styles/styledComponents/WhitePaperPage.style";
 // import Image from "next/image";
-import { Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
 import DownlaodWhitePaper from "../../../components/Home/DownloadWhitePaper/DownloadWhitePaper";
 import BookImg from "../../../components/BookImg/BookImg";
 import resourceConstant from "../../../utils/resources.constants";
+
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/whitepaper4.png");
-// const telecom = require("public/img/telecom.png");
 const defence = require("public/img/helecoptr.svg");
-// const oilgas = require("public/img/oil&gas.png");
-// const utilities = require("public/img/utilities.png");
 const Frame78 = require("public/img/zero-trust.webp");
 
 export default function WhitePaper() {
@@ -34,18 +30,7 @@ export default function WhitePaper() {
     e.preventDefault();
     handleClose();
   };
-  const section1 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section1.title}</Tooltip>
-  );
-  const section2 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section2.title}</Tooltip>
-  );
-  const section3 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section3.title}</Tooltip>
-  );
-  const section4 = (props) => (
-    <Tooltip {...props}>{resourceConstant.section4.title}</Tooltip>
-  );
+
   return (
     <PaperWraper>
       <SectionPadding>

@@ -6,8 +6,6 @@ import {
   FullContainer,
   FeatureListing,
 } from "../../../styles/styledComponents/ProductListing.style";
-import Header from "../../../components/Header/Header";
-import Footer from "../../../components/Footer/Footer";
 import productConstants from "../../../utils/products.constants";
 const product2 = require("public/img/product1.1.svg");
 const Product1 = require("public/img/product1.svg");
@@ -18,14 +16,17 @@ export default function ProductDetailsHub() {
       <Head>
         <title>Product Details Hub</title>
       </Head>
-      <Header />
       <ProuctListing>
         <InfoArea>
           <div className="container">
             <div className="row my-lg-5">
               <div className="col-12 col-xl-3 py-2">
                 {/* <SectionImage> */}
-                <img className="img w-100 max-image-content" src={Product1} />
+                <img
+                  className="img w-100 max-image-content"
+                  alt="bdata"
+                  src={Product1}
+                />
                 {/* </SectionImage> */}
               </div>
               <div className="col-12 col-xl-9 py-2">
@@ -89,7 +90,6 @@ export default function ProductDetailsHub() {
           </div>
         </InfoArea>
       </ProuctListing>
-      <Footer />
     </div>
   );
 }

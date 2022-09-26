@@ -75,7 +75,7 @@ export default function Guide() {
           <div className="col-12 col-lg-6 col-xl-4 py-3">
             <div className="custom-card">
               <div className="imageCenter">
-                <img src={icon3} alt="Director" className="custom-round-img" />
+                <img src={icon3} alt="bdata" className="custom-round-img" />
               </div>
               <div className="card-body">
                 <h5 className="card-title text-center">Pratik Patil</h5>

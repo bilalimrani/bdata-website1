@@ -3,6 +3,7 @@ import axios from "axios";
 import resourceConstant from "../../../utils/resources.constants";
 import { SectionWrapper, Button } from "./DownloadWhitePaper.style";
 import { event } from "../../../lib/ga";
+import { IoIosClose } from "react-icons/io";
 
 export default function DownlaodWhitePaper(props) {
   const [isLoading, setIsLoading] = useState(false);
@@ -99,7 +100,7 @@ export default function DownlaodWhitePaper(props) {
       <div className="custom-modal-header">
         <h2 className="heading fw-bold m-0">{name}</h2>
         <button onClick={handleClose}>
-          <i className="fa fa-times"></i>
+          <IoIosClose />
         </button>
       </div>
       <form className="form" onSubmit={submit}>

@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import links from "../../utils/navbar.constants";
 import { NavContainer, NavbarLogo, NavbarWrapper } from "./Header.style";
+import {FaBars}  from "react-icons/fa";
 // import { route } from "next/dist/next-server/server/router";
 const whiteLogo = require("public/img/footerlogo.svg");
 const Logo = require("public/img/logo.svg");
@@ -45,11 +46,13 @@ export default function Header() {
                   src={!isIncreaseHeight ? whiteLogo : Logo}
                   width={150}
                   height={48}
+                  alt="bdata"
                 />
               </a>
             </Link>
             <button className="navbar-toggler" onClick={toggleNav}>
-              <i className="fa fa-bars"></i>
+              {/* <i className="fa fa-bars"></i> */}
+              <FaBars/>
               {/* <span className="navbar-toggler-icon"></span> */}
             </button>
           </NavbarLogo>
@@ -64,7 +67,9 @@ export default function Header() {
                     <li key={index} className="nav-item">
                       <Link href={item?.link}>
                         {item?.type === "outer" ? (
-                          <a target="_blank">{item?.name}</a>
+                          <a target="_blank" className="nav-link">
+                            {item?.name}
+                          </a>
                         ) : (
                           <a
                             className={`${

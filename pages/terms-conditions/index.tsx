@@ -1,16 +1,13 @@
 import React from "react";
 import Head from "next/head";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
 import { MainWrapper } from "../../styles/styledComponents/terms.style";
 
 const TermsConditions = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Terms & Conditions</title>
       </Head>
-      <Header />
       <MainWrapper>
         <div className="container-fluid">
           <h2 className="text-left fw-bold">Terms Conditions</h2>
@@ -172,8 +169,7 @@ const TermsConditions = () => {
           </p>
         </div>
       </MainWrapper>
-      <Footer />
-    </div>
+    </>
   );
 };
 

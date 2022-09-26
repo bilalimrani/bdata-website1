@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   ProuctListing,
   Button,
@@ -6,6 +7,7 @@ import {
   ContainerDefault,
 } from "../../../styles/styledComponents/ProductListing.style";
 import productConstants from "../../../utils/products.constants";
+
 const product2 = require("public/img/product2.svg");
 const Product1 = require("public/img/product1.svg");
 
@@ -16,9 +18,15 @@ export default function LightWeightSection() {
         <div className="container">
           <div className="row my-lg-5">
             <div className="col-12 col-lg-6 col-xl-5 order-lg-2 py-2">
-              {/* <SectionImage> */}
-              <img className="img w-100 max-image-content" src={Product1} />
-              {/* </SectionImage> */}
+              <Image
+                className="img w-100 max-image-content"
+                alt="bdata"
+                src={Product1}
+                width={100}
+                height={70}
+                layout="responsive"
+                priority
+              />
             </div>
             <div className="col-12  col-lg-6 col-xl-7 py-2 order-lg-1">
               <ContainerDefault>
@@ -40,9 +48,15 @@ export default function LightWeightSection() {
           </div>
           <div className="row my-lg-5">
             <div className="col-12 col-lg-6 col-xl-5 py-2">
-              {/* <SectionImage> */}
-              <img className="img w-100 max-image-content" src={product2}></img>
-              {/* </SectionImage> */}
+              <Image
+                className="img w-100 max-image-content"
+                alt="bdata"
+                src={product2}
+                width={100}
+                height={70}
+                layout="responsive"
+                priority
+              />
             </div>
             <div className="col-12  col-lg-6 col-xl-7 py-2">
               <ContainerDefault>
