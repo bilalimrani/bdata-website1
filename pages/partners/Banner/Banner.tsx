@@ -4,8 +4,8 @@ import partners from "../../../utils/partners.constant";
 import Image from "next/image";
 import { Modal, Form } from "react-bootstrap";
 import Partnership from "../partnership/partnership";
-import {IoIosClose}  from "react-icons/io";
-const partnersImg = require("public/img/partners.svg");
+
+const partnersImg = require("public/img/partners-banners.gif");
 
 export default function Banner() {
   const [show, setShow] = useState(false);
@@ -20,7 +20,7 @@ export default function Banner() {
     <Partners>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-6 custom-mobile-wrapper">
+          <div className="col-sm-7 custom-mobile-wrapper">
             <div className="banner-content-wrapper">
               <h2 className="fw-bold">{partners.banner.title}</h2>
               <p>{partners.banner.subTitle1}</p>
@@ -29,11 +29,11 @@ export default function Banner() {
               </Button>
             </div>
           </div>
-          <div className="col-sm-6 image-wrapper">
+          <div className="col-sm-5 image-wrapper">
             <Image
                 src={partnersImg}
                 className="w-100"
-                height="400px"
+                height="450px"
                 alt="bdata"
                 width="100%"
               />
