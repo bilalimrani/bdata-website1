@@ -23,6 +23,10 @@ export default [
     link: "/press",
   },
   {
+    name: "Partners",
+    link: "/partners",
+  },
+  {
     name: "About Us",
     link: "/aboutus",
   },
@@ -30,10 +34,10 @@ export default [
     name: "Contact Us",
     link: "/contactus",
   },
-  {
-    name: "Career",
-    link: "/careers",
-  },
+  // {
+  //   name: "Career",
+  //   link: "/careers",
+  // },
   // {
   //   name: "Case Studies",
   //   link: "/casestudy",
