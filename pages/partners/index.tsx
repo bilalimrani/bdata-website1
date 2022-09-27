@@ -1,13 +1,14 @@
 import React from "react";
 import Head from "next/head";
+import Banner from "./Banner/Banner";
 
 const Partners = () => {
   return (
     <div>
       <Head>
-        <title>Press</title>
+        <title>Partners</title>
       </Head>
-      <>Partners</>
+      <Banner />
     </div>
   );
 };
