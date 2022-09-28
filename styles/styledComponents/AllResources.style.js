@@ -1,6 +1,17 @@
 import styled from "styled-components";
 
 const AllResourcesWrapper = styled.div`
+h6{
+  font-size:28px;
+  font-weight:700;
+  text-align:center;
+  @media (max-width: 1199px) {
+    font-size:24px;
+  }
+  @media (max-width: 767px) {
+    font-size:20px;
+  }
+}
   padding:36px 0;
   .nav.nav-tabs {
     border:none;

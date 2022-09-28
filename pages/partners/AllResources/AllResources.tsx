@@ -16,6 +16,7 @@ export default function AllResources() {
   return (
     <AllResourcesWrapper>
       <div className="container">
+        <h6>BDATA Partner Space</h6>
         <Tabs defaultActiveKey="allpartners" id="resources-tabs">
           <Tab eventKey="allpartners" title="All Partners">
             <SectionPadding>
@@ -43,6 +44,7 @@ export default function AllResources() {
             </SectionPadding>
           </Tab>
         </Tabs>
+        <h6>Let’s Grow Your Business Together</h6>
       </div>
       <ProductsListing />
     </AllResourcesWrapper>
