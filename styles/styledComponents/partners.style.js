@@ -17,14 +17,22 @@ const Partners = styled.div`
     background-size:100px 200px;
     height:500px;
   }
+  @media (max-width: 992px) {
+    background-image:none;
+    height:auto;
+    padding:40px;
+    background-color:black;
+  }
   .custom-mobile-wrapper{
     @media (max-width: 992px) {
         width:100%;
+       
+        
     }
   }
  
   h2 {
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
       color: white;
     }
   }
@@ -34,12 +42,7 @@ const Partners = styled.div`
    @media (max-width: 1199px) {
     padding:0;
   }
-   @media (max-width: 768px) {
-    padding:40px;
-   }
-   @media (max-width:479px) {
-    padding:20px;
-   }
+
 
   }
   .image-wrapper{
@@ -58,7 +61,7 @@ const Partners = styled.div`
   }
   .banner-content-wrapper{
     max-width:400px;
-    margin-left:150px;
+    margin-left:130px;
     text-align:left;
     height: 100%;
     align-items: center;

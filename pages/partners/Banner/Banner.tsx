@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Modal } from "react-bootstrap";
-// import partners from "../../../utils/partners.constant";
+import partners from "../../../utils/partners.constant";
 import {
   Partners,
   Button,
@@ -25,9 +25,9 @@ export default function Banner() {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm-7 custom-mobile-wrapper">
-              <div className="banner-content-wrapper">
-                {/* <h2 className="fw-bold">{partners.banner.title}</h2>
-                <p>{partners.banner.subTitle1}</p> */}
+              <div className="banner-content-wrapper container">
+                <h2 className="fw-bold">{partners.banner.title}</h2>
+                <p>{partners.banner.subTitle1}</p>
                 <Button onClick={handleShow} className="btn btn-primary mt-2">
                   Apply for partnership program
                 </Button>
