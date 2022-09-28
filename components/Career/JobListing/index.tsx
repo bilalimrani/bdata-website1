@@ -84,12 +84,12 @@ const JobListing = () => {
                       <p className="mt-2 mb-0 apply-link">
                         Apply at
                         <a
-                          href="mailto:info@Bdata.ca"
+                          href="mailto:info@bdata.ca"
                           target="_self"
-                          title="info@Bdata.ca"
+                          title="info@bdata.ca"
                           className="bdata-links-p ms-1 email1"
                         >
-                          <span>info@Bdata.ca</span>
+                          <span>info@bdata.ca</span>
                         </a>
                       </p>
                     </div>

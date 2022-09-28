@@ -14,7 +14,7 @@ import resourceConstant from "../../../utils/resources.constants";
 
 const screen = require("public/img/screen.webp");
 const technology = require("public/img/whitepaper4.png");
-const defence = require("public/img/helecoptr.svg");
+const defence = require("public/img/defense.png");
 const Frame78 = require("public/img/zero-trust.webp");
 
 export default function WhitePaper() {
