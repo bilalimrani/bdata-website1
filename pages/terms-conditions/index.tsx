@@ -31,12 +31,12 @@ const TermsConditions = () => {
           <p>
             Please email us at{" "}
             <a
-              href="mailto:info@Bdata.ca"
+              href="mailto:info@bdata.ca"
               target="_self"
-              title="info@Bdata.ca"
+              title="info@bdata.ca"
               className="email-link"
             >
-              <span>info@Bdata.ca</span>
+              <span>info@bdata.ca</span>
             </a>{" "}
             if you have any questions relating to these terms and conditions.
           </p>
