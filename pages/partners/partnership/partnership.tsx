@@ -1,21 +1,25 @@
-import React, { useState } from "react";
-import { SectionWrapper,Button, CalendlyWrapper, CalendlyWrapperInner, } from "./partnership.style.js";
-import {IoIosClose}  from "react-icons/io";
+import React from "react";
+import {
+  SectionWrapper,
+  Button,
+  CalendlyWrapper,
+  CalendlyWrapperInner,
+} from "./partnership.style.js";
+import { IoIosClose } from "react-icons/io";
 const calendly = require("public/img/calendly.png");
 
-
 export default function Partnership(handleClose) {
-  
   return (
     <>
       <SectionWrapper>
-      <div className="custom-modal-header">
-      <h2 className="heading fw-bold m-0">Apply for Partnership Program</h2>
-      <button onClick={handleClose}><IoIosClose /></button>
-      </div>
-      <form className="form">
-        <div className="custom-body-wrapper">
-          
+        <div className="custom-modal-header">
+          <h2 className="heading fw-bold m-0">Apply for Partnership Program</h2>
+          <button onClick={handleClose}>
+            <IoIosClose />
+          </button>
+        </div>
+        <form className="form">
+          <div className="custom-body-wrapper">
             <div className="row">
               <div className="col-sm-12 col-md-6 mb-4">
                 <div className="form-floating">
@@ -73,8 +77,8 @@ export default function Partnership(handleClose) {
                   <label htmlFor="floatingInput">Phone Number</label>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 mb-4">
-              <CalendlyWrapper>
+              {/* <div className="col-sm-12 col-md-6 mb-4">
+                <CalendlyWrapper>
                   <img className="img w-100" src={calendly} alt="bdata" />
                   <CalendlyWrapperInner>
                     <p className="text-center">
@@ -89,13 +93,20 @@ export default function Partnership(handleClose) {
                     Calendly
                   </Button>
                 </CalendlyWrapper>
-              </div>
+              </div> */}
               <div className="col-sm-12 col-md-6 mb-4">
-              <p> BDATA Solutions Inc. is committed to protecting and respecting your privacy, From time to time, we would like to contact you about our products and services, as well as other content that may be of interest to you. If you consent to us contacting you for this purpose, please tick below to say how you would like us to contact you:
-            </p>
+                <p>
+                  {" "}
+                  BDATA Solutions Inc. is committed to protecting and respecting
+                  your privacy, From time to time, we would like to contact you
+                  about our products and services, as well as other content that
+                  may be of interest to you. If you consent to us contacting you
+                  for this purpose, please tick below to say how you would like
+                  us to contact you:
+                </p>
               </div>
             </div>
-         
+
             <div className="form-check d-flex justify-content-left">
               <input
                 className="form-check-input me-2"
@@ -110,26 +121,24 @@ export default function Partnership(handleClose) {
               </label>
             </div>
             <p>You can unsubscribe from these communications at any time. </p>
-          
           </div>
-        <div className="btnGroup">
-              <Button
-                onClick={handleClose}
-                className="btn btn-primary btn-block me-4"
-              >
-                Cancel
-              </Button>
-              <Button
-                // disabled={isLoading}
-                type="submit"
-                className="btn btn-primary btn-block"
-              >
-                Apply
-              </Button>
-            </div>
-      </form>
-    </SectionWrapper>  
+          <div className="btnGroup">
+            <Button
+              onClick={handleClose}
+              className="btn btn-primary btn-block me-4"
+            >
+              Cancel
+            </Button>
+            <Button
+              // disabled={isLoading}
+              type="submit"
+              className="btn btn-primary btn-block"
+            >
+              Apply
+            </Button>
+          </div>
+        </form>
+      </SectionWrapper>
     </>
   );
 }
-
