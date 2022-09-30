@@ -8,7 +8,7 @@ import {
 import { IoIosClose } from "react-icons/io";
 const calendly = require("public/img/calendly.png");
 
-export default function Partnership(handleClose) {
+export default function Partnership({ handleClose }) {
   return (
     <>
       <SectionWrapper>

@@ -12,9 +12,8 @@ import Partnership from "../partnership/partnership";
 const partnersImg = require("public/img/partners-banners.gif");
 
 export default function Banner() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
   const [section, setSection] = useState();
-  const handleClose = () => setShow(false);
   const handleShow = (event: any) => {
     setSection(event.target.id);
     setShow(true);
@@ -46,12 +45,17 @@ export default function Banner() {
         </div>
       </Partners>
 
-      <Modal className="modal-xl" show={show} onHide={handleClose} centered>
+      <Modal
+        className="modal-xl"
+        show={show}
+        onHide={() => setShow(false)}
+        centered
+      >
         <Modal.Body className="p-0">
           <Partnership
             // data={section}
             // onSubmit={onLoginFormSubmit}
-            handleClose={handleClose}
+            handleClose={() => setShow(false)}
           />
         </Modal.Body>
       </Modal>
