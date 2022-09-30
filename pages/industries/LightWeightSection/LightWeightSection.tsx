@@ -9,7 +9,7 @@ import {
 } from "../../../styles/styledComponents/industriesLightWeightSection.style";
 import industriesConstants from "../../../utils/industries.constants";
 const telecom = require("public/img/telecom.png");
-const defence = require("public/img/defence.png");
+const defence = require("public/img/defense.png");
 const oilgas = require("public/img/oil&gas.png");
 const utilities = require("public/img/utilities.png");
 
