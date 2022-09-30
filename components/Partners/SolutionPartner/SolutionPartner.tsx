@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import BookWrapper from "../BookWrapper.style.js";
+import BookWrapper from "../../../styles/styledComponents/BookWrapper.style";
 
 const logoImg = require("public/img/favicon.png");
 const telus = require("public/img/telus.svg");
