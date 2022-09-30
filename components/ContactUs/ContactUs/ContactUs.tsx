@@ -9,6 +9,7 @@ import {
 import { event } from "../../../lib/ga";
 import contactUsConstant from "../../../utils/contactUs.constants";
 const calendly = require("public/img/calendly.png");
+
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [msg, setMsg] = useState("");
