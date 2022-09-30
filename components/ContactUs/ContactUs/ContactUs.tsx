@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import {
   ContactWrapper,
@@ -14,9 +14,11 @@ export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [msg, setMsg] = useState("");
   const [form, setForm] = useState({});
+
   useEffect(() => {
     setMsg("Submit");
   }, []);
+
   const submit = (e) => {
     e.preventDefault();
     setIsLoading(true);

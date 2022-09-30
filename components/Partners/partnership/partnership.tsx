@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import {
   SectionWrapper,
   Button,
@@ -9,6 +10,44 @@ import { IoIosClose } from "react-icons/io";
 const calendly = require("public/img/calendly.png");
 
 export default function Partnership({ handleClose }) {
+  const [isLoading, setIsLoading] = useState(false);
+  const [form, setForm] = useState<any>({});
+  const form1: any = useRef();
+
+  const onChange = (event) => {
+    setForm({
+      ...form,
+      [event.target.id]: event.target.value,
+    });
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    emailjs
+      .send(
+        "service_mmad8dt",
+        "template_mf0o2hn",
+        {
+          from_name: "BDATA Team",
+          message_html: `First Name: ${form?.firstName}
+          Last Name: ${form?.lastName}
+          Email: ${form?.email}
+          Phone: ${form["phone-number"]}`,
+        },
+        "pdBmb_M65-xPNn8ub"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    setIsLoading(false);
+  };
   return (
     <>
       <SectionWrapper>
@@ -18,7 +57,7 @@ export default function Partnership({ handleClose }) {
             <IoIosClose />
           </button>
         </div>
-        <form className="form">
+        <form className="form" onSubmit={onSubmit} ref={form1}>
           <div className="custom-body-wrapper">
             <div className="row">
               <div className="col-sm-12 col-md-6 mb-4">
@@ -27,7 +66,7 @@ export default function Partnership({ handleClose }) {
                     type="text"
                     id="firstName"
                     name="firstName"
-                    // onChange={onChange}
+                    onChange={onChange}
                     className="form-control"
                     placeholder="First Name"
                     required
@@ -40,7 +79,7 @@ export default function Partnership({ handleClose }) {
                   <input
                     type="text"
                     id="lastName"
-                    // onChange={onChange}
+                    onChange={onChange}
                     name="lastName"
                     className="form-control"
                     placeholder="Last Name"
@@ -54,7 +93,7 @@ export default function Partnership({ handleClose }) {
                   <input
                     type="email"
                     id="email"
-                    // onChange={onChange}
+                    onChange={onChange}
                     name="email"
                     className="form-control"
                     placeholder="Email Address"
@@ -68,8 +107,8 @@ export default function Partnership({ handleClose }) {
                   <input
                     type="number"
                     id="phone-number"
-                    // onChange={onChange}
-                    name="email"
+                    onChange={onChange}
+                    name="phone"
                     className="form-control"
                     placeholder="Phone Number"
                     required
@@ -134,7 +173,13 @@ export default function Partnership({ handleClose }) {
               type="submit"
               className="btn btn-primary btn-block"
             >
-              Apply
+              {isLoading ? (
+                <div className="spinner-border" role="status">
+                  <span className="sr-only"></span>
+                </div>
+              ) : (
+                "Apply"
+              )}
             </Button>
           </div>
         </form>
