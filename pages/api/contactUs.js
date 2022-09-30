@@ -213,9 +213,9 @@ export default async function (req, res) {
 
   transporter.sendMail(mailOptions, function (err, res1) {
     if (err) {
-      res.status(200).json({ message: "Error" });
+      res.send({ message: "Error" });
     } else {
-      res.status(200).json({ message: "Send Mail" });
+      res.send({ message: "Send Mail" });
     }
   });
 }
