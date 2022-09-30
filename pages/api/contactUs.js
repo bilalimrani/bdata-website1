@@ -1,21 +1,21 @@
 const nodemailer = require("nodemailer");
 
 export default async function (req, res) {
-    const { attachments, subject, data } = req.body
-    console.log(req.body)
-    let transporter = nodemailer.createTransport({
-        service: "gmail",
-        host: 'smtp.gmail.com',
-        auth: {
-            user: "no_reply@bdata.ca",
-            pass: "E=Q8bq>P",
-        },
-    });
-    let mailOptions = {
-        from: "no_reply@bdata.ca",
-        to: 'info@bdata.ca',
-        subject: subject,
-        html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  const { attachments, subject, data } = req.body;
+  console.log(req.body);
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    auth: {
+      user: "no_reply@bdata.ca",
+      pass: "E=Q8bq>P",
+    },
+  });
+  let mailOptions = {
+    from: "no_reply@bdata.ca",
+    to: "info@bdata.ca",
+    subject: subject,
+    html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
       <html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%;">
          <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -209,15 +209,13 @@ export default async function (req, res) {
             </center>
          </body>
       </html>`,
-   };
+  };
 
-   transporter.sendMail(mailOptions, function (err, res1) {
+  transporter.sendMail(mailOptions, function (err, res1) {
     if (err) {
-       console.log(err, "Asd")
-       res.status(400).end(JSON.stringify({ message: "Error" }));
-
+      res.redirect(302, JSON.stringify({ message: "Error" }));
     } else {
-       res.status(200).end(JSON.stringify({ message: "Send Mail" }));
+      res.redirect(302, JSON.stringify({ message: "Send Mail" }));
     }
- });
+  });
 }
