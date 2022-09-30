@@ -26,7 +26,7 @@ export default function Contact() {
     };
     event({ actions: "contactUs", params: data });
     axios
-      .post("http://54.202.19.104:3000/api/contactUs", {
+      .post("/api/contactUs", {
         data,
         subject: "Thanks for Contacting Us!",
       })
@@ -165,7 +165,7 @@ export default function Contact() {
                   >
                     {isLoading && (
                       <div className="spinner-border" role="status">
-                        <span className="sr-only">Loading...</span>
+                        <span className="sr-only"></span>
                       </div>
                     )}
                     {!isLoading && <span>{msg}</span>}
