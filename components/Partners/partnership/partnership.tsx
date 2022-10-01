@@ -46,6 +46,7 @@ export default function Partnership({ handleClose }) {
           console.log(error.text);
         }
       );
+    handleClose();
     setIsLoading(false);
   };
   return (
