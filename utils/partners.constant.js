@@ -68,7 +68,7 @@ export default {
     },
     {
       img: soracom,
-      subTitle: "Partner",
+      subTitle: "Telecom Global Connectivity Partner",
       type: "partner",
     },
     {
