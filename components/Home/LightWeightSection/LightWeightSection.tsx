@@ -19,9 +19,12 @@ import BookImg from "../../../components/BookImg/BookImg";
 export default function LightWeightSection() {
   const [show, setShow] = useState(false);
   const [section, setSection] = useState();
+  const [selectedData, setSelectedData] = useState<any>(null);
   const handleClose = () => setShow(false);
   const handleShow = (event) => {
     setSection(event.target.id);
+
+    setSelectedData(event.target.attributes.getNamedItem("data-id").value);
     setShow(true);
   };
 
@@ -49,16 +52,11 @@ export default function LightWeightSection() {
                 <p className="custom-padding m-0">
                   {homeConstants.lightWeightSection.section1.subTitle}
                 </p>
-                {/* <UL>
-                  <li>Visit B Data & Humber College Cyber Lab</li>
-                  <li>
-                    Reserve a spot for Free cyber-attack awareness workshop.
-                  </li>
-                </UL> */}
                 <Button
                   onClick={handleShow}
                   id="section1"
                   type="button"
+                  data-id={homeConstants.lightWeightSection.section1.title}
                   className="btn btn-primary"
                 >
                   Download
@@ -72,9 +70,6 @@ export default function LightWeightSection() {
                 title={homeConstants.lightWeightSection.section2.title}
                 img={second}
               />
-              {/* <SectionImage>
-                <img className="img w-100" src={Frame78} />
-              </SectionImage> */}
             </div>
             <div className="col-12 col-lg-8 col-xl-9 py-2 order-lg-1">
               <ContainerDefault>
@@ -92,6 +87,7 @@ export default function LightWeightSection() {
                   onClick={handleShow}
                   id="section2"
                   type="button"
+                  data-id={homeConstants.lightWeightSection.section2.title}
                   className="btn btn-primary"
                 >
                   Download
@@ -122,6 +118,7 @@ export default function LightWeightSection() {
                   onClick={handleShow}
                   id="section3"
                   type="button"
+                  data-id={homeConstants.lightWeightSection.section3.title}
                   className="btn btn-primary"
                 >
                   Download
@@ -154,6 +151,7 @@ export default function LightWeightSection() {
                   onClick={handleShow}
                   id="section4"
                   type="button"
+                  data-id={homeConstants.lightWeightSection.section4.title}
                   className="btn btn-primary"
                 >
                   Download
@@ -166,6 +164,7 @@ export default function LightWeightSection() {
           <Modal.Body className="p-0">
             <DownlaodWhitePaper
               data={section}
+              selected={selectedData}
               onSubmit={onLoginFormSubmit}
               handleClose={handleClose}
             />
