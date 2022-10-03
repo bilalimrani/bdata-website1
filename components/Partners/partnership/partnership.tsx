@@ -1,13 +1,9 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import {
-  SectionWrapper,
-  Button,
-  CalendlyWrapper,
-  CalendlyWrapperInner,
-} from "./partnership.style.js";
 import { IoIosClose } from "react-icons/io";
-const calendly = require("public/img/calendly.png");
+import { partnerShipEmailTemplate } from "../../../utils/emilTemplate";
+import { SectionWrapper, Button } from "./partnership.style.js";
+// const calendly = require("public/img/calendly.png");
 
 export default function Partnership({ handleClose }) {
   const [isLoading, setIsLoading] = useState(false);
@@ -24,30 +20,29 @@ export default function Partnership({ handleClose }) {
   const onSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
+    form.subject = "DATA Partnership Program";
 
     emailjs
       .send(
         "service_mmad8dt",
         "template_mf0o2hn",
         {
+          subject: form.subject,
           from_name: "BDATA Team",
-          message_html: `First Name: ${form?.firstName}
-          Last Name: ${form?.lastName}
-          Email: ${form?.email}
-          Phone: ${form["phone-number"]}`,
+          message_html: partnerShipEmailTemplate(form),
         },
         "pdBmb_M65-xPNn8ub"
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setIsLoading(false);
+          handleClose();
         },
         (error) => {
-          console.log(error.text);
+          setIsLoading(false);
+          handleClose();
         }
       );
-    handleClose();
-    setIsLoading(false);
   };
   return (
     <>

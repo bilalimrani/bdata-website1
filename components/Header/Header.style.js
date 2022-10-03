@@ -6,14 +6,14 @@ const NavbarWrapper = styled.div`
   left: 0; */
   width: 100%;
   background: ${(props) => (props.isIncreaseHeight ? "white" : "black")};
-  .navbar-toggler{
-    border:1px solid white;
-    svg{
-      color:white;
+  .navbar-toggler {
+    border: 1px solid white;
+    svg {
+      color: white;
     }
   }
-  .navbar-toggler i{
-    color:white;
+  .navbar-toggler i {
+    color: white;
   }
   /* z-index: 999; */
 `;
