@@ -24,7 +24,7 @@ export default function AllPartner() {
                   // className="w-100"
                   height="210px"
                   alt="bdata"
-                  width="170px"
+                  width="227px"
                   // objectFit="cover"
                 />
               </div>

@@ -26,7 +26,7 @@ export default function TechPartner() {
                       className="w-100"
                       height="210px"
                       alt="bdata"
-                      width="170px"
+                      width="227px"
                     />
                   </div>
                   <div className="card-title">

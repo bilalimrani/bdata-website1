@@ -12,6 +12,7 @@ const rogers = require("public/img/rogers-logo.svg");
 const assus = require("public/img/assus.svg");
 const advantech = require("public/img/advantech.svg");
 const fiveyears = require("public/img/fiveyears.svg");
+const supermicro = require("public/img/supermicroPartner.png");
 
 export default {
   banner: {
@@ -94,6 +95,11 @@ export default {
     {
       img: fiveyears,
       subTitle: "Solution Partner",
+      type: "solution",
+    },
+    {
+      img: supermicro,
+      subTitle: "OT Server/Data Centre Provider",
       type: "solution",
     },
   ],
