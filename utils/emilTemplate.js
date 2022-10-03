@@ -318,9 +318,7 @@ export const partnerShipEmailTemplate = (
                                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing: 0 40px;">
                                                                <tr>
                                                                   <td style="font-size: 16px;">
-                                                                  Hi ${
-                                                                    data?.firstName
-                                                                  },
+                                                                  Hi Syed,
                                                                   <br />
                                                                   <br /> 
                                                                     This email you received from Partnership Program BDATA. To get in touch. With Patner Please review details.
