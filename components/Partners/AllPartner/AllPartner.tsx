@@ -21,10 +21,11 @@ export default function AllPartner() {
               <div className="card-body-inner-img">
                 <Image
                   src={item.img}
-                  className="w-100"
-                  height="50px"
-                  alt="bdata"
+                  // className="w-100"
+                  height="210px"
+                  // alt="bdata"
                   width="170px"
+                  // objectFit="cover"
                 />
               </div>
               <div className="card-title">
