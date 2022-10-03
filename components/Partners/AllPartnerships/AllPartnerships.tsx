@@ -24,7 +24,7 @@ export default function AllPartnerships() {
                     <Image
                       src={item.img}
                       className="w-100"
-                      height="50px"
+                      height="210px"
                       alt="bdata"
                       width="170px"
                     />

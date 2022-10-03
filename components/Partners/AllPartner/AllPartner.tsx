@@ -23,7 +23,7 @@ export default function AllPartner() {
                   src={item.img}
                   // className="w-100"
                   height="210px"
-                  // alt="bdata"
+                  alt="bdata"
                   width="170px"
                   // objectFit="cover"
                 />
