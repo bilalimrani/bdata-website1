@@ -29,7 +29,7 @@ export default {
     },
     {
       img: telus,
-      subTitle: "Telecom Connectivity Solution Partner",
+      subTitle: "Telecom Connectivity Partner",
       type: "solution",
     },
     {
