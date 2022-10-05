@@ -122,6 +122,13 @@ export default (props) => {
                     });
                 `}
         </script>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js.hs-scripts.com/22504652.js"
+        ></script>
       </Head>
       <Cookie />
       {isLoading ? (
