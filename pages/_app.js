@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Cookie from "../components/Cookie/Cookie";
-import { IoArrowUp } from "react-icons/io5";
+// import { IoArrowUp } from "react-icons/io5";
 // import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
@@ -122,13 +122,6 @@ export default (props) => {
                     });
                 `}
         </script>
-        <script
-          type="text/javascript"
-          id="hs-script-loader"
-          async
-          defer
-          src="//js.hs-scripts.com/22504652.js"
-        ></script>
       </Head>
       <Cookie />
       {isLoading ? (
