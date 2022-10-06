@@ -139,11 +139,11 @@ export default (props) => {
         </Layout>
       )}
 
-      {showButton && (
+      {/* {showButton && (
         <div onClick={scrollToTop} className="back-to-top">
           <IoArrowUp />
         </div>
-      )}
+      )} */}
     </React.Fragment>
   );
 };
