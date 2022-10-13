@@ -1,4 +1,3 @@
-/*eslint-disable*/
 import React from "react";
 import Image from "next/image";
 import {
@@ -57,12 +56,12 @@ export default function Footer() {
               <div className="email">
                 <IoMailOutline />
                 <a
-                  href="mailto:info@Bdata.ca"
+                  href="mailto:info@bdata.ca"
                   target="_self"
-                  title="info@Bdata.ca"
+                  title="info@bdata.ca"
                   className="bdata-links-p email1"
                 >
-                  <span>info@Bdata.ca</span>
+                  <span>info@bdata.ca</span>
                 </a>
               </div>
             </div>

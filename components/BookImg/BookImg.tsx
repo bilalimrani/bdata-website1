@@ -25,10 +25,10 @@ const BookImg = ({ title, img }) => {
         </div>
         <div className="bottom-area">
           <p className="fw-bold text-center yellow-text m-0">
-            BDATA Solution Inc
+            BDATA Solutions Inc
           </p>
           <p className="fw-bold text-center yellow-text m-0 p-0">
-            info@Bdata.ca
+            info@bdata.ca
           </p>
         </div>
       </BookImgWrapper>

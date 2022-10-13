@@ -1,13 +1,12 @@
 import React from "react";
-import Image from "next/image";
 import {
   LightWeightSectionWrapper,
   Button,
   InfoArea,
   ContainerDefault,
-  SectionImage,
 } from "../../../styles/styledComponents/pressLightWeightSection.style";
 import pressConstant from "../../../utils/press.constants";
+import BookImg from "../../../components/BookImg/BookImg";
 
 export default function LightWeightSection() {
   const reverseData = Array.from(pressConstant.sectionsData).reverse();
@@ -19,26 +18,19 @@ export default function LightWeightSection() {
           {reverseData.map((item: any, index) => {
             const reminder = index % 2;
             return (
-              <div className="row">
+              <div className="row my-lg-5">
                 <div
-                  className={`col-12 col-lg-4 col-xl-3 py-2 ${
+                  className={`col-12 col-lg-4 col-xl-3 ${
                     reminder !== 0 && "order-lg-2"
+                  } py-2`}
+                >
+                  <BookImg title={item.title} img={item.img} />
+                </div>
+                <div
+                  className={`col-12 col-lg-8 col-xl-9 py-2 order-lg-1 ${
+                    reminder !== 0 && "order-lg-1"
                   }`}
                 >
-                  <SectionImage>
-                    <Image
-                      className="img w-100"
-                      alt="bdata"
-                      src={item.img}
-                      width={100}
-                      height={130}
-                      layout="responsive"
-                      priority
-                    />
-                    {/* <img className="img w-100" alt="bdata" src={item.img}></img> */}
-                  </SectionImage>
-                </div>
-                <div className="col-12 col-lg-8 col-xl-9 py-2">
                   <ContainerDefault>
                     <h3 className="text-left m-0 custom-padding fw-bold">
                       {item.title}

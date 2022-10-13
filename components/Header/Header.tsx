@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import links from "../../utils/navbar.constants";
 import { NavContainer, NavbarLogo, NavbarWrapper } from "./Header.style";
-import {FaBars}  from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 // import { route } from "next/dist/next-server/server/router";
 const whiteLogo = require("public/img/footerlogo.svg");
 const Logo = require("public/img/logo.svg");
@@ -51,9 +51,7 @@ export default function Header() {
               </a>
             </Link>
             <button className="navbar-toggler" onClick={toggleNav}>
-              {/* <i className="fa fa-bars"></i> */}
-              <FaBars/>
-              {/* <span className="navbar-toggler-icon"></span> */}
+              <FaBars />
             </button>
           </NavbarLogo>
 

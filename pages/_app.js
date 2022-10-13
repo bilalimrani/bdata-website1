@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Cookie from "../components/Cookie/Cookie";
-import { IoArrowUp } from "react-icons/io5";
+// import { IoArrowUp } from "react-icons/io5";
 // import App from "next/app";
 import Head from "next/head";
 import TagManager from "react-gtm-module";
@@ -138,11 +138,11 @@ export default (props) => {
         </Layout>
       )}
 
-      {showButton && (
+      {/* {showButton && (
         <div onClick={scrollToTop} className="back-to-top">
           <IoArrowUp />
         </div>
-      )}
+      )} */}
     </React.Fragment>
   );
 };

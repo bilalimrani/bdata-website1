@@ -23,8 +23,8 @@ export default [
     link: "/press",
   },
   {
-    name: "Career",
-    link: "/careers",
+    name: "Partners",
+    link: "/partners",
   },
   {
     name: "About Us",
@@ -34,7 +34,10 @@ export default [
     name: "Contact Us",
     link: "/contactus",
   },
-
+  // {
+  //   name: "Career",
+  //   link: "/careers",
+  // },
   // {
   //   name: "Case Studies",
   //   link: "/casestudy",

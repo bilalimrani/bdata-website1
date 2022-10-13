@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 import {
   ContactWrapper,
   InfoArea,
@@ -7,35 +7,45 @@ import {
   CalendlyWrapperInner,
 } from "./ContactUs.style";
 import { event } from "../../../lib/ga";
+import { contactUsEmailTemplate } from "../../../utils/emilTemplate";
 import contactUsConstant from "../../../utils/contactUs.constants";
 const calendly = require("public/img/calendly.png");
 
 export default function Contact() {
   const [isLoading, setIsLoading] = useState(false);
   const [msg, setMsg] = useState("");
-  const [form, setForm] = useState({});
+  const [form, setForm] = useState<any>({});
+
   useEffect(() => {
     setMsg("Submit");
   }, []);
+
   const submit = (e) => {
     e.preventDefault();
     setIsLoading(true);
     setMsg("Submit");
-    const data = {
-      ...form,
-    };
-    event({ actions: "contactUs", params: data });
-    axios
-      .post("http://54.202.19.104:3000/api/contactUs", {
-        data,
-        subject: "Thanks for Contacting Us!",
-      })
-      .then((res) => {
-        setMsg("Email has been sent.");
-        setIsLoading(false);
-        // setEmail("");
-      })
-      .catch((e) => console.log(e));
+    event({ actions: "contactUs", params: form });
+    form.subject = "BDATA Contact US";
+    emailjs
+      .send(
+        "service_mmad8dt",
+        "template_w7es1kj",
+        {
+          subject: form.subject,
+          from_name: "BDATA Team",
+          message_html: contactUsEmailTemplate(form),
+        },
+        "pdBmb_M65-xPNn8ub"
+      )
+      .then(
+        (result) => {
+          setMsg("Email has been sent.");
+          setIsLoading(false);
+        },
+        (error) => {
+          setIsLoading(false);
+        }
+      );
   };
   const onChange = (event) => {
     setForm({
@@ -165,7 +175,7 @@ export default function Contact() {
                   >
                     {isLoading && (
                       <div className="spinner-border" role="status">
-                        <span className="sr-only">Loading...</span>
+                        <span className="sr-only"></span>
                       </div>
                     )}
                     {!isLoading && <span>{msg}</span>}

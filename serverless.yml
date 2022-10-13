@@ -1,0 +1,8 @@
+myNextApplication:
+  component: serverless-next.js@1.14.0
+  inputs:
+    domain:
+      - bdata.ca
+      - qa.bdata.ca
+  build:
+    cmd: yarn build

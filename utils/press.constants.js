@@ -1,8 +1,8 @@
-const soracom = require("public/img/soracomPress.png");
-const desjandis = require("public/img/desjardinsPress.png");
-const microservice = require("public/img/microservice.png");
-const lionliar = require("public/img/lionliar.png");
-const telus = require("public/img/telus.png");
+const soracom = require("public/img/soracomPress.svg");
+const desjandis = require("public/img/desjardinsPress.svg");
+const microservice = require("public/img/supermicroPress.svg");
+const lionliar = require("public/img/lionliarPress.svg");
+const telus = require("public/img/telusPress.svg");
 
 export default {
   banner: {

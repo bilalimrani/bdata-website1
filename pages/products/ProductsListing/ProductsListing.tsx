@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import {
   ProuctListing,
   Button,
@@ -12,6 +13,8 @@ const product2 = require("public/img/product2.svg");
 const Product1 = require("public/img/product1.svg");
 
 export default function LightWeightSection() {
+  const router = useRouter();
+
   return (
     <ProuctListing>
       <InfoArea>
@@ -38,7 +41,9 @@ export default function LightWeightSection() {
                 </p>
 
                 <Button
-                  href="/products/ProductsListing/ProductDetailsHub"
+                  onClick={() =>
+                    router.push("/products/ProductsListing/ProductDetailsHub")
+                  }
                   className="btn btn-primary"
                 >
                   Read More
@@ -67,7 +72,11 @@ export default function LightWeightSection() {
                   {productConstants.products.section2.subTitle}
                 </p>
                 <Button
-                  href="/products/ProductsListing/ProductDetailsFingerPrint"
+                  onClick={() =>
+                    router.push(
+                      "/products/ProductsListing/ProductDetailsFingerPrint"
+                    )
+                  }
                   className="btn btn-primary"
                 >
                   Read More
