@@ -18,6 +18,9 @@ const NavbarWrapper = styled.div`
   /* z-index: 999; */
 `;
 const NavContainer = styled.div`
+  margin: 0px 15px !important;
+  width: 100%;
+  max-width: 100%;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;

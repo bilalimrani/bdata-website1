@@ -43,9 +43,10 @@ const ContainerDefault = styled.div`
 
 const InfoArea = styled.section`
   position: relative;
-  background-image: url(${bgImage}), url(${bg_pattern});
+  background-image: url(${bgImage});
   background-position: top right, right center;
   background-repeat: no-repeat;
+  background-position-y: 55px;
   background-size: 450px 375px, 120px 300px;
   @media (max-width: 1199px) {
     background-position: top 90px right, right center;

@@ -33,7 +33,10 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12  col-lg-6 col-xl-7 py-2 order-lg-1">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
+                <h3
+                  style={{ textAlign: "left" }}
+                  className="text-left m-0 custom-padding fw-bold"
+                >
                   {productConstants.products.section1.title}
                 </h3>
                 <p className="custom-padding m-0">
@@ -65,7 +68,10 @@ export default function LightWeightSection() {
             </div>
             <div className="col-12  col-lg-6 col-xl-7 py-2">
               <ContainerDefault>
-                <h3 className="text-left m-0 custom-padding fw-bold">
+                <h3
+                  style={{ textAlign: "left" }}
+                  className="text-left m-0 custom-padding fw-bold"
+                >
                   {productConstants.products.section2.title}
                 </h3>
                 <p className="custom-padding m-0">

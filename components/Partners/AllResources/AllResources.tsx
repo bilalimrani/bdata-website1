@@ -47,7 +47,7 @@ export default function AllResources() {
             </SectionPadding>
           </Tab>
         </Tabs>
-        <h6>Let’s Grow Your Business Together</h6>
+        <h3>Let’s Grow Your Business Together</h3>
       </div>
       <ProductsListing />
     </AllResourcesWrapper>
