@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bdataPattern from "public/img/imageas.png";
+const bdataPattern = require("public/img/imageas.png");
 
 const BannerWrapper = styled.div`
   padding: 100px 30px;
