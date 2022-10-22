@@ -14,8 +14,7 @@ const BannerWrapper = styled.div`
     /* width: 70px;
     height: 315px; */
     @media (max-width: 991px) {
-      /* width: 75px; */
-      /* height: 215px; */
+      display: none;
     }
     @media (max-width: 767px) {
       display: none;
