@@ -6,8 +6,8 @@ const BannerWrapper = styled.div`
   min-height: 480px;
   position: relative;
   &::before {
-    content: url(${bdataPattern});
-    position: absolute;
+    /* content: url(${bdataPattern}); */
+    /* position: absolute; */
     right: 0;
     top: 20%;
     /* transform: translateY(-50%); */
