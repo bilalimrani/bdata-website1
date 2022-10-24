@@ -12,6 +12,11 @@ const AllResourcesWrapper = styled.div`
       /* font-size:20px; */
     }
   }
+  h3 {
+    /* font-size:28px; */
+    font-weight: 700;
+    text-align: center;
+  }
   padding: 36px 0;
   .nav.nav-tabs {
     border: none;

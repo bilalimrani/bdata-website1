@@ -1,3 +1,8 @@
+/* bootstrap css */
+.row {
+  margin: 0px !important;
+}
+
 .video-box {
   position: relative;
   border-radius: 5px;
@@ -21,6 +26,20 @@
   cursor: pointer;
   border-radius: 100%;
   border: none;
+}
+
+.nav-link.active {
+  /* background-color: aqua !important; */
+  margin-right: 2px solid;
+  background: none !important;
+}
+
+.nav-link {
+  /* color: black !important; */
+}
+
+.nav-item > .active {
+  border-right: 5px solid black;
 }
 
 .video-box .image {

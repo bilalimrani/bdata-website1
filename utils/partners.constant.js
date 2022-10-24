@@ -99,7 +99,7 @@ export default {
     },
     {
       img: supermicro,
-      subTitle: "OT Server/Data Centre Provider",
+      subTitle: "OT Server/Data Centre",
       type: "solution",
     },
   ],

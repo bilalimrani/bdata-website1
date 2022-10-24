@@ -3,6 +3,7 @@ const desjandis = require("public/img/desjardinsPress.svg");
 const microservice = require("public/img/supermicroPress.svg");
 const lionliar = require("public/img/lionliarPress.svg");
 const telus = require("public/img/telusPress.svg");
+const NIVEE = require("public/img/NIVEE.svg");
 
 export default {
   banner: {
@@ -54,6 +55,13 @@ export default {
       subTitle: `Secure edge connectivity bundle is a secure, cost-effective, and Off-the-shelf solution which provides cyber resilience, global connectivity, and endpoint management for mission critical IoT projects.`,
       link: "https://www.marketwatch.com/press-release/secure-edge-connectivity-bundle-is-a-secure-cost-effective-and-off-the-shelf-solution-which-provides-cyber-resilience-global-connectivity-and-endpoint-management-for-mission-critical-iot-projects-2022-09-14?mod=search_headline",
       img: soracom,
+    },
+    {
+      title: "BDATA and Nivee (Cyber Security Company) Partnership.",
+      subTitle: `BDATA and Nivee (An Indigenous Cyber Security Company) partnering to support customers in achieving Zero Trust cyber resilience, system pen testing, vulnerability detection and response.BDATA is partnering with Nivee to offer IT and OT based cyber security managed services forcustomers in North America region using BDATA’s Zero Trust Cyber Security Platform.`,
+      // link: "https://www.marketwatch.com/press-release/secure-edge-connectivity-bundle-is-a-secure-cost-effective-and-off-the-shelf-solution-which-provides-cyber-resilience-global-connectivity-and-endpoint-management-for-mission-critical-iot-projects-2022-09-14?mod=search_headline",
+      img: NIVEE,
+      intrnalLink: "nivee",
     },
   ],
 };
