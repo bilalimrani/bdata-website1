@@ -11,7 +11,7 @@ export default [
   },
   {
     name: "Buy Now",
-    link: "https://org-soracom.bdata.ca/",
+    link: "https://org-registration.bdata.ca/",
     type: "outer",
   },
   {
