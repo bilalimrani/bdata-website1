@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import validator from "email-validator";
 import { IoIosClose } from "react-icons/io";
 import resourceConstant from "../../../utils/resources.constants";
 import { SectionWrapper, Button } from "./DownloadWhitePaper.style";
 import { event } from "../../../lib/ga";
+import { emailValidator } from "../../../utils/constants";
 import { sendWhitePaper } from "../../../services/whitepaper.service";
 
 export default function DownlaodWhitePaper(props) {
   const [isLoading, setIsLoading] = useState(false);
+  const [emailError, setEmailError] = useState(false);
   const [msg, setMsg] = useState("");
   const [name, setName] = useState("");
   const [form, setForm] = useState<any>({});
@@ -58,20 +60,25 @@ export default function DownlaodWhitePaper(props) {
   };
   const submit = (e) => {
     e.preventDefault();
-    console.log(fileName);
-    window.open(fileName, "_blank");
-    props.handleClose();
+    console.log(validator.validate(form.email));
 
-    event({
-      actions: "downloadWhitePaper",
-      params: {
-        ...form,
-      },
-    });
-    form.pdf = props.selected;
-    form.subject = props.type;
+    if (emailValidator(form)) {
+      window.open(fileName, "_blank");
+      props.handleClose();
 
-    sendWhitePaper(form);
+      event({
+        actions: "downloadWhitePaper",
+        params: {
+          ...form,
+        },
+      });
+      form.pdf = props.selected;
+      form.subject = props.type;
+
+      sendWhitePaper(form);
+    } else {
+      setEmailError(true);
+    }
   };
   const onChange = (event) => {
     setForm({
@@ -137,6 +144,9 @@ export default function DownlaodWhitePaper(props) {
                   />
                   <label htmlFor="floatingInput">Email Address</label>
                 </div>
+                <span style={{ color: "red" }}>
+                  {emailError && "Please enter valid email!"}
+                </span>
               </div>
             </div>
             <p>
