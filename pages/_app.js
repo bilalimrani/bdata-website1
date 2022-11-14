@@ -15,6 +15,10 @@ import "public/css/index.css";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
 const Logo = require("public/img/logo.svg");
 
+import { Amplify } from "aws-amplify";
+import awsExports from "./aws-exports";
+Amplify.configure({ ...awsExports, ssr: true });
+
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   document.body.classList.add("body-page-transition");
