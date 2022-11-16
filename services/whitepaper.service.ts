@@ -1,24 +1,28 @@
 import emailjs from "@emailjs/browser";
-import { downloadWhitePaperEmail } from "../utils/emilTemplate";
+// import { toast } from "react-toastify";
 
-export const sendWhitePaper = (data) => {
-  emailjs
-    .send(
-      "service_jpjkbyk",
-      "template_1ptwhi3",
-      {
-        subject: data.subject,
-        from_name: "BDATA Team",
-        message_html: downloadWhitePaperEmail(data),
-      },
-      "-Q1ZU0qTKDXiGYV8T"
-    )
-    .then(
-      () => {
-        return true;
-      },
-      () => {
-        return false;
-      }
-    );
+export const sendWhitePaper = async (data) => {
+  const res = await sendEmail(data);
+  if (res.status && res?.text === "OK") {
+    data.addToast("Please check your email!", {
+      appearance: "success",
+      autoDismiss: true,
+    });
+    data.to_email = "bilal@bdata.ca";
+    data.templateId = "template_fv74s89";
+    sendEmail(data);
+  }
+};
+
+export const sendEmail = async (data) => {
+  const res = await emailjs.send(
+    data?.service,
+    data?.templateId,
+    {
+      ...data,
+    },
+    data?.account
+  );
+
+  return res;
 };

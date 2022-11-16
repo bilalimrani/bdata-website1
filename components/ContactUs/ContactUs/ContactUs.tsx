@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
 import {
   ContactWrapper,
   InfoArea,
@@ -7,11 +6,13 @@ import {
   CalendlyWrapperInner,
 } from "./ContactUs.style";
 import { event } from "../../../lib/ga";
-import { contactUsEmailTemplate } from "../../../utils/emilTemplate";
+import { useToasts } from "react-toast-notifications";
 import contactUsConstant from "../../../utils/contactUs.constants";
+import { sendEmail } from "../../../services/whitepaper.service";
 const calendly = require("public/img/calendly.png");
 
 export default function Contact() {
+  const { addToast } = useToasts();
   const [isLoading, setIsLoading] = useState(false);
   const [msg, setMsg] = useState("");
   const [form, setForm] = useState<any>({});
@@ -20,32 +21,27 @@ export default function Contact() {
     setMsg("Submit");
   }, []);
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setMsg("Submit");
     event({ actions: "contactUs", params: form });
     form.subject = "BDATA Contact US";
-    emailjs
-      .send(
-        "service_mmad8dt",
-        "template_w7es1kj",
-        {
-          subject: form.subject,
-          from_name: "BDATA Team",
-          message_html: contactUsEmailTemplate(form),
-        },
-        "pdBmb_M65-xPNn8ub"
-      )
-      .then(
-        (result) => {
-          setMsg("Email has been sent.");
-          setIsLoading(false);
-        },
-        (error) => {
-          setIsLoading(false);
-        }
-      );
+    form.templateId = "template_mf0o2hn";
+    form.service = "service_mmad8dt";
+    form.account = "pdBmb_M65-xPNn8ub";
+    const res: any = await sendEmail(form);
+
+    if (res?.status && res?.text === "OK") {
+      setMsg("Email has been sent.");
+      addToast("Thank you for contacting with us. We will contact you soon!", {
+        appearance: "success",
+        autoDismiss: true,
+      });
+    }
+    form.templateId = "template_w7es1kj";
+    sendEmail(form);
+    setIsLoading(false);
   };
   const onChange = (event) => {
     setForm({

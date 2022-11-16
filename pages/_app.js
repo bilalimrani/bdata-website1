@@ -4,6 +4,7 @@ import Cookie from "../components/Cookie/Cookie";
 // import { IoArrowUp } from "react-icons/io5";
 // import App from "next/app";
 import Head from "next/head";
+import { ToastProvider } from "react-toast-notifications";
 import TagManager from "react-gtm-module";
 import Router from "next/router";
 import { useRouter } from "next/router";
@@ -13,6 +14,7 @@ import * as ga from "../lib/ga";
 import "bootstrap/dist/css/bootstrap.css";
 import "styles/scss/nextjs-material-kit.scss?v=1.2.0";
 import "public/css/index.css";
+// import "react-toastify/dist/ReactToastify.css";
 import "react-bootstrap-country-select/dist/react-bootstrap-country-select.css";
 const Logo = require("public/img/logo.svg");
 
@@ -134,7 +136,9 @@ export default (props) => {
         <Loader />
       ) : (
         <Layout>
-          <Component {...pageProps} />
+          <ToastProvider>
+            <Component {...pageProps} />
+          </ToastProvider>
         </Layout>
       )}
 
@@ -143,6 +147,7 @@ export default (props) => {
           <IoArrowUp />
         </div>
       )} */}
+      {/* <ToastContainer /> */}
     </React.Fragment>
   );
 };

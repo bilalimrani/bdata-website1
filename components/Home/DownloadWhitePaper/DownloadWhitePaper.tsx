@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from "react";
-import validator from "email-validator";
+import React, { useState, useEffect, useRef } from "react";
 import { IoIosClose } from "react-icons/io";
 import resourceConstant from "../../../utils/resources.constants";
 import { SectionWrapper, Button } from "./DownloadWhitePaper.style";
 import { event } from "../../../lib/ga";
-import { emailValidator } from "../../../utils/constants";
+import { useToasts } from "react-toast-notifications";
 import { sendWhitePaper } from "../../../services/whitepaper.service";
+import AlertPopup from "../../Alert/Alert";
 
 export default function DownlaodWhitePaper(props) {
+  const formData: any = useRef();
+  const { addToast } = useToasts();
+  const [showAlert, setShowAlert] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [msg, setMsg] = useState("");
@@ -17,10 +20,10 @@ export default function DownlaodWhitePaper(props) {
 
   useEffect(() => {
     setMsg("Submit");
-    getWhitepaper(props);
+    getWhitepaper();
   }, []);
 
-  const getWhitepaper = (props) => {
+  const getWhitepaper = () => {
     if (props.data == "section1") {
       setName(resourceConstant?.whitePapers[0].title);
       setFileName(
@@ -60,25 +63,21 @@ export default function DownlaodWhitePaper(props) {
   };
   const submit = (e) => {
     e.preventDefault();
-    console.log(validator.validate(form.email));
-
-    if (emailValidator(form)) {
-      window.open(fileName, "_blank");
-      props.handleClose();
-
-      event({
-        actions: "downloadWhitePaper",
-        params: {
-          ...form,
-        },
-      });
-      form.pdf = props.selected;
-      form.subject = props.type;
-
-      sendWhitePaper(form);
-    } else {
-      setEmailError(true);
-    }
+    event({
+      actions: "downloadWhitePaper",
+      params: {
+        ...form,
+      },
+    });
+    form.pdf = fileName;
+    form.subject = props.selected;
+    form.from_name = "BDATA Team";
+    form.service = "service_jpjkbyk";
+    form.templateId = "template_1ptwhi3";
+    form.account = "-Q1ZU0qTKDXiGYV8T";
+    form.addToast = addToast;
+    sendWhitePaper(form);
+    props.handleClose();
   };
   const onChange = (event) => {
     setForm({
@@ -97,7 +96,7 @@ export default function DownlaodWhitePaper(props) {
           <IoIosClose />
         </button>
       </div>
-      <form className="form" onSubmit={submit}>
+      <form className="form" ref={formData} onSubmit={submit}>
         <div className="row custom-body-wrapper">
           <div className="">
             <div className="row">
@@ -144,6 +143,7 @@ export default function DownlaodWhitePaper(props) {
                   />
                   <label htmlFor="floatingInput">Email Address</label>
                 </div>
+                <input type="hidden" id="pdf" onChange={fileName} name="pdf" />
                 <span style={{ color: "red" }}>
                   {emailError && "Please enter valid email!"}
                 </span>
@@ -194,6 +194,9 @@ export default function DownlaodWhitePaper(props) {
           </Button>
         </div>
       </form>
+      {showAlert && (
+        <AlertPopup variant="success" text="Please check your email!" />
+      )}
     </SectionWrapper>
   );
 }
