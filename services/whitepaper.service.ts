@@ -8,7 +8,7 @@ export const sendWhitePaper = async (data) => {
       appearance: "success",
       autoDismiss: true,
     });
-    data.to_email = "bilal@bdata.ca";
+    // data.to_email = "bilal@bdata.ca";
     data.templateId = "template_fv74s89";
     sendEmail(data);
   }

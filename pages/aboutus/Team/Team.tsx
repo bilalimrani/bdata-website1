@@ -3,6 +3,7 @@ import { ValueWrapper } from "../../../styles/styledComponents/Team.style.js";
 import aboutUsConstant from "../../../utils/aboutUs.constants";
 const icon1 = require("public/img/founder.svg");
 const icon2 = require("public/img/cofounder.svg");
+const golden = require("public/img/chris.svg");
 const icon3 = require("public/img/dirctor-cyberSecurity.svg");
 const icon4 = require("public/img/automotion.svg");
 const icon5 = require("public/img/accounting.svg");
@@ -94,6 +95,22 @@ export default function Guide() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="card-body">
+            <h5 className="card-title text-center">Dr Chris Golden</h5>
+            <p className="card-text text-center">
+              <a
+                href="https://www.linkedin.com/in/chrisgoldenpmp/"
+                target="_blank"
+              >
+                <img
+                  src={linkdin}
+                  alt="linkdin link"
+                  className="linkdin-link"
+                />
+              </a>
+              Chief Information Security Officer (CISO)
+            </p>
           </div>
           <div className="col-12 col-lg-6 col-xl-4 py-3">
             <div className="custom-card">
@@ -256,6 +273,17 @@ export default function Guide() {
                   </a>
                   Healthcare Adviser
                 </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 col-xl-4 py-3">
+            <div className="custom-card">
+              <div className="imageCenter">
+                <img
+                  src={golden}
+                  alt="Co-Founder"
+                  className="custom-round-img"
+                />
               </div>
             </div>
           </div>
