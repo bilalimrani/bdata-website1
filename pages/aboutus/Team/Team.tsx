@@ -96,21 +96,32 @@ export default function Guide() {
               </div>
             </div>
           </div>
-          <div className="card-body">
-            <h5 className="card-title text-center">Dr Chris Golden</h5>
-            <p className="card-text text-center">
-              <a
-                href="https://www.linkedin.com/in/chrisgoldenpmp/"
-                target="_blank"
-              >
+          <div className="col-12 col-lg-6 col-xl-4 py-3">
+            <div className="custom-card">
+              <div className="imageCenter">
                 <img
-                  src={linkdin}
-                  alt="linkdin link"
-                  className="linkdin-link"
+                  src={golden}
+                  alt="Co-Founder"
+                  className="custom-round-img"
                 />
-              </a>
-              Chief Information Security Officer (CISO)
-            </p>
+              </div>
+              <div className="card-body">
+                <h5 className="card-title text-center">Dr Chris Golden</h5>
+                <p className="card-text text-center">
+                  <a
+                    href="https://www.linkedin.com/in/chrisgoldenpmp/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
+                  Chief Information Security Officer (CISO)
+                </p>
+              </div>
+            </div>
           </div>
           <div className="col-12 col-lg-6 col-xl-4 py-3">
             <div className="custom-card">
@@ -273,17 +284,6 @@ export default function Guide() {
                   </a>
                   Healthcare Adviser
                 </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6 col-xl-4 py-3">
-            <div className="custom-card">
-              <div className="imageCenter">
-                <img
-                  src={golden}
-                  alt="Co-Founder"
-                  className="custom-round-img"
-                />
               </div>
             </div>
           </div>
