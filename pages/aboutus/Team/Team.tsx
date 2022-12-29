@@ -289,33 +289,6 @@ export default function Guide() {
                 />
               </div>
               <div className="card-body">
-                <h5 className="card-title text-center">Carlo Cristofari</h5>
-                <p className="card-text text-center">
-                  <a
-                    href="https://www.linkedin.com/in/carlocristofari/"
-                    target="_blank"
-                  >
-                    <img
-                      src={linkdin}
-                      alt="linkdin link"
-                      className="linkdin-link"
-                    />
-                  </a>
-                  Growth Advisor
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-lg-6 col-xl-4 py-3">
-            <div className="custom-card">
-              <div className="imageCenter">
-                <img
-                  src={dummy}
-                  alt="Automation"
-                  className="custom-round-img"
-                />
-              </div>
-              <div className="card-body">
                 <h5 className="card-title text-center">
                   Nadia Diakun-Thibault, ABD (PhD), MPA, BSc
                 </h5>
