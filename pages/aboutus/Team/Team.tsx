@@ -10,6 +10,8 @@ const icon5 = require("public/img/accounting.svg");
 const icon6 = require("public/img/vp-finance.svg");
 const linkdin = require("public/img/linkdin.svg");
 const dummy = require("public/img/dummy.svg");
+const tom = require("public/img/tom.png");
+const puay = require("public/img/puay.png");
 
 export default function Guide() {
   return (
@@ -119,6 +121,52 @@ export default function Guide() {
                     />
                   </a>
                   Chief Information Security Officer (CISO)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 col-xl-4 py-3">
+            <div className="custom-card">
+              <div className="imageCenter">
+                <img src={puay} alt="Co-Founder" className="custom-round-img" />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title text-center">Puay Guan Goh</h5>
+                <p className="card-text text-center">
+                  <a
+                    href="https://www.linkedin.com/in/puay-guan-goh/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
+                  Business Adviser
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-lg-6 col-xl-4 py-3">
+            <div className="custom-card">
+              <div className="imageCenter">
+                <img src={tom} alt="Co-Founder" className="custom-round-img" />
+              </div>
+              <div className="card-body">
+                <h5 className="card-title text-center">Tom Goodman</h5>
+                <p className="card-text text-center">
+                  <a
+                    href="https://www.linkedin.com/in/tom-goodman-78ba57/"
+                    target="_blank"
+                  >
+                    <img
+                      src={linkdin}
+                      alt="linkdin link"
+                      className="linkdin-link"
+                    />
+                  </a>
+                  Chief Growth Officer
                 </p>
               </div>
             </div>
