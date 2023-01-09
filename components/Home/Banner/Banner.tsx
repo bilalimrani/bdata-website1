@@ -64,7 +64,7 @@ export default function Banner() {
         </Carousel.Item>
       </Carousel> */}
       <A
-        href="https://demo.org.bdata.ca"
+        href="https://org-registration.bdata.ca"
         target="_blank"
         className="btn btn-light"
       >

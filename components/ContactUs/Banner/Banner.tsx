@@ -17,7 +17,7 @@ export default function Banner() {
 
       <Button
         target="_blank"
-        href="https://demo.org.bdata.ca"
+        href="https://org-registration.bdata.ca"
         className="btn btn-light"
       >
         Start free trial
