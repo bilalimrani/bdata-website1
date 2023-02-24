@@ -27,6 +27,10 @@ export default [
     link: "/partners",
   },
   {
+    name: "Documentation",
+    link: "/documentation",
+  },
+  {
     name: "About Us",
     link: "/aboutus",
   },

@@ -5,6 +5,7 @@ import Cookie from "../components/Cookie/Cookie";
 // import App from "next/app";
 import Head from "next/head";
 import { ToastProvider } from "react-toast-notifications";
+import { ProSidebarProvider } from "react-pro-sidebar";
 import TagManager from "react-gtm-module";
 import Router from "next/router";
 import { useRouter } from "next/router";
@@ -137,7 +138,9 @@ export default (props) => {
       ) : (
         <Layout>
           <ToastProvider>
-            <Component {...pageProps} />
+            <ProSidebarProvider>
+              <Component {...pageProps} />
+            </ProSidebarProvider>
           </ToastProvider>
         </Layout>
       )}

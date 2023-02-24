@@ -128,7 +128,7 @@ export default function Footer() {
                 <h5 className="fw-bold m-0 mb-2 text-white">More</h5>
                 <ul className="footer-links-ul">
                   <li>
-                    <a href="/resources" className="footer-links">
+                    <a href="/documentation" className="footer-links">
                       Documentation
                     </a>
                   </li>

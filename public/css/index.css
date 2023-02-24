@@ -13,6 +13,14 @@
   margin-top: 100px;
 }
 
+.ps-menuitem-root.ps-active {
+  background-color: rgb(223, 223, 223);
+}
+/* 
+.ps-menu-label:hover .ps-active > span:hover {
+  background-color: none !important;
+} */
+
 .back-to-top {
   display: flex;
   justify-content: center;
