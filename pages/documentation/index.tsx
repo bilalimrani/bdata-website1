@@ -3,6 +3,10 @@ import Head from "next/head";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { BiHomeAlt } from "react-icons/bi";
 // import MainWrapper from "../style.js";
+import {
+  OverlayTrigger,
+  Tooltip
+} from 'react-bootstrap';
 import { GettingStarted } from "../../components/Documentation";
 import { DocumentationWrapper } from "../../styles/styledComponents/documentation.style";
 import Overview from "../../components/Documentation/Overview";
@@ -24,6 +28,8 @@ import ThreatResponse from "../../components/Documentation/UseCases/ThreatRespon
 import Telemetry from "../../components/Documentation/UseCases/Telemetry";
 import Microprocessors from "../../components/Documentation/Microprocessors";
 import Audiano from "../../components/Documentation/Audiano";
+import OnPrmises from '../../components/Documentation/OnPrmises'
+import Cloud from '../../components/Documentation/Cloud'
 
 const menues: any = [
   {
@@ -53,6 +59,14 @@ const menues: any = [
       {
         name: "BIoT Security Technology - OT Architecture",
         Component: () => BSTOTArchitect,
+      },
+      {
+        name: "IoT/OT Security - On Premises",
+        Component: () => OnPrmises,
+      },
+      {
+        name: "IoT/OT Security - Cloud (AWS/Google/Azure)",
+        Component: () => Cloud,
       },
       {
         name: "Microprocessors",
@@ -119,6 +133,12 @@ const menues: any = [
   },
 ];
 
+const renderTooltip = (props) => (
+  <Tooltip {...props}>
+    Simple tooltip
+  </Tooltip>
+);
+
 const Documentation = () => {
   const [Component, setComponent] = useState(menues[0].Component);
   const [breadcrumb, setBreadcrumb] = useState([menues[0].name]);
@@ -177,30 +197,42 @@ const Documentation = () => {
                 return (
                   <SubMenu label={item.name} key={index}>
                     {item?.sub?.map((item1, index1) => (
-                      <MenuItem
-                        active={item1?.active && true}
-                        onClick={() => {
-                          onChangeComponent(item1.Component);
-                          onTabChange(index, index1);
-                        }}
+                      <OverlayTrigger
+                      placement="right"
+                      delay={{ show: 250, hide: 400 }}
+                      overlay={<Tooltip id="button-tooltip-2">{item1.name}</Tooltip>}
                       >
-                        {item1.name}
-                      </MenuItem>
+                        <MenuItem
+                          active={item1?.active && true}
+                          onClick={() => {
+                            onChangeComponent(item1.Component);
+                            onTabChange(index, index1);
+                          }}
+                        >
+                          {item1.name}
+                        </MenuItem>
+                      </OverlayTrigger>
                     ))}
                   </SubMenu>
                 );
               }
               return (
-                <MenuItem
-                  key={index}
-                  active={item?.active && true}
-                  onClick={() => {
-                    onChangeComponent(item.Component);
-                    onTabChange(index, null);
-                  }}
-                >
-                  {item.name}
-                </MenuItem>
+                <OverlayTrigger
+                  placement="right"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={<Tooltip id="button-tooltip-2">{item.name}</Tooltip>}
+                  >
+                  <MenuItem
+                    key={index}
+                    active={item?.active && true}
+                    onClick={() => {
+                      onChangeComponent(item.Component);
+                      onTabChange(index, null);
+                    }}
+                  >
+                    {item.name}
+                  </MenuItem>
+                </OverlayTrigger>
               );
             })}
           </Menu>
