@@ -1,4 +1,4 @@
-const microProcessor = require("public/img/microprocessor.png");
+const microProcessor = require("public/img/aurdino.jpg");
 
 export default function Microprocessors() {
   return (
