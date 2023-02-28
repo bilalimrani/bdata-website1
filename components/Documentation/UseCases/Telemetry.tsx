@@ -1,3 +1,5 @@
+const telemetryImg = require("public/img/telemetryImg.jpg");
+
 export default function Telemetry() {
   return (
     <div>
@@ -30,6 +32,10 @@ export default function Telemetry() {
       to collect, monitor, and analyze data from remote and hard-to-reach
       locations, enabling them to improve performance, safety, and efficiency
       across a wide range of industries.
+
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src={telemetryImg} width="50%" alt="" />
+      </div>
     </div>
   );
 }

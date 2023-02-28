@@ -1,4 +1,5 @@
 import styled from "styled-components";
+const securityComplianceImg = require("public/img/securityCompliance.jpg");
 
 const H5 = styled.h5`
   font-weight: bold;
@@ -49,6 +50,9 @@ export default function SecurityCompliance() {
           Corporation (NERC) is focused on protecting the bulk electric system
           in North America.
         </p>
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <img src={securityComplianceImg} alt="finger print" width="70%" />
       </div>
     </div>
   );

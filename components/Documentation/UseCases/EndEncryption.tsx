@@ -1,3 +1,5 @@
+const dataEncryption = require("public/img/dataEncryption.jpg");
+
 export default function EndEncryption() {
   return (
     <div>
@@ -22,6 +24,9 @@ export default function EndEncryption() {
       solution for data transmission, by utilizing a multilayer architecture and
       fingerprint based encryption and decryption methodology to ensure that the
       data is authentic and secure, and eliminate the risk of cyber attacks.
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <img src={dataEncryption} alt="finger print" width="50%" />
+      </div>
     </div>
   );
 }

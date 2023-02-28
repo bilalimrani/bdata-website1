@@ -1,3 +1,5 @@
+const deviceManagement = require("public/img/deviceManagement.jpg");
+
 export default function DM() {
   return (
     <div>
@@ -33,6 +35,10 @@ export default function DM() {
       cyber threats. This helps to ensure that devices are secure, reliable and
       performing optimally, which is crucial for IT, OT and IoT infrastructure
       management.
+
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <img src={deviceManagement} alt="finger print" width="50%" />
+      </div>
     </div>
   );
 }

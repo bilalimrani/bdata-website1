@@ -1,3 +1,5 @@
+const biorOverview = require("public/img/biotOverview.jpg");
+
 export default function Overview() {
   return (
     <div>
@@ -15,6 +17,9 @@ export default function Overview() {
       security technology, offering advanced and innovative solutions to protect
       businesses from cyber attacks leveraging a zero-trust approach, and
       maintaining compliance with industry standards.
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src={biorOverview} width="80%" alt="" />
+      </div>
     </div>
   );
 }

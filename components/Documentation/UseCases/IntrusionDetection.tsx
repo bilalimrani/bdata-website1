@@ -1,3 +1,5 @@
+const intrusionDetection = require("public/img/intrusionDetection.jpg");
+
 export default function IntrusionDetection() {
   return (
     <div>
@@ -33,6 +35,9 @@ export default function IntrusionDetection() {
       Overall, the implementation of an intrusion detection system for oil and
       gas OT infrastructure is essential for protecting against cyber threats
       and ensuring the safe and secure operation of oil and gas facilities.
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <img src={intrusionDetection} alt="finger print" width="50%" />
+      </div>
     </div>
   );
 }

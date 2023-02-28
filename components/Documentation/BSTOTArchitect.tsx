@@ -15,8 +15,12 @@ export default function BSTOTArchitect() {
       and cloud infrastructure from various cyber threats, by simplifying the
       management of security measures, increasing the efficiency of security
       processes and improving the overall security posture of an organization.
-      <img src={bstot} alt="finger print" width="100%" />
-      <img src={bst} alt="finger print" width="100%" />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+      
+        <img src={bstot} alt="finger print" width="80%" />
+        <br />
+        <img src={bst} alt="finger print" width="80%" />
+      </div>
     </div>
   );
 }

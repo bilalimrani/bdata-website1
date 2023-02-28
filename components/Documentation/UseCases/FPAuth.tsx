@@ -1,3 +1,5 @@
+const fingerPrintAuth = require("public/img/fingerPrintAuth.jpg");
+
 export default function FPAuth() {
   return (
     <div>
@@ -19,6 +21,9 @@ export default function FPAuth() {
       unique, unchangeable fingerprints for devices and ensuring that data is
       coming from a trusted source through the use of immutable hash functions.
       This provides a high level of security for the network and the data on it.
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        <img src={fingerPrintAuth} alt="finger print" width="50%" />
+      </div>
     </div>
   );
 }
