@@ -5,7 +5,8 @@ import { BiHomeAlt } from "react-icons/bi";
 // import MainWrapper from "../style.js";
 import {
   OverlayTrigger,
-  Tooltip
+  Tooltip,
+  Card
 } from 'react-bootstrap';
 import { GettingStarted } from "../../components/Documentation";
 import { DocumentationWrapper } from "../../styles/styledComponents/documentation.style";
@@ -183,24 +184,20 @@ const Documentation = () => {
       <Head>
         <title>Documentation</title>
       </Head>
+       <Card>
       <DocumentationWrapper>
+       
         <Sidebar>
-          <Menu
-            style={{
-              minHeight: "600px",
-              maxHeight: "600px",
-              overflow: "scroll",
-            }}
-          >
+          <Menu>
             {menues.map((item: any, index) => {
               if (item?.sub) {
                 return (
                   <SubMenu label={item.name} key={index}>
                     {item?.sub?.map((item1, index1) => (
                       <OverlayTrigger
-                      placement="right"
-                      delay={{ show: 250, hide: 400 }}
-                      overlay={<Tooltip id="button-tooltip-2">{item1.name}</Tooltip>}
+                        placement="right"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={<Tooltip id="button-tooltip-2">{item1.name}</Tooltip>}
                       >
                         <MenuItem
                           active={item1?.active && true}
@@ -208,6 +205,7 @@ const Documentation = () => {
                             onChangeComponent(item1.Component);
                             onTabChange(index, index1);
                           }}
+                          style={{ paddingLeft: '30px' }}
                         >
                           {item1.name}
                         </MenuItem>
@@ -266,6 +264,8 @@ const Documentation = () => {
           <Component />
         </div>
       </DocumentationWrapper>
+        </Card>
+
     </div>
   );
 };
