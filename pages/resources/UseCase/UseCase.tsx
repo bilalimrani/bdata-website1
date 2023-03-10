@@ -35,7 +35,7 @@ export default function UseCase() {
       <div className="row">
         {resourceConstant?.useCases?.map((item, index) => (
           <div
-            className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding"
+            className="col-12 col-md-6 col-lg-4 col-xl-3 custom-padding position-relative"
             key={index}
           >
             <BookImg title={item.title} img={item.img} />
@@ -46,7 +46,7 @@ export default function UseCase() {
                 id={`useCase${index + 1}`}
                 type="button"
                 data-id={item.title}
-                className="btn btn-primary"
+                className="btn btn-primary px-3 py-2 position-absolute bottom-0"
               >
                 Request Download
               </Button>

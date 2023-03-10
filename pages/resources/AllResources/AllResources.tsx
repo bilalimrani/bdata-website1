@@ -18,6 +18,8 @@ export default function AllResources() {
           <Tab eventKey="allresources" title="All Resources">
             <SectionPadding>
               <WhitePaper />
+              <br />
+              <br />
               <UseCase />
               {/* <Videos /> */}
             </SectionPadding>
