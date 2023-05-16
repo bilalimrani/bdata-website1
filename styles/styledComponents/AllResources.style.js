@@ -32,8 +32,8 @@ const AllResourcesWrapper = styled.div`
   }
   .nav.nav-tabs .active {
     background: #2b7bb9;
-    color: white;
-    border: 1px solid transparent;
+    /* color: white; */
+    /* border: 1px solid transparent; */
   }
   .custom-padding {
     padding-bottom: 30px;

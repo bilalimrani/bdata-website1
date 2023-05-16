@@ -16,7 +16,7 @@ export default function AllResources() {
   return (
     <AllResourcesWrapper>
       <div className="container">
-        <h6>BDATA Partner Space</h6>
+        {/* <h6>BDATA Partner Space</h6> */}
         <Tabs defaultActiveKey="allpartners" id="resources-tabs">
           <Tab eventKey="allpartners" title="All Partners">
             <SectionPadding>

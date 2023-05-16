@@ -62,11 +62,11 @@ export default {
       subTitle: "Partner",
       type: "partner",
     },
-    {
-      img: netlify,
-      subTitle: "Solution Partner",
-      type: "solution",
-    },
+    // {
+    //   img: netlify,
+    //   subTitle: "Solution Partner",
+    //   type: "solution",
+    // },
     {
       img: soracom,
       subTitle: "Telecom Global Connectivity Partner",
