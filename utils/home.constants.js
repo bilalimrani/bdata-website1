@@ -118,10 +118,10 @@ another network.`,
         image: Image43,
         alt: "",
       },
-      {
-        image: Image44,
-        alt: "",
-      },
+      // {
+      //   image: Image44,
+      //   alt: "",
+      // },
       {
         image: Image45,
         alt: "",

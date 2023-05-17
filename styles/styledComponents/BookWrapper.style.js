@@ -5,8 +5,9 @@ const BookWrapper = styled.div`
     min-height:380px;
     width:100%;
     position:relative;
-    border:1px solid #000000;
-    padding:20px 15px;
+    border: 1px solid rgb(222 219 219);
+    padding: 20px 15px;
+    border-radius: 3px;
     &::before{
         content:'';
         position:absolute;
@@ -31,6 +32,7 @@ const BookWrapper = styled.div`
                 font-size:16px;
                 font-weight:700;
                 text-align:center;
+                color: #656262;
             }
         }
     }
