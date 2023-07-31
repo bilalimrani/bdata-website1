@@ -7,8 +7,8 @@ export default function Banner() {
     <BannerWrapper>
       <video autoPlay muted loop>
         <source
-          type="video/mp4"
-          src="https://bdatawebsite.s3.us-west-1.amazonaws.com/Apply+Zero+Trust+Using+Device+Immutable+Fingerprints+to+end+ransomware+(17).mp4"
+          type="video/webm"
+          src="../homeBannerVideo.webm"
         />
       </video>
       {/* <Carousel fade indicators={false}>
