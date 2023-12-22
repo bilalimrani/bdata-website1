@@ -23,6 +23,7 @@
   "license": "MIT",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
+    "@netlify/plugin-nextjs": "^4.41.3",
     "@popperjs/core": "^2.11.5",
     "@sendgrid/mail": "^7.7.0",
     "add": "^2.0.6",
