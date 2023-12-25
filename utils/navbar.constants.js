@@ -11,7 +11,7 @@ export default [
   },
   {
     name: "Buy Now",
-    link: "https://dev--genuine-crepe-4943ec.netlify.app/",
+    link: "https://registration-bdata.netlify.app/",
     type: "outer",
   },
   {
