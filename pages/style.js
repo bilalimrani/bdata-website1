@@ -315,9 +315,10 @@ const ThirdVideoOverlay = styled.div`
   }
 `;
 
+export default A;
+
 export {
   BannerWrapper,
-  A,
   FirstVideoOverlay,
   SecondVideoOverlay,
   ThirdVideoOverlay,

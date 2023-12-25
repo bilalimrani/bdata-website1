@@ -1,6 +1,8 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import { BannerWrapper, A, MainWrapper } from "./style";
+import { BannerWrapper, MainWrapper } from "./style";
+import A from "./style";
+
 const Banner = dynamic(() => import("components/Home/Banner/Banner"));
 const AwardsContainer = dynamic(() => import("components/Home/Awards/Awards"));
 const PartnersContainer = dynamic(() =>
