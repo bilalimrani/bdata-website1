@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Banner from "../../components/Career/Banner/Banner";
-import MainWrapper from "../style.js";
+import { MainWrapper } from "../style.js";
 import JobListing from "../../components/Career/JobListing";
 
 const careers = () => {
