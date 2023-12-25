@@ -11,7 +11,7 @@ export default [
   },
   {
     name: "Buy Now",
-    link: "https://org-registration.bdata.ca/",
+    link: "https://dev--genuine-crepe-4943ec.netlify.app/",
     type: "outer",
   },
   {

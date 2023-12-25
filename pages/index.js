@@ -1,5 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import { BannerWrapper, A, MainWrapper } from "./style";
 const Banner = dynamic(() => import("components/Home/Banner/Banner"));
 const AwardsContainer = dynamic(() => import("components/Home/Awards/Awards"));
 const PartnersContainer = dynamic(() =>
@@ -12,13 +13,27 @@ const CustomersStories = dynamic(() =>
   import("components/Home/CustomersStories/CustomersStories")
 );
 import homeConstants from "../utils/home.constants";
-import MainWrapper from "./style.js";
 // import Cookies from "../components/Cookie/Cookie";
 
 const Main = () => {
   return (
     <div>
       <MainWrapper>
+        <BannerWrapper>
+          <video autoPlay muted loop>
+            <source
+              type="video/webm"
+              src="../homeBannerVideo.webm"
+            />
+          </video>
+          <A
+            href="https://org-registration.bdata.ca"
+            target="_blank"
+            className="btn btn-light"
+          >
+            Start free trial
+          </A>
+        </BannerWrapper>
         <Banner data={homeConstants?.banner} />
         <AwardsContainer />
         <LightWeightSection />
