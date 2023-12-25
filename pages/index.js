@@ -34,7 +34,6 @@ const Main = () => {
             Start free trial
           </A>
         </BannerWrapper>
-        <Banner data={homeConstants?.banner} />
         <AwardsContainer />
         <LightWeightSection />
         <PartnersContainer />
