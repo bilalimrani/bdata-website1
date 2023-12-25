@@ -31,5 +31,4 @@ module.exports = withPlugins([[withImages]], {
       ],
     };
   },
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
 });
