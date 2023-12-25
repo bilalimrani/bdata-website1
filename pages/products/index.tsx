@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import MainWrapper from "../style.js";
+import { MainWrapper } from "../style.js";
 import ProductsListing from "./ProductsListing/ProductsListing";
 
 const Products = () => {
